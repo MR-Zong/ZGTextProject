@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     _animationView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, 40, 40)];
     _animationView.backgroundColor = [UIColor redColor];
     [self.view addSubview:_animationView];

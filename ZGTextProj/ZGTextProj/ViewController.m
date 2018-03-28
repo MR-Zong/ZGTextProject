@@ -39,6 +39,7 @@
 #import "ZGInitializeController.h"
 #import "ZGPerformanceController.h"
 #import "ZGCAAnimationController.h"
+#import "ZGCrashController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -73,7 +74,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 30;
+    return 31;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -139,7 +140,10 @@
         cell.textLabel.text = @"performance";
     }else if(indexPath.row == 29){
         cell.textLabel.text = @"CAAnimation";
+    }else if(indexPath.row == 30){
+        cell.textLabel.text = @"crash";
     }
+
 
 
 
@@ -239,7 +243,11 @@
     }else if(indexPath.row == 29){
         ZGCAAnimationController *con = [[ZGCAAnimationController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 30){
+        ZGCrashController *con = [[ZGCrashController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
+
 
 
 }

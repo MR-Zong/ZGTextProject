@@ -67,6 +67,8 @@
 		EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC582D1F341E4200B94D93 /* ZGProgressHUD.m */; };
 		EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC58301F3420E000B94D93 /* ZGImagesToVideoManager.m */; };
 		EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA8C2069EDE000F42842 /* ZGCAAnimationController.m */; };
+		EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA93206B46E100F42842 /* UncaughtExceptionHandler.m */; };
+		EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA96206B47A500F42842 /* ZGCrashController.m */; };
 		EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC56B7820181ECA00BA5487 /* ZGHeaderFileController.m */; };
 		EFC56B7C20181F9900BA5487 /* ZGHFMan.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC56B7B20181F9900BA5487 /* ZGHFMan.m */; };
 		EFC56B7F20181FA400BA5487 /* ZGHFGirl.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC56B7E20181FA400BA5487 /* ZGHFGirl.m */; };
@@ -248,6 +250,10 @@
 		EFAC58301F3420E000B94D93 /* ZGImagesToVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGImagesToVideoManager.m; sourceTree = "<group>"; };
 		EFC4FA8B2069EDE000F42842 /* ZGCAAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCAAnimationController.h; sourceTree = "<group>"; };
 		EFC4FA8C2069EDE000F42842 /* ZGCAAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCAAnimationController.m; sourceTree = "<group>"; };
+		EFC4FA92206B46E100F42842 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		EFC4FA93206B46E100F42842 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		EFC4FA95206B47A500F42842 /* ZGCrashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCrashController.h; sourceTree = "<group>"; };
+		EFC4FA96206B47A500F42842 /* ZGCrashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCrashController.m; sourceTree = "<group>"; };
 		EFC56B292016CB0000BA5487 /* ZGCategoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCategoryProtocol.h; sourceTree = "<group>"; };
 		EFC56B7720181ECA00BA5487 /* ZGHeaderFileController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGHeaderFileController.h; sourceTree = "<group>"; };
 		EFC56B7820181ECA00BA5487 /* ZGHeaderFileController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGHeaderFileController.m; sourceTree = "<group>"; };
@@ -1041,6 +1047,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EFC4FA8E206B46B600F42842 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4FA8F206B46B600F42842 /* Controller */,
+				EFC4FA90206B46B600F42842 /* Model */,
+				EFC4FA91206B46B600F42842 /* View */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		EFC4FA8F206B46B600F42842 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4FA95206B47A500F42842 /* ZGCrashController.h */,
+				EFC4FA96206B47A500F42842 /* ZGCrashController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFC4FA90206B46B600F42842 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4FA92206B46E100F42842 /* UncaughtExceptionHandler.h */,
+				EFC4FA93206B46E100F42842 /* UncaughtExceptionHandler.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFC4FA91206B46B600F42842 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EFC56B7420181EB400BA5487 /* HeaderFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -1205,6 +1246,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFC4FA8E206B46B600F42842 /* Crash */,
 				EFC4FA872069EDC900F42842 /* CAAnimation */,
 				EF261CED2063A8D30002BFB2 /* Performance */,
 				EF67D663205763E800FA65DC /* Initialize */,
@@ -1644,6 +1686,7 @@
 				EF0A0EA52006FD9E0095779B /* ZGOneScrollViewController.m in Sources */,
 				EF67D66F2057644D00FA65DC /* ZGINSubObject.m in Sources */,
 				EFFCE4C71F64D67C008E2375 /* ZGChineseDate.m in Sources */,
+				EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */,
 				EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */,
 				EFFCE49F1F62330F008E2375 /* NSString+PinYin4Cocoa.m in Sources */,
 				EF570B182022F0A200E14BC9 /* ZGKVOObserverB.m in Sources */,
@@ -1657,6 +1700,7 @@
 				EFAC58251F341BF000B94D93 /* ZGAudioManager.m in Sources */,
 				EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */,
 				EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */,
+				EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */,
 				EF261CF32063A9050002BFB2 /* ZGPerformanceController.m in Sources */,
 				EFFCE4A01F62330F008E2375 /* PinyinFormatter.m in Sources */,
 				EF67D669205763FE00FA65DC /* ZGInitializeController.m in Sources */,
