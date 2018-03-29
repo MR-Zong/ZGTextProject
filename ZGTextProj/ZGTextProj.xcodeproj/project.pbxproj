@@ -69,6 +69,8 @@
 		EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA8C2069EDE000F42842 /* ZGCAAnimationController.m */; };
 		EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA93206B46E100F42842 /* UncaughtExceptionHandler.m */; };
 		EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA96206B47A500F42842 /* ZGCrashController.m */; };
+		EFC4FA9E206C98D000F42842 /* ZGNSProxyController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA9D206C98D000F42842 /* ZGNSProxyController.m */; };
+		EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FAA0206C98E100F42842 /* ZGProxy.m */; };
 		EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC56B7820181ECA00BA5487 /* ZGHeaderFileController.m */; };
 		EFC56B7C20181F9900BA5487 /* ZGHFMan.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC56B7B20181F9900BA5487 /* ZGHFMan.m */; };
 		EFC56B7F20181FA400BA5487 /* ZGHFGirl.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC56B7E20181FA400BA5487 /* ZGHFGirl.m */; };
@@ -254,6 +256,10 @@
 		EFC4FA93206B46E100F42842 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		EFC4FA95206B47A500F42842 /* ZGCrashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCrashController.h; sourceTree = "<group>"; };
 		EFC4FA96206B47A500F42842 /* ZGCrashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCrashController.m; sourceTree = "<group>"; };
+		EFC4FA9C206C98D000F42842 /* ZGNSProxyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNSProxyController.h; sourceTree = "<group>"; };
+		EFC4FA9D206C98D000F42842 /* ZGNSProxyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNSProxyController.m; sourceTree = "<group>"; };
+		EFC4FA9F206C98E100F42842 /* ZGProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGProxy.h; sourceTree = "<group>"; };
+		EFC4FAA0206C98E100F42842 /* ZGProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGProxy.m; sourceTree = "<group>"; };
 		EFC56B292016CB0000BA5487 /* ZGCategoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCategoryProtocol.h; sourceTree = "<group>"; };
 		EFC56B7720181ECA00BA5487 /* ZGHeaderFileController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGHeaderFileController.h; sourceTree = "<group>"; };
 		EFC56B7820181ECA00BA5487 /* ZGHeaderFileController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGHeaderFileController.m; sourceTree = "<group>"; };
@@ -1082,6 +1088,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EFC4FA98206C98BE00F42842 /* NSProxy */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4FA99206C98BE00F42842 /* Controller */,
+				EFC4FA9A206C98BE00F42842 /* Model */,
+				EFC4FA9B206C98BE00F42842 /* View */,
+			);
+			path = NSProxy;
+			sourceTree = "<group>";
+		};
+		EFC4FA99206C98BE00F42842 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4FA9C206C98D000F42842 /* ZGNSProxyController.h */,
+				EFC4FA9D206C98D000F42842 /* ZGNSProxyController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFC4FA9A206C98BE00F42842 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFC4FA9F206C98E100F42842 /* ZGProxy.h */,
+				EFC4FAA0206C98E100F42842 /* ZGProxy.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFC4FA9B206C98BE00F42842 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EFC56B7420181EB400BA5487 /* HeaderFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -1246,6 +1287,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFC4FA98206C98BE00F42842 /* NSProxy */,
 				EFC4FA8E206B46B600F42842 /* Crash */,
 				EFC4FA872069EDC900F42842 /* CAAnimation */,
 				EF261CED2063A8D30002BFB2 /* Performance */,
@@ -1713,6 +1755,7 @@
 				EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */,
 				EF618EB72000C75C0084A59E /* ZGBrightManger.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
+				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
 				EF2F668F1FFF638800EA4F6F /* ZGTbTestController.m in Sources */,
 				EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */,
 				EF3C47C81F384D610039AA5C /* ZGboy.m in Sources */,
@@ -1736,6 +1779,7 @@
 				EF570B152022F09400E14BC9 /* ZGKVOObserverA.m in Sources */,
 				EFC6EE2B1FF4E81500E1D2C5 /* ZGCategoryObject.m in Sources */,
 				EFDBCDBE1F2B159700C542AD /* main.m in Sources */,
+				EFC4FA9E206C98D000F42842 /* ZGNSProxyController.m in Sources */,
 				EFFF331D1FFF69600086BE7D /* ZGNoDataView.m in Sources */,
 				EF2F66851FFF585000EA4F6F /* ZGPLman.m in Sources */,
 				EF3FE04C2010A5090088C2C9 /* ZGWeakSelfController.m in Sources */,

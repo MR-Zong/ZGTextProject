@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-        
+    
+//    NSProxy
+    
     NSArray *arry=[NSArray arrayWithObject:@"sss"];
     NSLog(@"%@",[arry objectAtIndex:1]);
 

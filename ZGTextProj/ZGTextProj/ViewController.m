@@ -40,6 +40,7 @@
 #import "ZGPerformanceController.h"
 #import "ZGCAAnimationController.h"
 #import "ZGCrashController.h"
+#import "ZGNSProxyController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -74,7 +75,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 31;
+    return 32;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -142,7 +143,10 @@
         cell.textLabel.text = @"CAAnimation";
     }else if(indexPath.row == 30){
         cell.textLabel.text = @"crash";
+    }else if(indexPath.row == 31){
+        cell.textLabel.text = @"NSProxy";
     }
+
 
 
 
@@ -246,7 +250,11 @@
     }else if(indexPath.row == 30){
         ZGCrashController *con = [[ZGCrashController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 31){
+        ZGNSProxyController *con = [[ZGNSProxyController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
+
 
 
 
