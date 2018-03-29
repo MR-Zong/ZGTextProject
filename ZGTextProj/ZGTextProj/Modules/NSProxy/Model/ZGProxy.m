@@ -68,7 +68,7 @@
          /** v@:@
           * v 返回值类型void;
           * @ id类型,执行sel的对象;
-          * ：参数分隔符
+          * ：分隔符 ，分隔执行sel的对象 与 参数
           * @ 参数
           */
         NSMethodSignature *ms = [NSMethodSignature signatureWithObjCTypes:"v@:v"];
