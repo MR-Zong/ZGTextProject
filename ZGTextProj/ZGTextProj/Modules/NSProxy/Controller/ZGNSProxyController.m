@@ -30,6 +30,11 @@
     // Do any additional setup after loading the view.
     
     self.title = @"NSProxy应用";
+    
+    /* NSProxy 用途还可以实现多重继承 */
+    
+    
+    // 测试 NSProxy 解决 NSTimer 的循环引用
     [self testProxy];
 }
 
@@ -37,6 +42,16 @@
 - (void)testCircule
 {
     _timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(doTimer:) userInfo:nil repeats:YES];
+    
+}
+
+// 测试 ios10 之后 用block的方法 不会引起 NSTimer循环引用
+- (void)testIos10
+{
+    // 此方法iOS10以上版本可用 因为 并没有引用 self
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        NSLog(@"yyyy");
+    }];
     
 }
 

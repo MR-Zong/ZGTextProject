@@ -65,7 +65,12 @@
         return [self.target methodSignatureForSelector:sel];
     } else {
         
-         //v@:@ v:返回值类型void;@ id类型,执行sel的对象;：SEL;@参数
+         /** v@:@
+          * v 返回值类型void;
+          * @ id类型,执行sel的对象;
+          * ：参数分隔符
+          * @ 参数
+          */
         NSMethodSignature *ms = [NSMethodSignature signatureWithObjCTypes:"v@:v"];
         return  ms;
     }
