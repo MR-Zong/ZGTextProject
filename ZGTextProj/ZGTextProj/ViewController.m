@@ -41,6 +41,7 @@
 #import "ZGCAAnimationController.h"
 #import "ZGCrashController.h"
 #import "ZGNSProxyController.h"
+#import "ZGSafeDicController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -75,7 +76,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 32;
+    return 33;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -145,6 +146,8 @@
         cell.textLabel.text = @"crash";
     }else if(indexPath.row == 31){
         cell.textLabel.text = @"NSProxy";
+    }else if(indexPath.row == 32){
+        cell.textLabel.text = @"safeDictionary";
     }
 
 
@@ -253,7 +256,11 @@
     }else if(indexPath.row == 31){
         ZGNSProxyController *con = [[ZGNSProxyController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 32){
+        ZGSafeDicController *con = [[ZGSafeDicController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
+
 
 
 
