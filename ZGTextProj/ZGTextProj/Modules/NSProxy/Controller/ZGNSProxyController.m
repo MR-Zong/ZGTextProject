@@ -8,8 +8,9 @@
 
 #import "ZGNSProxyController.h"
 #import "ZGProxy.h"
+#import "ZGNSPCollectionViewCell.h"
 
-@interface ZGNSProxyController ()
+@interface ZGNSProxyController () <UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, strong) NSTimer *timer;
 
@@ -31,11 +32,34 @@
     
     self.title = @"NSProxy应用";
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     /* NSProxy 用途还可以实现多重继承 */
     
     
     // 测试 NSProxy 解决 NSTimer 的循环引用
-    [self testProxy];
+//    [self testProxy];
+    
+    // 测试collectionView
+    [self testCollectionView];
+}
+
+- (void)testCollectionView
+{
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    flowLayout.minimumLineSpacing = 0;
+    flowLayout.minimumInteritemSpacing = 0;
+    flowLayout.itemSize = CGSizeMake(200, 100);
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    
+    UICollectionView *c = [[UICollectionView alloc] initWithFrame:CGRectMake(100, 100, 200, 100) collectionViewLayout:flowLayout];
+    [c registerClass:[ZGNSPCollectionViewCell class] forCellWithReuseIdentifier:@"ZGNSPCollectionViewCellReusedID"];
+    c.pagingEnabled = YES;
+    c.showsVerticalScrollIndicator = NO;
+    c.bounces = NO;
+    c.dataSource = self;
+    c.delegate = self;
+    [self.view addSubview:c];
 }
 
 // 测试 NSTimer 导致的循环引用
@@ -66,5 +90,18 @@
     NSLog(@"xxx");
 }
 
+
+#pragma mark - UICollectionViewDelegate,UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 5;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZGNSPCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZGNSPCollectionViewCellReusedID" forIndexPath:indexPath];
+    cell.titleLael.text = [NSString stringWithFormat:@"%zd",indexPath.item];
+    return cell;
+}
 
 @end

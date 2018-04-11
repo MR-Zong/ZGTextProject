@@ -42,6 +42,9 @@
 #import "ZGCrashController.h"
 #import "ZGNSProxyController.h"
 #import "ZGSafeDicController.h"
+#import "ZGOperationQueueController.h"
+#import "ZGExtendLayoutController.h"
+#import "ZGERController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -76,7 +79,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 33;
+    return 36;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -148,7 +151,16 @@
         cell.textLabel.text = @"NSProxy";
     }else if(indexPath.row == 32){
         cell.textLabel.text = @"safeDictionary";
+    }else if(indexPath.row == 33){
+        cell.textLabel.text = @"NSOperationQueue";
+    }else if(indexPath.row == 34){
+        cell.textLabel.text = @"ExtendLayout";
+    }else if(indexPath.row == 35){
+        cell.textLabel.text = @"EstimateRowHeight";
     }
+
+
+
 
 
 
@@ -259,7 +271,19 @@
     }else if(indexPath.row == 32){
         ZGSafeDicController *con = [[ZGSafeDicController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 33){
+        ZGOperationQueueController *con = [[ZGOperationQueueController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 34){
+        ZGExtendLayoutController *con = [[ZGExtendLayoutController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 35){
+        ZGERController *con = [[ZGERController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
+
+
+
 
 
 
