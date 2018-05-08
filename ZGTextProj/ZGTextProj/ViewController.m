@@ -45,6 +45,8 @@
 #import "ZGOperationQueueController.h"
 #import "ZGExtendLayoutController.h"
 #import "ZGERController.h"
+#import "ZGInitFunctionController.h"
+#import "ZGClassFunctionController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -79,7 +81,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 36;
+    return 38;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -157,7 +159,12 @@
         cell.textLabel.text = @"ExtendLayout";
     }else if(indexPath.row == 35){
         cell.textLabel.text = @"EstimateRowHeight";
+    }else if(indexPath.row == 36){
+        cell.textLabel.text = @"initFunciton";
+    }else if(indexPath.row == 37){
+        cell.textLabel.text = @"ClassFunction";
     }
+
 
 
 
@@ -279,6 +286,12 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 35){
         ZGERController *con = [[ZGERController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 36){
+        ZGInitFunctionController *con = [[ZGInitFunctionController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 37){
+        ZGClassFunctionController *con = [[ZGClassFunctionController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

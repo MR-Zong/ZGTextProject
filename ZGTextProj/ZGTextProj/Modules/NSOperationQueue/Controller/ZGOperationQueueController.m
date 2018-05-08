@@ -20,6 +20,16 @@
     
     self.title = @"NSOperationQueue";
     
+    NSLog(@"navigationBar %f",self.navigationController.navigationBar.bounds.size.height);
+    
+    // 状态栏(statusbar)
+     ;
+//    NSLog(@"status width - %f", rectStatus.size.width); // 宽度
+    NSLog(@"status height  %f",  [[UIApplication sharedApplication] statusBarFrame].size.height);  // 高度
+    
+    // tabBAr 高度
+    
+    
     [self testOperationQueue];
 }
 

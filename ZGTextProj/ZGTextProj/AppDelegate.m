@@ -18,6 +18,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // 沙盒路径
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *path = [paths objectAtIndex:0];
+    NSLog(@"path %@",path);
+    
+    // Bundle 路径
+    NSString *p = [[NSBundle mainBundle] pathForResource:@"myPlayer" ofType:@"mp4"];
+    NSLog(@"p %@",p);
+    
     // Override point for customization after application launch.
     
 //    InstallUncaughtExceptionHandler(); 
