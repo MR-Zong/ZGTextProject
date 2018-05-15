@@ -47,6 +47,7 @@
 #import "ZGERController.h"
 #import "ZGInitFunctionController.h"
 #import "ZGClassFunctionController.h"
+#import "ZGScrollViewNestingController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -81,7 +82,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 38;
+    return 39;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -163,7 +164,10 @@
         cell.textLabel.text = @"initFunciton";
     }else if(indexPath.row == 37){
         cell.textLabel.text = @"ClassFunction";
+    }else if(indexPath.row == 38){
+        cell.textLabel.text = @"ScrollViewNesting";
     }
+
 
 
 
@@ -292,6 +296,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 37){
         ZGClassFunctionController *con = [[ZGClassFunctionController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 38){
+        ZGScrollViewNestingController *con = [[ZGScrollViewNestingController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

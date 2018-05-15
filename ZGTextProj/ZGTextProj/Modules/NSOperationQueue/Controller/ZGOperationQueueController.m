@@ -7,6 +7,8 @@
 //
 
 #import "ZGOperationQueueController.h"
+#import "ZGMainOperation.h"
+#import "ZGStartOperation.h"
 
 @interface ZGOperationQueueController ()
 
@@ -19,6 +21,7 @@
     // Do any additional setup after loading the view.
     
     self.title = @"NSOperationQueue";
+    self.view.backgroundColor = [UIColor whiteColor];
     
     NSLog(@"navigationBar %f",self.navigationController.navigationBar.bounds.size.height);
     
@@ -33,7 +36,13 @@
     
     // NSOperationQueue测试：A任务完成后，等待状态的B任务是否会自动执行
     // 测试结果：NSOperationQueue相当完美！以后自己需要队列管理，都用NSOperationQueue
-    [self testWaitAndContinue2];
+//    [self testWaitAndContinue2];
+    
+    // NSOperationQueue测试： 但注意是测试自定义NSOperation 实现main方式
+//    [self testMainOperationWaitAndContinue];
+    
+    // NSOperationQueue测试： 但注意是测试自定义NSOperation 实现start方式
+    [self testStartOperationWaitAndContinue];
 }
 
 - (void)testOperation
@@ -65,6 +74,7 @@
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     [queue addOperation:op1];
 }
+
 // NSOperationQueue测试：A任务完成后，等待状态的B任务是否会自动执行
 - (void)testWaitAndContinue
 {
@@ -116,6 +126,94 @@
         NSLog(@"bopC end");
     }];
 
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 2;
+    [queue addOperation:bopA];
+    [queue addOperation:bopB];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"add bopC");
+        [queue addOperation:bopC];
+    });
+}
+
+#pragma mark - 自定义NSOperation main
+// NSOperationQueue测试：A任务完成后，等待状态的B任务是否会自动执行
+- (void)testMainOperationWaitAndContinue
+{
+    ZGMainOperation *bopA = [[ZGMainOperation alloc] init];
+    bopA.fullName = @"bopA";
+    
+    ZGMainOperation *bopB = [[ZGMainOperation alloc] init];
+    bopB.fullName = @"bopB";
+    
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 1;
+    [queue addOperation:bopA];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"add bopB");
+        [queue addOperation:bopB];
+    });
+}
+
+// NSOperationQueue测试：A,B任务其中任何一个任务完成后，等待状态的C任务是否会自动执行
+- (void)testMainOperationWaitAndContinue2
+{
+    ZGMainOperation *bopA = [[ZGMainOperation alloc] init];
+    bopA.fullName = @"bopA";
+    
+    ZGMainOperation *bopB = [[ZGMainOperation alloc] init];
+    bopB.fullName = @"bopB";
+    
+    ZGMainOperation *bopC = [[ZGMainOperation alloc] init];
+    bopC.fullName = @"bopC";
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 2;
+    [queue addOperation:bopA];
+    [queue addOperation:bopB];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"add bopC");
+        [queue addOperation:bopC];
+    });
+}
+
+#pragma mark - 自定义NSOperation start
+// NSOperationQueue测试：A任务完成后，等待状态的B任务是否会自动执行
+- (void)testStartOperationWaitAndContinue
+{
+    ZGStartOperation *bopA = [[ZGStartOperation alloc] init];
+    bopA.fullName = @"bopA";
+    
+    ZGStartOperation *bopB = [[ZGStartOperation alloc] init];
+    bopB.fullName = @"bopB";
+    
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 1;
+    [queue addOperation:bopA];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"add bopB");
+        [queue addOperation:bopB];
+    });
+}
+
+// NSOperationQueue测试：A,B任务其中任何一个任务完成后，等待状态的C任务是否会自动执行
+- (void)testStartOperationWaitAndContinue2
+{
+    ZGStartOperation *bopA = [[ZGStartOperation alloc] init];
+    bopA.fullName = @"bopA";
+    
+    ZGStartOperation *bopB = [[ZGStartOperation alloc] init];
+    bopB.fullName = @"bopB";
+    
+    ZGStartOperation *bopC = [[ZGStartOperation alloc] init];
+    bopC.fullName = @"bopC";
+    
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     queue.maxConcurrentOperationCount = 2;
     [queue addOperation:bopA];

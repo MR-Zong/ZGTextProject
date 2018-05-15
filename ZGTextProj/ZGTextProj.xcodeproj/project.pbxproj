@@ -43,6 +43,7 @@
 		EF3FE04C2010A5090088C2C9 /* ZGWeakSelfController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3FE04B2010A5090088C2C9 /* ZGWeakSelfController.m */; };
 		EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3FE04E2010B2200088C2C9 /* ZGWeakSelfManager.m */; };
 		EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF488F1C2078679200451738 /* ZGNSPCollectionViewCell.m */; };
+		EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF53FC7820A81FFB00FAA3E7 /* ZGScrollViewNestingController.m */; };
 		EF570B032022E57E00E14BC9 /* ZGNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B022022E57E00E14BC9 /* ZGNotificationController.m */; };
 		EF570B062022E5A500E14BC9 /* ZGKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B052022E5A500E14BC9 /* ZGKVOController.m */; };
 		EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B082022E93D00E14BC9 /* ZGNFNotificationCenter.m */; };
@@ -66,6 +67,8 @@
 		EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EF76E21E1FFB324B009D21CF /* videoWithAudio.mp4 */; };
 		EF85FF3A204A4E9000F5186A /* ZGGCDTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */; };
 		EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8E19701F56618100E19DA4 /* ZGStoreKitController.m */; };
+		EFA9A62320AA765A00E73288 /* ZGMainOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA9A62220AA765A00E73288 /* ZGMainOperation.m */; };
+		EFA9A62620AA770E00E73288 /* ZGStartOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA9A62520AA770E00E73288 /* ZGStartOperation.m */; };
 		EFAC581C1F30B61F00B94D93 /* ZGTestBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC581B1F30B61F00B94D93 /* ZGTestBlockViewController.m */; };
 		EFAC581F1F332B5C00B94D93 /* ZGComposeVideoAndAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC581E1F332B5C00B94D93 /* ZGComposeVideoAndAudioViewController.m */; };
 		EFAC58221F340D2E00B94D93 /* ZGComposeAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC58211F340D2E00B94D93 /* ZGComposeAudioModel.m */; };
@@ -215,6 +218,8 @@
 		EF3FE04E2010B2200088C2C9 /* ZGWeakSelfManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWeakSelfManager.m; sourceTree = "<group>"; };
 		EF488F1B2078679200451738 /* ZGNSPCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNSPCollectionViewCell.h; sourceTree = "<group>"; };
 		EF488F1C2078679200451738 /* ZGNSPCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNSPCollectionViewCell.m; sourceTree = "<group>"; };
+		EF53FC7720A81FFB00FAA3E7 /* ZGScrollViewNestingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGScrollViewNestingController.h; sourceTree = "<group>"; };
+		EF53FC7820A81FFB00FAA3E7 /* ZGScrollViewNestingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGScrollViewNestingController.m; sourceTree = "<group>"; };
 		EF570B012022E57E00E14BC9 /* ZGNotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNotificationController.h; sourceTree = "<group>"; };
 		EF570B022022E57E00E14BC9 /* ZGNotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNotificationController.m; sourceTree = "<group>"; };
 		EF570B042022E5A500E14BC9 /* ZGKVOController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVOController.h; sourceTree = "<group>"; };
@@ -260,6 +265,10 @@
 		EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGGCDTestController.m; sourceTree = "<group>"; };
 		EF8E196F1F56618100E19DA4 /* ZGStoreKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGStoreKitController.h; sourceTree = "<group>"; };
 		EF8E19701F56618100E19DA4 /* ZGStoreKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGStoreKitController.m; sourceTree = "<group>"; };
+		EFA9A62120AA765A00E73288 /* ZGMainOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMainOperation.h; sourceTree = "<group>"; };
+		EFA9A62220AA765A00E73288 /* ZGMainOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMainOperation.m; sourceTree = "<group>"; };
+		EFA9A62420AA770E00E73288 /* ZGStartOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGStartOperation.h; sourceTree = "<group>"; };
+		EFA9A62520AA770E00E73288 /* ZGStartOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGStartOperation.m; sourceTree = "<group>"; };
 		EFAC581A1F30B61F00B94D93 /* ZGTestBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTestBlockViewController.h; sourceTree = "<group>"; };
 		EFAC581B1F30B61F00B94D93 /* ZGTestBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTestBlockViewController.m; sourceTree = "<group>"; };
 		EFAC581D1F332B5C00B94D93 /* ZGComposeVideoAndAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGComposeVideoAndAudioViewController.h; sourceTree = "<group>"; };
@@ -722,6 +731,10 @@
 		EF31F9642070BE6400B1B148 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFA9A62120AA765A00E73288 /* ZGMainOperation.h */,
+				EFA9A62220AA765A00E73288 /* ZGMainOperation.m */,
+				EFA9A62420AA770E00E73288 /* ZGStartOperation.h */,
+				EFA9A62520AA770E00E73288 /* ZGStartOperation.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -840,6 +853,39 @@
 			sourceTree = "<group>";
 		};
 		EF3FE0492010A4F20088C2C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF53FC7320A81F5400FAA3E7 /* scrollViewNesting */ = {
+			isa = PBXGroup;
+			children = (
+				EF53FC7420A81F5400FAA3E7 /* Controller */,
+				EF53FC7520A81F5400FAA3E7 /* Model */,
+				EF53FC7620A81F5400FAA3E7 /* View */,
+			);
+			path = scrollViewNesting;
+			sourceTree = "<group>";
+		};
+		EF53FC7420A81F5400FAA3E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF53FC7720A81FFB00FAA3E7 /* ZGScrollViewNestingController.h */,
+				EF53FC7820A81FFB00FAA3E7 /* ZGScrollViewNestingController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF53FC7520A81F5400FAA3E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF53FC7620A81F5400FAA3E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1424,6 +1470,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF53FC7320A81F5400FAA3E7 /* scrollViewNesting */,
 				EFE5F82E20932CB50065775D /* ClassFunction */,
 				EF3352552091B1A8003D4344 /* InitFunction */,
 				EFE0B318207DB6690020B143 /* EstimatedRowHeight */,
@@ -1958,6 +2005,7 @@
 				EF570B062022E5A500E14BC9 /* ZGKVOController.m in Sources */,
 				EF0A0E9B20060CF90095779B /* ZGSV2Delegate.m in Sources */,
 				EF2F66771FFC6B1100EA4F6F /* ZGBlockController.m in Sources */,
+				EFA9A62320AA765A00E73288 /* ZGMainOperation.m in Sources */,
 				EFFCE4BB1F62828C008E2375 /* ZGCalendarManager.m in Sources */,
 				EF0A0E8F2005C41F0095779B /* ZGSBaseScrollView.m in Sources */,
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
@@ -2002,9 +2050,11 @@
 				EFAC58221F340D2E00B94D93 /* ZGComposeAudioModel.m in Sources */,
 				EFC56B93201DBB8000BA5487 /* ZGMsgForwardController.m in Sources */,
 				EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */,
+				EFA9A62620AA770E00E73288 /* ZGStartOperation.m in Sources */,
 				EF618EB72000C75C0084A59E /* ZGBrightManger.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
+				EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */,
 				EF2F668F1FFF638800EA4F6F /* ZGTbTestController.m in Sources */,
 				EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */,
 				EF3C47C81F384D610039AA5C /* ZGboy.m in Sources */,
