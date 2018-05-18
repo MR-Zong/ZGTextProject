@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
+		EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */; };
+		EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E220AE6E310023B282 /* ZGNavTestController.m */; };
+		EF01D5E620AE6FC00023B282 /* ZGNTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E520AE6FC00023B282 /* ZGNTestController.m */; };
+		EF01D5E920AE70370023B282 /* ZGNRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E820AE70370023B282 /* ZGNRootController.m */; };
 		EF0A0E892004C2490095779B /* ZGSTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0E882004C2490095779B /* ZGSTestController.m */; };
 		EF0A0E8F2005C41F0095779B /* ZGSBaseScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0E8E2005C41F0095779B /* ZGSBaseScrollView.m */; };
 		EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0E912005C6AD0095779B /* ZGSSubScrollView.m */; };
@@ -145,6 +150,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF01D5B220AC08170023B282 /* ZGSafeAreaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSafeAreaController.h; sourceTree = "<group>"; };
+		EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSafeAreaController.m; sourceTree = "<group>"; };
+		EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZGSAExample.storyboard; sourceTree = "<group>"; };
+		EF01D5E120AE6E310023B282 /* ZGNavTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNavTestController.h; sourceTree = "<group>"; };
+		EF01D5E220AE6E310023B282 /* ZGNavTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNavTestController.m; sourceTree = "<group>"; };
+		EF01D5E420AE6FC00023B282 /* ZGNTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNTestController.h; sourceTree = "<group>"; };
+		EF01D5E520AE6FC00023B282 /* ZGNTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNTestController.m; sourceTree = "<group>"; };
+		EF01D5E720AE70370023B282 /* ZGNRootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNRootController.h; sourceTree = "<group>"; };
+		EF01D5E820AE70370023B282 /* ZGNRootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNRootController.m; sourceTree = "<group>"; };
 		EF0A0E872004C2490095779B /* ZGSTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTestController.h; sourceTree = "<group>"; };
 		EF0A0E882004C2490095779B /* ZGSTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTestController.m; sourceTree = "<group>"; };
 		EF0A0E8D2005C41F0095779B /* ZGSBaseScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSBaseScrollView.h; sourceTree = "<group>"; };
@@ -408,6 +422,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF01D5AE20AC070B0023B282 /* SafeArea */ = {
+			isa = PBXGroup;
+			children = (
+				EF01D5AF20AC070B0023B282 /* Controller */,
+				EF01D5B020AC070B0023B282 /* Model */,
+				EF01D5B120AC070B0023B282 /* View */,
+			);
+			path = SafeArea;
+			sourceTree = "<group>";
+		};
+		EF01D5AF20AC070B0023B282 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF01D5B220AC08170023B282 /* ZGSafeAreaController.h */,
+				EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF01D5B020AC070B0023B282 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF01D5B120AC070B0023B282 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF01D5DD20AE6E040023B282 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				EF01D5DE20AE6E040023B282 /* Controller */,
+				EF01D5DF20AE6E040023B282 /* Model */,
+				EF01D5E020AE6E040023B282 /* View */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		EF01D5DE20AE6E040023B282 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF01D5E120AE6E310023B282 /* ZGNavTestController.h */,
+				EF01D5E220AE6E310023B282 /* ZGNavTestController.m */,
+				EF01D5E420AE6FC00023B282 /* ZGNTestController.h */,
+				EF01D5E520AE6FC00023B282 /* ZGNTestController.m */,
+				EF01D5E720AE70370023B282 /* ZGNRootController.h */,
+				EF01D5E820AE70370023B282 /* ZGNRootController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF01D5DF20AE6E040023B282 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF01D5E020AE6E040023B282 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EF0A0E832004C2370095779B /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1470,6 +1555,8 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF01D5DD20AE6E040023B282 /* Navigation */,
+				EF01D5AE20AC070B0023B282 /* SafeArea */,
 				EF53FC7320A81F5400FAA3E7 /* scrollViewNesting */,
 				EFE5F82E20932CB50065775D /* ClassFunction */,
 				EF3352552091B1A8003D4344 /* InitFunction */,
@@ -1949,6 +2036,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */,
 				EFDBCDCC1F2B159700C542AD /* LaunchScreen.storyboard in Resources */,
 				EFDBCDC91F2B159700C542AD /* Assets.xcassets in Resources */,
 				EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */,
@@ -1981,10 +2069,12 @@
 			files = (
 				EF2F66811FFF572300EA4F6F /* ZGProtocolController.m in Sources */,
 				EFFCE4A11F62330F008E2375 /* PinyinHelper.m in Sources */,
+				EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
 				EFFCE4AF1F624D3F008E2375 /* ZGCalendarController.m in Sources */,
 				EF570B252024015300E14BC9 /* ZGTestCopyViewController.m in Sources */,
 				EFC56B7F20181FA400BA5487 /* ZGHFGirl.m in Sources */,
+				EF01D5E620AE6FC00023B282 /* ZGNTestController.m in Sources */,
 				EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */,
 				EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */,
 				EF2F66921FFF651F00EA4F6F /* ZGTbBaseTableView.m in Sources */,
@@ -2036,6 +2126,7 @@
 				EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */,
 				EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */,
 				EFAC58251F341BF000B94D93 /* ZGAudioManager.m in Sources */,
+				EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */,
 				EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */,
 				EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */,
 				EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */,
@@ -2089,6 +2180,7 @@
 				EFC6EE201FF48CB500E1D2C5 /* ZGTestWindowController.m in Sources */,
 				EFAC581F1F332B5C00B94D93 /* ZGComposeVideoAndAudioViewController.m in Sources */,
 				EF0A0E9820060CED0095779B /* ZGSV1Delegate.m in Sources */,
+				EF01D5E920AE70370023B282 /* ZGNRootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2241,7 +2333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9W8KXJ7KY8;
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kk.hongnishuitest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2254,7 +2346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9W8KXJ7KY8;
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kk.hongnishuitest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

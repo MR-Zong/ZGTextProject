@@ -48,6 +48,8 @@
 #import "ZGInitFunctionController.h"
 #import "ZGClassFunctionController.h"
 #import "ZGScrollViewNestingController.h"
+#import "ZGSafeAreaController.h"
+#import "ZGNavTestController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -82,7 +84,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 39;
+    return 41;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -166,7 +168,13 @@
         cell.textLabel.text = @"ClassFunction";
     }else if(indexPath.row == 38){
         cell.textLabel.text = @"ScrollViewNesting";
+    }else if(indexPath.row == 39){
+        cell.textLabel.text = @"SafeArea";
+    }else if(indexPath.row == 40){
+        cell.textLabel.text = @"Navigation";
     }
+
+
 
 
 
@@ -300,7 +308,14 @@
     }else if(indexPath.row == 38){
         ZGScrollViewNestingController *con = [[ZGScrollViewNestingController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 39){
+        ZGSafeAreaController *con = [[ZGSafeAreaController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 40){
+        ZGNavTestController *con = [[ZGNavTestController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
+
 
 
 
