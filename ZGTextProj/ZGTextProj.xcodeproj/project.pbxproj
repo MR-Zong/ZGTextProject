@@ -12,6 +12,7 @@
 		EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E220AE6E310023B282 /* ZGNavTestController.m */; };
 		EF01D5E620AE6FC00023B282 /* ZGNTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E520AE6FC00023B282 /* ZGNTestController.m */; };
 		EF01D5E920AE70370023B282 /* ZGNRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E820AE70370023B282 /* ZGNRootController.m */; };
+		EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5EB20AE74700023B282 /* ZGNavigationBar.m */; };
 		EF0A0E892004C2490095779B /* ZGSTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0E882004C2490095779B /* ZGSTestController.m */; };
 		EF0A0E8F2005C41F0095779B /* ZGSBaseScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0E8E2005C41F0095779B /* ZGSBaseScrollView.m */; };
 		EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0E912005C6AD0095779B /* ZGSSubScrollView.m */; };
@@ -45,6 +46,10 @@
 		EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3C47C11F384D3C0039AA5C /* ZGInterviewViewController.m */; };
 		EF3C47C51F384D530039AA5C /* ZGPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3C47C41F384D530039AA5C /* ZGPeople.m */; };
 		EF3C47C81F384D610039AA5C /* ZGboy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3C47C71F384D610039AA5C /* ZGboy.m */; };
+		EF3CAA8420BD3C9D00FCC752 /* ZGCellOptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAA8320BD3C9D00FCC752 /* ZGCellOptionController.m */; };
+		EF3CAA8720BD60B000FCC752 /* ZGCellOptionMGController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAA8620BD60B000FCC752 /* ZGCellOptionMGController.m */; };
+		EF3CAA8E20BD616800FCC752 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAA8920BD616800FCC752 /* MGSwipeTableCell.m */; };
+		EF3CAA8F20BD616800FCC752 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAA8C20BD616800FCC752 /* MGSwipeButton.m */; };
 		EF3FE04C2010A5090088C2C9 /* ZGWeakSelfController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3FE04B2010A5090088C2C9 /* ZGWeakSelfController.m */; };
 		EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3FE04E2010B2200088C2C9 /* ZGWeakSelfManager.m */; };
 		EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF488F1C2078679200451738 /* ZGNSPCollectionViewCell.m */; };
@@ -159,6 +164,8 @@
 		EF01D5E520AE6FC00023B282 /* ZGNTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNTestController.m; sourceTree = "<group>"; };
 		EF01D5E720AE70370023B282 /* ZGNRootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNRootController.h; sourceTree = "<group>"; };
 		EF01D5E820AE70370023B282 /* ZGNRootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNRootController.m; sourceTree = "<group>"; };
+		EF01D5EA20AE74700023B282 /* ZGNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNavigationBar.h; sourceTree = "<group>"; };
+		EF01D5EB20AE74700023B282 /* ZGNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNavigationBar.m; sourceTree = "<group>"; };
 		EF0A0E872004C2490095779B /* ZGSTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTestController.h; sourceTree = "<group>"; };
 		EF0A0E882004C2490095779B /* ZGSTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTestController.m; sourceTree = "<group>"; };
 		EF0A0E8D2005C41F0095779B /* ZGSBaseScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSBaseScrollView.h; sourceTree = "<group>"; };
@@ -226,6 +233,14 @@
 		EF3C47C41F384D530039AA5C /* ZGPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGPeople.m; sourceTree = "<group>"; };
 		EF3C47C61F384D610039AA5C /* ZGboy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGboy.h; sourceTree = "<group>"; };
 		EF3C47C71F384D610039AA5C /* ZGboy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGboy.m; sourceTree = "<group>"; };
+		EF3CAA8220BD3C9D00FCC752 /* ZGCellOptionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCellOptionController.h; sourceTree = "<group>"; };
+		EF3CAA8320BD3C9D00FCC752 /* ZGCellOptionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCellOptionController.m; sourceTree = "<group>"; };
+		EF3CAA8520BD60B000FCC752 /* ZGCellOptionMGController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCellOptionMGController.h; sourceTree = "<group>"; };
+		EF3CAA8620BD60B000FCC752 /* ZGCellOptionMGController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCellOptionMGController.m; sourceTree = "<group>"; };
+		EF3CAA8920BD616800FCC752 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		EF3CAA8A20BD616800FCC752 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		EF3CAA8B20BD616800FCC752 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		EF3CAA8C20BD616800FCC752 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
 		EF3FE04A2010A5090088C2C9 /* ZGWeakSelfController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWeakSelfController.h; sourceTree = "<group>"; };
 		EF3FE04B2010A5090088C2C9 /* ZGWeakSelfController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWeakSelfController.m; sourceTree = "<group>"; };
 		EF3FE04D2010B2200088C2C9 /* ZGWeakSelfManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWeakSelfManager.h; sourceTree = "<group>"; };
@@ -489,6 +504,8 @@
 		EF01D5E020AE6E040023B282 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF01D5EA20AE74700023B282 /* ZGNavigationBar.h */,
+				EF01D5EB20AE74700023B282 /* ZGNavigationBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -907,6 +924,53 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EF3CAA7E20BD3C8900FCC752 /* CellOption */ = {
+			isa = PBXGroup;
+			children = (
+				EF3CAA7F20BD3C8900FCC752 /* Controller */,
+				EF3CAA8020BD3C8900FCC752 /* Model */,
+				EF3CAA8120BD3C8900FCC752 /* View */,
+			);
+			path = CellOption;
+			sourceTree = "<group>";
+		};
+		EF3CAA7F20BD3C8900FCC752 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF3CAA8220BD3C9D00FCC752 /* ZGCellOptionController.h */,
+				EF3CAA8320BD3C9D00FCC752 /* ZGCellOptionController.m */,
+				EF3CAA8520BD60B000FCC752 /* ZGCellOptionMGController.h */,
+				EF3CAA8620BD60B000FCC752 /* ZGCellOptionMGController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF3CAA8020BD3C8900FCC752 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF3CAA8120BD3C8900FCC752 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF3CAA8820BD616800FCC752 /* MGSwipeTableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF3CAA8820BD616800FCC752 /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF3CAA8B20BD616800FCC752 /* MGSwipeTableCell.h */,
+				EF3CAA8920BD616800FCC752 /* MGSwipeTableCell.m */,
+				EF3CAA8A20BD616800FCC752 /* MGSwipeButton.h */,
+				EF3CAA8C20BD616800FCC752 /* MGSwipeButton.m */,
+			);
+			path = MGSwipeTableCell;
 			sourceTree = "<group>";
 		};
 		EF3FE0462010A4F20088C2C9 /* WeakSelf */ = {
@@ -1555,6 +1619,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF3CAA7E20BD3C8900FCC752 /* CellOption */,
 				EF01D5DD20AE6E040023B282 /* Navigation */,
 				EF01D5AE20AC070B0023B282 /* SafeArea */,
 				EF53FC7320A81F5400FAA3E7 /* scrollViewNesting */,
@@ -2091,6 +2156,7 @@
 				EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */,
 				EFFCE4A81F623F9E008E2375 /* ZGLetterSectionModel.m in Sources */,
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
+				EF3CAA8720BD60B000FCC752 /* ZGCellOptionMGController.m in Sources */,
 				EF570B0C2022E94C00E14BC9 /* ZGNFObserverA.m in Sources */,
 				EF570B062022E5A500E14BC9 /* ZGKVOController.m in Sources */,
 				EF0A0E9B20060CF90095779B /* ZGSV2Delegate.m in Sources */,
@@ -2101,6 +2167,7 @@
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
+				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
 				EF570B322024625600E14BC9 /* ZGKEDataModel.m in Sources */,
@@ -2115,6 +2182,7 @@
 				EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */,
 				EFFCE49F1F62330F008E2375 /* NSString+PinYin4Cocoa.m in Sources */,
 				EF33525B2091B1C6003D4344 /* ZGInitFunctionController.m in Sources */,
+				EF3CAA8420BD3C9D00FCC752 /* ZGCellOptionController.m in Sources */,
 				EF570B182022F0A200E14BC9 /* ZGKVOObserverB.m in Sources */,
 				EFC6EE2E1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.m in Sources */,
 				EF570B352024626400E14BC9 /* ZGKEObserverA.m in Sources */,
@@ -2161,6 +2229,8 @@
 				EFAC581C1F30B61F00B94D93 /* ZGTestBlockViewController.m in Sources */,
 				EF3C47C51F384D530039AA5C /* ZGPeople.m in Sources */,
 				EF0A0EAB2006FE240095779B /* ZGOHeaderScrollView.m in Sources */,
+				EF3CAA8F20BD616800FCC752 /* MGSwipeButton.m in Sources */,
+				EF3CAA8E20BD616800FCC752 /* MGSwipeTableCell.m in Sources */,
 				EFFCE4C11F637C3D008E2375 /* ZGDayModel.m in Sources */,
 				EFFCE4B51F62722F008E2375 /* ZGCalendarCell.m in Sources */,
 				EFFCE49E1F62330F008E2375 /* HanyuPinyinOutputFormat.m in Sources */,

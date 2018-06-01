@@ -21,6 +21,22 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"rootVC";
+    
+    
+    // UIToolBar
+    self.navigationController.toolbarHidden = NO;
+    //b.设置是否有透明度(默认true->有透明度)
+    self.navigationController.toolbar.translucent = NO;
+    
+    //c.设置背景颜色
+    self.navigationController.toolbar.barTintColor = [UIColor yellowColor];
+    //d.设置填充颜色
+    self.navigationController.toolbar.tintColor = [UIColor redColor];
+
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"AB" style:UIBarButtonItemStylePlain target:self action:@selector(didAB)];
+    self.toolbarItems = @[item];
+    
+    
     [self navTest];
     
     NSLog(@"%@-height %f",self.title,[UIScreen mainScreen].bounds.size.height);
@@ -45,6 +61,12 @@
     ZGNTestController *vc = [[ZGNTestController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
     
+}
+
+
+- (void)didAB
+{
+    NSLog(@"didAB");
 }
 
 

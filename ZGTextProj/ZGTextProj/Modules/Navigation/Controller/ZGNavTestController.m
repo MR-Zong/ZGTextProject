@@ -8,6 +8,7 @@
 
 #import "ZGNavTestController.h"
 #import "ZGNRootController.h"
+#import "ZGNavigationBar.h"
 
 @interface ZGNavTestController ()
 
@@ -22,10 +23,11 @@
     self.title = @"NavTest";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self navTest];
+    [self setupBtn];
 }
 
-- (void)navTest
+// 测试view heigth
+- (void)setupBtn
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(100, 100, 60, 40);
@@ -37,9 +39,28 @@
 
 - (void)didBtn
 {
+    // 测试view heigth
+    //    [self navTestViewHeight];
+    
+    // 测试 自定义 NavgationBar
+    [self navTestCustomBar];
+}
+
+#pragma mark - 测试view heigth
+- (void)navTestViewHeight
+{
     ZGNRootController *rootVC = [[ZGNRootController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
     [self presentViewController:nav animated:YES completion:nil];
+}
+
+#pragma mark - 测试 自定义 NavgationBar
+- (void)navTestCustomBar
+{
+    UINavigationController *nav = [[UINavigationController alloc] initWithNavigationBarClass:[ZGNavigationBar class] toolbarClass:[UIToolbar class]];
+    ZGNRootController *rootVC = [[ZGNRootController alloc] init];
+    nav.viewControllers = @[rootVC];
+     [self presentViewController:nav animated:YES completion:nil];
 }
 
 

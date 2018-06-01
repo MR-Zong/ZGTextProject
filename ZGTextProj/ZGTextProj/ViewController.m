@@ -50,6 +50,8 @@
 #import "ZGScrollViewNestingController.h"
 #import "ZGSafeAreaController.h"
 #import "ZGNavTestController.h"
+#import "ZGCellOptionController.h"
+#import "ZGCellOptionMGController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -84,7 +86,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 41;
+    return 42;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -172,7 +174,10 @@
         cell.textLabel.text = @"SafeArea";
     }else if(indexPath.row == 40){
         cell.textLabel.text = @"Navigation";
+    }else if(indexPath.row == 41){
+        cell.textLabel.text = @"cellOption";
     }
+
 
 
 
@@ -313,6 +318,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 40){
         ZGNavTestController *con = [[ZGNavTestController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 41){
+        ZGCellOptionMGController *con = [[ZGCellOptionMGController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
