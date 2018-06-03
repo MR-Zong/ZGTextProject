@@ -9,8 +9,11 @@
 #import "ZGNavTestController.h"
 #import "ZGNRootController.h"
 #import "ZGNavigationBar.h"
+#import "ZGNRoot2Controller.h"
 
 @interface ZGNavTestController ()
+
+@property (nonatomic, strong) UINavigationController *nav;
 
 @end
 
@@ -24,8 +27,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupBtn];
+    [self setupNavView];
 }
 
+
+#pragma mark -
 // 测试view heigth
 - (void)setupBtn
 {
@@ -44,6 +50,17 @@
     
     // 测试 自定义 NavgationBar
     [self navTestCustomBar];
+}
+
+#pragma mark -
+- (void)setupNavView
+{
+    ZGNRoot2Controller *rootVC = [[ZGNRoot2Controller alloc] init];
+    _nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    _nav.view.frame = CGRectMake(50, 100, 300, 400);
+    _nav.view.backgroundColor = [UIColor redColor];
+    [self.view addSubview:_nav.view];
+    [self addChildViewController:_nav];
 }
 
 #pragma mark - 测试view heigth

@@ -50,6 +50,7 @@
 		EF3CAA8720BD60B000FCC752 /* ZGCellOptionMGController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAA8620BD60B000FCC752 /* ZGCellOptionMGController.m */; };
 		EF3CAA8E20BD616800FCC752 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAA8920BD616800FCC752 /* MGSwipeTableCell.m */; };
 		EF3CAA8F20BD616800FCC752 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAA8C20BD616800FCC752 /* MGSwipeButton.m */; };
+		EF3CAAAC20C141C400FCC752 /* ZGNRoot2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAAAB20C141C400FCC752 /* ZGNRoot2Controller.m */; };
 		EF3FE04C2010A5090088C2C9 /* ZGWeakSelfController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3FE04B2010A5090088C2C9 /* ZGWeakSelfController.m */; };
 		EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3FE04E2010B2200088C2C9 /* ZGWeakSelfManager.m */; };
 		EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF488F1C2078679200451738 /* ZGNSPCollectionViewCell.m */; };
@@ -76,6 +77,7 @@
 		EF67D6722057648B00FA65DC /* ZGINSubObject+initialize.m in Sources */ = {isa = PBXBuildFile; fileRef = EF67D6712057648B00FA65DC /* ZGINSubObject+initialize.m */; };
 		EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EF76E21E1FFB324B009D21CF /* videoWithAudio.mp4 */; };
 		EF85FF3A204A4E9000F5186A /* ZGGCDTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */; };
+		EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8A660F20C384B8002FD95F /* ZGNavView2Controller.m */; };
 		EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8E19701F56618100E19DA4 /* ZGStoreKitController.m */; };
 		EFA9A62320AA765A00E73288 /* ZGMainOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA9A62220AA765A00E73288 /* ZGMainOperation.m */; };
 		EFA9A62620AA770E00E73288 /* ZGStartOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA9A62520AA770E00E73288 /* ZGStartOperation.m */; };
@@ -241,6 +243,8 @@
 		EF3CAA8A20BD616800FCC752 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
 		EF3CAA8B20BD616800FCC752 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
 		EF3CAA8C20BD616800FCC752 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		EF3CAAAA20C141C400FCC752 /* ZGNRoot2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNRoot2Controller.h; sourceTree = "<group>"; };
+		EF3CAAAB20C141C400FCC752 /* ZGNRoot2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNRoot2Controller.m; sourceTree = "<group>"; };
 		EF3FE04A2010A5090088C2C9 /* ZGWeakSelfController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWeakSelfController.h; sourceTree = "<group>"; };
 		EF3FE04B2010A5090088C2C9 /* ZGWeakSelfController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWeakSelfController.m; sourceTree = "<group>"; };
 		EF3FE04D2010B2200088C2C9 /* ZGWeakSelfManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWeakSelfManager.h; sourceTree = "<group>"; };
@@ -292,6 +296,8 @@
 		EF76E21E1FFB324B009D21CF /* videoWithAudio.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoWithAudio.mp4; sourceTree = "<group>"; };
 		EF85FF38204A4E9000F5186A /* ZGGCDTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGGCDTestController.h; sourceTree = "<group>"; };
 		EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGGCDTestController.m; sourceTree = "<group>"; };
+		EF8A660E20C384B8002FD95F /* ZGNavView2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNavView2Controller.h; sourceTree = "<group>"; };
+		EF8A660F20C384B8002FD95F /* ZGNavView2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNavView2Controller.m; sourceTree = "<group>"; };
 		EF8E196F1F56618100E19DA4 /* ZGStoreKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGStoreKitController.h; sourceTree = "<group>"; };
 		EF8E19701F56618100E19DA4 /* ZGStoreKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGStoreKitController.m; sourceTree = "<group>"; };
 		EFA9A62120AA765A00E73288 /* ZGMainOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMainOperation.h; sourceTree = "<group>"; };
@@ -490,6 +496,10 @@
 				EF01D5E520AE6FC00023B282 /* ZGNTestController.m */,
 				EF01D5E720AE70370023B282 /* ZGNRootController.h */,
 				EF01D5E820AE70370023B282 /* ZGNRootController.m */,
+				EF3CAAAA20C141C400FCC752 /* ZGNRoot2Controller.h */,
+				EF3CAAAB20C141C400FCC752 /* ZGNRoot2Controller.m */,
+				EF8A660E20C384B8002FD95F /* ZGNavView2Controller.h */,
+				EF8A660F20C384B8002FD95F /* ZGNavView2Controller.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2167,6 +2177,7 @@
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
+				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,
 				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
@@ -2188,6 +2199,7 @@
 				EF570B352024626400E14BC9 /* ZGKEObserverA.m in Sources */,
 				EF2F666D1FFB90EB00EA4F6F /* ZGInstanceController.m in Sources */,
 				EF570B1F2024004D00E14BC9 /* ZGCYViewController.m in Sources */,
+				EF3CAAAC20C141C400FCC752 /* ZGNRoot2Controller.m in Sources */,
 				EF570B0F2022E95900E14BC9 /* ZGNFObserverB.m in Sources */,
 				EFDBCDC41F2B159700C542AD /* ViewController.m in Sources */,
 				EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */,

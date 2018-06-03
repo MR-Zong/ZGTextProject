@@ -21,8 +21,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"rootVC";
-    
-    
+        
     // UIToolBar
     self.navigationController.toolbarHidden = NO;
     //b.设置是否有透明度(默认true->有透明度)
