@@ -52,6 +52,7 @@
 #import "ZGNavTestController.h"
 #import "ZGCellOptionController.h"
 #import "ZGCellOptionMGController.h"
+#import "ZGPVCTestController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -86,7 +87,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 42;
+    return 43;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -176,6 +177,8 @@
         cell.textLabel.text = @"Navigation";
     }else if(indexPath.row == 41){
         cell.textLabel.text = @"cellOption";
+    }else if(indexPath.row == 42){
+        cell.textLabel.text = @"pageViewController";
     }
 
 
@@ -321,6 +324,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 41){
         ZGCellOptionMGController *con = [[ZGCellOptionMGController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 42){
+        ZGPVCTestController *con = [[ZGPVCTestController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

@@ -114,6 +114,10 @@
 		EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE0B316207CB9420020B143 /* ZGExtendLayoutController.m */; };
 		EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE0B31D207DB67B0020B143 /* ZGERController.m */; };
 		EFE5F83420932CCD0065775D /* ZGClassFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE5F83320932CCD0065775D /* ZGClassFunctionController.m */; };
+		EFF1DA5020D0FECA00CBC680 /* ZGPVCTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA4F20D0FECA00CBC680 /* ZGPVCTestController.m */; };
+		EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA5220D1048D00CBC680 /* ZGPageAController.m */; };
+		EFF1DA5620D1049E00CBC680 /* ZGPageBController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA5520D1049E00CBC680 /* ZGPageBController.m */; };
+		EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA5820D104AC00CBC680 /* ZGPageCController.m */; };
 		EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFA9C441FFB25A400280573 /* ZGAVAudioTrackController.m */; };
 		EFFC13561F3454D300E6F664 /* myPlayer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EFFC13551F3454D300E6F664 /* myPlayer.mp4 */; };
 		EFFCE47D1F60F6AD008E2375 /* ZGOffScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFCE47C1F60F6AD008E2375 /* ZGOffScreenController.m */; };
@@ -371,6 +375,14 @@
 		EFE0B31D207DB67B0020B143 /* ZGERController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGERController.m; sourceTree = "<group>"; };
 		EFE5F83220932CCD0065775D /* ZGClassFunctionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGClassFunctionController.h; sourceTree = "<group>"; };
 		EFE5F83320932CCD0065775D /* ZGClassFunctionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGClassFunctionController.m; sourceTree = "<group>"; };
+		EFF1DA4E20D0FECA00CBC680 /* ZGPVCTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPVCTestController.h; sourceTree = "<group>"; };
+		EFF1DA4F20D0FECA00CBC680 /* ZGPVCTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPVCTestController.m; sourceTree = "<group>"; };
+		EFF1DA5120D1048D00CBC680 /* ZGPageAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPageAController.h; sourceTree = "<group>"; };
+		EFF1DA5220D1048D00CBC680 /* ZGPageAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPageAController.m; sourceTree = "<group>"; };
+		EFF1DA5420D1049E00CBC680 /* ZGPageBController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPageBController.h; sourceTree = "<group>"; };
+		EFF1DA5520D1049E00CBC680 /* ZGPageBController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPageBController.m; sourceTree = "<group>"; };
+		EFF1DA5720D104AC00CBC680 /* ZGPageCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPageCController.h; sourceTree = "<group>"; };
+		EFF1DA5820D104AC00CBC680 /* ZGPageCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPageCController.m; sourceTree = "<group>"; };
 		EFFA9C431FFB25A400280573 /* ZGAVAudioTrackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioTrackController.h; sourceTree = "<group>"; };
 		EFFA9C441FFB25A400280573 /* ZGAVAudioTrackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAVAudioTrackController.m; sourceTree = "<group>"; };
 		EFFC13551F3454D300E6F664 /* myPlayer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myPlayer.mp4; sourceTree = "<group>"; };
@@ -1629,6 +1641,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFF1DA4A20D0FEAA00CBC680 /* PageViewController */,
 				EF3CAA7E20BD3C8900FCC752 /* CellOption */,
 				EF01D5DD20AE6E040023B282 /* Navigation */,
 				EF01D5AE20AC070B0023B282 /* SafeArea */,
@@ -1809,6 +1822,45 @@
 			sourceTree = "<group>";
 		};
 		EFE5F83120932CB50065775D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFF1DA4A20D0FEAA00CBC680 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EFF1DA4B20D0FEAA00CBC680 /* Controller */,
+				EFF1DA4C20D0FEAA00CBC680 /* Model */,
+				EFF1DA4D20D0FEAA00CBC680 /* View */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		EFF1DA4B20D0FEAA00CBC680 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFF1DA4E20D0FECA00CBC680 /* ZGPVCTestController.h */,
+				EFF1DA4F20D0FECA00CBC680 /* ZGPVCTestController.m */,
+				EFF1DA5120D1048D00CBC680 /* ZGPageAController.h */,
+				EFF1DA5220D1048D00CBC680 /* ZGPageAController.m */,
+				EFF1DA5420D1049E00CBC680 /* ZGPageBController.h */,
+				EFF1DA5520D1049E00CBC680 /* ZGPageBController.m */,
+				EFF1DA5720D104AC00CBC680 /* ZGPageCController.h */,
+				EFF1DA5820D104AC00CBC680 /* ZGPageCController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFF1DA4C20D0FEAA00CBC680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFF1DA4D20D0FEAA00CBC680 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -2156,6 +2208,7 @@
 				EF570B122022F08200E14BC9 /* ZGKVODataModel.m in Sources */,
 				EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */,
 				EFFCE4841F62253C008E2375 /* ZGAddressListController.m in Sources */,
+				EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */,
 				EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */,
 				EF0A0EB1200701DF0095779B /* ZGSubTabBarView.m in Sources */,
 				EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */,
@@ -2208,12 +2261,14 @@
 				EFAC58251F341BF000B94D93 /* ZGAudioManager.m in Sources */,
 				EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */,
 				EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */,
+				EFF1DA5020D0FECA00CBC680 /* ZGPVCTestController.m in Sources */,
 				EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */,
 				EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */,
 				EF261CF32063A9050002BFB2 /* ZGPerformanceController.m in Sources */,
 				EFFCE4A01F62330F008E2375 /* PinyinFormatter.m in Sources */,
 				EF67D669205763FE00FA65DC /* ZGInitializeController.m in Sources */,
 				EFFCE4BE1F628C42008E2375 /* NSDate+Calendar.m in Sources */,
+				EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */,
 				EFFCE4CA1F651DB7008E2375 /* ZGHolidayManager.m in Sources */,
 				EF570B2F2024616700E14BC9 /* ZGKEViewController.m in Sources */,
 				EFFCE4B81F62725B008E2375 /* ZGCalendarMonthCell.m in Sources */,
@@ -2262,6 +2317,7 @@
 				EFC6EE201FF48CB500E1D2C5 /* ZGTestWindowController.m in Sources */,
 				EFAC581F1F332B5C00B94D93 /* ZGComposeVideoAndAudioViewController.m in Sources */,
 				EF0A0E9820060CED0095779B /* ZGSV1Delegate.m in Sources */,
+				EFF1DA5620D1049E00CBC680 /* ZGPageBController.m in Sources */,
 				EF01D5E920AE70370023B282 /* ZGNRootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
