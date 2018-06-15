@@ -118,6 +118,10 @@
 		EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA5220D1048D00CBC680 /* ZGPageAController.m */; };
 		EFF1DA5620D1049E00CBC680 /* ZGPageBController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA5520D1049E00CBC680 /* ZGPageBController.m */; };
 		EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA5820D104AC00CBC680 /* ZGPageCController.m */; };
+		EFF1DA5C20D118D900CBC680 /* ZGPageDController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA5B20D118D900CBC680 /* ZGPageDController.m */; };
+		EFF1DA8520D3BA8900CBC680 /* ZGAnimationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA8420D3BA8900CBC680 /* ZGAnimationsController.m */; };
+		EFF1DA8820D3BE2500CBC680 /* ZGAnimationsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA8720D3BE2500CBC680 /* ZGAnimationsTableController.m */; };
+		EFF1DA8B20D3BF1600CBC680 /* SMTopicHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA8A20D3BF1600CBC680 /* SMTopicHeaderView.m */; };
 		EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFA9C441FFB25A400280573 /* ZGAVAudioTrackController.m */; };
 		EFFC13561F3454D300E6F664 /* myPlayer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EFFC13551F3454D300E6F664 /* myPlayer.mp4 */; };
 		EFFCE47D1F60F6AD008E2375 /* ZGOffScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFCE47C1F60F6AD008E2375 /* ZGOffScreenController.m */; };
@@ -383,6 +387,14 @@
 		EFF1DA5520D1049E00CBC680 /* ZGPageBController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPageBController.m; sourceTree = "<group>"; };
 		EFF1DA5720D104AC00CBC680 /* ZGPageCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPageCController.h; sourceTree = "<group>"; };
 		EFF1DA5820D104AC00CBC680 /* ZGPageCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPageCController.m; sourceTree = "<group>"; };
+		EFF1DA5A20D118D900CBC680 /* ZGPageDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPageDController.h; sourceTree = "<group>"; };
+		EFF1DA5B20D118D900CBC680 /* ZGPageDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPageDController.m; sourceTree = "<group>"; };
+		EFF1DA8320D3BA8900CBC680 /* ZGAnimationsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAnimationsController.h; sourceTree = "<group>"; };
+		EFF1DA8420D3BA8900CBC680 /* ZGAnimationsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAnimationsController.m; sourceTree = "<group>"; };
+		EFF1DA8620D3BE2500CBC680 /* ZGAnimationsTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAnimationsTableController.h; sourceTree = "<group>"; };
+		EFF1DA8720D3BE2500CBC680 /* ZGAnimationsTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAnimationsTableController.m; sourceTree = "<group>"; };
+		EFF1DA8920D3BF1600CBC680 /* SMTopicHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTopicHeaderView.h; sourceTree = "<group>"; };
+		EFF1DA8A20D3BF1600CBC680 /* SMTopicHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTopicHeaderView.m; sourceTree = "<group>"; };
 		EFFA9C431FFB25A400280573 /* ZGAVAudioTrackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioTrackController.h; sourceTree = "<group>"; };
 		EFFA9C441FFB25A400280573 /* ZGAVAudioTrackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAVAudioTrackController.m; sourceTree = "<group>"; };
 		EFFC13551F3454D300E6F664 /* myPlayer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myPlayer.mp4; sourceTree = "<group>"; };
@@ -1641,6 +1653,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFF1DA7F20D3BA7400CBC680 /* Animations */,
 				EFF1DA4A20D0FEAA00CBC680 /* PageViewController */,
 				EF3CAA7E20BD3C8900FCC752 /* CellOption */,
 				EF01D5DD20AE6E040023B282 /* Navigation */,
@@ -1849,6 +1862,8 @@
 				EFF1DA5520D1049E00CBC680 /* ZGPageBController.m */,
 				EFF1DA5720D104AC00CBC680 /* ZGPageCController.h */,
 				EFF1DA5820D104AC00CBC680 /* ZGPageCController.m */,
+				EFF1DA5A20D118D900CBC680 /* ZGPageDController.h */,
+				EFF1DA5B20D118D900CBC680 /* ZGPageDController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1863,6 +1878,43 @@
 		EFF1DA4D20D0FEAA00CBC680 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFF1DA7F20D3BA7400CBC680 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				EFF1DA8020D3BA7400CBC680 /* Controller */,
+				EFF1DA8120D3BA7400CBC680 /* Model */,
+				EFF1DA8220D3BA7400CBC680 /* View */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		EFF1DA8020D3BA7400CBC680 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFF1DA8320D3BA8900CBC680 /* ZGAnimationsController.h */,
+				EFF1DA8420D3BA8900CBC680 /* ZGAnimationsController.m */,
+				EFF1DA8620D3BE2500CBC680 /* ZGAnimationsTableController.h */,
+				EFF1DA8720D3BE2500CBC680 /* ZGAnimationsTableController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFF1DA8120D3BA7400CBC680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFF1DA8220D3BA7400CBC680 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFF1DA8920D3BF1600CBC680 /* SMTopicHeaderView.h */,
+				EFF1DA8A20D3BF1600CBC680 /* SMTopicHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2194,6 +2246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF1DA8B20D3BF1600CBC680 /* SMTopicHeaderView.m in Sources */,
 				EF2F66811FFF572300EA4F6F /* ZGProtocolController.m in Sources */,
 				EFFCE4A11F62330F008E2375 /* PinyinHelper.m in Sources */,
 				EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */,
@@ -2255,6 +2308,7 @@
 				EF3CAAAC20C141C400FCC752 /* ZGNRoot2Controller.m in Sources */,
 				EF570B0F2022E95900E14BC9 /* ZGNFObserverB.m in Sources */,
 				EFDBCDC41F2B159700C542AD /* ViewController.m in Sources */,
+				EFF1DA8520D3BA8900CBC680 /* ZGAnimationsController.m in Sources */,
 				EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */,
 				EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */,
 				EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */,
@@ -2306,12 +2360,14 @@
 				EF570B152022F09400E14BC9 /* ZGKVOObserverA.m in Sources */,
 				EFC6EE2B1FF4E81500E1D2C5 /* ZGCategoryObject.m in Sources */,
 				EFE5F83420932CCD0065775D /* ZGClassFunctionController.m in Sources */,
+				EFF1DA5C20D118D900CBC680 /* ZGPageDController.m in Sources */,
 				EFDBCDBE1F2B159700C542AD /* main.m in Sources */,
 				EFC4FA9E206C98D000F42842 /* ZGNSProxyController.m in Sources */,
 				EF33525E2091B261003D4344 /* ZGIFUBaseObject.m in Sources */,
 				EFFF331D1FFF69600086BE7D /* ZGNoDataView.m in Sources */,
 				EF2F66851FFF585000EA4F6F /* ZGPLman.m in Sources */,
 				EF3352612091B272003D4344 /* ZGIFUAObject.m in Sources */,
+				EFF1DA8820D3BE2500CBC680 /* ZGAnimationsTableController.m in Sources */,
 				EF3FE04C2010A5090088C2C9 /* ZGWeakSelfController.m in Sources */,
 				EF570B032022E57E00E14BC9 /* ZGNotificationController.m in Sources */,
 				EFC6EE201FF48CB500E1D2C5 /* ZGTestWindowController.m in Sources */,

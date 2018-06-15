@@ -7,8 +7,15 @@
 //
 
 #import "ZGPageAController.h"
+#import "ZGPageBController.h"
+#import "ZGPageCController.h"
 
-@interface ZGPageAController ()
+@interface ZGPageAController () <UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+
+@property (nonatomic, strong) UIPageViewController *pageViewController;
+@property (nonatomic, strong) UIViewController *pendingViewController;
+@property (nonatomic, assign) NSInteger currentIndex;
+@property (nonatomic, strong) NSArray *vcsAry;
 
 @end
 
@@ -16,64 +23,66 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.title = @"UIPageViewController";
+    self.view.backgroundColor = [UIColor whiteColor];
+
+    ZGPageBController *b = [[ZGPageBController alloc] init];
+    ZGPageCController *c = [[ZGPageCController alloc] init];
+    _vcsAry = @[b,c];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Acell"];
+    _pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    _pageViewController.dataSource = self;
+    _pageViewController.delegate = self;
+    _pageViewController.view.frame = self.view.bounds;
+    [self.view addSubview:_pageViewController.view];
+    [self addChildViewController:_pageViewController];
+    
+    [_pageViewController setViewControllers:@[_vcsAry.firstObject] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
+        NSLog(@"complete");
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UIPageViewControllerDelegate,UIPageViewControllerDataSource
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
+{
+    NSInteger beforeIndex = self.currentIndex - 1;
+    if (beforeIndex < 0) {
+        return nil;
+    }
+    return self.vcsAry[beforeIndex];
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    NSInteger afterIndex = self.currentIndex + 1;
+    if (afterIndex > self.vcsAry.count - 1) {
+        return nil;
+    }
+    return self.vcsAry[afterIndex];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 30;
+- (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> *)pendingViewControllers {
+    //pendingViewControllers虽然是一个数组，但经测试证明该数组始终只包含一个对象
+    _pendingViewController = pendingViewControllers.firstObject;
 }
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Acell" forIndexPath:indexPath];
- 
-    cell.textLabel.text = [NSString stringWithFormat:@"A - %zd",indexPath.row];
- 
-    return cell;
+//跳转动画完成时触发，配合上面的代理方法可以定位到具体的跳转界面，此方法有利于定位具体的界面位置（childViewControllersArray），便于日后的管理
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed {
+    //previousViewControllers虽然是一个数组，但经测试证明该数组始终只包含一个对象
+    if (completed) {
+        
+        [self.vcsAry enumerateObjectsUsingBlock:^(UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            
+            if (_pendingViewController == obj) {
+                
+                _currentIndex = idx;
+                *stop = YES;
+            }
+        }];
+    }
 }
-
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

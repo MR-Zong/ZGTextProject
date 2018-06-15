@@ -10,6 +10,7 @@
 #import "ZGPageAController.h"
 #import "ZGPageBController.h"
 #import "ZGPageCController.h"
+#import "ZGPageDController.h"
 
 @interface ZGPVCTestController () <UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 
@@ -32,7 +33,8 @@
     ZGPageAController *a = [[ZGPageAController alloc] init];
     ZGPageBController *b = [[ZGPageBController alloc] init];
     ZGPageCController *c = [[ZGPageCController alloc] init];
-    _vcsAry = @[a,b,c];
+    ZGPageDController *d = [[ZGPageDController alloc] init];
+    _vcsAry = @[b,c,d];
     
     
     _pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
@@ -52,7 +54,9 @@
 {
     NSInteger beforeIndex = self.currentIndex - 1;
     if (beforeIndex < 0) {
-        return self.vcsAry.lastObject;
+        return nil;
+        // 无限轮播
+//        return self.vcsAry.lastObject;
     }
     return self.vcsAry[beforeIndex];
 }
@@ -61,7 +65,9 @@
 {
     NSInteger afterIndex = self.currentIndex + 1;
     if (afterIndex > self.vcsAry.count - 1) {
-        return self.vcsAry.firstObject;
+        return nil;
+        // 无限轮播
+//        return self.vcsAry.firstObject;
     }
     return self.vcsAry[afterIndex];
 }

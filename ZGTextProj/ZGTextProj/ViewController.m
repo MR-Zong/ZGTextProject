@@ -53,6 +53,8 @@
 #import "ZGCellOptionController.h"
 #import "ZGCellOptionMGController.h"
 #import "ZGPVCTestController.h"
+#import "ZGAnimationsController.h"
+#import "ZGAnimationsTableController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -87,7 +89,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 43;
+    return 44;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -179,7 +181,10 @@
         cell.textLabel.text = @"cellOption";
     }else if(indexPath.row == 42){
         cell.textLabel.text = @"pageViewController";
+    }else if(indexPath.row == 43){
+        cell.textLabel.text = @"Animations";
     }
+
 
 
 
@@ -328,7 +333,11 @@
     }else if(indexPath.row == 42){
         ZGPVCTestController *con = [[ZGPVCTestController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 43){
+        ZGAnimationsTableController *con = [[ZGAnimationsTableController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
+
 
 
 

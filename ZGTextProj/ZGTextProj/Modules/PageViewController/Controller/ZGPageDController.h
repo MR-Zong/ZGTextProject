@@ -1,5 +1,5 @@
 //
-//  ZGPageAController.h
+//  ZGPageDController.h
 //  ZGTextProj
 //
 //  Created by 徐宗根 on 2018/6/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZGPageAController : UIViewController
+@interface ZGPageDController : UIViewController
 
 @end
