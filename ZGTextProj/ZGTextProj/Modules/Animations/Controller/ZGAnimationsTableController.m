@@ -133,8 +133,10 @@
     
     self.headerView.textHeight = textHeight;
     
+//    self.tableView.tableHeaderView = self.headerView;
+    
     [UIView animateWithDuration:0.25 animations:^{
-        
+
         self.tableView.tableHeaderView = self.headerView;
     }];
 }

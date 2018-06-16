@@ -7,6 +7,7 @@
 //
 
 #import "SMTopicHeaderView.h"
+#import "UIView+ZGExtension.h"
 
 CGFloat SMTopicHeaderViewBaseHeight = 328; // 364
 CGFloat SMTopicHeaderViewBaseTextHeight = 36;
@@ -97,6 +98,8 @@ CGFloat SMTopicHeaderViewBaseTextHeight = 36;
     CGFloat CXTLeftMarginFloat = 15;
     // set frame
     _titleLabel.frame = CGRectMake(CXTLeftMarginFloat, 15, [UIScreen mainScreen].bounds.size.width - 15 - 25, 14);
+    
+    
     CGFloat containViewHeight = _textHeight;
     if (_textHeight == SMTopicHeaderViewBaseTextHeight) {
         containViewHeight -= 1;
@@ -106,6 +109,12 @@ CGFloat SMTopicHeaderViewBaseTextHeight = 36;
     CGFloat realTextHeight = [_descLabel.text boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 30, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil].size.height;
     _descLabel.frame = CGRectMake(0, 0, _containLabelView.frame.size.width, realTextHeight);
 //    _descLabel.backgroundColor = [UIColor redColor];
+    
+    if (_textHeight > SMTopicHeaderViewBaseTextHeight) {
+        // mask 实现圆角
+        [self roundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerSize:CGSizeMake(10, 10)];
+        
+    }
     
     
     CGFloat extendBtnX = CGRectGetMaxX(_containLabelView.frame) - 44;
@@ -138,6 +147,7 @@ CGFloat SMTopicHeaderViewBaseTextHeight = 36;
     if (self = [super initWithFrame:frame]) {
         
         self.backgroundColor = [UIColor orangeColor];
+//        self.layer.masksToBounds = YES;
         
         _textHeight = SMTopicHeaderViewBaseTextHeight;
         
@@ -148,7 +158,6 @@ CGFloat SMTopicHeaderViewBaseTextHeight = 36;
         
         _contentView = [[SMTopicHeaderConttentView alloc] init];
         _contentView.backgroundColor = [UIColor purpleColor];
-        _contentView.layer.masksToBounds = YES;
         [_contentView.extendBtn addTarget:self action:@selector(didExtendBtn:) forControlEvents:UIControlEventTouchUpInside];
         [_contentView.shareBtn addTarget:self action:@selector(didShareBtn:) forControlEvents:UIControlEventTouchUpInside];
         [_contentView.downLoadBtn addTarget:self action:@selector(didDownLoadBtn:) forControlEvents:UIControlEventTouchUpInside];
@@ -161,29 +170,45 @@ CGFloat SMTopicHeaderViewBaseTextHeight = 36;
 
         CGFloat contentViewY = CGRectGetMaxY(_coverImgView.frame) - 10;
         _contentView.frame = CGRectMake(0, contentViewY, _coverImgView.frame.size.width, SMTopicHeaderViewBaseHeight - 190 + _textHeight);
+        
+        // 系统的 动画没问题
+//        _contentView.layer.cornerRadius = 10;
+//        _contentView.layer.masksToBounds = YES;
+        
+        // mask 实现圆角
+        [_contentView roundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerSize:CGSizeMake(10, 10)];
+        
         }
     return self;
 }
 
-
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+//    NSLog(@"self.bounds %@",NSStringFromCGRect(self.bounds));
+//    NSLog(@"contentView.bounds %@",NSStringFromCGRect(self.contentView.bounds));
+}
 
 - (void)setTextHeight:(CGFloat)textHeight
 {
     _textHeight = textHeight;
     
     self.contentView.textHeight = textHeight;
+
     
     // set frame
     CGRect tmpF = self.contentView.frame;
     tmpF.size.height = SMTopicHeaderViewBaseHeight -190 + self.textHeight;
     [UIView animateWithDuration:0.25 animations:^{
-        [self.contentView updateSubViewsFrame];
         self.contentView.frame = tmpF;
+        [self.contentView updateSubViewsFrame];
         
     }completion:^(BOOL finished) {
         if (finished) {
             if (textHeight == SMTopicHeaderViewBaseTextHeight) {
                 self.contentView.extendBtn.hidden = NO;
+                
             }
         }
     }];

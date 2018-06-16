@@ -122,6 +122,7 @@
 		EFF1DA8520D3BA8900CBC680 /* ZGAnimationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA8420D3BA8900CBC680 /* ZGAnimationsController.m */; };
 		EFF1DA8820D3BE2500CBC680 /* ZGAnimationsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA8720D3BE2500CBC680 /* ZGAnimationsTableController.m */; };
 		EFF1DA8B20D3BF1600CBC680 /* SMTopicHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA8A20D3BF1600CBC680 /* SMTopicHeaderView.m */; };
+		EFF1DA9020D3C56F00CBC680 /* UIView+ZGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA8F20D3C56F00CBC680 /* UIView+ZGExtension.m */; };
 		EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFA9C441FFB25A400280573 /* ZGAVAudioTrackController.m */; };
 		EFFC13561F3454D300E6F664 /* myPlayer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EFFC13551F3454D300E6F664 /* myPlayer.mp4 */; };
 		EFFCE47D1F60F6AD008E2375 /* ZGOffScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFCE47C1F60F6AD008E2375 /* ZGOffScreenController.m */; };
@@ -395,6 +396,8 @@
 		EFF1DA8720D3BE2500CBC680 /* ZGAnimationsTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAnimationsTableController.m; sourceTree = "<group>"; };
 		EFF1DA8920D3BF1600CBC680 /* SMTopicHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTopicHeaderView.h; sourceTree = "<group>"; };
 		EFF1DA8A20D3BF1600CBC680 /* SMTopicHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTopicHeaderView.m; sourceTree = "<group>"; };
+		EFF1DA8E20D3C56F00CBC680 /* UIView+ZGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZGExtension.h"; sourceTree = "<group>"; };
+		EFF1DA8F20D3C56F00CBC680 /* UIView+ZGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZGExtension.m"; sourceTree = "<group>"; };
 		EFFA9C431FFB25A400280573 /* ZGAVAudioTrackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioTrackController.h; sourceTree = "<group>"; };
 		EFFA9C441FFB25A400280573 /* ZGAVAudioTrackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAVAudioTrackController.m; sourceTree = "<group>"; };
 		EFFC13551F3454D300E6F664 /* myPlayer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myPlayer.mp4; sourceTree = "<group>"; };
@@ -1608,6 +1611,7 @@
 		EFDBCDBB1F2B159700C542AD /* ZGTextProj */ = {
 			isa = PBXGroup;
 			children = (
+				EFF1DA8C20D3C56100CBC680 /* Libraries */,
 				EFDBCDEF1F2B15FD00C542AD /* Modules */,
 				EFDBCDBF1F2B159700C542AD /* AppDelegate.h */,
 				EFDBCDC01F2B159700C542AD /* AppDelegate.m */,
@@ -1917,6 +1921,23 @@
 				EFF1DA8A20D3BF1600CBC680 /* SMTopicHeaderView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EFF1DA8C20D3C56100CBC680 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EFF1DA8D20D3C56100CBC680 /* Category */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		EFF1DA8D20D3C56100CBC680 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EFF1DA8E20D3C56F00CBC680 /* UIView+ZGExtension.h */,
+				EFF1DA8F20D3C56F00CBC680 /* UIView+ZGExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		EFFA9C3F1FFB258100280573 /* AVFoundation */ = {
@@ -2325,6 +2346,7 @@
 				EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */,
 				EFFCE4CA1F651DB7008E2375 /* ZGHolidayManager.m in Sources */,
 				EF570B2F2024616700E14BC9 /* ZGKEViewController.m in Sources */,
+				EFF1DA9020D3C56F00CBC680 /* UIView+ZGExtension.m in Sources */,
 				EFFCE4B81F62725B008E2375 /* ZGCalendarMonthCell.m in Sources */,
 				EF31F9682070BE8700B1B148 /* ZGOperationQueueController.m in Sources */,
 				EFAC58221F340D2E00B94D93 /* ZGComposeAudioModel.m in Sources */,
