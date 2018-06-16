@@ -53,8 +53,11 @@
 #import "ZGCellOptionController.h"
 #import "ZGCellOptionMGController.h"
 #import "ZGPVCTestController.h"
+// animations
 #import "ZGAnimationsController.h"
 #import "ZGAnimationsTableController.h"
+#import "ZGAnimationsCellController.h"
+#import "ZGAnimationCellNormalController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 

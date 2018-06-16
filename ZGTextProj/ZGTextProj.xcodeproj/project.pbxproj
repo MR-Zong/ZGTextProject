@@ -113,6 +113,12 @@
 		EFDBCDF61F2B168000C542AD /* ZGMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDF51F2B168000C542AD /* ZGMaskController.m */; };
 		EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE0B316207CB9420020B143 /* ZGExtendLayoutController.m */; };
 		EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE0B31D207DB67B0020B143 /* ZGERController.m */; };
+		EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4307E20D4F65A006930E5 /* UIImage+ZGExtension.m */; };
+		EFE4308220D5017C006930E5 /* ZGAnimationsCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4308120D5017C006930E5 /* ZGAnimationsCellController.m */; };
+		EFE4308520D501CF006930E5 /* ZGHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4308420D501CF006930E5 /* ZGHeaderCell.m */; };
+		EFE4308820D50F82006930E5 /* ZGAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4308720D50F82006930E5 /* ZGAnimationCell.m */; };
+		EFE4308B20D51721006930E5 /* ZGAnimationsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4308A20D51721006930E5 /* ZGAnimationsTableView.m */; };
+		EFE4308E20D5305F006930E5 /* ZGAnimationCellNormalController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4308D20D5305F006930E5 /* ZGAnimationCellNormalController.m */; };
 		EFE5F83420932CCD0065775D /* ZGClassFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE5F83320932CCD0065775D /* ZGClassFunctionController.m */; };
 		EFF1DA5020D0FECA00CBC680 /* ZGPVCTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA4F20D0FECA00CBC680 /* ZGPVCTestController.m */; };
 		EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1DA5220D1048D00CBC680 /* ZGPageAController.m */; };
@@ -378,6 +384,18 @@
 		EFE0B316207CB9420020B143 /* ZGExtendLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExtendLayoutController.m; sourceTree = "<group>"; };
 		EFE0B31C207DB67B0020B143 /* ZGERController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGERController.h; sourceTree = "<group>"; };
 		EFE0B31D207DB67B0020B143 /* ZGERController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGERController.m; sourceTree = "<group>"; };
+		EFE4307D20D4F65A006930E5 /* UIImage+ZGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZGExtension.h"; sourceTree = "<group>"; };
+		EFE4307E20D4F65A006930E5 /* UIImage+ZGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZGExtension.m"; sourceTree = "<group>"; };
+		EFE4308020D5017C006930E5 /* ZGAnimationsCellController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAnimationsCellController.h; sourceTree = "<group>"; };
+		EFE4308120D5017C006930E5 /* ZGAnimationsCellController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAnimationsCellController.m; sourceTree = "<group>"; };
+		EFE4308320D501CF006930E5 /* ZGHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGHeaderCell.h; sourceTree = "<group>"; };
+		EFE4308420D501CF006930E5 /* ZGHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGHeaderCell.m; sourceTree = "<group>"; };
+		EFE4308620D50F82006930E5 /* ZGAnimationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAnimationCell.h; sourceTree = "<group>"; };
+		EFE4308720D50F82006930E5 /* ZGAnimationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAnimationCell.m; sourceTree = "<group>"; };
+		EFE4308920D51721006930E5 /* ZGAnimationsTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAnimationsTableView.h; sourceTree = "<group>"; };
+		EFE4308A20D51721006930E5 /* ZGAnimationsTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAnimationsTableView.m; sourceTree = "<group>"; };
+		EFE4308C20D5305F006930E5 /* ZGAnimationCellNormalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAnimationCellNormalController.h; sourceTree = "<group>"; };
+		EFE4308D20D5305F006930E5 /* ZGAnimationCellNormalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAnimationCellNormalController.m; sourceTree = "<group>"; };
 		EFE5F83220932CCD0065775D /* ZGClassFunctionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGClassFunctionController.h; sourceTree = "<group>"; };
 		EFE5F83320932CCD0065775D /* ZGClassFunctionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGClassFunctionController.m; sourceTree = "<group>"; };
 		EFF1DA4E20D0FECA00CBC680 /* ZGPVCTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPVCTestController.h; sourceTree = "<group>"; };
@@ -1903,6 +1921,10 @@
 				EFF1DA8420D3BA8900CBC680 /* ZGAnimationsController.m */,
 				EFF1DA8620D3BE2500CBC680 /* ZGAnimationsTableController.h */,
 				EFF1DA8720D3BE2500CBC680 /* ZGAnimationsTableController.m */,
+				EFE4308020D5017C006930E5 /* ZGAnimationsCellController.h */,
+				EFE4308120D5017C006930E5 /* ZGAnimationsCellController.m */,
+				EFE4308C20D5305F006930E5 /* ZGAnimationCellNormalController.h */,
+				EFE4308D20D5305F006930E5 /* ZGAnimationCellNormalController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1919,6 +1941,12 @@
 			children = (
 				EFF1DA8920D3BF1600CBC680 /* SMTopicHeaderView.h */,
 				EFF1DA8A20D3BF1600CBC680 /* SMTopicHeaderView.m */,
+				EFE4308320D501CF006930E5 /* ZGHeaderCell.h */,
+				EFE4308420D501CF006930E5 /* ZGHeaderCell.m */,
+				EFE4308620D50F82006930E5 /* ZGAnimationCell.h */,
+				EFE4308720D50F82006930E5 /* ZGAnimationCell.m */,
+				EFE4308920D51721006930E5 /* ZGAnimationsTableView.h */,
+				EFE4308A20D51721006930E5 /* ZGAnimationsTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1936,6 +1964,8 @@
 			children = (
 				EFF1DA8E20D3C56F00CBC680 /* UIView+ZGExtension.h */,
 				EFF1DA8F20D3C56F00CBC680 /* UIView+ZGExtension.m */,
+				EFE4307D20D4F65A006930E5 /* UIImage+ZGExtension.h */,
+				EFE4307E20D4F65A006930E5 /* UIImage+ZGExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2272,6 +2302,7 @@
 				EFFCE4A11F62330F008E2375 /* PinyinHelper.m in Sources */,
 				EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
+				EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */,
 				EFFCE4AF1F624D3F008E2375 /* ZGCalendarController.m in Sources */,
 				EF570B252024015300E14BC9 /* ZGTestCopyViewController.m in Sources */,
 				EFC56B7F20181FA400BA5487 /* ZGHFGirl.m in Sources */,
@@ -2279,6 +2310,7 @@
 				EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */,
 				EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */,
 				EF2F66921FFF651F00EA4F6F /* ZGTbBaseTableView.m in Sources */,
+				EFE4308820D50F82006930E5 /* ZGAnimationCell.m in Sources */,
 				EF570B122022F08200E14BC9 /* ZGKVODataModel.m in Sources */,
 				EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */,
 				EFFCE4841F62253C008E2375 /* ZGAddressListController.m in Sources */,
@@ -2293,6 +2325,8 @@
 				EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */,
 				EFFCE4A81F623F9E008E2375 /* ZGLetterSectionModel.m in Sources */,
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
+				EFE4308220D5017C006930E5 /* ZGAnimationsCellController.m in Sources */,
+				EFE4308B20D51721006930E5 /* ZGAnimationsTableView.m in Sources */,
 				EF3CAA8720BD60B000FCC752 /* ZGCellOptionMGController.m in Sources */,
 				EF570B0C2022E94C00E14BC9 /* ZGNFObserverA.m in Sources */,
 				EF570B062022E5A500E14BC9 /* ZGKVOController.m in Sources */,
@@ -2301,6 +2335,7 @@
 				EFA9A62320AA765A00E73288 /* ZGMainOperation.m in Sources */,
 				EFFCE4BB1F62828C008E2375 /* ZGCalendarManager.m in Sources */,
 				EF0A0E8F2005C41F0095779B /* ZGSBaseScrollView.m in Sources */,
+				EFE4308520D501CF006930E5 /* ZGHeaderCell.m in Sources */,
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
@@ -2372,6 +2407,7 @@
 				EFAC581C1F30B61F00B94D93 /* ZGTestBlockViewController.m in Sources */,
 				EF3C47C51F384D530039AA5C /* ZGPeople.m in Sources */,
 				EF0A0EAB2006FE240095779B /* ZGOHeaderScrollView.m in Sources */,
+				EFE4308E20D5305F006930E5 /* ZGAnimationCellNormalController.m in Sources */,
 				EF3CAA8F20BD616800FCC752 /* MGSwipeButton.m in Sources */,
 				EF3CAA8E20BD616800FCC752 /* MGSwipeTableCell.m in Sources */,
 				EFFCE4C11F637C3D008E2375 /* ZGDayModel.m in Sources */,

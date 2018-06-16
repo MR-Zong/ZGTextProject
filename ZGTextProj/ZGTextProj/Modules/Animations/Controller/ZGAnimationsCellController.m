@@ -1,30 +1,27 @@
 //
-//  ZGAnimationsTableController.m
+//  ZGAnimationsCellController.m
 //  ZGTextProj
 //
-//  Created by 徐宗根 on 2018/6/15.
+//  Created by 徐宗根 on 2018/6/16.
 //  Copyright © 2018年 XuZonggen. All rights reserved.
 //
 
-#import "ZGAnimationsTableController.h"
-#import "SMTopicHeaderView.h"
+#import "ZGAnimationsCellController.h"
+#import "ZGHeaderCell.h"
 #import "UIImage+ZGExtension.h"
-#import "ZGAnimationCell.h"
-#import "ZGAnimationsTableView.h"
 
-@interface ZGAnimationsTableController () <UITableViewDelegate,UITableViewDataSource,SMTopicHeaderViewDelegate>
+@interface ZGAnimationsCellController () <UITableViewDelegate,UITableViewDataSource,SMTopicHeaderViewDelegate>
 
-@property (nonatomic, strong) ZGAnimationsTableView *tableView;
-@property (nonatomic, strong) SMTopicHeaderView *headerView;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) ZGHeaderCell *headerCell;
+@property (nonatomic, assign) NSInteger headerCellHeight;
 @end
 
-@implementation ZGAnimationsTableController
+@implementation ZGAnimationsCellController
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSLog(@"sh %f",[UIScreen mainScreen].bounds.size.height);
     
     [self initialize];
     [self setupViews];
@@ -38,13 +35,18 @@
     [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
     UIImage *img = [UIImage imageWithColor:[UIColor clearColor]];
     [self.navigationController.navigationBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
-
+        
+    // headerView
+    _headerCellHeight = SMTopicHeaderViewBaseHeight + SMTopicHeaderViewBaseTextHeight;
+    _headerCell = [[ZGHeaderCell alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, _headerCellHeight)];
+    _headerCell.hView.delegate = self;
+    
 }
 
 - (void)setupViews
 {
     // tableView
-    _tableView = [[ZGAnimationsTableView alloc] initWithFrame:self.view.bounds];
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     if (@available(iOS 11.0, *)) {
         _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
@@ -52,48 +54,68 @@
     }
     _tableView.dataSource = self;
     _tableView.delegate = self;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.showsVerticalScrollIndicator = NO;
-    [_tableView registerClass:[ZGAnimationCell class] forCellReuseIdentifier:@"ZGAnimationsCellReusedId"];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ZGAnimationsCellReusedId"];
     _tableView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:_tableView];
     
-    
-    // headerView
-    CGFloat headerViewHeight = SMTopicHeaderViewBaseHeight + SMTopicHeaderViewBaseTextHeight;
-    _headerView = [[SMTopicHeaderView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, headerViewHeight)];
-    _headerView.delegate = self;
-    _tableView.tableHeaderView = _headerView;
-    
+
 }
 
 
 
 
 #pragma mark - UITableViewDelegate,UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    if (section == 0) {
+        return 1;
+    }
     return 20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ZGAnimationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZGAnimationsCellReusedId"];
-    cell.titleLabel.text = [NSString stringWithFormat:@"Cell - %zd",indexPath.row];
+    if (indexPath.section == 0) {
+        return self.headerCell;
+    }
+    
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZGAnimationsCellReusedId"];
+    cell.textLabel.text = [NSString stringWithFormat:@"Cell - %zd",indexPath.row];
     return cell;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 80;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 42;
+    if (section == 0) {
+        return 0;
+    }
+    return 0;//42;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        return self.headerCellHeight;
+    }
+    
+    return 44;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
+    return nil;
+    if (section == 0) {
+        return nil;
+    }
+    
     UIView *sh = [[UIView alloc] init];
     
     sh.backgroundColor = [UIColor grayColor];
@@ -131,38 +153,30 @@
     if (textHeight < SMTopicHeaderViewBaseTextHeight) {
         textHeight = SMTopicHeaderViewBaseTextHeight;
     }
-    CGFloat headerViewHeight = SMTopicHeaderViewBaseHeight + textHeight;
+    self.headerCellHeight = SMTopicHeaderViewBaseHeight + textHeight;
     
-    CGRect tmpF = self.headerView.frame;
-    tmpF.size.height = headerViewHeight;
-    self.headerView.frame = tmpF;
+//    CGRect tmpF = self.headerView.frame;
+//    tmpF.size.height = headerViewHeight;
+//    self.headerView.frame = tmpF;
     
-    self.headerView.textHeight = textHeight;
+    self.headerCell.hView.textHeight = textHeight;
     
-    [UIView animateWithDuration:0.25 animations:^{
-        
-        self.tableView.tableHeaderView = self.headerView;
-    }];
-    
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
 }
 
 - (void)topicHeaderView:(SMTopicHeaderView *)view didDescLabelWithExtendBtn:(UIButton *)btn
 {
     CGFloat textHeight = SMTopicHeaderViewBaseTextHeight;
-    CGFloat headerViewHeight = SMTopicHeaderViewBaseHeight + textHeight;
+    self.headerCellHeight = SMTopicHeaderViewBaseHeight + textHeight;
     
-    CGRect tmpF = self.headerView.frame;
-    tmpF.size.height = headerViewHeight;
-    self.headerView.frame = tmpF;
+    //    CGRect tmpF = self.headerView.frame;
+    //    tmpF.size.height = headerViewHeight;
+    //    self.headerView.frame = tmpF;
     
-    self.headerView.textHeight = textHeight;
+    self.headerCell.hView.textHeight = textHeight;
     
-//    self.tableView.tableHeaderView = self.headerView;
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
     
-    [UIView animateWithDuration:0.25 animations:^{
-
-        self.tableView.tableHeaderView = self.headerView;
-    }];
 }
 
 @end
