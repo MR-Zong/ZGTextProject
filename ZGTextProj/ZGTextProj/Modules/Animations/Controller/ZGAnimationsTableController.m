@@ -44,7 +44,8 @@
 - (void)setupViews
 {
     // tableView
-    _tableView = [[ZGAnimationsTableView alloc] initWithFrame:self.view.bounds];
+    _tableView = [[ZGAnimationsTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height + 86)];
+    _tableView.contentInset = UIEdgeInsetsMake(0, 0, 86, 0);
     if (@available(iOS 11.0, *)) {
         _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
