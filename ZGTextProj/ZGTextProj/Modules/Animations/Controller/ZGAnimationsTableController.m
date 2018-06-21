@@ -136,11 +136,11 @@
     
     CGRect tmpF = self.headerView.frame;
     tmpF.size.height = headerViewHeight;
-    self.headerView.frame = tmpF;
     
     self.headerView.textHeight = textHeight;
     
     [UIView animateWithDuration:0.25 animations:^{
+        self.headerView.frame = tmpF;
         
         self.tableView.tableHeaderView = self.headerView;
     }];
@@ -154,13 +154,13 @@
     
     CGRect tmpF = self.headerView.frame;
     tmpF.size.height = headerViewHeight;
-    self.headerView.frame = tmpF;
     
     self.headerView.textHeight = textHeight;
     
 //    self.tableView.tableHeaderView = self.headerView;
     
     [UIView animateWithDuration:0.25 animations:^{
+        self.headerView.frame = tmpF;
 
         self.tableView.tableHeaderView = self.headerView;
     }];

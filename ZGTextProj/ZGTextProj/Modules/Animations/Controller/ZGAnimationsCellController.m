@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) ZGHeaderCell *headerCell;
-@property (nonatomic, assign) NSInteger headerCellHeight;
+@property (nonatomic, assign) CGFloat headerCellHeight;
 @end
 
 @implementation ZGAnimationsCellController
@@ -36,7 +36,7 @@
     UIImage *img = [UIImage imageWithColor:[UIColor clearColor]];
     [self.navigationController.navigationBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
         
-    // headerView
+    // headerCell
     _headerCellHeight = SMTopicHeaderViewBaseHeight + SMTopicHeaderViewBaseTextHeight;
     _headerCell = [[ZGHeaderCell alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, _headerCellHeight)];
     _headerCell.hView.delegate = self;
@@ -92,14 +92,6 @@
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    if (section == 0) {
-        return 0;
-    }
-    return 0;//42;
-}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
@@ -109,39 +101,48 @@
     return 44;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    return nil;
-    if (section == 0) {
-        return nil;
-    }
-    
-    UIView *sh = [[UIView alloc] init];
-    
-    sh.backgroundColor = [UIColor grayColor];
-    
-    UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, 10, [UIScreen mainScreen].bounds.size.width, 32)];
-    bg.backgroundColor = [UIColor whiteColor];
-    [sh addSubview:bg];
-    
-    UILabel *countLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 25, 260, 14)];
-    countLabel.textColor = [UIColor blackColor];
-    countLabel.font = [UIFont systemFontOfSize:14];
-    countLabel.text = @"共3个故事";
-    [sh addSubview:countLabel];
-    
-    return sh;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    if (section == 0) {
+//        return 0;
+//    }
+//    return 0;//42;
+//}
+//
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    return nil;
+//    if (section == 0) {
+//        return nil;
+//    }
+//
+//    UIView *sh = [[UIView alloc] init];
+//
+//    sh.backgroundColor = [UIColor grayColor];
+//
+//    UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, 10, [UIScreen mainScreen].bounds.size.width, 32)];
+//    bg.backgroundColor = [UIColor whiteColor];
+//    [sh addSubview:bg];
+//
+//    UILabel *countLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 25, 260, 14)];
+//    countLabel.textColor = [UIColor blackColor];
+//    countLabel.font = [UIFont systemFontOfSize:14];
+//    countLabel.text = @"共3个故事";
+//    [sh addSubview:countLabel];
+//
+//    return sh;
+//}
+
 #pragma mark - scrollviewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    if (scrollView.contentOffset.y >= -64 && scrollView.contentOffset.y <= 64) {
-        
-        CGFloat alpha = fabs(scrollView.contentOffset.y - 0) / 64.0;
-        UIImage *img = [UIImage imageWithColor:[[UIColor whiteColor] colorWithAlphaComponent:alpha]];
-        [self.navigationController.navigationBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
-    }
-}
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+//{
+//    if (scrollView.contentOffset.y >= -64 && scrollView.contentOffset.y <= 64) {
+//        
+//        CGFloat alpha = fabs(scrollView.contentOffset.y - 0) / 64.0;
+//        UIImage *img = [UIImage imageWithColor:[[UIColor whiteColor] colorWithAlphaComponent:alpha]];
+//        [self.navigationController.navigationBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
+//    }
+//}
 
 #pragma mark - SMTopicHeaderViewDelegate
 - (void)topicHeaderView:(SMTopicHeaderView *)view didExtendBtn:(UIButton *)btn
@@ -155,11 +156,9 @@
     }
     self.headerCellHeight = SMTopicHeaderViewBaseHeight + textHeight;
     
-//    CGRect tmpF = self.headerView.frame;
-//    tmpF.size.height = headerViewHeight;
-//    self.headerView.frame = tmpF;
-    
     self.headerCell.hView.textHeight = textHeight;
+    
+    NSLog(@"headerCellHeight %f",self.headerCellHeight);
     
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
 }
@@ -169,12 +168,11 @@
     CGFloat textHeight = SMTopicHeaderViewBaseTextHeight;
     self.headerCellHeight = SMTopicHeaderViewBaseHeight + textHeight;
     
-    //    CGRect tmpF = self.headerView.frame;
-    //    tmpF.size.height = headerViewHeight;
-    //    self.headerView.frame = tmpF;
-    
     self.headerCell.hView.textHeight = textHeight;
     
+
+    NSLog(@"headerCellHeight %f",self.headerCellHeight);
+
     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
     
 }

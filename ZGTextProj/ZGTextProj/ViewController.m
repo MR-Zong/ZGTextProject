@@ -58,6 +58,8 @@
 #import "ZGAnimationsTableController.h"
 #import "ZGAnimationsCellController.h"
 #import "ZGAnimationCellNormalController.h"
+#import "ZGAnimationsCollectionViewController.h"
+#import "ZGAniCollectionViewNormalController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -337,7 +339,7 @@
         ZGPVCTestController *con = [[ZGPVCTestController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 43){
-        ZGAnimationsTableController *con = [[ZGAnimationsTableController alloc] init];
+        ZGAnimationsCollectionViewController *con = [[ZGAnimationsCollectionViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
