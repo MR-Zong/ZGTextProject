@@ -45,7 +45,13 @@
 - (void)setupViews
 {
     // tableView
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+//    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, -500, self.view.bounds.size.width, self.view.bounds.size.height + 500) style:UITableViewStylePlain];
+//    // 设置contentInset
+//    _tableView.contentInset = UIEdgeInsetsMake(500, 0, 0, 0);
+    
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStylePlain];
+    
+    
     if (@available(iOS 11.0, *)) {
         _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
@@ -91,6 +97,7 @@
         
     }else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZGAnimationsCellReusedId"];
+        NSLog(@"row %zd，cell %@",indexPath.row,cell);
         cell.textLabel.text = [NSString stringWithFormat:@"Cell - %zd",indexPath.row];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = [UIColor redColor];
@@ -133,10 +140,11 @@
         self.cellTeHeight = 364;
     }
     
-    NSLog(@"cellTeHeight %f",self.cellTeHeight);
+//    NSLog(@"cellTeHeight %f",self.cellTeHeight);
 
+    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     // 测试了 以下两种方法 都无法解决问题
-    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+//    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
 //    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
 }
 @end

@@ -339,7 +339,7 @@
         ZGPVCTestController *con = [[ZGPVCTestController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 43){
-        ZGAnimationsCollectionViewController *con = [[ZGAnimationsCollectionViewController alloc] init];
+        ZGAnimationCellNormalController *con = [[ZGAnimationCellNormalController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
