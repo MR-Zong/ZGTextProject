@@ -14,7 +14,6 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) CGFloat cellTeHeight;
-@property (nonatomic, strong) UITableViewCell *topicCell;
 
 
 @end
@@ -38,7 +37,7 @@
     [self.navigationController.navigationBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.hidden = YES;
     
-    _cellTeHeight = 364;
+    _cellTeHeight = 200;
     
 }
 
@@ -65,12 +64,6 @@
     _tableView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:_tableView];
     
-//    _topicCell = [_tableView dequeueReusableCellWithIdentifier:@"ZGAnimationsCellTopicReusedId"];
-    _topicCell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 144)];
-    _topicCell.backgroundColor = [UIColor orangeColor];
-    _topicCell.selectionStyle = UITableViewCellSelectionStyleNone;
-    _topicCell.textLabel.text = @"topic";
-    
     
 }
 
@@ -93,11 +86,13 @@
 {
     
     if (indexPath.section == 0) {
-        return self.topicCell;
-        
+        UITableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:@"ZGAnimationsCellTopicReusedId"];
+        cell.backgroundColor = [UIColor orangeColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.textLabel.text = @"topic";
+        return cell;
     }else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ZGAnimationsCellReusedId"];
-        NSLog(@"row %zd，cell %@",indexPath.row,cell);
         cell.textLabel.text = [NSString stringWithFormat:@"Cell - %zd",indexPath.row];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = [UIColor redColor];
@@ -134,17 +129,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.cellTeHeight == 364) {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    if (self.cellTeHeight == 200) {
         self.cellTeHeight = 396;
     }else {
-        self.cellTeHeight = 364;
+        self.cellTeHeight = 200;
     }
     
 //    NSLog(@"cellTeHeight %f",self.cellTeHeight);
 
-    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+//    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    
     // 测试了 以下两种方法 都无法解决问题
-//    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+//        [tableView reloadData];
+    
+    [self.tableView beginUpdates];
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableView endUpdates];
+    
 //    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
 }
 @end
