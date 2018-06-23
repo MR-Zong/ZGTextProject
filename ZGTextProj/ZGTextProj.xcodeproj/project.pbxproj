@@ -115,6 +115,8 @@
 		EFDBCDD71F2B159700C542AD /* ZGTextProjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDD61F2B159700C542AD /* ZGTextProjTests.m */; };
 		EFDBCDE21F2B159700C542AD /* ZGTextProjUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDE11F2B159700C542AD /* ZGTextProjUITests.m */; };
 		EFDBCDF61F2B168000C542AD /* ZGMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDF51F2B168000C542AD /* ZGMaskController.m */; };
+		EFDCEE3620DE43190076C129 /* ZGAniTextCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDCEE3520DE43190076C129 /* ZGAniTextCellController.m */; };
+		EFDCEE3920DE43B40076C129 /* ZGAniTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDCEE3820DE43B40076C129 /* ZGAniTextCell.m */; };
 		EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE0B316207CB9420020B143 /* ZGExtendLayoutController.m */; };
 		EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE0B31D207DB67B0020B143 /* ZGERController.m */; };
 		EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4307E20D4F65A006930E5 /* UIImage+ZGExtension.m */; };
@@ -392,6 +394,10 @@
 		EFDBCDE31F2B159700C542AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFDBCDF41F2B168000C542AD /* ZGMaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGMaskController.h; sourceTree = "<group>"; };
 		EFDBCDF51F2B168000C542AD /* ZGMaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGMaskController.m; sourceTree = "<group>"; };
+		EFDCEE3420DE43190076C129 /* ZGAniTextCellController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAniTextCellController.h; sourceTree = "<group>"; };
+		EFDCEE3520DE43190076C129 /* ZGAniTextCellController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAniTextCellController.m; sourceTree = "<group>"; };
+		EFDCEE3720DE43B40076C129 /* ZGAniTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAniTextCell.h; sourceTree = "<group>"; };
+		EFDCEE3820DE43B40076C129 /* ZGAniTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAniTextCell.m; sourceTree = "<group>"; };
 		EFE0B315207CB9420020B143 /* ZGExtendLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExtendLayoutController.h; sourceTree = "<group>"; };
 		EFE0B316207CB9420020B143 /* ZGExtendLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExtendLayoutController.m; sourceTree = "<group>"; };
 		EFE0B31C207DB67B0020B143 /* ZGERController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGERController.h; sourceTree = "<group>"; };
@@ -1941,6 +1947,8 @@
 				EF72319E20DA40B600999D3A /* ZGAnimationsCollectionViewController.m */,
 				EF7231A520DB44E100999D3A /* ZGAniCollectionViewNormalController.h */,
 				EF7231A620DB44E100999D3A /* ZGAniCollectionViewNormalController.m */,
+				EFDCEE3420DE43190076C129 /* ZGAniTextCellController.h */,
+				EFDCEE3520DE43190076C129 /* ZGAniTextCellController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1967,6 +1975,8 @@
 				EF7231A320DB413200999D3A /* ZGHeaderCollectionViewCell.m */,
 				EF7231A820DB478200999D3A /* ZGTopicHeaderView.h */,
 				EF7231A920DB478200999D3A /* ZGTopicHeaderView.m */,
+				EFDCEE3720DE43B40076C129 /* ZGAniTextCell.h */,
+				EFDCEE3820DE43B40076C129 /* ZGAniTextCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2322,6 +2332,7 @@
 				EFFCE4A11F62330F008E2375 /* PinyinHelper.m in Sources */,
 				EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
+				EFDCEE3620DE43190076C129 /* ZGAniTextCellController.m in Sources */,
 				EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */,
 				EFFCE4AF1F624D3F008E2375 /* ZGCalendarController.m in Sources */,
 				EF570B252024015300E14BC9 /* ZGTestCopyViewController.m in Sources */,
@@ -2386,6 +2397,7 @@
 				EF3CAAAC20C141C400FCC752 /* ZGNRoot2Controller.m in Sources */,
 				EF570B0F2022E95900E14BC9 /* ZGNFObserverB.m in Sources */,
 				EFDBCDC41F2B159700C542AD /* ViewController.m in Sources */,
+				EFDCEE3920DE43B40076C129 /* ZGAniTextCell.m in Sources */,
 				EFF1DA8520D3BA8900CBC680 /* ZGAnimationsController.m in Sources */,
 				EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */,
 				EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */,
