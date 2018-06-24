@@ -12,6 +12,7 @@
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, assign) CGFloat textHeight;
 @property (nonatomic, assign) CGFloat miniHeight;
+@property (nonatomic, assign) BOOL isExtend;
 @end
 
 

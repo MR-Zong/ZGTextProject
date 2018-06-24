@@ -117,6 +117,7 @@
 		EFDBCDF61F2B168000C542AD /* ZGMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDF51F2B168000C542AD /* ZGMaskController.m */; };
 		EFDCEE3620DE43190076C129 /* ZGAniTextCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDCEE3520DE43190076C129 /* ZGAniTextCellController.m */; };
 		EFDCEE3920DE43B40076C129 /* ZGAniTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDCEE3820DE43B40076C129 /* ZGAniTextCell.m */; };
+		EFDCEE4020DF93600076C129 /* ZGAnisTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDCEE3F20DF93600076C129 /* ZGAnisTestController.m */; };
 		EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE0B316207CB9420020B143 /* ZGExtendLayoutController.m */; };
 		EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE0B31D207DB67B0020B143 /* ZGERController.m */; };
 		EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4307E20D4F65A006930E5 /* UIImage+ZGExtension.m */; };
@@ -398,6 +399,8 @@
 		EFDCEE3520DE43190076C129 /* ZGAniTextCellController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAniTextCellController.m; sourceTree = "<group>"; };
 		EFDCEE3720DE43B40076C129 /* ZGAniTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAniTextCell.h; sourceTree = "<group>"; };
 		EFDCEE3820DE43B40076C129 /* ZGAniTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAniTextCell.m; sourceTree = "<group>"; };
+		EFDCEE3E20DF93600076C129 /* ZGAnisTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAnisTestController.h; sourceTree = "<group>"; };
+		EFDCEE3F20DF93600076C129 /* ZGAnisTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAnisTestController.m; sourceTree = "<group>"; };
 		EFE0B315207CB9420020B143 /* ZGExtendLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExtendLayoutController.h; sourceTree = "<group>"; };
 		EFE0B316207CB9420020B143 /* ZGExtendLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExtendLayoutController.m; sourceTree = "<group>"; };
 		EFE0B31C207DB67B0020B143 /* ZGERController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGERController.h; sourceTree = "<group>"; };
@@ -1782,6 +1785,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EFDCEE3A20DF934D0076C129 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				EFDCEE3B20DF934D0076C129 /* Controller */,
+				EFDCEE3C20DF934D0076C129 /* Model */,
+				EFDCEE3D20DF934D0076C129 /* View */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		EFDCEE3B20DF934D0076C129 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFDCEE3E20DF93600076C129 /* ZGAnisTestController.h */,
+				EFDCEE3F20DF93600076C129 /* ZGAnisTestController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFDCEE3C20DF934D0076C129 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFDCEE3D20DF934D0076C129 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EFE0B311207CB9270020B143 /* ExtendLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1925,6 +1961,7 @@
 		EFF1DA7F20D3BA7400CBC680 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				EFDCEE3A20DF934D0076C129 /* Test */,
 				EFF1DA8020D3BA7400CBC680 /* Controller */,
 				EFF1DA8120D3BA7400CBC680 /* Model */,
 				EFF1DA8220D3BA7400CBC680 /* View */,
@@ -2411,6 +2448,7 @@
 				EF261CF32063A9050002BFB2 /* ZGPerformanceController.m in Sources */,
 				EFFCE4A01F62330F008E2375 /* PinyinFormatter.m in Sources */,
 				EF67D669205763FE00FA65DC /* ZGInitializeController.m in Sources */,
+				EFDCEE4020DF93600076C129 /* ZGAnisTestController.m in Sources */,
 				EFFCE4BE1F628C42008E2375 /* NSDate+Calendar.m in Sources */,
 				EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */,
 				EFFCE4CA1F651DB7008E2375 /* ZGHolidayManager.m in Sources */,

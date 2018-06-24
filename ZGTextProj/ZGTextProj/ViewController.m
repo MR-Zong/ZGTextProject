@@ -61,6 +61,7 @@
 #import "ZGAnimationsCollectionViewController.h"
 #import "ZGAniCollectionViewNormalController.h"
 #import "ZGAniTextCellController.h"
+#import "ZGAnisTestController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 

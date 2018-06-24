@@ -32,7 +32,7 @@
 {
     _model = [[ZGAniTextCellModel alloc] init];
     _model.miniHeight = 70;
-    _model.text = @"所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集";
+    _model.text = @"所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集所谓专题，是指针对某个特定对象而特别收集制作而成的一种集中作品，这个对象可以是具体的某个或某集";
 }
 
 - (void)setupViews
@@ -68,9 +68,9 @@
         // 如果 返回一个固定的。。会闪屏
         //        return self.headerCell;
         
-        ZGAniTextCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:@"ZGAniTextCellReusedId" forIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];
+        ZGAniTextCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:@"ZGAniTextCellReusedId" forIndexPath:indexPath];
         cell.model = self.model;
-        NSLog(@"cell %@",cell);
+//        NSLog(@"cell %@",cell);
         return cell;
     }
     
@@ -83,19 +83,26 @@
 {
     [collectionView deselectItemAtIndexPath:indexPath animated:NO];
     
-    self.isExtend = !self.isExtend;
+    ZGAniTextCellModel *model = self.model;
+    model.isExtend = !model.isExtend;
     
-    [collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:0 inSection:0]]];
+    [collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:2 inSection:0]]];
     
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    ;
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.item == 2) {
-        CGFloat cellHeight = self.model.miniHeight;
-        if (self.isExtend) {
-            cellHeight = self.model.textHeight;
+        ZGAniTextCellModel *model = self.model;
+        CGFloat cellHeight = model.miniHeight;
+        if (model.isExtend) {
+            cellHeight = model.textHeight;
         }
         return CGSizeMake(self.view.bounds.size.width, cellHeight);
     }
