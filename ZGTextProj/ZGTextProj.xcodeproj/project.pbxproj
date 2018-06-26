@@ -26,6 +26,12 @@
 		EF0A0EAE2006FE3A0095779B /* ZGOScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0EAD2006FE3A0095779B /* ZGOScrollManager.m */; };
 		EF0A0EB1200701DF0095779B /* ZGSubTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0EB0200701DF0095779B /* ZGSubTabBarView.m */; };
 		EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1C33011FBBEC0000FB43F9 /* ZGTestViewBoundsController.m */; };
+		EF25CBB420E28077005A7F8C /* ZGNestScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBB320E28077005A7F8C /* ZGNestScrollView.m */; };
+		EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBB620E28145005A7F8C /* ZGNestPageAController.m */; };
+		EF25CBBA20E28155005A7F8C /* ZGNestPageBController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBB920E28155005A7F8C /* ZGNestPageBController.m */; };
+		EF25CBBD20E28161005A7F8C /* ZGNestPageCController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBBC20E28161005A7F8C /* ZGNestPageCController.m */; };
+		EF25CBC020E284E3005A7F8C /* ZGNestPageDController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBBF20E284E3005A7F8C /* ZGNestPageDController.m */; };
+		EF25CBC320E28522005A7F8C /* ZGNestSubScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBC220E28522005A7F8C /* ZGNestSubScrollView.m */; };
 		EF261CF32063A9050002BFB2 /* ZGPerformanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF261CF22063A9050002BFB2 /* ZGPerformanceController.m */; };
 		EF261CF62063AA600002BFB2 /* ZGFPSProbeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF261CF52063AA600002BFB2 /* ZGFPSProbeView.m */; };
 		EF2F666D1FFB90EB00EA4F6F /* ZGInstanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2F666C1FFB90EB00EA4F6F /* ZGInstanceController.m */; };
@@ -216,6 +222,18 @@
 		EF0A0EB0200701DF0095779B /* ZGSubTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSubTabBarView.m; sourceTree = "<group>"; };
 		EF1C33001FBBEC0000FB43F9 /* ZGTestViewBoundsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTestViewBoundsController.h; sourceTree = "<group>"; };
 		EF1C33011FBBEC0000FB43F9 /* ZGTestViewBoundsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTestViewBoundsController.m; sourceTree = "<group>"; };
+		EF25CBB220E28077005A7F8C /* ZGNestScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNestScrollView.h; sourceTree = "<group>"; };
+		EF25CBB320E28077005A7F8C /* ZGNestScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNestScrollView.m; sourceTree = "<group>"; };
+		EF25CBB520E28145005A7F8C /* ZGNestPageAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNestPageAController.h; sourceTree = "<group>"; };
+		EF25CBB620E28145005A7F8C /* ZGNestPageAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNestPageAController.m; sourceTree = "<group>"; };
+		EF25CBB820E28155005A7F8C /* ZGNestPageBController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNestPageBController.h; sourceTree = "<group>"; };
+		EF25CBB920E28155005A7F8C /* ZGNestPageBController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNestPageBController.m; sourceTree = "<group>"; };
+		EF25CBBB20E28161005A7F8C /* ZGNestPageCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNestPageCController.h; sourceTree = "<group>"; };
+		EF25CBBC20E28161005A7F8C /* ZGNestPageCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNestPageCController.m; sourceTree = "<group>"; };
+		EF25CBBE20E284E3005A7F8C /* ZGNestPageDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNestPageDController.h; sourceTree = "<group>"; };
+		EF25CBBF20E284E3005A7F8C /* ZGNestPageDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNestPageDController.m; sourceTree = "<group>"; };
+		EF25CBC120E28522005A7F8C /* ZGNestSubScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNestSubScrollView.h; sourceTree = "<group>"; };
+		EF25CBC220E28522005A7F8C /* ZGNestSubScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNestSubScrollView.m; sourceTree = "<group>"; };
 		EF261CF12063A9050002BFB2 /* ZGPerformanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPerformanceController.h; sourceTree = "<group>"; };
 		EF261CF22063A9050002BFB2 /* ZGPerformanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPerformanceController.m; sourceTree = "<group>"; };
 		EF261CF42063AA600002BFB2 /* ZGFPSProbeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFPSProbeView.h; sourceTree = "<group>"; };
@@ -1099,6 +1117,14 @@
 			children = (
 				EF53FC7720A81FFB00FAA3E7 /* ZGScrollViewNestingController.h */,
 				EF53FC7820A81FFB00FAA3E7 /* ZGScrollViewNestingController.m */,
+				EF25CBB520E28145005A7F8C /* ZGNestPageAController.h */,
+				EF25CBB620E28145005A7F8C /* ZGNestPageAController.m */,
+				EF25CBB820E28155005A7F8C /* ZGNestPageBController.h */,
+				EF25CBB920E28155005A7F8C /* ZGNestPageBController.m */,
+				EF25CBBB20E28161005A7F8C /* ZGNestPageCController.h */,
+				EF25CBBC20E28161005A7F8C /* ZGNestPageCController.m */,
+				EF25CBBE20E284E3005A7F8C /* ZGNestPageDController.h */,
+				EF25CBBF20E284E3005A7F8C /* ZGNestPageDController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1113,6 +1139,10 @@
 		EF53FC7620A81F5400FAA3E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF25CBB220E28077005A7F8C /* ZGNestScrollView.h */,
+				EF25CBB320E28077005A7F8C /* ZGNestScrollView.m */,
+				EF25CBC120E28522005A7F8C /* ZGNestSubScrollView.h */,
+				EF25CBC220E28522005A7F8C /* ZGNestSubScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2378,6 +2408,7 @@
 				EF72319F20DA40B600999D3A /* ZGAnimationsCollectionViewController.m in Sources */,
 				EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */,
 				EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */,
+				EF25CBC020E284E3005A7F8C /* ZGNestPageDController.m in Sources */,
 				EF2F66921FFF651F00EA4F6F /* ZGTbBaseTableView.m in Sources */,
 				EFE4308820D50F82006930E5 /* ZGAnimationCell.m in Sources */,
 				EF570B122022F08200E14BC9 /* ZGKVODataModel.m in Sources */,
@@ -2413,6 +2444,7 @@
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
 				EF570B322024625600E14BC9 /* ZGKEDataModel.m in Sources */,
+				EF25CBBA20E28155005A7F8C /* ZGNestPageBController.m in Sources */,
 				EFC56B7C20181F9900BA5487 /* ZGHFMan.m in Sources */,
 				EFFCE48D1F622804008E2375 /* ZGAddressListCell.m in Sources */,
 				EFFCE47D1F60F6AD008E2375 /* ZGOffScreenController.m in Sources */,
@@ -2460,8 +2492,10 @@
 				EFC56B93201DBB8000BA5487 /* ZGMsgForwardController.m in Sources */,
 				EF7231A720DB44E100999D3A /* ZGAniCollectionViewNormalController.m in Sources */,
 				EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */,
+				EF25CBC320E28522005A7F8C /* ZGNestSubScrollView.m in Sources */,
 				EFA9A62620AA770E00E73288 /* ZGStartOperation.m in Sources */,
 				EF618EB72000C75C0084A59E /* ZGBrightManger.m in Sources */,
+				EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
 				EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */,
@@ -2490,10 +2524,12 @@
 				EFDBCDF61F2B168000C542AD /* ZGMaskController.m in Sources */,
 				EF570B222024014A00E14BC9 /* ZGCopyObj.m in Sources */,
 				EF570B152022F09400E14BC9 /* ZGKVOObserverA.m in Sources */,
+				EF25CBBD20E28161005A7F8C /* ZGNestPageCController.m in Sources */,
 				EFC6EE2B1FF4E81500E1D2C5 /* ZGCategoryObject.m in Sources */,
 				EFE5F83420932CCD0065775D /* ZGClassFunctionController.m in Sources */,
 				EFF1DA5C20D118D900CBC680 /* ZGPageDController.m in Sources */,
 				EFDBCDBE1F2B159700C542AD /* main.m in Sources */,
+				EF25CBB420E28077005A7F8C /* ZGNestScrollView.m in Sources */,
 				EFC4FA9E206C98D000F42842 /* ZGNSProxyController.m in Sources */,
 				EF33525E2091B261003D4344 /* ZGIFUBaseObject.m in Sources */,
 				EFFF331D1FFF69600086BE7D /* ZGNoDataView.m in Sources */,

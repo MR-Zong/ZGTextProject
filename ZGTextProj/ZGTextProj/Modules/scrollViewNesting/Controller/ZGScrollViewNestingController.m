@@ -7,8 +7,19 @@
 //
 
 #import "ZGScrollViewNestingController.h"
+#import "ZGNestScrollView.h"
+
+#import "ZGNestPageAController.h"
+#import "ZGNestPageBController.h"
+#import "ZGNestPageCController.h"
 
 @interface ZGScrollViewNestingController ()
+
+@property (nonatomic, strong) ZGNestScrollView *nestScrollView;
+
+@property (nonatomic, strong) ZGNestPageAController *aVC;
+@property (nonatomic, strong) ZGNestPageBController *bVC;
+@property (nonatomic, strong) ZGNestPageCController *cVC;
 
 @end
 
@@ -20,27 +31,42 @@
     self.title = @"scrollView嵌套";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    /* 微博个人主页效果
+    /* 微博个人主页效果 （在另一个项目里写了）
     *  方案筛选
     *  1，两个UITableView 通过contentInset.top 的方法来实现
     *  但整个方案 很不完美
     *  2，直接一个大scrollView  然后里面 两个UITAbleView
     */
+    
+    // 现在是写 scrollView横向滚动嵌套
+    [self setupViews];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupViews
+{
+    _nestScrollView = [[ZGNestScrollView alloc] initWithFrame:self.view.bounds];
+    _nestScrollView.backgroundColor = [UIColor redColor];
+    _nestScrollView.pagingEnabled = YES;
+    _nestScrollView.bounces = NO;
+    _nestScrollView.contentSize = CGSizeMake(3*_nestScrollView.frame.size.width, _nestScrollView.frame.size.height);
+    [self.view addSubview:_nestScrollView];
+    
+    
+    // vc
+    _aVC = [[ZGNestPageAController alloc] init];
+    _aVC.view.frame = CGRectMake(0, 0, _nestScrollView.frame.size.width, _nestScrollView.frame.size.height);
+    [_nestScrollView addSubview:_aVC.view];
+    
+    _bVC = [[ZGNestPageBController alloc] init];
+    _bVC.view.frame = CGRectMake(CGRectGetMaxX(_aVC.view.frame), 0, _nestScrollView.frame.size.width, _nestScrollView.frame.size.height);
+    [_nestScrollView addSubview:_bVC.view];
+
+    
+    _cVC = [[ZGNestPageCController alloc] init];
+    _cVC.view.frame = CGRectMake(CGRectGetMaxX(_bVC.view.frame), 0, _nestScrollView.frame.size.width, _nestScrollView.frame.size.height);
+    [_nestScrollView addSubview:_cVC.view];
+
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
