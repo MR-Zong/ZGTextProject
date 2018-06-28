@@ -10,7 +10,10 @@
 
 @implementation ZGCellopGestureScrollView
 
-// 算是可行方案
+
+/**
+ * 次优方案：限定速度，可触发cell左滑删除
+ */
 //- (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer{
 //
 //

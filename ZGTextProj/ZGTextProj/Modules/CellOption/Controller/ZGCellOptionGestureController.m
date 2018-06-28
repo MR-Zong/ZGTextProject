@@ -26,6 +26,9 @@
     
     self.title = @"左滑删除冲突";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    NSLog(@"width %f",[UIScreen mainScreen].bounds.size.width);
     _dataArray = [NSMutableArray array];
     for (int i=0; i<20; i++) {
         [_dataArray addObject:@0];

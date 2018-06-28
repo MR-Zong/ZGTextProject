@@ -83,6 +83,8 @@
 		EF64EEB320E48778009B5767 /* ZGCellopGestureScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEB220E48778009B5767 /* ZGCellopGestureScrollView.m */; };
 		EF64EEB820E4D6B6009B5767 /* ZGCellOpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEB720E4D6B6009B5767 /* ZGCellOpCell.m */; };
 		EF64EEBF20E4DAC0009B5767 /* ZGEventChainController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEBE20E4DAC0009B5767 /* ZGEventChainController.m */; };
+		EF64EEC220E4E5DA009B5767 /* ZGEventChainView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEC120E4E5DA009B5767 /* ZGEventChainView.m */; };
+		EF64EEC520E4E5E8009B5767 /* ZGEventChainSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEC420E4E5E8009B5767 /* ZGEventChainSubView.m */; };
 		EF67D669205763FE00FA65DC /* ZGInitializeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF67D668205763FE00FA65DC /* ZGInitializeController.m */; };
 		EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF67D66B2057643C00FA65DC /* ZGINBaseObject.m */; };
 		EF67D66F2057644D00FA65DC /* ZGINSubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF67D66E2057644D00FA65DC /* ZGINSubObject.m */; };
@@ -343,6 +345,10 @@
 		EF64EEB720E4D6B6009B5767 /* ZGCellOpCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCellOpCell.m; sourceTree = "<group>"; };
 		EF64EEBD20E4DAC0009B5767 /* ZGEventChainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGEventChainController.h; sourceTree = "<group>"; };
 		EF64EEBE20E4DAC0009B5767 /* ZGEventChainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGEventChainController.m; sourceTree = "<group>"; };
+		EF64EEC020E4E5DA009B5767 /* ZGEventChainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGEventChainView.h; sourceTree = "<group>"; };
+		EF64EEC120E4E5DA009B5767 /* ZGEventChainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGEventChainView.m; sourceTree = "<group>"; };
+		EF64EEC320E4E5E8009B5767 /* ZGEventChainSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGEventChainSubView.h; sourceTree = "<group>"; };
+		EF64EEC420E4E5E8009B5767 /* ZGEventChainSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGEventChainSubView.m; sourceTree = "<group>"; };
 		EF67D667205763FE00FA65DC /* ZGInitializeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGInitializeController.h; sourceTree = "<group>"; };
 		EF67D668205763FE00FA65DC /* ZGInitializeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGInitializeController.m; sourceTree = "<group>"; };
 		EF67D66A2057643C00FA65DC /* ZGINBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGINBaseObject.h; sourceTree = "<group>"; };
@@ -1391,6 +1397,10 @@
 		EF64EEBC20E4DAA9009B5767 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF64EEC020E4E5DA009B5767 /* ZGEventChainView.h */,
+				EF64EEC120E4E5DA009B5767 /* ZGEventChainView.m */,
+				EF64EEC320E4E5E8009B5767 /* ZGEventChainSubView.h */,
+				EF64EEC420E4E5E8009B5767 /* ZGEventChainSubView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2510,6 +2520,7 @@
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
 				EF570B322024625600E14BC9 /* ZGKEDataModel.m in Sources */,
 				EF64EEAD20E4806E009B5767 /* ZGCellOptionGestureController.m in Sources */,
+				EF64EEC220E4E5DA009B5767 /* ZGEventChainView.m in Sources */,
 				EF64EEA920E3DC5A009B5767 /* ZGNestTableView.m in Sources */,
 				EF25CBBA20E28155005A7F8C /* ZGNestPageBController.m in Sources */,
 				EFC56B7C20181F9900BA5487 /* ZGHFMan.m in Sources */,
@@ -2538,6 +2549,7 @@
 				EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */,
 				EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */,
 				EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */,
+				EF64EEC520E4E5E8009B5767 /* ZGEventChainSubView.m in Sources */,
 				EFAC58251F341BF000B94D93 /* ZGAudioManager.m in Sources */,
 				EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */,
 				EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */,
