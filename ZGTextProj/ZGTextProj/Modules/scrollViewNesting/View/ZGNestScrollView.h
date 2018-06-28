@@ -10,4 +10,6 @@
 
 @interface ZGNestScrollView : UIScrollView
 
+@property (nonatomic, assign) BOOL shouldGestureBegin;
+
 @end

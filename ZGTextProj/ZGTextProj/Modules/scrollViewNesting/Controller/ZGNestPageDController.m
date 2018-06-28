@@ -7,10 +7,11 @@
 //
 
 #import "ZGNestPageDController.h"
+#import "ZGNestTableView.h"
 
 @interface ZGNestPageDController () <UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) ZGNestTableView *tableView;
 
 @end
 
@@ -25,7 +26,7 @@
 
 - (void)setupViews
 {
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    _tableView = [[ZGNestTableView alloc] initWithFrame:self.view.bounds];
     _tableView.showsVerticalScrollIndicator= NO;
     _tableView.dataSource = self;
     _tableView.delegate = self;
@@ -56,5 +57,13 @@
     return cell;
     
 }
+
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+//{
+//    NSLog(@"DDD didScroll");
+//}
+
+
+
 
 @end

@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZGNestSubScrollView.h"
 #import "ZGNestPageDController.h"
 
+@class ZGNestScrollView;
+
 @interface ZGNestPageBController : UIViewController
+
+@property (nonatomic, strong) ZGNestSubScrollView *scrollView;
+@property (nonatomic, weak) ZGNestScrollView *nestScrollView;
+
 
 @end

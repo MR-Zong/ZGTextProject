@@ -9,11 +9,9 @@
 #import "ZGNestPageBController.h"
 
 #import "ZGNestPageDController.h"
-#import "ZGNestSubScrollView.h"
+#import "ZGNestScrollView.h"
 
-@interface ZGNestPageBController ()
-
-@property (nonatomic, strong) ZGNestSubScrollView *scrollView;
+@interface ZGNestPageBController () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) ZGNestPageDController *dVC1;
 @property (nonatomic, strong) ZGNestPageDController *dVC2;
@@ -46,6 +44,7 @@
     _scrollView.backgroundColor = [UIColor redColor];
     _scrollView.pagingEnabled = YES;
     _scrollView.bounces = NO;
+    _scrollView.delegate = self;
     _scrollView.contentSize = CGSizeMake(3*_scrollView.frame.size.width, _scrollView.frame.size.height);
     [self.view addSubview:_scrollView];
     
@@ -69,6 +68,25 @@
     [_scrollView addSubview:_dVC3.view];
 
     
+}
+
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+//    self.nestScrollView.scrollEnabled = NO;
+    self.nestScrollView.shouldGestureBegin = YES;
+    NSLog(@"subSV begindrag");
+}
+//
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+//{
+//    self.nestScrollView.scrollEnabled = YES;
+//    NSLog(@"subSV enddrag");
+//}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+//    NSLog(@"sub didScroll");
 }
 
 

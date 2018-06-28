@@ -77,6 +77,12 @@
 		EF570B352024626400E14BC9 /* ZGKEObserverA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B342024626400E14BC9 /* ZGKEObserverA.m */; };
 		EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF618EB32000C4B40084A59E /* ZGBrightnessController.m */; };
 		EF618EB72000C75C0084A59E /* ZGBrightManger.m in Sources */ = {isa = PBXBuildFile; fileRef = EF618EB62000C75C0084A59E /* ZGBrightManger.m */; };
+		EF64EEA920E3DC5A009B5767 /* ZGNestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEA820E3DC5A009B5767 /* ZGNestTableView.m */; };
+		EF64EEAD20E4806E009B5767 /* ZGCellOptionGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEAC20E4806E009B5767 /* ZGCellOptionGestureController.m */; };
+		EF64EEB020E485A3009B5767 /* ZGCellOpGestureTable.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEAF20E485A3009B5767 /* ZGCellOpGestureTable.m */; };
+		EF64EEB320E48778009B5767 /* ZGCellopGestureScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEB220E48778009B5767 /* ZGCellopGestureScrollView.m */; };
+		EF64EEB820E4D6B6009B5767 /* ZGCellOpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEB720E4D6B6009B5767 /* ZGCellOpCell.m */; };
+		EF64EEBF20E4DAC0009B5767 /* ZGEventChainController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEBE20E4DAC0009B5767 /* ZGEventChainController.m */; };
 		EF67D669205763FE00FA65DC /* ZGInitializeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF67D668205763FE00FA65DC /* ZGInitializeController.m */; };
 		EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF67D66B2057643C00FA65DC /* ZGINBaseObject.m */; };
 		EF67D66F2057644D00FA65DC /* ZGINSubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF67D66E2057644D00FA65DC /* ZGINSubObject.m */; };
@@ -325,6 +331,18 @@
 		EF618EB32000C4B40084A59E /* ZGBrightnessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBrightnessController.m; sourceTree = "<group>"; };
 		EF618EB52000C75C0084A59E /* ZGBrightManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBrightManger.h; sourceTree = "<group>"; };
 		EF618EB62000C75C0084A59E /* ZGBrightManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBrightManger.m; sourceTree = "<group>"; };
+		EF64EEA720E3DC5A009B5767 /* ZGNestTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNestTableView.h; sourceTree = "<group>"; };
+		EF64EEA820E3DC5A009B5767 /* ZGNestTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNestTableView.m; sourceTree = "<group>"; };
+		EF64EEAB20E4806E009B5767 /* ZGCellOptionGestureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCellOptionGestureController.h; sourceTree = "<group>"; };
+		EF64EEAC20E4806E009B5767 /* ZGCellOptionGestureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCellOptionGestureController.m; sourceTree = "<group>"; };
+		EF64EEAE20E485A3009B5767 /* ZGCellOpGestureTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCellOpGestureTable.h; sourceTree = "<group>"; };
+		EF64EEAF20E485A3009B5767 /* ZGCellOpGestureTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCellOpGestureTable.m; sourceTree = "<group>"; };
+		EF64EEB120E48778009B5767 /* ZGCellopGestureScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCellopGestureScrollView.h; sourceTree = "<group>"; };
+		EF64EEB220E48778009B5767 /* ZGCellopGestureScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCellopGestureScrollView.m; sourceTree = "<group>"; };
+		EF64EEB620E4D6B6009B5767 /* ZGCellOpCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCellOpCell.h; sourceTree = "<group>"; };
+		EF64EEB720E4D6B6009B5767 /* ZGCellOpCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCellOpCell.m; sourceTree = "<group>"; };
+		EF64EEBD20E4DAC0009B5767 /* ZGEventChainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGEventChainController.h; sourceTree = "<group>"; };
+		EF64EEBE20E4DAC0009B5767 /* ZGEventChainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGEventChainController.m; sourceTree = "<group>"; };
 		EF67D667205763FE00FA65DC /* ZGInitializeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGInitializeController.h; sourceTree = "<group>"; };
 		EF67D668205763FE00FA65DC /* ZGInitializeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGInitializeController.m; sourceTree = "<group>"; };
 		EF67D66A2057643C00FA65DC /* ZGINBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGINBaseObject.h; sourceTree = "<group>"; };
@@ -1037,6 +1055,8 @@
 				EF3CAA8320BD3C9D00FCC752 /* ZGCellOptionController.m */,
 				EF3CAA8520BD60B000FCC752 /* ZGCellOptionMGController.h */,
 				EF3CAA8620BD60B000FCC752 /* ZGCellOptionMGController.m */,
+				EF64EEAB20E4806E009B5767 /* ZGCellOptionGestureController.h */,
+				EF64EEAC20E4806E009B5767 /* ZGCellOptionGestureController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1052,6 +1072,12 @@
 			isa = PBXGroup;
 			children = (
 				EF3CAA8820BD616800FCC752 /* MGSwipeTableCell */,
+				EF64EEAE20E485A3009B5767 /* ZGCellOpGestureTable.h */,
+				EF64EEAF20E485A3009B5767 /* ZGCellOpGestureTable.m */,
+				EF64EEB120E48778009B5767 /* ZGCellopGestureScrollView.h */,
+				EF64EEB220E48778009B5767 /* ZGCellopGestureScrollView.m */,
+				EF64EEB620E4D6B6009B5767 /* ZGCellOpCell.h */,
+				EF64EEB720E4D6B6009B5767 /* ZGCellOpCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1143,6 +1169,8 @@
 				EF25CBB320E28077005A7F8C /* ZGNestScrollView.m */,
 				EF25CBC120E28522005A7F8C /* ZGNestSubScrollView.h */,
 				EF25CBC220E28522005A7F8C /* ZGNestSubScrollView.m */,
+				EF64EEA720E3DC5A009B5767 /* ZGNestTableView.h */,
+				EF64EEA820E3DC5A009B5767 /* ZGNestTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1328,6 +1356,39 @@
 			sourceTree = "<group>";
 		};
 		EF618EB12000C4830084A59E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF64EEB920E4DAA9009B5767 /* EventChain */ = {
+			isa = PBXGroup;
+			children = (
+				EF64EEBA20E4DAA9009B5767 /* Controller */,
+				EF64EEBB20E4DAA9009B5767 /* Model */,
+				EF64EEBC20E4DAA9009B5767 /* View */,
+			);
+			path = EventChain;
+			sourceTree = "<group>";
+		};
+		EF64EEBA20E4DAA9009B5767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF64EEBD20E4DAC0009B5767 /* ZGEventChainController.h */,
+				EF64EEBE20E4DAC0009B5767 /* ZGEventChainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF64EEBB20E4DAA9009B5767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF64EEBC20E4DAA9009B5767 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1726,6 +1787,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF64EEB920E4DAA9009B5767 /* EventChain */,
 				EFF1DA7F20D3BA7400CBC680 /* Animations */,
 				EFF1DA4A20D0FEAA00CBC680 /* PageViewController */,
 				EF3CAA7E20BD3C8900FCC752 /* CellOption */,
@@ -2398,6 +2460,7 @@
 				EF2F66811FFF572300EA4F6F /* ZGProtocolController.m in Sources */,
 				EFFCE4A11F62330F008E2375 /* PinyinHelper.m in Sources */,
 				EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */,
+				EF64EEBF20E4DAC0009B5767 /* ZGEventChainController.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
 				EFDCEE3620DE43190076C129 /* ZGAniTextCellController.m in Sources */,
 				EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */,
@@ -2426,6 +2489,7 @@
 				EFFCE4A81F623F9E008E2375 /* ZGLetterSectionModel.m in Sources */,
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
 				EFE4308220D5017C006930E5 /* ZGAnimationsCellController.m in Sources */,
+				EF64EEB020E485A3009B5767 /* ZGCellOpGestureTable.m in Sources */,
 				EFE4308B20D51721006930E5 /* ZGAnimationsTableView.m in Sources */,
 				EF3CAA8720BD60B000FCC752 /* ZGCellOptionMGController.m in Sources */,
 				EF570B0C2022E94C00E14BC9 /* ZGNFObserverA.m in Sources */,
@@ -2441,9 +2505,12 @@
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,
 				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
+				EF64EEB320E48778009B5767 /* ZGCellopGestureScrollView.m in Sources */,
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
 				EF570B322024625600E14BC9 /* ZGKEDataModel.m in Sources */,
+				EF64EEAD20E4806E009B5767 /* ZGCellOptionGestureController.m in Sources */,
+				EF64EEA920E3DC5A009B5767 /* ZGNestTableView.m in Sources */,
 				EF25CBBA20E28155005A7F8C /* ZGNestPageBController.m in Sources */,
 				EFC56B7C20181F9900BA5487 /* ZGHFMan.m in Sources */,
 				EFFCE48D1F622804008E2375 /* ZGAddressListCell.m in Sources */,
@@ -2475,6 +2542,7 @@
 				EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */,
 				EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */,
 				EFF1DA5020D0FECA00CBC680 /* ZGPVCTestController.m in Sources */,
+				EF64EEB820E4D6B6009B5767 /* ZGCellOpCell.m in Sources */,
 				EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */,
 				EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */,
 				EF261CF32063A9050002BFB2 /* ZGPerformanceController.m in Sources */,

@@ -1,25 +1,18 @@
 //
-//  ZGNestSubScrollView.m
+//  ZGNestTableView.m
 //  ZGTextProj
 //
-//  Created by 徐宗根 on 2018/6/26.
+//  Created by 徐宗根 on 2018/6/27.
 //  Copyright © 2018年 XuZonggen. All rights reserved.
 //
 
-#import "ZGNestSubScrollView.h"
+#import "ZGNestTableView.h"
 
-@implementation ZGNestSubScrollView
-
-///允许同时识别多个手势
-//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-//    NSLog(@"ffffTable gggggg ");
-//    return YES;
-//}
-
+@implementation ZGNestTableView
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
-    NSLog(@"sholdBegin %@",gestureRecognizer);
+    NSLog(@"gestureRecognizer %@",gestureRecognizer);
     if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
         
         UIPanGestureRecognizer *pan = (UIPanGestureRecognizer *)gestureRecognizer;
@@ -35,7 +28,8 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    NSLog(@"touchesBegan");
+    NSLog(@"nestTable touchesBegan");
+    [super touchesBegan:touches withEvent:event];
 }
 
 

@@ -13,7 +13,7 @@
 #import "ZGNestPageBController.h"
 #import "ZGNestPageCController.h"
 
-@interface ZGScrollViewNestingController ()
+@interface ZGScrollViewNestingController () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) ZGNestScrollView *nestScrollView;
 
@@ -48,8 +48,10 @@
     _nestScrollView.backgroundColor = [UIColor redColor];
     _nestScrollView.pagingEnabled = YES;
     _nestScrollView.bounces = NO;
+    _nestScrollView.delegate = self;
     _nestScrollView.contentSize = CGSizeMake(3*_nestScrollView.frame.size.width, _nestScrollView.frame.size.height);
     [self.view addSubview:_nestScrollView];
+//    NSLog(@"panGestureRecognizer %@",_nestScrollView.panGestureRecognizer.delegate);
     
     
     // vc
@@ -58,6 +60,7 @@
     [_nestScrollView addSubview:_aVC.view];
     
     _bVC = [[ZGNestPageBController alloc] init];
+    _bVC.nestScrollView = _nestScrollView;
     _bVC.view.frame = CGRectMake(CGRectGetMaxX(_aVC.view.frame), 0, _nestScrollView.frame.size.width, _nestScrollView.frame.size.height);
     [_nestScrollView addSubview:_bVC.view];
 
@@ -68,5 +71,22 @@
 
 }
 
+#pragma mark - scrollViewDelegate
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+//    self.nestScrollView.shouldGestureBegin = YES;
+    NSLog(@"nest begindrag");
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    self.nestScrollView.shouldGestureBegin = NO;
+     NSLog(@"nest enddrag");
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+//    NSLog(@"nest didScroll");
+}
 
 @end

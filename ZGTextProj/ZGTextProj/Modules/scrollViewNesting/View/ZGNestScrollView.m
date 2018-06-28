@@ -10,12 +10,39 @@
 
 @implementation ZGNestScrollView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        _shouldGestureBegin = YES;
+    }
+    return self;
 }
-*/
+
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+//    NSLog(@"nestScrollView nnnnnnnnnn");
+//    return YES;
+//}
+
+//- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+//{
+//    NSLog(@"gestureRecognizer %@",gestureRecognizer);
+//    return self.shouldGestureBegin;
+//}
+
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+//{
+//    if (otherGestureRecognizer) {
+//         ;
+//    }
+//    return YES;
+//}
+
+
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+//{
+//    UIView *v = [super hitTest:point withEvent:event];
+//    NSLog(@"v %@",v);
+//    return v;
+//}
 
 @end

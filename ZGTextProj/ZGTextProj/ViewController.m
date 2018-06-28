@@ -51,7 +51,10 @@
 #import "ZGSafeAreaController.h"
 #import "ZGNavTestController.h"
 #import "ZGCellOptionController.h"
+// cell option
 #import "ZGCellOptionMGController.h"
+#import "ZGCellOptionGestureController.h"
+
 #import "ZGPVCTestController.h"
 // animations
 #import "ZGAnimationsController.h"
@@ -62,6 +65,8 @@
 #import "ZGAniCollectionViewNormalController.h"
 #import "ZGAniTextCellController.h"
 #import "ZGAnisTestController.h"
+
+#import "ZGEventChainController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -96,7 +101,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 44;
+    return 45;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -190,6 +195,8 @@
         cell.textLabel.text = @"pageViewController";
     }else if(indexPath.row == 43){
         cell.textLabel.text = @"Animations";
+    }else if(indexPath.row == 44){
+        cell.textLabel.text = @"eventChain";
     }
 
 
@@ -335,13 +342,16 @@
         ZGNavTestController *con = [[ZGNavTestController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 41){
-        ZGCellOptionMGController *con = [[ZGCellOptionMGController alloc] init];
+        ZGCellOptionGestureController *con = [[ZGCellOptionGestureController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 42){
         ZGPVCTestController *con = [[ZGPVCTestController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 43){
         ZGAniTextCellController *con = [[ZGAniTextCellController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 44){
+        ZGEventChainController *con = [[ZGEventChainController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
