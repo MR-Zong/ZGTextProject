@@ -16,4 +16,9 @@
     [super touchesBegan:touches withEvent:event];
 }
 
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"touch cancel  sub sub");
+}
+
 @end
