@@ -46,6 +46,9 @@
     _scrollView.bounces = NO;
     _scrollView.delegate = self;
     _scrollView.contentSize = CGSizeMake(3*_scrollView.frame.size.width, _scrollView.frame.size.height);
+    
+    // 直接这样 效果不好
+//    [self.nestScrollView.panGestureRecognizer requireGestureRecognizerToFail:_scrollView.panGestureRecognizer];
     [self.view addSubview:_scrollView];
     
     
