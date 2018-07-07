@@ -57,6 +57,7 @@
 		EF3CAA8E20BD616800FCC752 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAA8920BD616800FCC752 /* MGSwipeTableCell.m */; };
 		EF3CAA8F20BD616800FCC752 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAA8C20BD616800FCC752 /* MGSwipeButton.m */; };
 		EF3CAAAC20C141C400FCC752 /* ZGNRoot2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CAAAB20C141C400FCC752 /* ZGNRoot2Controller.m */; };
+		EF3CFB4420F09DB200FCE02E /* ZGSTestDragingController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3CFB4320F09DB200FCE02E /* ZGSTestDragingController.m */; };
 		EF3FE04C2010A5090088C2C9 /* ZGWeakSelfController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3FE04B2010A5090088C2C9 /* ZGWeakSelfController.m */; };
 		EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3FE04E2010B2200088C2C9 /* ZGWeakSelfManager.m */; };
 		EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF488F1C2078679200451738 /* ZGNSPCollectionViewCell.m */; };
@@ -294,6 +295,8 @@
 		EF3CAA8C20BD616800FCC752 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
 		EF3CAAAA20C141C400FCC752 /* ZGNRoot2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNRoot2Controller.h; sourceTree = "<group>"; };
 		EF3CAAAB20C141C400FCC752 /* ZGNRoot2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNRoot2Controller.m; sourceTree = "<group>"; };
+		EF3CFB4220F09DB200FCE02E /* ZGSTestDragingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTestDragingController.h; sourceTree = "<group>"; };
+		EF3CFB4320F09DB200FCE02E /* ZGSTestDragingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTestDragingController.m; sourceTree = "<group>"; };
 		EF3FE04A2010A5090088C2C9 /* ZGWeakSelfController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWeakSelfController.h; sourceTree = "<group>"; };
 		EF3FE04B2010A5090088C2C9 /* ZGWeakSelfController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWeakSelfController.m; sourceTree = "<group>"; };
 		EF3FE04D2010B2200088C2C9 /* ZGWeakSelfManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWeakSelfManager.h; sourceTree = "<group>"; };
@@ -646,6 +649,8 @@
 			children = (
 				EF0A0E872004C2490095779B /* ZGSTestController.h */,
 				EF0A0E882004C2490095779B /* ZGSTestController.m */,
+				EF3CFB4220F09DB200FCE02E /* ZGSTestDragingController.h */,
+				EF3CFB4320F09DB200FCE02E /* ZGSTestDragingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2598,6 +2603,7 @@
 				EF2F66881FFF58E000EA4F6F /* ZGPLzong.m in Sources */,
 				EFFCE4B21F6271F9008E2375 /* ZGCalendarHeaderView.m in Sources */,
 				EFAC581C1F30B61F00B94D93 /* ZGTestBlockViewController.m in Sources */,
+				EF3CFB4420F09DB200FCE02E /* ZGSTestDragingController.m in Sources */,
 				EF3C47C51F384D530039AA5C /* ZGPeople.m in Sources */,
 				EF0A0EAB2006FE240095779B /* ZGOHeaderScrollView.m in Sources */,
 				EFE4308E20D5305F006930E5 /* ZGAnimationCellNormalController.m in Sources */,

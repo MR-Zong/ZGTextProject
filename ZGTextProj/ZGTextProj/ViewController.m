@@ -67,6 +67,7 @@
 #import "ZGAnisTestController.h"
 
 #import "ZGEventChainController.h"
+#import "ZGSTestDragingController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -269,8 +270,8 @@
     }else if(indexPath.row == 16){
         ZGBrightnessController *con = [[ZGBrightnessController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
-    }else if(indexPath.row == 17){
-        ZGSTestController *con = [[ZGSTestController alloc] init];
+    }else if(indexPath.row == 17){ // uiScorllView
+        ZGSTestDragingController *con = [[ZGSTestDragingController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 18){
         ZGOneScrollViewController *con = [[ZGOneScrollViewController alloc] init];
