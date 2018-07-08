@@ -29,8 +29,8 @@
 {
     _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     _scrollView.contentSize = CGSizeMake(_scrollView.bounds.size.width * 3, 0);
-//    _scrollView.pagingEnabled = YES;
-    _scrollView.decelerationRate = 0.5;
+    _scrollView.pagingEnabled = YES;
+//    _scrollView.decelerationRate = 0.5;
 //    _scrollView.bounces = NO;
     _scrollView.delegate = self;
     [self.view addSubview:_scrollView];
@@ -53,24 +53,38 @@
 
 
 #pragma mark - UIScrollViewDelegate
-//- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-//{
-//    NSLog(@"beginDrag %@",self.scrollView.dragging?@"YES":@"NO");
-//}
-//
-//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-//{
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    NSLog(@"tracking %@",self.scrollView.tracking?@"YES":@"NO");
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    NSLog(@"end Drag666666");
 //    NSLog(@"endDrag %@",self.scrollView.dragging?@"YES":@"NO");
 //    NSLog(@"endDrag decelerate %@",decelerate?@"YES":@"NO");
-//}
+//    NSLog(@"tracking %@",self.scrollView.tracking?@"YES":@"NO");
+
+}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
+{
+    NSLog(@"Begin    Decelerating77777777");
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSLog(@"End    Deceleratin888888888");
+}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"dragging %@",self.scrollView.dragging?@"YES":@"NO");
-    NSLog(@"decelerate %@",self.scrollView.decelerating?@"YES":@"NO");
-    if (self.scrollView.dragging == NO) {
-        NSLog(@"******************************");
-    }
+//    NSLog(@"tracking %@",self.scrollView.tracking?@"YES":@"NO");
+//    NSLog(@"dragging %@",self.scrollView.dragging?@"YES":@"NO");
+//    NSLog(@"decelerate %@",self.scrollView.decelerating?@"YES":@"NO");
+//    if (self.scrollView.dragging == NO) {
+//        NSLog(@"******************************");
+//    }
     
 }
 

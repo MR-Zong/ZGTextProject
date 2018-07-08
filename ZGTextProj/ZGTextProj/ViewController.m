@@ -271,7 +271,7 @@
         ZGBrightnessController *con = [[ZGBrightnessController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 17){ // uiScorllView
-        ZGSTestDragingController *con = [[ZGSTestDragingController alloc] init];
+        ZGSTestController *con = [[ZGSTestController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 18){
         ZGOneScrollViewController *con = [[ZGOneScrollViewController alloc] init];
