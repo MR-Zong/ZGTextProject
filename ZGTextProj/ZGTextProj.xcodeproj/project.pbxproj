@@ -34,6 +34,9 @@
 		EF25CBC320E28522005A7F8C /* ZGNestSubScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBC220E28522005A7F8C /* ZGNestSubScrollView.m */; };
 		EF261CF32063A9050002BFB2 /* ZGPerformanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF261CF22063A9050002BFB2 /* ZGPerformanceController.m */; };
 		EF261CF62063AA600002BFB2 /* ZGFPSProbeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF261CF52063AA600002BFB2 /* ZGFPSProbeView.m */; };
+		EF2EEA9F20F3449900C9FBAD /* ZGKVOResearchData.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEA9E20F3449900C9FBAD /* ZGKVOResearchData.m */; };
+		EF2EEAA220F344C000C9FBAD /* ZGKVOResearchObserverA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAA120F344C000C9FBAD /* ZGKVOResearchObserverA.m */; };
+		EF2EEAA520F344C700C9FBAD /* ZGKVOResearchObserverB.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAA420F344C700C9FBAD /* ZGKVOResearchObserverB.m */; };
 		EF2F666D1FFB90EB00EA4F6F /* ZGInstanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2F666C1FFB90EB00EA4F6F /* ZGInstanceController.m */; };
 		EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2F666F1FFB91A100EA4F6F /* ZGBaseObject.m */; };
 		EF2F66771FFC6B1100EA4F6F /* ZGBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2F66761FFC6B1100EA4F6F /* ZGBlockController.m */; };
@@ -248,6 +251,12 @@
 		EF261CF22063A9050002BFB2 /* ZGPerformanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPerformanceController.m; sourceTree = "<group>"; };
 		EF261CF42063AA600002BFB2 /* ZGFPSProbeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFPSProbeView.h; sourceTree = "<group>"; };
 		EF261CF52063AA600002BFB2 /* ZGFPSProbeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFPSProbeView.m; sourceTree = "<group>"; };
+		EF2EEA9D20F3449900C9FBAD /* ZGKVOResearchData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVOResearchData.h; sourceTree = "<group>"; };
+		EF2EEA9E20F3449900C9FBAD /* ZGKVOResearchData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKVOResearchData.m; sourceTree = "<group>"; };
+		EF2EEAA020F344C000C9FBAD /* ZGKVOResearchObserverA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVOResearchObserverA.h; sourceTree = "<group>"; };
+		EF2EEAA120F344C000C9FBAD /* ZGKVOResearchObserverA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKVOResearchObserverA.m; sourceTree = "<group>"; };
+		EF2EEAA320F344C700C9FBAD /* ZGKVOResearchObserverB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVOResearchObserverB.h; sourceTree = "<group>"; };
+		EF2EEAA420F344C700C9FBAD /* ZGKVOResearchObserverB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKVOResearchObserverB.m; sourceTree = "<group>"; };
 		EF2F666B1FFB90EB00EA4F6F /* ZGInstanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGInstanceController.h; sourceTree = "<group>"; };
 		EF2F666C1FFB90EB00EA4F6F /* ZGInstanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGInstanceController.m; sourceTree = "<group>"; };
 		EF2F666E1FFB91A100EA4F6F /* ZGBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBaseObject.h; sourceTree = "<group>"; };
@@ -1217,6 +1226,12 @@
 				EF570B142022F09400E14BC9 /* ZGKVOObserverA.m */,
 				EF570B162022F0A100E14BC9 /* ZGKVOObserverB.h */,
 				EF570B172022F0A200E14BC9 /* ZGKVOObserverB.m */,
+				EF2EEA9D20F3449900C9FBAD /* ZGKVOResearchData.h */,
+				EF2EEA9E20F3449900C9FBAD /* ZGKVOResearchData.m */,
+				EF2EEAA020F344C000C9FBAD /* ZGKVOResearchObserverA.h */,
+				EF2EEAA120F344C000C9FBAD /* ZGKVOResearchObserverA.m */,
+				EF2EEAA320F344C700C9FBAD /* ZGKVOResearchObserverB.h */,
+				EF2EEAA420F344C700C9FBAD /* ZGKVOResearchObserverB.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2546,6 +2561,7 @@
 				EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */,
 				EFFCE49F1F62330F008E2375 /* NSString+PinYin4Cocoa.m in Sources */,
 				EF33525B2091B1C6003D4344 /* ZGInitFunctionController.m in Sources */,
+				EF2EEA9F20F3449900C9FBAD /* ZGKVOResearchData.m in Sources */,
 				EF3CAA8420BD3C9D00FCC752 /* ZGCellOptionController.m in Sources */,
 				EF570B182022F0A200E14BC9 /* ZGKVOObserverB.m in Sources */,
 				EFC6EE2E1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.m in Sources */,
@@ -2562,6 +2578,7 @@
 				EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */,
 				EF64EEC520E4E5E8009B5767 /* ZGEventChainSubView.m in Sources */,
 				EFAC58251F341BF000B94D93 /* ZGAudioManager.m in Sources */,
+				EF2EEAA520F344C700C9FBAD /* ZGKVOResearchObserverB.m in Sources */,
 				EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */,
 				EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */,
 				EFF1DA5020D0FECA00CBC680 /* ZGPVCTestController.m in Sources */,
@@ -2578,6 +2595,7 @@
 				EF570B2F2024616700E14BC9 /* ZGKEViewController.m in Sources */,
 				EFF1DA9020D3C56F00CBC680 /* UIView+ZGExtension.m in Sources */,
 				EFFCE4B81F62725B008E2375 /* ZGCalendarMonthCell.m in Sources */,
+				EF2EEAA220F344C000C9FBAD /* ZGKVOResearchObserverA.m in Sources */,
 				EF31F9682070BE8700B1B148 /* ZGOperationQueueController.m in Sources */,
 				EFAC58221F340D2E00B94D93 /* ZGComposeAudioModel.m in Sources */,
 				EFC56B93201DBB8000BA5487 /* ZGMsgForwardController.m in Sources */,
