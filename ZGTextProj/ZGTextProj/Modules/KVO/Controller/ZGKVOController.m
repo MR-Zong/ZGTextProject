@@ -17,18 +17,26 @@
 
 #import <objc/runtime.h>
 
+#import "ZGKVOCDataModel.h"
+#import "ZGKVOCBaseOberver.h"
+#import "ZGKVOCSubObserver.h"
+
+
 @interface ZGKVOController ()
 
 @property (nonatomic, strong) ZGKVODataModel *dataModel;
 @property (nonatomic, strong) ZGKVOObserverA *a;
 @property (nonatomic, strong) ZGKVOObserverB *b;
 
-
+// research
 @property (nonatomic, strong) ZGKVOResearchData *rsDataModel;
 @property (nonatomic, strong) ZGKVOResearchObserverA *rsA;
 @property (nonatomic, strong) ZGKVOResearchObserverB *rsB;
 
-
+// context
+@property (nonatomic, strong) ZGKVOCDataModel *cDataModel;
+@property (nonatomic, strong) ZGKVOCBaseOberver *cBase;
+@property (nonatomic, strong) ZGKVOCSubObserver *cSub;
 
 @end
 
@@ -41,6 +49,13 @@
     self.title = @"KVO";
     
     /**
+     * 数组removeObject 不在数组的对象不会崩溃
+     */
+//    NSMutableArray *mAry = [NSMutableArray arrayWithCapacity:3];
+//    [mAry addObject:@8];
+//    [mAry removeObject:@9];
+    
+    /**
      1，  经过测试 KVO 和通知一样 默认是同步的！！！  不会自己开线程！！
      2，changeValue后，会挨个一次 执行 监听通知的对象的selector ，顺序是 先进后出（与通知相反），就是先监听的对象的selector  反而会后面执行
      3，在哪个线程 changeValue  就在哪个线程 执行 监听对象的 selector（第2点依然适用）
@@ -51,13 +66,20 @@
     
     /**
      * 深入研究KVO ：KVO 观察者 是否 在被观察者的数组保存？
+     * 证明NSKVONotifying_xx 类并不会新增实例变量，也不能新增实例变量，因为他的实例已经形成
+     * 保存被观察者的数组其实在observerinfo 里
      */
 //    [self researchKVO];
     
     /**
      * 深入研究KVO ：关联key   keyPathsForValuesAffectingValueForKey
      */
-    [self researchKVOKeyPathAffecting];
+//    [self researchKVOKeyPathAffecting];
+    
+    /**
+     * 深入研究KOV -- context 参数 意义
+     */
+    [self kvo_context];
     
     
     
@@ -114,6 +136,28 @@
     
     _rsDataModel.name = @"a";
     _rsDataModel.address = @"japan";
+}
+
+- (void)kvo_context
+{
+    _cDataModel = [[ZGKVOCDataModel alloc] init];
+    
+    _cBase = [[ZGKVOCBaseOberver alloc] initWithTarget:_cDataModel];
+//    _cBase = [[ZGKVOCBaseOberver alloc] init];
+//    _cBase.target = _cDataModel;
+//    [_cDataModel addObserver:_cBase forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:ZGKVOCBaseOberverContext];
+    
+    NSLog(@"baseContext %p",ZGKVOCBaseOberverContext);
+    NSLog(@"baseContext value %lx",*(NSUInteger *)ZGKVOCBaseOberverContext);
+    
+    _cSub = [[ZGKVOCSubObserver alloc] initWithTarget:_cDataModel];
+//    _cSub = [[ZGKVOCSubObserver alloc] init];
+//    _cSub.target = _cDataModel;
+//      [_cDataModel addObserver:_cSub forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:ZGKVOCSubObserverContext];
+    
+    _cDataModel.name = @"Z";
+    
+//    [_cSub changName];
 }
 
 
