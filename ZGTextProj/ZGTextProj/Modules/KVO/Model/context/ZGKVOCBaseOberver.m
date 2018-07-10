@@ -14,7 +14,10 @@ void *ZGKVOCBaseOberverContext = &ZGKVOCBaseOberverContext;
 
 - (void)dealloc
 {
-    [self.target removeObserver:self forKeyPath:@"name"];
+    // 移除监听
+    if ([self isMemberOfClass:[ZGKVOCBaseOberver class]]) {
+        [self.target removeObserver:self forKeyPath:@"name"];
+    }
 }
 
 

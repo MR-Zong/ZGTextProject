@@ -21,6 +21,10 @@
 #import "ZGKVOCBaseOberver.h"
 #import "ZGKVOCSubObserver.h"
 
+#import "ZGKVOODataModel.h"
+#import "ZGKVOOObserverA.h"
+#import "ZGKVOOObserverB.h"
+
 
 @interface ZGKVOController ()
 
@@ -37,6 +41,11 @@
 @property (nonatomic, strong) ZGKVOCDataModel *cDataModel;
 @property (nonatomic, strong) ZGKVOCBaseOberver *cBase;
 @property (nonatomic, strong) ZGKVOCSubObserver *cSub;
+
+// observationInfo
+@property (nonatomic, strong) ZGKVOODataModel *oDataModel;
+@property (nonatomic, strong) ZGKVOOObserverA *oA;
+@property (nonatomic, strong) ZGKVOOObserverB *oB;
 
 @end
 
@@ -77,10 +86,18 @@
 //    [self researchKVOKeyPathAffecting];
     
     /**
+     * 深入研究KOV -- observationInfo 参数 意义
+     * 可以重写observationInfo 的getter  setter方法把，observationInfo实例放到当前实例
+     * 的某个实例变量里
+     */
+    [self kvo_observationInfo];
+
+    
+    /**
      * 深入研究KOV -- context 参数 意义
      */
-    [self kvo_context];
-    
+//    [self kvo_context];
+
     
     
 }
@@ -158,6 +175,30 @@
     _cDataModel.name = @"Z";
     
 //    [_cSub changName];
+}
+
+- (void)kvo_observationInfo
+{
+    _oDataModel = [[ZGKVOODataModel alloc] init];
+    
+    _oA = [[ZGKVOOObserverA alloc] init];
+    _oA.target = _oDataModel;
+    [_oDataModel addObserver:_oA forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    [_oDataModel addObserver:_oA forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    
+    NSLog(@"observationInfo %@",_oDataModel.observationInfo);
+    // 此句，为xcode 查看数据结果
+    id obserInfoObj = _oDataModel.observationInfo;
+    NSArray *observaArray = [(NSObject *)_oDataModel.observationInfo valueForKey:@"_observances"];
+    for (id obser in observaArray) {
+        NSLog(@"obser %@",obser);
+    }
+    
+//    _oB = [[ZGKVOOObserverB alloc] init];
+//    _oB.target = _oDataModel;
+//    [_oDataModel addObserver:_oB forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    
+    _oDataModel.name = @"Z";
 }
 
 

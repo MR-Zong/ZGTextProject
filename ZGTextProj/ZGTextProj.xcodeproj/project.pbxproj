@@ -40,6 +40,9 @@
 		EF2EEAB320F4595A00C9FBAD /* ZGKVOCDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAB220F4595A00C9FBAD /* ZGKVOCDataModel.m */; };
 		EF2EEAB620F4597700C9FBAD /* ZGKVOCBaseOberver.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAB520F4597700C9FBAD /* ZGKVOCBaseOberver.m */; };
 		EF2EEAB920F4598600C9FBAD /* ZGKVOCSubObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAB820F4598600C9FBAD /* ZGKVOCSubObserver.m */; };
+		EF2EEAC020F495D300C9FBAD /* ZGKVOODataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEABF20F495D300C9FBAD /* ZGKVOODataModel.m */; };
+		EF2EEAC320F495E900C9FBAD /* ZGKVOOObserverA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAC220F495E900C9FBAD /* ZGKVOOObserverA.m */; };
+		EF2EEAC620F495F900C9FBAD /* ZGKVOOObserverB.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAC520F495F900C9FBAD /* ZGKVOOObserverB.m */; };
 		EF2F666D1FFB90EB00EA4F6F /* ZGInstanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2F666C1FFB90EB00EA4F6F /* ZGInstanceController.m */; };
 		EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2F666F1FFB91A100EA4F6F /* ZGBaseObject.m */; };
 		EF2F66771FFC6B1100EA4F6F /* ZGBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2F66761FFC6B1100EA4F6F /* ZGBlockController.m */; };
@@ -266,6 +269,12 @@
 		EF2EEAB520F4597700C9FBAD /* ZGKVOCBaseOberver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKVOCBaseOberver.m; sourceTree = "<group>"; };
 		EF2EEAB720F4598600C9FBAD /* ZGKVOCSubObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVOCSubObserver.h; sourceTree = "<group>"; };
 		EF2EEAB820F4598600C9FBAD /* ZGKVOCSubObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKVOCSubObserver.m; sourceTree = "<group>"; };
+		EF2EEABE20F495D300C9FBAD /* ZGKVOODataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVOODataModel.h; sourceTree = "<group>"; };
+		EF2EEABF20F495D300C9FBAD /* ZGKVOODataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKVOODataModel.m; sourceTree = "<group>"; };
+		EF2EEAC120F495E900C9FBAD /* ZGKVOOObserverA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVOOObserverA.h; sourceTree = "<group>"; };
+		EF2EEAC220F495E900C9FBAD /* ZGKVOOObserverA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKVOOObserverA.m; sourceTree = "<group>"; };
+		EF2EEAC420F495F900C9FBAD /* ZGKVOOObserverB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVOOObserverB.h; sourceTree = "<group>"; };
+		EF2EEAC520F495F900C9FBAD /* ZGKVOOObserverB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKVOOObserverB.m; sourceTree = "<group>"; };
 		EF2F666B1FFB90EB00EA4F6F /* ZGInstanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGInstanceController.h; sourceTree = "<group>"; };
 		EF2F666C1FFB90EB00EA4F6F /* ZGInstanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGInstanceController.m; sourceTree = "<group>"; };
 		EF2F666E1FFB91A100EA4F6F /* ZGBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBaseObject.h; sourceTree = "<group>"; };
@@ -801,6 +810,19 @@
 			path = context;
 			sourceTree = "<group>";
 		};
+		EF2EEABD20F495BD00C9FBAD /* observationInfo */ = {
+			isa = PBXGroup;
+			children = (
+				EF2EEABE20F495D300C9FBAD /* ZGKVOODataModel.h */,
+				EF2EEABF20F495D300C9FBAD /* ZGKVOODataModel.m */,
+				EF2EEAC120F495E900C9FBAD /* ZGKVOOObserverA.h */,
+				EF2EEAC220F495E900C9FBAD /* ZGKVOOObserverA.m */,
+				EF2EEAC420F495F900C9FBAD /* ZGKVOOObserverB.h */,
+				EF2EEAC520F495F900C9FBAD /* ZGKVOOObserverB.m */,
+			);
+			path = observationInfo;
+			sourceTree = "<group>";
+		};
 		EF2F66671FFB90D300EA4F6F /* Instance */ = {
 			isa = PBXGroup;
 			children = (
@@ -1255,6 +1277,7 @@
 		EF570AFB2022E54B00E14BC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EF2EEABD20F495BD00C9FBAD /* observationInfo */,
 				EF2EEAB020F4594300C9FBAD /* context */,
 				EF2EEAA620F4593B00C9FBAD /* research */,
 				EF570B102022F08200E14BC9 /* ZGKVODataModel.h */,
@@ -2527,6 +2550,7 @@
 				EFFCE4A11F62330F008E2375 /* PinyinHelper.m in Sources */,
 				EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */,
 				EF64EEBF20E4DAC0009B5767 /* ZGEventChainController.m in Sources */,
+				EF2EEAC020F495D300C9FBAD /* ZGKVOODataModel.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
 				EFDCEE3620DE43190076C129 /* ZGAniTextCellController.m in Sources */,
 				EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */,
@@ -2551,6 +2575,7 @@
 				EFFCE49D1F62330F008E2375 /* ChineseToPinyinResource.m in Sources */,
 				EF0A0EAE2006FE3A0095779B /* ZGOScrollManager.m in Sources */,
 				EFC6EE281FF4E78D00E1D2C5 /* ZGCategoryController.m in Sources */,
+				EF2EEAC320F495E900C9FBAD /* ZGKVOOObserverA.m in Sources */,
 				EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */,
 				EFFCE4A81F623F9E008E2375 /* ZGLetterSectionModel.m in Sources */,
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
@@ -2574,6 +2599,7 @@
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,
 				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
 				EF64EEB320E48778009B5767 /* ZGCellopGestureScrollView.m in Sources */,
+				EF2EEAC620F495F900C9FBAD /* ZGKVOOObserverB.m in Sources */,
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
 				EF570B322024625600E14BC9 /* ZGKEDataModel.m in Sources */,
