@@ -68,6 +68,7 @@
 
 #import "ZGEventChainController.h"
 #import "ZGSTestDragingController.h"
+#import "ZGPropertyController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -102,7 +103,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 45;
+    return 46;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -198,15 +199,9 @@
         cell.textLabel.text = @"Animations";
     }else if(indexPath.row == 44){
         cell.textLabel.text = @"eventChain";
+    }else if(indexPath.row == 45){
+        cell.textLabel.text = @"property";
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -354,11 +349,10 @@
     }else if(indexPath.row == 44){
         ZGEventChainController *con = [[ZGEventChainController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 45){
+        ZGPropertyController *con = [[ZGPropertyController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
-
-
-
-
 
 
 
