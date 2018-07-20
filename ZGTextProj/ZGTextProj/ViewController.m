@@ -69,6 +69,7 @@
 #import "ZGEventChainController.h"
 #import "ZGSTestDragingController.h"
 #import "ZGPropertyController.h"
+#import "ZGArchiveController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -103,7 +104,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 46;
+    return 47;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -201,6 +202,8 @@
         cell.textLabel.text = @"eventChain";
     }else if(indexPath.row == 45){
         cell.textLabel.text = @"property";
+    }else if(indexPath.row == 46){
+        cell.textLabel.text = @"archive";
     }
 
 
@@ -351,6 +354,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 45){
         ZGPropertyController *con = [[ZGPropertyController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 46){
+        ZGArchiveController *con = [[ZGArchiveController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
