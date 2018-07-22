@@ -28,6 +28,8 @@
 		EF14C7E82101D3B8007CC07B /* ZGArchiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14C7E72101D3B8007CC07B /* ZGArchiveController.m */; };
 		EF14C7EB2101D419007CC07B /* ZGArchiveModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14C7EA2101D419007CC07B /* ZGArchiveModelA.m */; };
 		EF14C7ED2101E121007CC07B /* modelA3.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF14C7EC2101E121007CC07B /* modelA3.plist */; };
+		EF14C7F021042846007CC07B /* ZGArchiveModelB.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14C7EF21042846007CC07B /* ZGArchiveModelB.m */; };
+		EF14C7F2210428EE007CC07B /* moreData2.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF14C7F1210428ED007CC07B /* moreData2.plist */; };
 		EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1C33011FBBEC0000FB43F9 /* ZGTestViewBoundsController.m */; };
 		EF25CBB420E28077005A7F8C /* ZGNestScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBB320E28077005A7F8C /* ZGNestScrollView.m */; };
 		EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBB620E28145005A7F8C /* ZGNestPageAController.m */; };
@@ -250,6 +252,9 @@
 		EF14C7E92101D419007CC07B /* ZGArchiveModelA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGArchiveModelA.h; sourceTree = "<group>"; };
 		EF14C7EA2101D419007CC07B /* ZGArchiveModelA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGArchiveModelA.m; sourceTree = "<group>"; };
 		EF14C7EC2101E121007CC07B /* modelA3.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = modelA3.plist; sourceTree = "<group>"; };
+		EF14C7EE21042846007CC07B /* ZGArchiveModelB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGArchiveModelB.h; sourceTree = "<group>"; };
+		EF14C7EF21042846007CC07B /* ZGArchiveModelB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGArchiveModelB.m; sourceTree = "<group>"; };
+		EF14C7F1210428ED007CC07B /* moreData2.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = moreData2.plist; sourceTree = "<group>"; };
 		EF1C33001FBBEC0000FB43F9 /* ZGTestViewBoundsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTestViewBoundsController.h; sourceTree = "<group>"; };
 		EF1C33011FBBEC0000FB43F9 /* ZGTestViewBoundsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTestViewBoundsController.m; sourceTree = "<group>"; };
 		EF25CBB220E28077005A7F8C /* ZGNestScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNestScrollView.h; sourceTree = "<group>"; };
@@ -790,6 +795,8 @@
 			children = (
 				EF14C7E92101D419007CC07B /* ZGArchiveModelA.h */,
 				EF14C7EA2101D419007CC07B /* ZGArchiveModelA.m */,
+				EF14C7EE21042846007CC07B /* ZGArchiveModelB.h */,
+				EF14C7EF21042846007CC07B /* ZGArchiveModelB.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1931,6 +1938,7 @@
 				EFDBCDCA1F2B159700C542AD /* LaunchScreen.storyboard */,
 				EFDBCDCD1F2B159700C542AD /* Info.plist */,
 				EF14C7EC2101E121007CC07B /* modelA3.plist */,
+				EF14C7F1210428ED007CC07B /* moreData2.plist */,
 				EFDBCDBC1F2B159700C542AD /* Supporting Files */,
 			);
 			path = ZGTextProj;
@@ -2608,6 +2616,7 @@
 			files = (
 				EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */,
 				EFDBCDCC1F2B159700C542AD /* LaunchScreen.storyboard in Resources */,
+				EF14C7F2210428EE007CC07B /* moreData2.plist in Resources */,
 				EFDBCDC91F2B159700C542AD /* Assets.xcassets in Resources */,
 				EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */,
 				EF14C7ED2101E121007CC07B /* modelA3.plist in Resources */,
@@ -2780,6 +2789,7 @@
 				EF3CFB4420F09DB200FCE02E /* ZGSTestDragingController.m in Sources */,
 				EF3C47C51F384D530039AA5C /* ZGPeople.m in Sources */,
 				EF7A7A242100393D00B79368 /* ZGPropertyController.m in Sources */,
+				EF14C7F021042846007CC07B /* ZGArchiveModelB.m in Sources */,
 				EF0A0EAB2006FE240095779B /* ZGOHeaderScrollView.m in Sources */,
 				EFE4308E20D5305F006930E5 /* ZGAnimationCellNormalController.m in Sources */,
 				EF7231A420DB413200999D3A /* ZGHeaderCollectionViewCell.m in Sources */,
