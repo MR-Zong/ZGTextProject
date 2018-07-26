@@ -110,8 +110,13 @@
 		EF7231AA20DB478200999D3A /* ZGTopicHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7231A920DB478200999D3A /* ZGTopicHeaderView.m */; };
 		EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EF76E21E1FFB324B009D21CF /* videoWithAudio.mp4 */; };
 		EF7A7A242100393D00B79368 /* ZGPropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A7A232100393D00B79368 /* ZGPropertyController.m */; };
-		EF7A7A27210039BA00B79368 /* ZGProModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A7A26210039BA00B79368 /* ZGProModelA.m */; };
-		EF7A7A2A21003BAF00B79368 /* ZGProModelB.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A7A2921003BAF00B79368 /* ZGProModelB.m */; };
+		EF7F2C9521070F9500AC6755 /* ZGProModelB.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2C9321070F9400AC6755 /* ZGProModelB.m */; };
+		EF7F2C9621070F9500AC6755 /* ZGProModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2C9421070F9400AC6755 /* ZGProModelA.m */; };
+		EF7F2C9A2107106600AC6755 /* ZGPAUTModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2C992107106600AC6755 /* ZGPAUTModelA.m */; };
+		EF7F2CA12108117900AC6755 /* ZGImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2CA02108117900AC6755 /* ZGImageController.m */; };
+		EF7F2CA42108176E00AC6755 /* news_pop_six_winged_demon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7F2CA22108176E00AC6755 /* news_pop_six_winged_demon@3x.png */; };
+		EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7F2CA32108176E00AC6755 /* news_pop_six_winged_demon@2x.png */; };
+		EF7F2CA7210972F800AC6755 /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7F2CA6210972F800AC6755 /* img.jpg */; };
 		EF85FF3A204A4E9000F5186A /* ZGGCDTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */; };
 		EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8A660F20C384B8002FD95F /* ZGNavView2Controller.m */; };
 		EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8E19701F56618100E19DA4 /* ZGStoreKitController.m */; };
@@ -124,6 +129,8 @@
 		EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC58271F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m */; };
 		EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC582D1F341E4200B94D93 /* ZGProgressHUD.m */; };
 		EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC58301F3420E000B94D93 /* ZGImagesToVideoManager.m */; };
+		EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB94E82210470B100484950 /* ZGCategoryExtendController.m */; };
+		EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB94E852104711200484950 /* ZGCategoryExtendA.m */; };
 		EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA8C2069EDE000F42842 /* ZGCAAnimationController.m */; };
 		EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA93206B46E100F42842 /* UncaughtExceptionHandler.m */; };
 		EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA96206B47A500F42842 /* ZGCrashController.m */; };
@@ -415,10 +422,17 @@
 		EF76E21E1FFB324B009D21CF /* videoWithAudio.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoWithAudio.mp4; sourceTree = "<group>"; };
 		EF7A7A222100393D00B79368 /* ZGPropertyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPropertyController.h; sourceTree = "<group>"; };
 		EF7A7A232100393D00B79368 /* ZGPropertyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPropertyController.m; sourceTree = "<group>"; };
-		EF7A7A25210039BA00B79368 /* ZGProModelA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGProModelA.h; sourceTree = "<group>"; };
-		EF7A7A26210039BA00B79368 /* ZGProModelA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGProModelA.m; sourceTree = "<group>"; };
-		EF7A7A2821003BAF00B79368 /* ZGProModelB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGProModelB.h; sourceTree = "<group>"; };
-		EF7A7A2921003BAF00B79368 /* ZGProModelB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGProModelB.m; sourceTree = "<group>"; };
+		EF7F2C9121070F9400AC6755 /* ZGProModelB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGProModelB.h; sourceTree = "<group>"; };
+		EF7F2C9221070F9400AC6755 /* ZGProModelA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGProModelA.h; sourceTree = "<group>"; };
+		EF7F2C9321070F9400AC6755 /* ZGProModelB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGProModelB.m; sourceTree = "<group>"; };
+		EF7F2C9421070F9400AC6755 /* ZGProModelA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGProModelA.m; sourceTree = "<group>"; };
+		EF7F2C982107106600AC6755 /* ZGPAUTModelA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPAUTModelA.h; sourceTree = "<group>"; };
+		EF7F2C992107106600AC6755 /* ZGPAUTModelA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPAUTModelA.m; sourceTree = "<group>"; };
+		EF7F2C9F2108117900AC6755 /* ZGImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGImageController.h; sourceTree = "<group>"; };
+		EF7F2CA02108117900AC6755 /* ZGImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGImageController.m; sourceTree = "<group>"; };
+		EF7F2CA22108176E00AC6755 /* news_pop_six_winged_demon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news_pop_six_winged_demon@3x.png"; sourceTree = "<group>"; };
+		EF7F2CA32108176E00AC6755 /* news_pop_six_winged_demon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news_pop_six_winged_demon@2x.png"; sourceTree = "<group>"; };
+		EF7F2CA6210972F800AC6755 /* img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpg; sourceTree = "<group>"; };
 		EF85FF38204A4E9000F5186A /* ZGGCDTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGGCDTestController.h; sourceTree = "<group>"; };
 		EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGGCDTestController.m; sourceTree = "<group>"; };
 		EF8A660E20C384B8002FD95F /* ZGNavView2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNavView2Controller.h; sourceTree = "<group>"; };
@@ -443,6 +457,10 @@
 		EFAC582D1F341E4200B94D93 /* ZGProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGProgressHUD.m; sourceTree = "<group>"; };
 		EFAC582F1F3420E000B94D93 /* ZGImagesToVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGImagesToVideoManager.h; sourceTree = "<group>"; };
 		EFAC58301F3420E000B94D93 /* ZGImagesToVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGImagesToVideoManager.m; sourceTree = "<group>"; };
+		EFB94E81210470B100484950 /* ZGCategoryExtendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCategoryExtendController.h; sourceTree = "<group>"; };
+		EFB94E82210470B100484950 /* ZGCategoryExtendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCategoryExtendController.m; sourceTree = "<group>"; };
+		EFB94E842104711200484950 /* ZGCategoryExtendA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCategoryExtendA.h; sourceTree = "<group>"; };
+		EFB94E852104711200484950 /* ZGCategoryExtendA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCategoryExtendA.m; sourceTree = "<group>"; };
 		EFC4FA8B2069EDE000F42842 /* ZGCAAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCAAnimationController.h; sourceTree = "<group>"; };
 		EFC4FA8C2069EDE000F42842 /* ZGCAAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCAAnimationController.m; sourceTree = "<group>"; };
 		EFC4FA92206B46E100F42842 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
@@ -1604,15 +1622,66 @@
 		EF7A7A202100392B00B79368 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EF7A7A25210039BA00B79368 /* ZGProModelA.h */,
-				EF7A7A26210039BA00B79368 /* ZGProModelA.m */,
-				EF7A7A2821003BAF00B79368 /* ZGProModelB.h */,
-				EF7A7A2921003BAF00B79368 /* ZGProModelB.m */,
+				EF7F2C9721070FA500AC6755 /* automic */,
+				EF7F2C9021070F9400AC6755 /* synthesize */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
 		EF7A7A212100392B00B79368 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF7F2C9021070F9400AC6755 /* synthesize */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F2C9121070F9400AC6755 /* ZGProModelB.h */,
+				EF7F2C9221070F9400AC6755 /* ZGProModelA.h */,
+				EF7F2C9321070F9400AC6755 /* ZGProModelB.m */,
+				EF7F2C9421070F9400AC6755 /* ZGProModelA.m */,
+			);
+			path = synthesize;
+			sourceTree = "<group>";
+		};
+		EF7F2C9721070FA500AC6755 /* automic */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F2C982107106600AC6755 /* ZGPAUTModelA.h */,
+				EF7F2C992107106600AC6755 /* ZGPAUTModelA.m */,
+			);
+			path = automic;
+			sourceTree = "<group>";
+		};
+		EF7F2C9B2108116A00AC6755 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F2C9C2108116A00AC6755 /* Controller */,
+				EF7F2C9D2108116A00AC6755 /* Model */,
+				EF7F2C9E2108116A00AC6755 /* View */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		EF7F2C9C2108116A00AC6755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F2C9F2108117900AC6755 /* ZGImageController.h */,
+				EF7F2CA02108117900AC6755 /* ZGImageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF7F2C9D2108116A00AC6755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF7F2C9E2108116A00AC6755 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1885,6 +1954,8 @@
 			children = (
 				EFC6EE261FF4E78D00E1D2C5 /* ZGCategoryController.h */,
 				EFC6EE271FF4E78D00E1D2C5 /* ZGCategoryController.m */,
+				EFB94E81210470B100484950 /* ZGCategoryExtendController.h */,
+				EFB94E82210470B100484950 /* ZGCategoryExtendController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1897,6 +1968,8 @@
 				EFC6EE2C1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.h */,
 				EFC6EE2D1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.m */,
 				EFC56B292016CB0000BA5487 /* ZGCategoryProtocol.h */,
+				EFB94E842104711200484950 /* ZGCategoryExtendA.h */,
+				EFB94E852104711200484950 /* ZGCategoryExtendA.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1933,6 +2006,7 @@
 				EFDBCDC21F2B159700C542AD /* ViewController.h */,
 				EFDBCDC31F2B159700C542AD /* ViewController.m */,
 				EFFC13551F3454D300E6F664 /* myPlayer.mp4 */,
+				EF7F2CA6210972F800AC6755 /* img.jpg */,
 				EFDBCDC51F2B159700C542AD /* Main.storyboard */,
 				EFDBCDC81F2B159700C542AD /* Assets.xcassets */,
 				EFDBCDCA1F2B159700C542AD /* LaunchScreen.storyboard */,
@@ -1947,6 +2021,8 @@
 		EFDBCDBC1F2B159700C542AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EF7F2CA32108176E00AC6755 /* news_pop_six_winged_demon@2x.png */,
+				EF7F2CA22108176E00AC6755 /* news_pop_six_winged_demon@3x.png */,
 				EF76E21E1FFB324B009D21CF /* videoWithAudio.mp4 */,
 				EFDBCDBD1F2B159700C542AD /* main.m */,
 			);
@@ -1974,6 +2050,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF7F2C9B2108116A00AC6755 /* image */,
 				EF14C7E22101D3A6007CC07B /* NSArchive */,
 				EF7A7A1E2100392B00B79368 /* Property */,
 				EF64EEB920E4DAA9009B5767 /* EventChain */,
@@ -2617,10 +2694,13 @@
 				EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */,
 				EFDBCDCC1F2B159700C542AD /* LaunchScreen.storyboard in Resources */,
 				EF14C7F2210428EE007CC07B /* moreData2.plist in Resources */,
+				EF7F2CA7210972F800AC6755 /* img.jpg in Resources */,
 				EFDBCDC91F2B159700C542AD /* Assets.xcassets in Resources */,
+				EF7F2CA42108176E00AC6755 /* news_pop_six_winged_demon@3x.png in Resources */,
 				EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */,
 				EF14C7ED2101E121007CC07B /* modelA3.plist in Resources */,
 				EFFC13561F3454D300E6F664 /* myPlayer.mp4 in Resources */,
+				EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */,
 				EFDBCDC71F2B159700C542AD /* Main.storyboard in Resources */,
 				EFFCE4A21F62330F008E2375 /* unicode_to_hanyu_pinyin.txt in Resources */,
 			);
@@ -2658,6 +2738,7 @@
 				EFDCEE3620DE43190076C129 /* ZGAniTextCellController.m in Sources */,
 				EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */,
 				EFFCE4AF1F624D3F008E2375 /* ZGCalendarController.m in Sources */,
+				EF7F2C9A2107106600AC6755 /* ZGPAUTModelA.m in Sources */,
 				EF570B252024015300E14BC9 /* ZGTestCopyViewController.m in Sources */,
 				EFC56B7F20181FA400BA5487 /* ZGHFGirl.m in Sources */,
 				EF01D5E620AE6FC00023B282 /* ZGNTestController.m in Sources */,
@@ -2676,6 +2757,8 @@
 				EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */,
 				EF2F667A1FFC6B5D00EA4F6F /* ZGBlockPeople.m in Sources */,
 				EFFCE49D1F62330F008E2375 /* ChineseToPinyinResource.m in Sources */,
+				EF7F2CA12108117900AC6755 /* ZGImageController.m in Sources */,
+				EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */,
 				EF0A0EAE2006FE3A0095779B /* ZGOScrollManager.m in Sources */,
 				EFC6EE281FF4E78D00E1D2C5 /* ZGCategoryController.m in Sources */,
 				EF2EEAC320F495E900C9FBAD /* ZGKVOOObserverA.m in Sources */,
@@ -2684,6 +2767,7 @@
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
 				EFE4308220D5017C006930E5 /* ZGAnimationsCellController.m in Sources */,
 				EF64EEB020E485A3009B5767 /* ZGCellOpGestureTable.m in Sources */,
+				EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */,
 				EFE4308B20D51721006930E5 /* ZGAnimationsTableView.m in Sources */,
 				EFF1C21420E769AD00DC57E5 /* ZGMemoryWebView.m in Sources */,
 				EF3CAA8720BD60B000FCC752 /* ZGCellOptionMGController.m in Sources */,
@@ -2717,6 +2801,7 @@
 				EFFCE47D1F60F6AD008E2375 /* ZGOffScreenController.m in Sources */,
 				EF0A0EA52006FD9E0095779B /* ZGOneScrollViewController.m in Sources */,
 				EF67D66F2057644D00FA65DC /* ZGINSubObject.m in Sources */,
+				EF7F2C9521070F9500AC6755 /* ZGProModelB.m in Sources */,
 				EFFCE4C71F64D67C008E2375 /* ZGChineseDate.m in Sources */,
 				EF7231AA20DB478200999D3A /* ZGTopicHeaderView.m in Sources */,
 				EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */,
@@ -2752,6 +2837,7 @@
 				EF67D669205763FE00FA65DC /* ZGInitializeController.m in Sources */,
 				EFDCEE4020DF93600076C129 /* ZGAnisTestController.m in Sources */,
 				EFFCE4BE1F628C42008E2375 /* NSDate+Calendar.m in Sources */,
+				EF7F2C9621070F9500AC6755 /* ZGProModelA.m in Sources */,
 				EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */,
 				EFFCE4CA1F651DB7008E2375 /* ZGHolidayManager.m in Sources */,
 				EF570B2F2024616700E14BC9 /* ZGKEViewController.m in Sources */,
@@ -2769,7 +2855,6 @@
 				EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
-				EF7A7A27210039BA00B79368 /* ZGProModelA.m in Sources */,
 				EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */,
 				EF2F668F1FFF638800EA4F6F /* ZGTbTestController.m in Sources */,
 				EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */,
@@ -2816,7 +2901,6 @@
 				EF3FE04C2010A5090088C2C9 /* ZGWeakSelfController.m in Sources */,
 				EF570B032022E57E00E14BC9 /* ZGNotificationController.m in Sources */,
 				EFC6EE201FF48CB500E1D2C5 /* ZGTestWindowController.m in Sources */,
-				EF7A7A2A21003BAF00B79368 /* ZGProModelB.m in Sources */,
 				EFAC581F1F332B5C00B94D93 /* ZGComposeVideoAndAudioViewController.m in Sources */,
 				EF0A0E9820060CED0095779B /* ZGSV1Delegate.m in Sources */,
 				EFF1DA5620D1049E00CBC680 /* ZGPageBController.m in Sources */,

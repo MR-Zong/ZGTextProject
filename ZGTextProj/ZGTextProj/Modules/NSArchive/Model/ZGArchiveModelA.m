@@ -8,6 +8,7 @@
 
 #import "ZGArchiveModelA.h"
 
+
 @implementation ZGArchiveModelA
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder

@@ -9,6 +9,7 @@
 #import "ZGPropertyController.h"
 #import "ZGProModelA.h"
 #import "ZGProModelB.h"
+#import "ZGPAUTModelA.h"
 
 @interface ZGPropertyController ()
 
@@ -23,7 +24,13 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"property";
     
-    [self testProperty];
+    /** 测试 @synthesize
+     */
+//    [self testProperty];
+    
+    /** 测试 automic
+     */
+    [self testAutomic];
 }
 
 - (void)testProperty
@@ -34,6 +41,18 @@
     
     ZGProModelB *b = [[ZGProModelB alloc] init];
     b.name = @"日本";
+}
+
+- (void)testAutomic
+{
+    ZGPAUTModelA *a = [[ZGPAUTModelA alloc] init];
+
+
+    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+
+    dispatch_async(queue, ^{
+
+    });
 }
 
 

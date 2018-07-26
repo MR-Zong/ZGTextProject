@@ -18,7 +18,11 @@
 #import "ZGCalendarController.h"
 #import "ZGTestViewBoundsController.h"
 #import "ZGTestWindowController.h"
+
+// category
 #import "ZGCategoryController.h"
+#import "ZGCategoryExtendController.h"
+
 #import "ZGAVAudioTrackController.h"
 #import "ZGInstanceController.h"
 #import "ZGBlockController.h"
@@ -71,6 +75,8 @@
 #import "ZGPropertyController.h"
 #import "ZGArchiveController.h"
 
+#import "ZGImageController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -104,7 +110,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 47;
+    return 48;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -204,6 +210,8 @@
         cell.textLabel.text = @"property";
     }else if(indexPath.row == 46){
         cell.textLabel.text = @"archive";
+    }else if(indexPath.row == 47){
+        cell.textLabel.text = @"image";
     }
 
 
@@ -248,7 +256,7 @@
         ZGTestWindowController *con = [[ZGTestWindowController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 10){
-        ZGCategoryController *con = [[ZGCategoryController alloc] init];
+        ZGCategoryExtendController *con = [[ZGCategoryExtendController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 11){
         ZGAVAudioTrackController *con = [[ZGAVAudioTrackController alloc] init];
@@ -357,6 +365,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 46){
         ZGArchiveController *con = [[ZGArchiveController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 47){
+        ZGImageController *con = [[ZGImageController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
