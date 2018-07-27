@@ -117,6 +117,14 @@
 		EF7F2CA42108176E00AC6755 /* news_pop_six_winged_demon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7F2CA22108176E00AC6755 /* news_pop_six_winged_demon@3x.png */; };
 		EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7F2CA32108176E00AC6755 /* news_pop_six_winged_demon@2x.png */; };
 		EF7F2CA7210972F800AC6755 /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7F2CA6210972F800AC6755 /* img.jpg */; };
+		EF7F2CCA210AF49F00AC6755 /* ZGScrollTabIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2CC9210AF49F00AC6755 /* ZGScrollTabIndicatorController.m */; };
+		EF7F2CCD210AF4B700AC6755 /* ZGSTITabView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2CCC210AF4B700AC6755 /* ZGSTITabView.m */; };
+		EF7F2CD0210AF4CD00AC6755 /* ZGSTIScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2CCF210AF4CD00AC6755 /* ZGSTIScrollManager.m */; };
+		EF7F2CD3210AF75700AC6755 /* ZGSTITabModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2CD2210AF75700AC6755 /* ZGSTITabModel.m */; };
+		EF7F2CD6210AF7BF00AC6755 /* ZGSTIHotController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2CD5210AF7BF00AC6755 /* ZGSTIHotController.m */; };
+		EF7F2CD9210AF7D000AC6755 /* ZGSTIDiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2CD8210AF7D000AC6755 /* ZGSTIDiscoveryController.m */; };
+		EF7F2CDC210AF7DD00AC6755 /* ZGSTIStoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2CDB210AF7DD00AC6755 /* ZGSTIStoryController.m */; };
+		EF7F2CDF210AF88500AC6755 /* ZGSTIBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F2CDE210AF88500AC6755 /* ZGSTIBaseController.m */; };
 		EF85FF3A204A4E9000F5186A /* ZGGCDTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */; };
 		EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8A660F20C384B8002FD95F /* ZGNavView2Controller.m */; };
 		EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8E19701F56618100E19DA4 /* ZGStoreKitController.m */; };
@@ -433,6 +441,22 @@
 		EF7F2CA22108176E00AC6755 /* news_pop_six_winged_demon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news_pop_six_winged_demon@3x.png"; sourceTree = "<group>"; };
 		EF7F2CA32108176E00AC6755 /* news_pop_six_winged_demon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news_pop_six_winged_demon@2x.png"; sourceTree = "<group>"; };
 		EF7F2CA6210972F800AC6755 /* img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpg; sourceTree = "<group>"; };
+		EF7F2CC8210AF49F00AC6755 /* ZGScrollTabIndicatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGScrollTabIndicatorController.h; sourceTree = "<group>"; };
+		EF7F2CC9210AF49F00AC6755 /* ZGScrollTabIndicatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGScrollTabIndicatorController.m; sourceTree = "<group>"; };
+		EF7F2CCB210AF4B700AC6755 /* ZGSTITabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTITabView.h; sourceTree = "<group>"; };
+		EF7F2CCC210AF4B700AC6755 /* ZGSTITabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTITabView.m; sourceTree = "<group>"; };
+		EF7F2CCE210AF4CD00AC6755 /* ZGSTIScrollManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTIScrollManager.h; sourceTree = "<group>"; };
+		EF7F2CCF210AF4CD00AC6755 /* ZGSTIScrollManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTIScrollManager.m; sourceTree = "<group>"; };
+		EF7F2CD1210AF75700AC6755 /* ZGSTITabModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTITabModel.h; sourceTree = "<group>"; };
+		EF7F2CD2210AF75700AC6755 /* ZGSTITabModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTITabModel.m; sourceTree = "<group>"; };
+		EF7F2CD4210AF7BF00AC6755 /* ZGSTIHotController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTIHotController.h; sourceTree = "<group>"; };
+		EF7F2CD5210AF7BF00AC6755 /* ZGSTIHotController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTIHotController.m; sourceTree = "<group>"; };
+		EF7F2CD7210AF7D000AC6755 /* ZGSTIDiscoveryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTIDiscoveryController.h; sourceTree = "<group>"; };
+		EF7F2CD8210AF7D000AC6755 /* ZGSTIDiscoveryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTIDiscoveryController.m; sourceTree = "<group>"; };
+		EF7F2CDA210AF7DD00AC6755 /* ZGSTIStoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTIStoryController.h; sourceTree = "<group>"; };
+		EF7F2CDB210AF7DD00AC6755 /* ZGSTIStoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTIStoryController.m; sourceTree = "<group>"; };
+		EF7F2CDD210AF88500AC6755 /* ZGSTIBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTIBaseController.h; sourceTree = "<group>"; };
+		EF7F2CDE210AF88500AC6755 /* ZGSTIBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTIBaseController.m; sourceTree = "<group>"; };
 		EF85FF38204A4E9000F5186A /* ZGGCDTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGGCDTestController.h; sourceTree = "<group>"; };
 		EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGGCDTestController.m; sourceTree = "<group>"; };
 		EF8A660E20C384B8002FD95F /* ZGNavView2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNavView2Controller.h; sourceTree = "<group>"; };
@@ -1688,6 +1712,53 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EF7F2CC4210AF46600AC6755 /* ScrollTabIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F2CC5210AF46600AC6755 /* Controller */,
+				EF7F2CC6210AF46600AC6755 /* Model */,
+				EF7F2CC7210AF46600AC6755 /* View */,
+			);
+			path = ScrollTabIndicator;
+			sourceTree = "<group>";
+		};
+		EF7F2CC5210AF46600AC6755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F2CC8210AF49F00AC6755 /* ZGScrollTabIndicatorController.h */,
+				EF7F2CC9210AF49F00AC6755 /* ZGScrollTabIndicatorController.m */,
+				EF7F2CD4210AF7BF00AC6755 /* ZGSTIHotController.h */,
+				EF7F2CD5210AF7BF00AC6755 /* ZGSTIHotController.m */,
+				EF7F2CD7210AF7D000AC6755 /* ZGSTIDiscoveryController.h */,
+				EF7F2CD8210AF7D000AC6755 /* ZGSTIDiscoveryController.m */,
+				EF7F2CDA210AF7DD00AC6755 /* ZGSTIStoryController.h */,
+				EF7F2CDB210AF7DD00AC6755 /* ZGSTIStoryController.m */,
+				EF7F2CDD210AF88500AC6755 /* ZGSTIBaseController.h */,
+				EF7F2CDE210AF88500AC6755 /* ZGSTIBaseController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF7F2CC6210AF46600AC6755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F2CCE210AF4CD00AC6755 /* ZGSTIScrollManager.h */,
+				EF7F2CCF210AF4CD00AC6755 /* ZGSTIScrollManager.m */,
+				EF7F2CD1210AF75700AC6755 /* ZGSTITabModel.h */,
+				EF7F2CD2210AF75700AC6755 /* ZGSTITabModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF7F2CC7210AF46600AC6755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F2CCB210AF4B700AC6755 /* ZGSTITabView.h */,
+				EF7F2CCC210AF4B700AC6755 /* ZGSTITabView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EF85FF34204A4E7B00F5186A /* GCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -2050,6 +2121,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF7F2CC4210AF46600AC6755 /* ScrollTabIndicator */,
 				EF7F2C9B2108116A00AC6755 /* image */,
 				EF14C7E22101D3A6007CC07B /* NSArchive */,
 				EF7A7A1E2100392B00B79368 /* Property */,
@@ -2750,15 +2822,18 @@
 				EFE4308820D50F82006930E5 /* ZGAnimationCell.m in Sources */,
 				EF570B122022F08200E14BC9 /* ZGKVODataModel.m in Sources */,
 				EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */,
+				EF7F2CD3210AF75700AC6755 /* ZGSTITabModel.m in Sources */,
 				EFFCE4841F62253C008E2375 /* ZGAddressListController.m in Sources */,
 				EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */,
 				EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */,
 				EF0A0EB1200701DF0095779B /* ZGSubTabBarView.m in Sources */,
 				EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */,
+				EF7F2CD0210AF4CD00AC6755 /* ZGSTIScrollManager.m in Sources */,
 				EF2F667A1FFC6B5D00EA4F6F /* ZGBlockPeople.m in Sources */,
 				EFFCE49D1F62330F008E2375 /* ChineseToPinyinResource.m in Sources */,
 				EF7F2CA12108117900AC6755 /* ZGImageController.m in Sources */,
 				EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */,
+				EF7F2CD9210AF7D000AC6755 /* ZGSTIDiscoveryController.m in Sources */,
 				EF0A0EAE2006FE3A0095779B /* ZGOScrollManager.m in Sources */,
 				EFC6EE281FF4E78D00E1D2C5 /* ZGCategoryController.m in Sources */,
 				EF2EEAC320F495E900C9FBAD /* ZGKVOOObserverA.m in Sources */,
@@ -2779,8 +2854,10 @@
 				EFA9A62320AA765A00E73288 /* ZGMainOperation.m in Sources */,
 				EFFCE4BB1F62828C008E2375 /* ZGCalendarManager.m in Sources */,
 				EF0A0E8F2005C41F0095779B /* ZGSBaseScrollView.m in Sources */,
+				EF7F2CCA210AF49F00AC6755 /* ZGScrollTabIndicatorController.m in Sources */,
 				EFE4308520D501CF006930E5 /* ZGHeaderCell.m in Sources */,
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
+				EF7F2CD6210AF7BF00AC6755 /* ZGSTIHotController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,
@@ -2815,6 +2892,7 @@
 				EF570B352024626400E14BC9 /* ZGKEObserverA.m in Sources */,
 				EF2F666D1FFB90EB00EA4F6F /* ZGInstanceController.m in Sources */,
 				EF570B1F2024004D00E14BC9 /* ZGCYViewController.m in Sources */,
+				EF7F2CDC210AF7DD00AC6755 /* ZGSTIStoryController.m in Sources */,
 				EF3CAAAC20C141C400FCC752 /* ZGNRoot2Controller.m in Sources */,
 				EF14C7E82101D3B8007CC07B /* ZGArchiveController.m in Sources */,
 				EF570B0F2022E95900E14BC9 /* ZGNFObserverB.m in Sources */,
@@ -2870,12 +2948,14 @@
 				EF2F66881FFF58E000EA4F6F /* ZGPLzong.m in Sources */,
 				EF2EEAB320F4595A00C9FBAD /* ZGKVOCDataModel.m in Sources */,
 				EFFCE4B21F6271F9008E2375 /* ZGCalendarHeaderView.m in Sources */,
+				EF7F2CCD210AF4B700AC6755 /* ZGSTITabView.m in Sources */,
 				EFAC581C1F30B61F00B94D93 /* ZGTestBlockViewController.m in Sources */,
 				EF3CFB4420F09DB200FCE02E /* ZGSTestDragingController.m in Sources */,
 				EF3C47C51F384D530039AA5C /* ZGPeople.m in Sources */,
 				EF7A7A242100393D00B79368 /* ZGPropertyController.m in Sources */,
 				EF14C7F021042846007CC07B /* ZGArchiveModelB.m in Sources */,
 				EF0A0EAB2006FE240095779B /* ZGOHeaderScrollView.m in Sources */,
+				EF7F2CDF210AF88500AC6755 /* ZGSTIBaseController.m in Sources */,
 				EFE4308E20D5305F006930E5 /* ZGAnimationCellNormalController.m in Sources */,
 				EF7231A420DB413200999D3A /* ZGHeaderCollectionViewCell.m in Sources */,
 				EF3CAA8F20BD616800FCC752 /* MGSwipeButton.m in Sources */,

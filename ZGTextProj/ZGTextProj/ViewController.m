@@ -76,6 +76,7 @@
 #import "ZGArchiveController.h"
 
 #import "ZGImageController.h"
+#import "ZGScrollTabIndicatorController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -110,7 +111,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 48;
+    return 49;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -212,7 +213,10 @@
         cell.textLabel.text = @"archive";
     }else if(indexPath.row == 47){
         cell.textLabel.text = @"image";
+    }else if(indexPath.row == 48){
+        cell.textLabel.text = @"scrollTabIndicator";
     }
+
 
 
 
@@ -368,6 +372,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 47){
         ZGImageController *con = [[ZGImageController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 48){
+        ZGScrollTabIndicatorController *con = [[ZGScrollTabIndicatorController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
