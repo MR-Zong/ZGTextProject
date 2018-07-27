@@ -21,9 +21,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"title";
     
-    [self testPNGToJpg];
+//    [self testPNGToJpg];
 //    [self testCGImageData];
-//    [self testImageData];
+    [self testImageData];
 //    [self testImage];
 }
 
@@ -35,6 +35,7 @@
 
 - (void)testImageData
 {
+    NSLog(@"cmd %@",NSStringFromSelector(_cmd));
     // news_pop_six_winged_demon@2x
 //    NSString *fileP = [[NSBundle mainBundle] pathForResource:@"news_pop_six_winged_demon@2x" ofType:@"png"];
 //    NSData *data = [NSData dataWithContentsOfFile:fileP];

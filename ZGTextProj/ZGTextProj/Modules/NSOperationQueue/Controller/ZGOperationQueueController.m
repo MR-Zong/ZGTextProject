@@ -42,7 +42,15 @@
 //    [self testMainOperationWaitAndContinue];
     
     // NSOperationQueue测试： 但注意是测试自定义NSOperation 实现start方式
-    [self testStartOperationWaitAndContinue];
+//    [self testStartOperationWaitAndContinue];
+    
+    /** NSOperationQueue测试：maxConcurrentOperationCount 设置为0会怎样?
+     * 答案如下：
+     * maxConcurrentOperationCount 默认值是 -1，负数时，线程数量不限制
+     * 实验证明：maxConcurrentOperationCount = 0 时，queue不会执行Operation
+     * maxConcurrentOperationCount > 0 时，按设置值，限制最大线程数
+     */
+    [self testQueueMaxCount];
 }
 
 - (void)testOperation
@@ -223,6 +231,33 @@
         NSLog(@"add bopC");
         [queue addOperation:bopC];
     });
+}
+
+#pragma mark - testQueueMaxCount
+- (void)testQueueMaxCount
+{
+    /** NSOperationQueue测试：maxConcurrentOperationCount 设置为0会怎样?
+     * 答案如下：
+     * maxConcurrentOperationCount 默认值是 -1，负数时，线程数量不限制
+     * 实验证明：maxConcurrentOperationCount = 0 时，queue不会执行Operation
+     * maxConcurrentOperationCount > 0 时，按设置值，限制最大线程数
+     */
+    NSOperationQueue *queue =[[NSOperationQueue alloc] init];
+//    queue.maxConcurrentOperationCount = -1;
+    NSLog(@"maxConcurrentOperationCount 默认值: %zd",queue.maxConcurrentOperationCount);
+    
+    NSLog(@"maxConcurrentOperationCount 测试");
+    NSBlockOperation *bo = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"bo thread %@",[NSThread currentThread]);
+        NSLog(@"maxConcurrentOperationCount = 0，会开辟线程吗？");
+    }];
+    
+    NSBlockOperation *bo1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"bo1 thread %@",[NSThread currentThread]);
+    }];
+    
+    [queue addOperation:bo];
+    [queue addOperation:bo1];
 }
 
 
