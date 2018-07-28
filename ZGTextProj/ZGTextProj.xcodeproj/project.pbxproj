@@ -30,6 +30,7 @@
 		EF14C7ED2101E121007CC07B /* modelA3.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF14C7EC2101E121007CC07B /* modelA3.plist */; };
 		EF14C7F021042846007CC07B /* ZGArchiveModelB.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14C7EF21042846007CC07B /* ZGArchiveModelB.m */; };
 		EF14C7F2210428EE007CC07B /* moreData2.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF14C7F1210428ED007CC07B /* moreData2.plist */; };
+		EF192AA8210C152400868D5B /* ZGLockAndSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF192AA7210C152400868D5B /* ZGLockAndSemaphoreController.m */; };
 		EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1C33011FBBEC0000FB43F9 /* ZGTestViewBoundsController.m */; };
 		EF25CBB420E28077005A7F8C /* ZGNestScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBB320E28077005A7F8C /* ZGNestScrollView.m */; };
 		EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBB620E28145005A7F8C /* ZGNestPageAController.m */; };
@@ -270,6 +271,8 @@
 		EF14C7EE21042846007CC07B /* ZGArchiveModelB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGArchiveModelB.h; sourceTree = "<group>"; };
 		EF14C7EF21042846007CC07B /* ZGArchiveModelB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGArchiveModelB.m; sourceTree = "<group>"; };
 		EF14C7F1210428ED007CC07B /* moreData2.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = moreData2.plist; sourceTree = "<group>"; };
+		EF192AA6210C152400868D5B /* ZGLockAndSemaphoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGLockAndSemaphoreController.h; sourceTree = "<group>"; };
+		EF192AA7210C152400868D5B /* ZGLockAndSemaphoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGLockAndSemaphoreController.m; sourceTree = "<group>"; };
 		EF1C33001FBBEC0000FB43F9 /* ZGTestViewBoundsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTestViewBoundsController.h; sourceTree = "<group>"; };
 		EF1C33011FBBEC0000FB43F9 /* ZGTestViewBoundsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTestViewBoundsController.m; sourceTree = "<group>"; };
 		EF25CBB220E28077005A7F8C /* ZGNestScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNestScrollView.h; sourceTree = "<group>"; };
@@ -844,6 +847,39 @@
 			sourceTree = "<group>";
 		};
 		EF14C7E52101D3A6007CC07B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF192AA2210C150000868D5B /* lock&semaphore */ = {
+			isa = PBXGroup;
+			children = (
+				EF192AA3210C150000868D5B /* Controller */,
+				EF192AA4210C150000868D5B /* Model */,
+				EF192AA5210C150000868D5B /* View */,
+			);
+			path = "lock&semaphore";
+			sourceTree = "<group>";
+		};
+		EF192AA3210C150000868D5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF192AA6210C152400868D5B /* ZGLockAndSemaphoreController.h */,
+				EF192AA7210C152400868D5B /* ZGLockAndSemaphoreController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF192AA4210C150000868D5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF192AA5210C150000868D5B /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -2121,6 +2157,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF192AA2210C150000868D5B /* lock&semaphore */,
 				EF7F2CC4210AF46600AC6755 /* ScrollTabIndicator */,
 				EF7F2C9B2108116A00AC6755 /* image */,
 				EF14C7E22101D3A6007CC07B /* NSArchive */,
@@ -2834,6 +2871,7 @@
 				EF7F2CA12108117900AC6755 /* ZGImageController.m in Sources */,
 				EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */,
 				EF7F2CD9210AF7D000AC6755 /* ZGSTIDiscoveryController.m in Sources */,
+				EF192AA8210C152400868D5B /* ZGLockAndSemaphoreController.m in Sources */,
 				EF0A0EAE2006FE3A0095779B /* ZGOScrollManager.m in Sources */,
 				EFC6EE281FF4E78D00E1D2C5 /* ZGCategoryController.m in Sources */,
 				EF2EEAC320F495E900C9FBAD /* ZGKVOOObserverA.m in Sources */,

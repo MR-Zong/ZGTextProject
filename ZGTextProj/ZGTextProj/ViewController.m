@@ -77,6 +77,7 @@
 
 #import "ZGImageController.h"
 #import "ZGScrollTabIndicatorController.h"
+#import "ZGLockAndSemaphoreController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -111,7 +112,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 49;
+    return 50;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -215,6 +216,8 @@
         cell.textLabel.text = @"image";
     }else if(indexPath.row == 48){
         cell.textLabel.text = @"scrollTabIndicator";
+    }else if(indexPath.row == 49){
+        cell.textLabel.text = @"lock&semaphore";
     }
 
 
@@ -375,6 +378,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 48){
         ZGScrollTabIndicatorController *con = [[ZGScrollTabIndicatorController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 49){
+        ZGLockAndSemaphoreController *con = [[ZGLockAndSemaphoreController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
