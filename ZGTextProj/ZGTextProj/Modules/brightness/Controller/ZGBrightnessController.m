@@ -22,6 +22,26 @@
     
     self.title = @"环境光照";
     
+    // 测试NSDictionary 能否删除，设置nil
+    NSMutableDictionary *mDic = [NSMutableDictionary dictionary];
+    // 字典不能设置Nil，否则崩溃
+//    [mDic setObject:nil forKey:@"a"];
+    
+    NSObject *p1 = [[NSObject alloc] init];
+    [mDic setObject:p1 forKey:@"p1"];
+    NSLog(@"mDic %@",mDic);
+    for (NSString *key in mDic.allKeys) {
+        NSLog(@"key %@, value %@",key,mDic[key]);
+    }
+    
+    [mDic removeObjectForKey:@"p1"];
+    NSLog(@"mDic %@",mDic);
+    for (NSString *key in mDic.allKeys) {
+        NSLog(@"key %@, value %@",key,mDic[key]);
+    }
+    
+    
+    // 测试 感光
     [self test];
 }
 

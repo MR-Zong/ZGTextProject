@@ -243,8 +243,8 @@
      * maxConcurrentOperationCount > 0 时，按设置值，限制最大线程数
      */
     NSOperationQueue *queue =[[NSOperationQueue alloc] init];
-//    queue.maxConcurrentOperationCount = -1;
     NSLog(@"maxConcurrentOperationCount 默认值: %zd",queue.maxConcurrentOperationCount);
+    queue.maxConcurrentOperationCount = 0;
     
     NSLog(@"maxConcurrentOperationCount 测试");
     NSBlockOperation *bo = [NSBlockOperation blockOperationWithBlock:^{
