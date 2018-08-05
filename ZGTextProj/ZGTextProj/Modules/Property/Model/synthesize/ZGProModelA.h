@@ -22,5 +22,7 @@
 
 @property (nonatomic, weak) id <ZGProModelADelegate> delegate;
 
+@property (nonatomic, assign) BOOL finished;
+
 
 @end

@@ -13,6 +13,7 @@
 
 //@synthesize name;
 //@synthesize delegate;
+@synthesize finished = _finished;
 
 - (void)printName
 {

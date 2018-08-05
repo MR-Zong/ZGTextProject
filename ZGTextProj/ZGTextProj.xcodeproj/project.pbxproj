@@ -263,6 +263,7 @@
 		EF0A0EAD2006FE3A0095779B /* ZGOScrollManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGOScrollManager.m; sourceTree = "<group>"; };
 		EF0A0EAF200701DF0095779B /* ZGSubTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSubTabBarView.h; sourceTree = "<group>"; };
 		EF0A0EB0200701DF0095779B /* ZGSubTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSubTabBarView.m; sourceTree = "<group>"; };
+		EF123A332116DD44006F76E8 /* ZGBenchmarkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBenchmarkProtocol.h; sourceTree = "<group>"; };
 		EF14C7E62101D3B8007CC07B /* ZGArchiveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGArchiveController.h; sourceTree = "<group>"; };
 		EF14C7E72101D3B8007CC07B /* ZGArchiveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGArchiveController.m; sourceTree = "<group>"; };
 		EF14C7E92101D419007CC07B /* ZGArchiveModelA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGArchiveModelA.h; sourceTree = "<group>"; };
@@ -875,6 +876,7 @@
 		EF192AA4210C150000868D5B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EF123A332116DD44006F76E8 /* ZGBenchmarkProtocol.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1699,8 +1701,8 @@
 			isa = PBXGroup;
 			children = (
 				EF7F2C9121070F9400AC6755 /* ZGProModelB.h */,
-				EF7F2C9221070F9400AC6755 /* ZGProModelA.h */,
 				EF7F2C9321070F9400AC6755 /* ZGProModelB.m */,
+				EF7F2C9221070F9400AC6755 /* ZGProModelA.h */,
 				EF7F2C9421070F9400AC6755 /* ZGProModelA.m */,
 			);
 			path = synthesize;

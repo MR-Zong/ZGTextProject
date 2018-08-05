@@ -7,9 +7,12 @@
 //
 
 #import "ZGGCDTestController.h"
+#import <libkern/OSAtomic.h>
 
 @interface ZGGCDTestController ()
 @property (nonatomic,copy) void(^block)(void);
+
+@property (nonatomic, strong) dispatch_source_t sourceTimer;
 
 @end
 
@@ -25,13 +28,46 @@
     
     self.title = @"GCD";
     
-
-    [self testAllKeys];
+    /**
+     * 测试 NSDictionary 的allkeys 是否随机
+     */
+//    [self testAllKeys];
+    
+    
 //    [self testBlock];
     
 //    [self testDispatchQueue];
 //    [self testSyncAndAsync];
 //    [self testDispatch_group_enter];
+    
+    
+    /**
+     * dispatch_source
+     */
+    [self testSource];
+    
+    /**
+     * 怎么实用自旋锁
+     */
+    [self testSpinLock];
+}
+
+- (void)testSpinLock
+{
+    static OSSpinLock lock = OS_SPINLOCK_INIT;
+    OSSpinLockLock(&lock);
+    NSLog(@"xxxx");
+    OSSpinLockUnlock(&lock);
+}
+
+- (void)testSource
+{
+    _sourceTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, DISPATCH_TARGET_QUEUE_DEFAULT);
+    dispatch_source_set_event_handler(_sourceTimer, ^{
+        NSLog(@"source Timer");
+    });
+    dispatch_source_set_timer(_sourceTimer, DISPATCH_TIME_NOW, 5ull * NSEC_PER_SEC, 100ull * NSEC_PER_MSEC);
+    dispatch_resume(_sourceTimer);
 }
 
 - (void)testBlock

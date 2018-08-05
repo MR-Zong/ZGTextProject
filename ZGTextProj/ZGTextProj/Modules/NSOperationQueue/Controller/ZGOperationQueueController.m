@@ -12,6 +12,9 @@
 
 @interface ZGOperationQueueController ()
 
+@property (weak, nonatomic, nullable) NSOperation *lastAddedOperation;
+
+
 @end
 
 @implementation ZGOperationQueueController
@@ -23,11 +26,15 @@
     self.title = @"NSOperationQueue";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSLog(@"navigationBar %f",self.navigationController.navigationBar.bounds.size.height);
+    
+    /**
+     *  测试 navigationBar satusbAr 高度
+     */
+//    NSLog(@"navigationBar %f",self.navigationController.navigationBar.bounds.size.height);
     
     // 状态栏(statusbar)
 //    NSLog(@"status width - %f", rectStatus.size.width); // 宽度
-    NSLog(@"status height  %f",  [[UIApplication sharedApplication] statusBarFrame].size.height);  // 高度
+//    NSLog(@"status height  %f",  [[UIApplication sharedApplication] statusBarFrame].size.height);  // 高度
     
     // tabBAr 高度
     
@@ -50,7 +57,12 @@
      * 实验证明：maxConcurrentOperationCount = 0 时，queue不会执行Operation
      * maxConcurrentOperationCount > 0 时，按设置值，限制最大线程数
      */
-    [self testQueueMaxCount];
+//    [self testQueueMaxCount];
+    
+    /**
+     * 测试NSOperation 依赖
+     */
+    [self testOperationDependency];
 }
 
 - (void)testOperation
@@ -258,6 +270,54 @@
     
     [queue addOperation:bo];
     [queue addOperation:bo1];
+}
+
+- (void)testOperationDependency
+{
+    NSOperationQueue *queue =[[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 1;
+    
+    NSLog(@"operation 依赖测试");
+    NSBlockOperation *bo = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"bo start");
+        sleep(2);
+        NSLog(@"bo thread %@",[NSThread currentThread]);
+        NSLog(@"bo end");
+    }];
+    
+    NSBlockOperation *bo1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"bo1111 start");
+        sleep(2);
+        NSLog(@"bo1111 thread %@",[NSThread currentThread]);
+        NSLog(@"bo111 end");
+
+    }];
+    
+    NSBlockOperation *bo2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"bo22222 start");
+        sleep(2);
+        NSLog(@"bo2222 thread %@",[NSThread currentThread]);
+        NSLog(@"bo2222 end");
+        
+    }];
+
+    
+    [self addOperation:bo queue:queue];
+    [self addOperation:bo1 queue:queue];
+    [self addOperation:bo2 queue:queue];
+}
+
+- (void)addOperation:(NSOperation *)op queue:(NSOperationQueue *)queue
+{
+    [queue addOperation:op];
+    
+    /**
+     * 依赖可以实现 LIFO
+     * 1，在queue.maxConcurrentOperationCount 内，肯定不会用管FiFo还是LIFO 因为是并发执行
+     * 2，在超过queue.maxConcurrentOperationCount 因为在等待所以依赖有效，正好可以实现LIFO
+     */
+    [self.lastAddedOperation addDependency:op];
+    self.lastAddedOperation = op;
 }
 
 
