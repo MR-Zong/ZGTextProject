@@ -59,6 +59,9 @@
     sleep(3);
     NSLog(@"BBBBBB");
     
+    NSLog(@"self %@",self);
+    
+    
     /**
      * 千万不能，没解锁时候就递归
      * 否则会导致 死锁

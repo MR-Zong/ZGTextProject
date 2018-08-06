@@ -78,6 +78,7 @@
 #import "ZGImageController.h"
 #import "ZGScrollTabIndicatorController.h"
 #import "ZGLockAndSemaphoreController.h"
+#import "ZGTimerController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -112,7 +113,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 50;
+    return 51;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -218,6 +219,8 @@
         cell.textLabel.text = @"scrollTabIndicator";
     }else if(indexPath.row == 49){
         cell.textLabel.text = @"lock&semaphore";
+    }else if(indexPath.row == 50){
+        cell.textLabel.text = @"timer";
     }
 
 
@@ -381,6 +384,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 49){
         ZGLockAndSemaphoreController *con = [[ZGLockAndSemaphoreController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 50){
+        ZGTimerController *con = [[ZGTimerController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

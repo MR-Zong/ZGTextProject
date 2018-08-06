@@ -13,6 +13,8 @@
 		EF01D5E620AE6FC00023B282 /* ZGNTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E520AE6FC00023B282 /* ZGNTestController.m */; };
 		EF01D5E920AE70370023B282 /* ZGNRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E820AE70370023B282 /* ZGNRootController.m */; };
 		EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5EB20AE74700023B282 /* ZGNavigationBar.m */; };
+		EF083A2C21182BBC0037D17C /* ZGTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF083A2B21182BBC0037D17C /* ZGTimerController.m */; };
+		EF083A2F21182D380037D17C /* ZGTimerProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = EF083A2E21182D380037D17C /* ZGTimerProcess.m */; };
 		EF0A0E892004C2490095779B /* ZGSTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0E882004C2490095779B /* ZGSTestController.m */; };
 		EF0A0E8F2005C41F0095779B /* ZGSBaseScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0E8E2005C41F0095779B /* ZGSBaseScrollView.m */; };
 		EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A0E912005C6AD0095779B /* ZGSSubScrollView.m */; };
@@ -239,6 +241,10 @@
 		EF01D5E820AE70370023B282 /* ZGNRootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNRootController.m; sourceTree = "<group>"; };
 		EF01D5EA20AE74700023B282 /* ZGNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNavigationBar.h; sourceTree = "<group>"; };
 		EF01D5EB20AE74700023B282 /* ZGNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNavigationBar.m; sourceTree = "<group>"; };
+		EF083A2A21182BBC0037D17C /* ZGTimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTimerController.h; sourceTree = "<group>"; };
+		EF083A2B21182BBC0037D17C /* ZGTimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTimerController.m; sourceTree = "<group>"; };
+		EF083A2D21182D380037D17C /* ZGTimerProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTimerProcess.h; sourceTree = "<group>"; };
+		EF083A2E21182D380037D17C /* ZGTimerProcess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTimerProcess.m; sourceTree = "<group>"; };
 		EF0A0E872004C2490095779B /* ZGSTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSTestController.h; sourceTree = "<group>"; };
 		EF0A0E882004C2490095779B /* ZGSTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSTestController.m; sourceTree = "<group>"; };
 		EF0A0E8D2005C41F0095779B /* ZGSBaseScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSBaseScrollView.h; sourceTree = "<group>"; };
@@ -725,6 +731,41 @@
 			children = (
 				EF01D5EA20AE74700023B282 /* ZGNavigationBar.h */,
 				EF01D5EB20AE74700023B282 /* ZGNavigationBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF083A2621182BA80037D17C /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				EF083A2721182BA80037D17C /* Controller */,
+				EF083A2821182BA80037D17C /* Model */,
+				EF083A2921182BA80037D17C /* View */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		EF083A2721182BA80037D17C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF083A2A21182BBC0037D17C /* ZGTimerController.h */,
+				EF083A2B21182BBC0037D17C /* ZGTimerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF083A2821182BA80037D17C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF083A2D21182D380037D17C /* ZGTimerProcess.h */,
+				EF083A2E21182D380037D17C /* ZGTimerProcess.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF083A2921182BA80037D17C /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2159,6 +2200,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF083A2621182BA80037D17C /* Timer */,
 				EF192AA2210C150000868D5B /* lock&semaphore */,
 				EF7F2CC4210AF46600AC6755 /* ScrollTabIndicator */,
 				EF7F2C9B2108116A00AC6755 /* image */,
@@ -2845,6 +2887,7 @@
 				EF64EEBF20E4DAC0009B5767 /* ZGEventChainController.m in Sources */,
 				EF2EEAC020F495D300C9FBAD /* ZGKVOODataModel.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
+				EF083A2F21182D380037D17C /* ZGTimerProcess.m in Sources */,
 				EF14C7EB2101D419007CC07B /* ZGArchiveModelA.m in Sources */,
 				EFDCEE3620DE43190076C129 /* ZGAniTextCellController.m in Sources */,
 				EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */,
@@ -2910,6 +2953,7 @@
 				EF64EEAD20E4806E009B5767 /* ZGCellOptionGestureController.m in Sources */,
 				EF64EEC220E4E5DA009B5767 /* ZGEventChainView.m in Sources */,
 				EF64EEA920E3DC5A009B5767 /* ZGNestTableView.m in Sources */,
+				EF083A2C21182BBC0037D17C /* ZGTimerController.m in Sources */,
 				EF2EEAAE20F4593B00C9FBAD /* ZGKVOResearchData.m in Sources */,
 				EF25CBBA20E28155005A7F8C /* ZGNestPageBController.m in Sources */,
 				EFC56B7C20181F9900BA5487 /* ZGHFMan.m in Sources */,
