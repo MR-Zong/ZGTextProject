@@ -80,6 +80,8 @@
 #import "ZGLockAndSemaphoreController.h"
 #import "ZGTimerController.h"
 
+#import "ZGHotFixController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -113,7 +115,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 51;
+    return 52;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -221,6 +223,8 @@
         cell.textLabel.text = @"lock&semaphore";
     }else if(indexPath.row == 50){
         cell.textLabel.text = @"timer";
+    }else if(indexPath.row == 51){
+        cell.textLabel.text = @"hotfix";
     }
 
 
@@ -387,6 +391,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 50){
         ZGTimerController *con = [[ZGTimerController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 51){
+        ZGHotFixController *con = [[ZGHotFixController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

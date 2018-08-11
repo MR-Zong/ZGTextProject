@@ -11,6 +11,19 @@
 #import "ZGProModelB.h"
 #import "ZGPAUTModelA.h"
 
+#import "ZGPEteModelA.h"
+#import "ZGPSHIModelA.h"
+
+/**
+ * 匿名分类 不在.m模块里 也不能定义实例变量 效果和不是匿名分类一个效果
+ */
+@interface ZGPEteModelA ()
+
+@property (nonatomic, strong) NSString *address;
+
+@end
+
+#pragma mark - - - - - -  - -  - -  -
 @interface ZGPropertyController ()
 
 @end
@@ -44,7 +57,19 @@
      * 结论：实践证明 runloop唤醒后 一定会先执行完 睡眠前未执行完的任务，然后再执行唤醒runloop的
      * timer dispatch_asyn source1 的对应回调
      */
-    [self testRunLoop];
+//    [self testRunLoop];
+    
+    
+    /**
+     * 测试匿名拓展 是第一次的才有用，还是在.m模块内的都有用
+     */
+//    [self testExtend];
+    
+    /**
+     * 测试单例 限制 init new方法
+     * NS_UNAVAILABLE 非常完美的实现了
+     */
+    [self testShareInstance];
     
 }
 
@@ -130,6 +155,31 @@
 {
     NSLog(@"testRlC");
     [NSThread sleepForTimeInterval:6];
+}
+
+
+#pragma mark - test extend
+- (void)testExtend
+{
+    ZGPEteModelA *a = [[ZGPEteModelA alloc] init];
+    
+    /**
+     * 匿名分类在 类定义.m 外，和其他分类效果一样
+     */
+//    a.address = @"dabu";
+//    NSLog(@"a.address %@",a);
+    
+    [a print];
+}
+
+#pragma mark - 测试单例 限制 init new
+- (void)testShareInstance
+{
+    /**
+     * 编译器会报错，非常完美！！！
+     */
+//    ZGPSHIModelA *a = [[ZGPSHIModelA alloc] init];
+//    ZGPSHIModelA *b = [ZGPSHIModelA new];
 }
 
 @end

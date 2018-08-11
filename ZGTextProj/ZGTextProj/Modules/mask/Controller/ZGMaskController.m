@@ -21,7 +21,19 @@
     
     self.title = @"Mask";
     
+    /**
+     * selector SEL 测试这两个本质是什么
+     */
+    [self testSEL];
+    
     [self setupViews];
+    
+//    [self maskLayer];
+}
+
+- (void)testSEL
+{
+    SEL s = @selector(setupViews);
 }
 
 
@@ -61,6 +73,17 @@
 
 
 
+- (void)maskLayer
+{
+//    self.maskLayer.frame = CGRectInset(self.bounds, self.edgeWidth, self.edgeWidth);
+//    CGFloat radius = self.maskLayer.bounds.size.width /2.0;
+//    NSLog(@"radius %f",radius);
+//    //    CGRect roundRect = CGRectInset(self.maskLayer.bounds, self.edgeWidth, self.edgeWidth);
+//    CGRect roundRect =  self.maskLayer.bounds;
+//    //    self.maskLayer.path = [[UIBezierPath bezierPathWithRoundedRect:roundRect cornerRadius:radius] bezierPathByReversingPath].CGPath;
+//    self.maskLayer.path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.maskLayer.bounds.size.width/2.0, self.maskLayer.bounds.size.width/2.0) radius:radius startAngle:0 endAngle:2*M_PI clockwise:YES].CGPath;
+//    self.mask = self.maskLayer;
+}
 
 
 @end
