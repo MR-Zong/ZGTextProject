@@ -17,21 +17,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    /**
+     * 测试 for in 对字典遍历
+     */
+    [self testDictionary];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)testDictionary
+{
+    NSDictionary *dic = @{@"a":@"aaa",@"b":@"bbb",@"c":@"ccc"};
+    /**
+     * 可以直接 for in 字典 的key
+     */
+    for (NSString *key in dic) {
+        NSLog(@"key %@",key);
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

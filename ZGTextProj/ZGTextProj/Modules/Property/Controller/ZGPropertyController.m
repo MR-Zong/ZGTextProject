@@ -69,7 +69,15 @@
      * 测试单例 限制 init new方法
      * NS_UNAVAILABLE 非常完美的实现了
      */
-    [self testShareInstance];
+//    [self testShareInstance];
+    
+    /**
+     * 测试
+     * Property 默认都是什么修饰
+     */
+        [self testDefaultProperty];
+    
+    
     
 }
 
@@ -182,4 +190,19 @@
 //    ZGPSHIModelA *b = [ZGPSHIModelA new];
 }
 
+#pragma mark - testDefaultProperty
+- (void)testDefaultProperty
+{
+    /**
+     *  证明 内存管理 默认，基本数据类型是assgin 对象类型是strong
+     *  读写修饰，默认  可读可写
+     */
+    ZGPEteModelA *t = [[ZGPEteModelA alloc] init];
+    ZGPSHIModelA *a = [ZGPSHIModelA shareInstance];
+    a.name = t;
+    NSLog(@"a.name %@",a.name);
+    t = nil;
+    NSLog(@"s %@",t);
+    NSLog(@"a.name %@",a.name);
+}
 @end

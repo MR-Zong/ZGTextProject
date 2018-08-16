@@ -10,7 +10,11 @@
 
 @interface ZGPSHIModelA : NSObject
 
++ (instancetype)shareInstance;
+
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
+//@property (assign) id name;
+@property id name;
 
 @end

@@ -11,7 +11,10 @@
 
 @interface ZGAVAudioTrackController ()
 
-@property (nonatomic,strong) UIButton *btn;
+@property (nonatomic, strong) UIButton *btn;
+@property (nonatomic, strong) UIButton *playBtn;
+@property (nonatomic, strong) AVPlayer *avPlayer;
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 
 @end
 
@@ -23,15 +26,42 @@
     
     self.title = @"AVFoundation";
     
+    
+    /**
+     * 提取音频
+     */
+    [self testAudio];
+    
+}
+
+- (void)testAudio
+{
+    // 播放视频
+    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
+    playerLayer.frame = CGRectMake(0, 0, self.view.bounds.size.width, 250);
+    [self.view.layer addSublayer:playerLayer];
+    
+    [self.avPlayer play];
+    
+    
+    // 两个按钮
     _btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _btn.frame = CGRectMake(100, 100, 100, 100);
+    _btn.titleLabel.font = [UIFont systemFontOfSize:13];
+    _btn.frame = CGRectMake(50, 260, 60, 40);
     _btn.backgroundColor = [UIColor redColor];
     [_btn setTitle:@"提取音频" forState:UIControlStateNormal];
     [_btn addTarget:self action:@selector(getAudio:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_btn];
+
     
-    
-    
+    _playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+     _playBtn.titleLabel.font = [UIFont systemFontOfSize:13];
+    _playBtn.frame = CGRectMake(160, 260, 85, 40);
+    _playBtn.backgroundColor = [UIColor redColor];
+    [_playBtn setTitle:@"播放提取音频" forState:UIControlStateNormal];
+    [_playBtn addTarget:self action:@selector(playAudio) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_playBtn];
+
 }
 
 
@@ -121,6 +151,33 @@
         NSLog(@"%@",outputURL);
         
     }
+}
+
+#pragma mark - 播放提取音频
+- (void)playAudio
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *myPathDocs =  [documentsDirectory stringByAppendingPathComponent:
+                             [NSString stringWithFormat:@"audio.m4a"]];
+    NSURL *url = [NSURL fileURLWithPath:myPathDocs];
+    
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    [self.audioPlayer prepareToPlay];
+    [self.audioPlayer play];
+}
+
+#pragma mark - getter
+- (AVPlayer *)avPlayer
+{
+    if (!_avPlayer) {
+        NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"videoWithAudio" ofType:@".mp4"];
+        NSURL *fileUrl = [NSURL fileURLWithPath:videoPath];
+        
+        AVPlayerItem *item = [AVPlayerItem playerItemWithURL:fileUrl];
+        _avPlayer = [AVPlayer playerWithPlayerItem:item];
+    }
+    return _avPlayer;
 }
 
 

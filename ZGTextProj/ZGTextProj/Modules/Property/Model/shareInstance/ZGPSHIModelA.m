@@ -8,6 +8,28 @@
 
 #import "ZGPSHIModelA.h"
 
+@interface ZGPSHIModelA ()
+- (instancetype)init;
+@end
+
 @implementation ZGPSHIModelA
+
++ (instancetype)shareInstance
+{
+    static ZGPSHIModelA *_pSHIModelAShareInstance_;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _pSHIModelAShareInstance_ = [[ZGPSHIModelA alloc] initPrivate];
+    });
+    return _pSHIModelAShareInstance_;
+}
+
+- (instancetype)initPrivate
+{
+    if (self = [super init]) {
+        ;
+    }
+    return self;
+}
 
 @end
