@@ -26,7 +26,7 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        _weakDictionary = [NSMapTable strongToWeakObjectsMapTable];
+        _weakDictionary = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsCopyIn valueOptions:NSPointerFunctionsWeakMemory];
     }
     return self;
 }
