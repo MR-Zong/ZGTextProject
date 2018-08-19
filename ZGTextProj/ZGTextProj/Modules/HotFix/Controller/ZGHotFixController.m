@@ -7,6 +7,8 @@
 //
 
 #import "ZGHotFixController.h"
+#import "ZGDicCopyModel.h"
+#import "ZGWeakMutableDictionary.h"
 
 @interface ZGHotFixController ()
 
@@ -21,7 +23,20 @@
     /**
      * 测试 for in 对字典遍历
      */
-    [self testDictionary];
+//    [self testDictionary];
+    
+    /**
+     * 测试 字典对value的强引用
+     */
+//    [self testDictionaryStrog];
+
+    
+    /**
+     * 测试 自定义weak字典对value的弱引用
+     */
+    [self testDictionaryWeakValue];
+
+
 }
 
 - (void)testDictionary
@@ -33,6 +48,35 @@
     for (NSString *key in dic) {
         NSLog(@"key %@",key);
     }
+}
+
+- (void)testDictionaryStrog
+{
+    NSMutableDictionary *mDic = [NSMutableDictionary dictionary];
+    
+    NSObject *a = [[NSObject alloc] init];
+    /**
+     * 证明weak 对字典是无效的
+     */
+    __weak typeof(a) weakA = a;
+    [mDic setObject:weakA forKey:@"a"];
+    
+    NSLog(@"a %@",a);
+    a = nil;
+    NSLog(@"dicA %@",mDic[@"a"]);
+    
+}
+
+- (void)testDictionaryWeakValue
+{
+    ZGWeakMutableDictionary *mDic = [ZGWeakMutableDictionary dictionary];
+    
+    NSObject *a = [[NSObject alloc] init];
+    [mDic setObject:a forKey:@"a"];
+    
+    NSLog(@"a %@",a);
+    a = nil;
+    NSLog(@"dicA %@",[mDic objectForKey:@"a"]);
 }
 
 

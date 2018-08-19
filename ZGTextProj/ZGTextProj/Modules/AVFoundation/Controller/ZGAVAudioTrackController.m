@@ -28,13 +28,13 @@
     
     
     /**
-     * 提取音频
+     * 从视频里，提取音频
      */
-    [self testAudio];
+    [self testAudioFromVideo];
     
 }
 
-- (void)testAudio
+- (void)testAudioFromVideo
 {
     // 播放视频
     AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
@@ -64,7 +64,9 @@
 
 }
 
-
+/**
+ * 提取从视频里音频
+*/
 - (void)getAudio:(UIButton *)btn {
     
     // 创建源视频的Asset
