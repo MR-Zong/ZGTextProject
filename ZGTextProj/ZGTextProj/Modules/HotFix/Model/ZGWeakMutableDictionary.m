@@ -39,10 +39,7 @@
         return;
     }
     
-    if ([self.weakDictionary objectForKey:key] == nil)
-    {
-        [self.weakDictionary setObject:object forKey:key];
-    }
+    [self.weakDictionary setObject:object forKey:key];
 }
 
 - (id)objectForKey:(NSString *)key
