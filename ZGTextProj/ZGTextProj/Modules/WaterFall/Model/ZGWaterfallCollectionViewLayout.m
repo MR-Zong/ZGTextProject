@@ -92,6 +92,10 @@
 {
     UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
 
+
+    if (layoutAttributes.frame.size.width > 0) {
+        return self.itemsAttributes[indexPath.item];
+    }
     
     CGFloat itemHeight = 100;
     if (self.delegate && [self.delegate respondsToSelector:@selector(zg_waterfallCollectionViewLayout:heightForItemAtIndexPath:)]) {
