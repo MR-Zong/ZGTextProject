@@ -19,6 +19,9 @@
 @property (nonatomic, assign) CGFloat  itemVerticalGap;
 @property (nonatomic, assign) CGFloat  itemWidth;
 
+@property (nonatomic, assign) CGSize cacheContenSize;
+@property (nonatomic, assign) NSInteger numberOfRowsInSectin;
+
 
 @end
 
@@ -74,9 +77,9 @@
     _itemWidth = (self.collectionView.frame.size.width - _collectionViewMarginLeft - _collectionViewMarginRight - (_numbersOfColumn - 1) * _itemHorizontalGap) / _numbersOfColumn;
 
     
-    NSInteger count = [self.collectionView numberOfItemsInSection:0];
+    _numberOfRowsInSectin = [self.collectionView numberOfItemsInSection:0];
     
-    for (int i=0; i < count; i++) {
+    for (int i=0; i < _numberOfRowsInSectin; i++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
         [_itemsAttributes addObject:[self layoutAttributesForItemAtIndexPath:indexPath]];
     }
@@ -91,11 +94,6 @@
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-
-
-    if (layoutAttributes.frame.size.width > 0) {
-        return self.itemsAttributes[indexPath.item];
-    }
     
     CGFloat itemHeight = 100;
     if (self.delegate && [self.delegate respondsToSelector:@selector(zg_waterfallCollectionViewLayout:heightForItemAtIndexPath:)]) {
@@ -119,10 +117,14 @@
     // 更新存放每列maxY的数组
     _columnMaxYs[columnOfMinMaxY] = @([_columnMaxYs[columnOfMinMaxY] floatValue] + itemHeight + self.itemVerticalGap);
     
+    // cache contentSize
+    if (indexPath.item == self.numberOfRowsInSectin - 1) {
+        self.cacheContenSize = [self caculateContentSize];
+    }
     return layoutAttributes;
 }
 
-- (CGSize)collectionViewContentSize
+- (CGSize)caculateContentSize
 {
     // 算出最高的那一列
     CGFloat maxY = [_columnMaxYs[0] floatValue];
@@ -131,8 +133,13 @@
             maxY = [_columnMaxYs[i] floatValue];
         }
     }
-
+    
     return CGSizeMake(self.collectionView.frame.size.width, maxY + self.itemVerticalGap);
+}
+
+- (CGSize)collectionViewContentSize
+{
+    return self.cacheContenSize;
 }
 
 @end
