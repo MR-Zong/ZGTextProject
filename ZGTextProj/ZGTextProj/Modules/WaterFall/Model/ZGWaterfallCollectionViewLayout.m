@@ -35,12 +35,13 @@
          默认列间距 10.0f
          默认内边距 top:10 left:10 bottom:10 right:10
          */
-        self.numbersOfColumn = 3;
+        _numbersOfColumn = 3;
+        [self setupColumnMaxYs];
+//        _columnMaxYs = [NSMutableArray arrayWithArray:@[@0,@0,@0]];
 //        self.rowSpacing = 10.0f;
 //        2self.lineSpacing = 10.0f;
 //        self.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
         _itemsAttributes = [NSMutableArray array];
-        _columnMaxYs = [NSMutableArray arrayWithArray:@[@0,@0,@0]];
         
         
         _collectionViewMarginLeft = 0;
@@ -50,6 +51,20 @@
     }
     
     return self;
+}
+
+- (void)setupColumnMaxYs
+{
+    _columnMaxYs = [NSMutableArray arrayWithCapacity:_numbersOfColumn];
+    for (int i=0;i<_numbersOfColumn; i++) {
+        [_columnMaxYs addObject:@0];
+    }
+}
+
+- (void)setNumbersOfColumn:(NSInteger)numbersOfColumn
+{
+    _numbersOfColumn = numbersOfColumn;
+    [self setupColumnMaxYs];
 }
 
 - (void)prepareLayout
@@ -95,7 +110,6 @@
     
     CGFloat itemX = self.collectionViewMarginLeft + columnOfMinMaxY * (self.itemWidth + self.itemHorizontalGap);
     CGFloat itemY = minMaxY + self.itemVerticalGap;
-    
     layoutAttributes.frame = CGRectMake(itemX, itemY, self.itemWidth, itemHeight);
     
     // 更新存放每列maxY的数组
