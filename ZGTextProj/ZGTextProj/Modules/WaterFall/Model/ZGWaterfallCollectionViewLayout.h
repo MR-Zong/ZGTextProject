@@ -13,7 +13,7 @@
 @protocol ZGWaterfallCollectionViewLayoutDelegate <NSObject>
 
 @required
-- (CGFloat)waterfallCollectionViewLayout:(ZGWaterfallCollectionViewLayout *)waterfallCollectionViewLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)zg_waterfallCollectionViewLayout:(ZGWaterfallCollectionViewLayout *)waterfallCollectionViewLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

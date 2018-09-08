@@ -55,7 +55,7 @@
 }
 
 #pragma mark - <ZGWaterfallCollectionViewLayoutDelegate>
-- (CGFloat)waterfallCollectionViewLayout:(ZGWaterfallCollectionViewLayout *)waterfallCollectionViewLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)zg_waterfallCollectionViewLayout:(ZGWaterfallCollectionViewLayout *)waterfallCollectionViewLayout heightForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return (arc4random() % 101) + 100;
 }

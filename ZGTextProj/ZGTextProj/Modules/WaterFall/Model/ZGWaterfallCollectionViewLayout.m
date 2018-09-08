@@ -11,8 +11,13 @@
 @interface ZGWaterfallCollectionViewLayout ()
 
 @property (strong, nonatomic) NSMutableArray *itemsAttributes;
-
 @property (strong, nonatomic) NSMutableArray *columnMaxYs;
+
+@property (nonatomic, assign) CGFloat collectionViewMarginLeft;
+@property (nonatomic, assign) CGFloat  collectionViewMarginRight;
+@property (nonatomic, assign) CGFloat  itemHorizontalGap;
+@property (nonatomic, assign) CGFloat  itemVerticalGap;
+@property (nonatomic, assign) CGFloat  itemWidth;
 
 
 @end
@@ -36,6 +41,12 @@
 //        self.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
         _itemsAttributes = [NSMutableArray array];
         _columnMaxYs = [NSMutableArray arrayWithArray:@[@0,@0,@0]];
+        
+        
+        _collectionViewMarginLeft = 0;
+        _collectionViewMarginRight = _collectionViewMarginLeft;
+        _itemHorizontalGap = 5;
+        _itemVerticalGap = 5;
     }
     
     return self;
@@ -44,6 +55,9 @@
 - (void)prepareLayout
 {
     [super prepareLayout];
+    
+    _itemWidth = (self.collectionView.frame.size.width - _collectionViewMarginLeft - _collectionViewMarginRight - (_numbersOfColumn - 1) * _itemHorizontalGap) / _numbersOfColumn;
+
     
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
     
@@ -62,18 +76,11 @@
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    
-    CGFloat collectionViewMarginLeft = 0;
-    CGFloat collectionViewMarginRight = collectionViewMarginLeft;
-    CGFloat itemHorizontalGap = 5;
-    CGFloat itemVerticalGap = 5;
-    
-    CGFloat itemWidth = (self.collectionView.frame.size.width - collectionViewMarginLeft - collectionViewMarginRight -
-                         (_numbersOfColumn - 1) * itemHorizontalGap) / _numbersOfColumn;
+
     
     CGFloat itemHeight = 100;
-    if (self.delegate && [self.delegate respondsToSelector:@selector(waterfallCollectionViewLayout:heightForItemAtIndexPath:)]) {
-        itemHeight = [self.delegate waterfallCollectionViewLayout:self heightForItemAtIndexPath:indexPath];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(zg_waterfallCollectionViewLayout:heightForItemAtIndexPath:)]) {
+        itemHeight = [self.delegate zg_waterfallCollectionViewLayout:self heightForItemAtIndexPath:indexPath];
     }
     
     // 算出最短的那一列
@@ -86,21 +93,19 @@
         }
     }
     
+    CGFloat itemX = self.collectionViewMarginLeft + columnOfMinMaxY * (self.itemWidth + self.itemHorizontalGap);
+    CGFloat itemY = minMaxY + self.itemVerticalGap;
     
-    CGFloat itemX = collectionViewMarginLeft + columnOfMinMaxY * (itemWidth + itemHorizontalGap);
-    CGFloat itemY = minMaxY + itemVerticalGap;
-    
-    layoutAttributes.frame = CGRectMake(itemX, itemY, itemWidth, itemHeight);
+    layoutAttributes.frame = CGRectMake(itemX, itemY, self.itemWidth, itemHeight);
     
     // 更新存放每列maxY的数组
-    _columnMaxYs[columnOfMinMaxY] = @([_columnMaxYs[columnOfMinMaxY] floatValue] + itemHeight + itemVerticalGap);
+    _columnMaxYs[columnOfMinMaxY] = @([_columnMaxYs[columnOfMinMaxY] floatValue] + itemHeight + self.itemVerticalGap);
     
     return layoutAttributes;
 }
 
 - (CGSize)collectionViewContentSize
 {
-    CGFloat itemVerticalGap = 5;
     // 算出最高的那一列
     CGFloat maxY = [_columnMaxYs[0] floatValue];
     for (int i= 0; i<_columnMaxYs.count; i++) {
@@ -109,7 +114,7 @@
         }
     }
 
-    return CGSizeMake(self.collectionView.frame.size.width, maxY + itemVerticalGap);
+    return CGSizeMake(self.collectionView.frame.size.width, maxY + self.itemVerticalGap);
 }
 
 @end

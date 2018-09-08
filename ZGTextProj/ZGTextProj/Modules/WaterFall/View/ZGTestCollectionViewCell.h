@@ -10,6 +10,6 @@
 
 @interface ZGTestCollectionViewCell : UICollectionViewCell
 
-@property (weak, nonatomic) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 @end

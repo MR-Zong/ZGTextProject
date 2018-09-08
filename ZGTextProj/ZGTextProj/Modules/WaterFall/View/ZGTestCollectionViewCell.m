@@ -14,9 +14,9 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        UILabel *titleLabel = [[UILabel alloc] init];
-        self.titleLabel = titleLabel;
-        [self.contentView addSubview:titleLabel];
+
+        _titleLabel = [[UILabel alloc] init];
+        [self.contentView addSubview:_titleLabel];
     }
     return self;
 }
