@@ -34,7 +34,18 @@
     /**
      * 测试 自定义weak字典对value的弱引用
      */
-    [self testDictionaryWeakValue];
+//    [self testDictionaryWeakValue];
+
+    
+    /**
+     * 测试 NSPointerArray
+     */
+    [self testPointArray];
+    
+    /**
+     * 测试 NSHashTable
+     */
+//    [self testHashTable];
 
 
 }
@@ -77,6 +88,11 @@
     NSLog(@"a %@",a);
     a = nil;
     NSLog(@"dicA %@",[mDic objectForKey:@"a"]);
+}
+
+- (void)testPointArray
+{
+    ;
 }
 
 

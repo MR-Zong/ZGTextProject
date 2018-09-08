@@ -82,6 +82,8 @@
 
 #import "ZGHotFixController.h"
 
+#import "ZGWaterFallController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -115,7 +117,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 52;
+    return 53;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -225,6 +227,8 @@
         cell.textLabel.text = @"timer";
     }else if(indexPath.row == 51){
         cell.textLabel.text = @"hotfix";
+    }else if(indexPath.row == 52){
+        cell.textLabel.text = @"waterfall";
     }
 
 
@@ -394,6 +398,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 51){
         ZGHotFixController *con = [[ZGHotFixController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 52){
+        ZGWaterFallController *con = [[ZGWaterFallController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

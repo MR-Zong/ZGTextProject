@@ -94,6 +94,9 @@
 		EF570B2F2024616700E14BC9 /* ZGKEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B2E2024616700E14BC9 /* ZGKEViewController.m */; };
 		EF570B322024625600E14BC9 /* ZGKEDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B312024625600E14BC9 /* ZGKEDataModel.m */; };
 		EF570B352024626400E14BC9 /* ZGKEObserverA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B342024626400E14BC9 /* ZGKEObserverA.m */; };
+		EF58F6952143BA590000CDC7 /* ZGWaterFallController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58F6942143BA590000CDC7 /* ZGWaterFallController.m */; };
+		EF58F6982143BA990000CDC7 /* ZGWaterfallCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58F6972143BA980000CDC7 /* ZGWaterfallCollectionViewLayout.m */; };
+		EF58F69B2143BADB0000CDC7 /* ZGTestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58F69A2143BADB0000CDC7 /* ZGTestCollectionViewCell.m */; };
 		EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF618EB32000C4B40084A59E /* ZGBrightnessController.m */; };
 		EF618EB72000C75C0084A59E /* ZGBrightManger.m in Sources */ = {isa = PBXBuildFile; fileRef = EF618EB62000C75C0084A59E /* ZGBrightManger.m */; };
 		EF64EEA920E3DC5A009B5767 /* ZGNestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEA820E3DC5A009B5767 /* ZGNestTableView.m */; };
@@ -408,6 +411,12 @@
 		EF570B312024625600E14BC9 /* ZGKEDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKEDataModel.m; sourceTree = "<group>"; };
 		EF570B332024626400E14BC9 /* ZGKEObserverA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKEObserverA.h; sourceTree = "<group>"; };
 		EF570B342024626400E14BC9 /* ZGKEObserverA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKEObserverA.m; sourceTree = "<group>"; };
+		EF58F6932143BA590000CDC7 /* ZGWaterFallController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWaterFallController.h; sourceTree = "<group>"; };
+		EF58F6942143BA590000CDC7 /* ZGWaterFallController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWaterFallController.m; sourceTree = "<group>"; };
+		EF58F6962143BA980000CDC7 /* ZGWaterfallCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGWaterfallCollectionViewLayout.h; sourceTree = "<group>"; };
+		EF58F6972143BA980000CDC7 /* ZGWaterfallCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGWaterfallCollectionViewLayout.m; sourceTree = "<group>"; };
+		EF58F6992143BADB0000CDC7 /* ZGTestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTestCollectionViewCell.h; sourceTree = "<group>"; };
+		EF58F69A2143BADB0000CDC7 /* ZGTestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTestCollectionViewCell.m; sourceTree = "<group>"; };
 		EF618EB22000C4B40084A59E /* ZGBrightnessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBrightnessController.h; sourceTree = "<group>"; };
 		EF618EB32000C4B40084A59E /* ZGBrightnessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBrightnessController.m; sourceTree = "<group>"; };
 		EF618EB52000C75C0084A59E /* ZGBrightManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBrightManger.h; sourceTree = "<group>"; };
@@ -1642,6 +1651,43 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EF58F68F2143B9740000CDC7 /* WaterFall */ = {
+			isa = PBXGroup;
+			children = (
+				EF58F6902143B9740000CDC7 /* Controller */,
+				EF58F6912143B9740000CDC7 /* Model */,
+				EF58F6922143B9740000CDC7 /* View */,
+			);
+			path = WaterFall;
+			sourceTree = "<group>";
+		};
+		EF58F6902143B9740000CDC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF58F6932143BA590000CDC7 /* ZGWaterFallController.h */,
+				EF58F6942143BA590000CDC7 /* ZGWaterFallController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF58F6912143B9740000CDC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF58F6962143BA980000CDC7 /* ZGWaterfallCollectionViewLayout.h */,
+				EF58F6972143BA980000CDC7 /* ZGWaterfallCollectionViewLayout.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF58F6922143B9740000CDC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF58F6992143BADB0000CDC7 /* ZGTestCollectionViewCell.h */,
+				EF58F69A2143BADB0000CDC7 /* ZGTestCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EF618EAE2000C4830084A59E /* brightness */ = {
 			isa = PBXGroup;
 			children = (
@@ -2272,6 +2318,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF58F68F2143B9740000CDC7 /* WaterFall */,
 				EF42A570211D8D7D00EB4A4E /* HotFix */,
 				EF083A2621182BA80037D17C /* Timer */,
 				EF192AA2210C150000868D5B /* lock&semaphore */,
@@ -2877,7 +2924,7 @@
 				TargetAttributes = {
 					EFDBCDB81F2B159700C542AD = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 9W8KXJ7KY8;
+						DevelopmentTeam = 6BVF5F2U9J;
 						ProvisioningStyle = Automatic;
 					};
 					EFDBCDD11F2B159700C542AD = {
@@ -3021,6 +3068,7 @@
 				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
 				EF64EEB320E48778009B5767 /* ZGCellopGestureScrollView.m in Sources */,
 				EF819FC7212918C3009B959A /* ZGWeakMutableDictionary.m in Sources */,
+				EF58F69B2143BADB0000CDC7 /* ZGTestCollectionViewCell.m in Sources */,
 				EF2EEAC620F495F900C9FBAD /* ZGKVOOObserverB.m in Sources */,
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
@@ -3040,6 +3088,7 @@
 				EF819FC4212915FF009B959A /* ZGDicCopyModel.m in Sources */,
 				EF7F2C9521070F9500AC6755 /* ZGProModelB.m in Sources */,
 				EFFCE4C71F64D67C008E2375 /* ZGChineseDate.m in Sources */,
+				EF58F6952143BA590000CDC7 /* ZGWaterFallController.m in Sources */,
 				EF7231AA20DB478200999D3A /* ZGTopicHeaderView.m in Sources */,
 				EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */,
 				EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */,
@@ -3116,6 +3165,7 @@
 				EF7A7A242100393D00B79368 /* ZGPropertyController.m in Sources */,
 				EF14C7F021042846007CC07B /* ZGArchiveModelB.m in Sources */,
 				EF0A0EAB2006FE240095779B /* ZGOHeaderScrollView.m in Sources */,
+				EF58F6982143BA990000CDC7 /* ZGWaterfallCollectionViewLayout.m in Sources */,
 				EF7F2CDF210AF88500AC6755 /* ZGSTIBaseController.m in Sources */,
 				EFE4308E20D5305F006930E5 /* ZGAnimationCellNormalController.m in Sources */,
 				EF7231A420DB413200999D3A /* ZGHeaderCollectionViewCell.m in Sources */,
@@ -3297,11 +3347,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9W8KXJ7KY8;
+				DEVELOPMENT_TEAM = 6BVF5F2U9J;
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kk.hongnishuitest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -3310,11 +3360,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9W8KXJ7KY8;
+				DEVELOPMENT_TEAM = 6BVF5F2U9J;
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kk.hongnishuitest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
