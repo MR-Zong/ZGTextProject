@@ -401,7 +401,7 @@
         ZGHotFixController *con = [[ZGHotFixController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 52){
-        ZGVAKDiscoverController *con = [[ZGVAKDiscoverController alloc] init];
+        ZGWaterFallController *con = [[ZGWaterFallController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

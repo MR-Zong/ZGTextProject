@@ -10,6 +10,15 @@
 
 @interface UIImage (ZGExtension)
 
+/**
+ * 用颜色生成图片
+ */
 + (instancetype)imageWithColor:(UIColor *)color;
+
+/**
+ * 获取 中间透明的图
+ */
++ (UIImage *)imageWithColor:(UIColor *)color rect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius;
+
 
 @end

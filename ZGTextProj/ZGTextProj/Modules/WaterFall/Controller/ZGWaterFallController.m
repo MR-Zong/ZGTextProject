@@ -9,6 +9,7 @@
 #import "ZGWaterFallController.h"
 #import "ZGWaterfallCollectionViewLayout.h"
 #import "ZGTestCollectionViewCell.h"
+#import "UIImage+zgExtension.h"
 
 @interface ZGWaterFallController () <UICollectionViewDataSource,ZGWaterfallCollectionViewLayoutDelegate>
 
@@ -20,6 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    // 测试 画中间透明的图片
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 100, 100)];
+    imgView.image = [UIImage imageWithColor:[UIColor blueColor] rect:imgView.bounds cornerRadius:50];
+    [self.view addSubview:imgView];
+    
+    return;
     
     ZGWaterfallCollectionViewLayout *waterfallLayout = [[ZGWaterfallCollectionViewLayout alloc] init];
     waterfallLayout.delegate = self;

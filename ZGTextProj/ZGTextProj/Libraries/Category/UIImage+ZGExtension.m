@@ -22,4 +22,28 @@
     return theImage;
 }
 
++ (UIImage *)imageWithColor:(UIColor *)color rect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius
+{
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    CGContextFillRect(context, rect);
+    
+    
+    CGContextClearRect(context,rect);
+    
+    // 透明圆
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];
+    UIBezierPath *clipPath = [[UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:cornerRadius] bezierPathByReversingPath];
+    [path appendPath:clipPath];
+    
+    CGContextAddPath(context, path.CGPath);
+    CGContextFillPath(context);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 @end
