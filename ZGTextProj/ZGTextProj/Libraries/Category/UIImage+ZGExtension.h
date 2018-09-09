@@ -18,6 +18,7 @@
 /**
  * 获取 中间透明的图
  */
++ (UIImage *)imageUsePathWithColor:(UIColor *)color rect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius;
 + (UIImage *)imageWithColor:(UIColor *)color rect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius;
 
 

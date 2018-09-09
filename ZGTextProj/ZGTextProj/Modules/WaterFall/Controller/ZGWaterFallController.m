@@ -21,9 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = [UIColor blackColor];
     // 测试 画中间透明的图片
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 100, 100)];
-    imgView.image = [UIImage imageWithColor:[UIColor blueColor] rect:imgView.bounds cornerRadius:50];
+//    imgView.image = [UIImage imageWithColor:[UIColor blueColor] rect:imgView.bounds cornerRadius:50];
+
+    imgView.image = [UIImage imageUsePathWithColor:[UIColor whiteColor] rect:imgView.bounds cornerRadius:50];
     [self.view addSubview:imgView];
     
     return;
