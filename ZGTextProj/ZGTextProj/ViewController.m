@@ -83,6 +83,7 @@
 #import "ZGHotFixController.h"
 
 #import "ZGWaterFallController.h"
+#import "ZGVAKDiscoverController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -400,7 +401,7 @@
         ZGHotFixController *con = [[ZGHotFixController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 52){
-        ZGWaterFallController *con = [[ZGWaterFallController alloc] init];
+        ZGVAKDiscoverController *con = [[ZGVAKDiscoverController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

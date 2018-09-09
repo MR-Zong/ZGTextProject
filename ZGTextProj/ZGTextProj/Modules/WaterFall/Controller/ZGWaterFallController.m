@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    
     ZGWaterfallCollectionViewLayout *waterfallLayout = [[ZGWaterfallCollectionViewLayout alloc] init];
     waterfallLayout.delegate = self;
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:waterfallLayout];
@@ -45,6 +46,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+//    NSLog(@"indexPath.item %zd",indexPath.item);
     ZGTestCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"testCell" forIndexPath:indexPath];
     
     cell.backgroundColor = [UIColor yellowColor];

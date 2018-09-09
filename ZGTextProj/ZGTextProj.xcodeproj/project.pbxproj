@@ -97,6 +97,9 @@
 		EF58F6952143BA590000CDC7 /* ZGWaterFallController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58F6942143BA590000CDC7 /* ZGWaterFallController.m */; };
 		EF58F6982143BA990000CDC7 /* ZGWaterfallCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58F6972143BA980000CDC7 /* ZGWaterfallCollectionViewLayout.m */; };
 		EF58F69B2143BADB0000CDC7 /* ZGTestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58F69A2143BADB0000CDC7 /* ZGTestCollectionViewCell.m */; };
+		EF58F69E214509180000CDC7 /* ZGVAKDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58F69D214509180000CDC7 /* ZGVAKDiscoverController.m */; };
+		EF58F6A121450B420000CDC7 /* ZGVAKDiscoverReusableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58F6A021450B420000CDC7 /* ZGVAKDiscoverReusableViewHeader.m */; };
+		EF58F6A421450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58F6A321450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.m */; };
 		EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF618EB32000C4B40084A59E /* ZGBrightnessController.m */; };
 		EF618EB72000C75C0084A59E /* ZGBrightManger.m in Sources */ = {isa = PBXBuildFile; fileRef = EF618EB62000C75C0084A59E /* ZGBrightManger.m */; };
 		EF64EEA920E3DC5A009B5767 /* ZGNestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64EEA820E3DC5A009B5767 /* ZGNestTableView.m */; };
@@ -417,6 +420,12 @@
 		EF58F6972143BA980000CDC7 /* ZGWaterfallCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGWaterfallCollectionViewLayout.m; sourceTree = "<group>"; };
 		EF58F6992143BADB0000CDC7 /* ZGTestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGTestCollectionViewCell.h; sourceTree = "<group>"; };
 		EF58F69A2143BADB0000CDC7 /* ZGTestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGTestCollectionViewCell.m; sourceTree = "<group>"; };
+		EF58F69C214509180000CDC7 /* ZGVAKDiscoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGVAKDiscoverController.h; sourceTree = "<group>"; };
+		EF58F69D214509180000CDC7 /* ZGVAKDiscoverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGVAKDiscoverController.m; sourceTree = "<group>"; };
+		EF58F69F21450B420000CDC7 /* ZGVAKDiscoverReusableViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGVAKDiscoverReusableViewHeader.h; sourceTree = "<group>"; };
+		EF58F6A021450B420000CDC7 /* ZGVAKDiscoverReusableViewHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGVAKDiscoverReusableViewHeader.m; sourceTree = "<group>"; };
+		EF58F6A221450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGVAKDiscoverReusableViewFooter.h; sourceTree = "<group>"; };
+		EF58F6A321450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGVAKDiscoverReusableViewFooter.m; sourceTree = "<group>"; };
 		EF618EB22000C4B40084A59E /* ZGBrightnessController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBrightnessController.h; sourceTree = "<group>"; };
 		EF618EB32000C4B40084A59E /* ZGBrightnessController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBrightnessController.m; sourceTree = "<group>"; };
 		EF618EB52000C75C0084A59E /* ZGBrightManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBrightManger.h; sourceTree = "<group>"; };
@@ -1666,6 +1675,8 @@
 			children = (
 				EF58F6932143BA590000CDC7 /* ZGWaterFallController.h */,
 				EF58F6942143BA590000CDC7 /* ZGWaterFallController.m */,
+				EF58F69C214509180000CDC7 /* ZGVAKDiscoverController.h */,
+				EF58F69D214509180000CDC7 /* ZGVAKDiscoverController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1684,6 +1695,10 @@
 			children = (
 				EF58F6992143BADB0000CDC7 /* ZGTestCollectionViewCell.h */,
 				EF58F69A2143BADB0000CDC7 /* ZGTestCollectionViewCell.m */,
+				EF58F69F21450B420000CDC7 /* ZGVAKDiscoverReusableViewHeader.h */,
+				EF58F6A021450B420000CDC7 /* ZGVAKDiscoverReusableViewHeader.m */,
+				EF58F6A221450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.h */,
+				EF58F6A321450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3009,6 +3024,7 @@
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
 				EF083A2F21182D380037D17C /* ZGTimerProcess.m in Sources */,
 				EF14C7EB2101D419007CC07B /* ZGArchiveModelA.m in Sources */,
+				EF58F6A121450B420000CDC7 /* ZGVAKDiscoverReusableViewHeader.m in Sources */,
 				EFDCEE3620DE43190076C129 /* ZGAniTextCellController.m in Sources */,
 				EFE4307F20D4F65A006930E5 /* UIImage+ZGExtension.m in Sources */,
 				EFFCE4AF1F624D3F008E2375 /* ZGCalendarController.m in Sources */,
@@ -3048,6 +3064,7 @@
 				EF64EEB020E485A3009B5767 /* ZGCellOpGestureTable.m in Sources */,
 				EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */,
 				EFE4308B20D51721006930E5 /* ZGAnimationsTableView.m in Sources */,
+				EF58F6A421450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.m in Sources */,
 				EFF1C21420E769AD00DC57E5 /* ZGMemoryWebView.m in Sources */,
 				EF3CAA8720BD60B000FCC752 /* ZGCellOptionMGController.m in Sources */,
 				EF570B0C2022E94C00E14BC9 /* ZGNFObserverA.m in Sources */,
@@ -3140,6 +3157,7 @@
 				EFA9A62620AA770E00E73288 /* ZGStartOperation.m in Sources */,
 				EF618EB72000C75C0084A59E /* ZGBrightManger.m in Sources */,
 				EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */,
+				EF58F69E214509180000CDC7 /* ZGVAKDiscoverController.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
 				EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */,
