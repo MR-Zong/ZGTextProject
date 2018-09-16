@@ -42,6 +42,7 @@
 		EF25CBC320E28522005A7F8C /* ZGNestSubScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF25CBC220E28522005A7F8C /* ZGNestSubScrollView.m */; };
 		EF261CF32063A9050002BFB2 /* ZGPerformanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF261CF22063A9050002BFB2 /* ZGPerformanceController.m */; };
 		EF261CF62063AA600002BFB2 /* ZGFPSProbeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF261CF52063AA600002BFB2 /* ZGFPSProbeView.m */; };
+		EF266127214DFDF800B8DA30 /* ZGGzipController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF266126214DFDF800B8DA30 /* ZGGzipController.m */; };
 		EF2EEAAD20F4593B00C9FBAD /* ZGKVOResearchObserverB.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAAA20F4593B00C9FBAD /* ZGKVOResearchObserverB.m */; };
 		EF2EEAAE20F4593B00C9FBAD /* ZGKVOResearchData.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAAB20F4593B00C9FBAD /* ZGKVOResearchData.m */; };
 		EF2EEAAF20F4593B00C9FBAD /* ZGKVOResearchObserverA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2EEAAC20F4593B00C9FBAD /* ZGKVOResearchObserverA.m */; };
@@ -309,6 +310,8 @@
 		EF261CF22063A9050002BFB2 /* ZGPerformanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPerformanceController.m; sourceTree = "<group>"; };
 		EF261CF42063AA600002BFB2 /* ZGFPSProbeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFPSProbeView.h; sourceTree = "<group>"; };
 		EF261CF52063AA600002BFB2 /* ZGFPSProbeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFPSProbeView.m; sourceTree = "<group>"; };
+		EF266125214DFDF800B8DA30 /* ZGGzipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGGzipController.h; sourceTree = "<group>"; };
+		EF266126214DFDF800B8DA30 /* ZGGzipController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGGzipController.m; sourceTree = "<group>"; };
 		EF2EEAA720F4593B00C9FBAD /* ZGKVOResearchObserverB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGKVOResearchObserverB.h; sourceTree = "<group>"; };
 		EF2EEAA820F4593B00C9FBAD /* ZGKVOResearchObserverA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGKVOResearchObserverA.h; sourceTree = "<group>"; };
 		EF2EEAA920F4593B00C9FBAD /* ZGKVOResearchData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGKVOResearchData.h; sourceTree = "<group>"; };
@@ -993,6 +996,39 @@
 			children = (
 				EF261CF42063AA600002BFB2 /* ZGFPSProbeView.h */,
 				EF261CF52063AA600002BFB2 /* ZGFPSProbeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF266121214DFDE500B8DA30 /* Gzip */ = {
+			isa = PBXGroup;
+			children = (
+				EF266122214DFDE500B8DA30 /* Controller */,
+				EF266123214DFDE500B8DA30 /* Model */,
+				EF266124214DFDE500B8DA30 /* View */,
+			);
+			path = Gzip;
+			sourceTree = "<group>";
+		};
+		EF266122214DFDE500B8DA30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF266125214DFDF800B8DA30 /* ZGGzipController.h */,
+				EF266126214DFDF800B8DA30 /* ZGGzipController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF266123214DFDE500B8DA30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF266124214DFDE500B8DA30 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2333,6 +2369,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF266121214DFDE500B8DA30 /* Gzip */,
 				EF58F68F2143B9740000CDC7 /* WaterFall */,
 				EF42A570211D8D7D00EB4A4E /* HotFix */,
 				EF083A2621182BA80037D17C /* Timer */,
@@ -3199,6 +3236,7 @@
 				EFC6EE2B1FF4E81500E1D2C5 /* ZGCategoryObject.m in Sources */,
 				EFE5F83420932CCD0065775D /* ZGClassFunctionController.m in Sources */,
 				EFF1DA5C20D118D900CBC680 /* ZGPageDController.m in Sources */,
+				EF266127214DFDF800B8DA30 /* ZGGzipController.m in Sources */,
 				EF7AC49D211F247600ED7982 /* ZGPSHIModelA.m in Sources */,
 				EFDBCDBE1F2B159700C542AD /* main.m in Sources */,
 				EF25CBB420E28077005A7F8C /* ZGNestScrollView.m in Sources */,

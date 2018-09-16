@@ -84,6 +84,7 @@
 
 #import "ZGWaterFallController.h"
 #import "ZGVAKDiscoverController.h"
+#import "ZGGzipController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -118,7 +119,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 53;
+    return 54;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -230,6 +231,8 @@
         cell.textLabel.text = @"hotfix";
     }else if(indexPath.row == 52){
         cell.textLabel.text = @"waterfall";
+    }else if(indexPath.row == 53){
+        cell.textLabel.text = @"gZip";
     }
 
 
@@ -402,6 +405,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 52){
         ZGWaterFallController *con = [[ZGWaterFallController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 53){
+        ZGGzipController *con = [[ZGGzipController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
