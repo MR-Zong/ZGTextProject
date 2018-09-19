@@ -120,6 +120,7 @@
 		EF7231A720DB44E100999D3A /* ZGAniCollectionViewNormalController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7231A620DB44E100999D3A /* ZGAniCollectionViewNormalController.m */; };
 		EF7231AA20DB478200999D3A /* ZGTopicHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7231A920DB478200999D3A /* ZGTopicHeaderView.m */; };
 		EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EF76E21E1FFB324B009D21CF /* videoWithAudio.mp4 */; };
+		EF77D76B21527AA80069DE80 /* ZGScrollAndPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF77D76A21527AA80069DE80 /* ZGScrollAndPopController.m */; };
 		EF7A7A242100393D00B79368 /* ZGPropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7A7A232100393D00B79368 /* ZGPropertyController.m */; };
 		EF7AC499211F21AA00ED7982 /* ZGPEteModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7AC498211F21AA00ED7982 /* ZGPEteModelA.m */; };
 		EF7AC49D211F247600ED7982 /* ZGPSHIModelA.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7AC49C211F247600ED7982 /* ZGPSHIModelA.m */; };
@@ -466,6 +467,8 @@
 		EF7231A820DB478200999D3A /* ZGTopicHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTopicHeaderView.h; sourceTree = "<group>"; };
 		EF7231A920DB478200999D3A /* ZGTopicHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTopicHeaderView.m; sourceTree = "<group>"; };
 		EF76E21E1FFB324B009D21CF /* videoWithAudio.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoWithAudio.mp4; sourceTree = "<group>"; };
+		EF77D76921527AA80069DE80 /* ZGScrollAndPopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGScrollAndPopController.h; sourceTree = "<group>"; };
+		EF77D76A21527AA80069DE80 /* ZGScrollAndPopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGScrollAndPopController.m; sourceTree = "<group>"; };
 		EF7A7A222100393D00B79368 /* ZGPropertyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPropertyController.h; sourceTree = "<group>"; };
 		EF7A7A232100393D00B79368 /* ZGPropertyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPropertyController.m; sourceTree = "<group>"; };
 		EF7AC497211F21AA00ED7982 /* ZGPEteModelA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPEteModelA.h; sourceTree = "<group>"; };
@@ -823,6 +826,8 @@
 				EF0A0E882004C2490095779B /* ZGSTestController.m */,
 				EF3CFB4220F09DB200FCE02E /* ZGSTestDragingController.h */,
 				EF3CFB4320F09DB200FCE02E /* ZGSTestDragingController.m */,
+				EF77D76921527AA80069DE80 /* ZGScrollAndPopController.h */,
+				EF77D76A21527AA80069DE80 /* ZGScrollAndPopController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3071,6 +3076,7 @@
 				EF01D5E620AE6FC00023B282 /* ZGNTestController.m in Sources */,
 				EF72319F20DA40B600999D3A /* ZGAnimationsCollectionViewController.m in Sources */,
 				EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */,
+				EF77D76B21527AA80069DE80 /* ZGScrollAndPopController.m in Sources */,
 				EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */,
 				EF25CBC020E284E3005A7F8C /* ZGNestPageDController.m in Sources */,
 				EF2F66921FFF651F00EA4F6F /* ZGTbBaseTableView.m in Sources */,

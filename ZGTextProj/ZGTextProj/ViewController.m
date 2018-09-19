@@ -85,6 +85,7 @@
 #import "ZGWaterFallController.h"
 #import "ZGVAKDiscoverController.h"
 #import "ZGGzipController.h"
+#import "ZGScrollAndPopController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -299,7 +300,7 @@
         ZGBrightnessController *con = [[ZGBrightnessController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 17){ // uiScorllView
-        ZGSTestController *con = [[ZGSTestController alloc] init];
+        ZGScrollAndPopController *con = [[ZGScrollAndPopController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 18){
         ZGOneScrollViewController *con = [[ZGOneScrollViewController alloc] init];
