@@ -87,6 +87,8 @@
 #import "ZGGzipController.h"
 #import "ZGScrollAndPopController.h"
 
+#import "ZGFontController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -120,7 +122,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 54;
+    return 55;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -234,6 +236,8 @@
         cell.textLabel.text = @"waterfall";
     }else if(indexPath.row == 53){
         cell.textLabel.text = @"gZip";
+    }else if(indexPath.row == 54){
+        cell.textLabel.text = @"font";
     }
 
 
@@ -409,6 +413,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 53){
         ZGGzipController *con = [[ZGGzipController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 54){
+        ZGFontController *con = [[ZGFontController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

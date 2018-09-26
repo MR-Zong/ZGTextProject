@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411B2BEA215B7275009747D8 /* ZGFontController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B2BE9215B7275009747D8 /* ZGFontController.m */; };
+		411B2BF2215B734F009747D8 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BEC215B734E009747D8 /* Cairo-Black.ttf */; };
+		411B2BF3215B734F009747D8 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BED215B734E009747D8 /* Cairo-Light.ttf */; };
+		411B2BF4215B734F009747D8 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BEE215B734E009747D8 /* Cairo-Regular.ttf */; };
+		411B2BF5215B734F009747D8 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BEF215B734E009747D8 /* Cairo-SemiBold.ttf */; };
+		411B2BF6215B734F009747D8 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BF0215B734E009747D8 /* Cairo-Bold.ttf */; };
+		411B2BF7215B734F009747D8 /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BF1215B734F009747D8 /* Cairo-ExtraLight.ttf */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
 		EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */; };
 		EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E220AE6E310023B282 /* ZGNavTestController.m */; };
@@ -243,6 +250,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		411B2BE8215B7275009747D8 /* ZGFontController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFontController.h; sourceTree = "<group>"; };
+		411B2BE9215B7275009747D8 /* ZGFontController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFontController.m; sourceTree = "<group>"; };
+		411B2BEC215B734E009747D8 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
+		411B2BED215B734E009747D8 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		411B2BEE215B734E009747D8 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		411B2BEF215B734E009747D8 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		411B2BF0215B734E009747D8 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		411B2BF1215B734F009747D8 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
 		EF01D5B220AC08170023B282 /* ZGSafeAreaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSafeAreaController.h; sourceTree = "<group>"; };
 		EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSafeAreaController.m; sourceTree = "<group>"; };
 		EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZGSAExample.storyboard; sourceTree = "<group>"; };
@@ -697,6 +712,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		411B2BE4215B7264009747D8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				411B2BEB215B72ED009747D8 /* Source */,
+				411B2BE5215B7264009747D8 /* Controller */,
+				411B2BE6215B7264009747D8 /* Model */,
+				411B2BE7215B7264009747D8 /* View */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		411B2BE5215B7264009747D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				411B2BE8215B7275009747D8 /* ZGFontController.h */,
+				411B2BE9215B7275009747D8 /* ZGFontController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		411B2BE6215B7264009747D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		411B2BE7215B7264009747D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		411B2BEB215B72ED009747D8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				411B2BEC215B734E009747D8 /* Cairo-Black.ttf */,
+				411B2BF0215B734E009747D8 /* Cairo-Bold.ttf */,
+				411B2BF1215B734F009747D8 /* Cairo-ExtraLight.ttf */,
+				411B2BED215B734E009747D8 /* Cairo-Light.ttf */,
+				411B2BEE215B734E009747D8 /* Cairo-Regular.ttf */,
+				411B2BEF215B734E009747D8 /* Cairo-SemiBold.ttf */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		EF01D5AE20AC070B0023B282 /* SafeArea */ = {
 			isa = PBXGroup;
 			children = (
@@ -2374,6 +2436,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				411B2BE4215B7264009747D8 /* Font */,
 				EF266121214DFDE500B8DA30 /* Gzip */,
 				EF58F68F2143B9740000CDC7 /* WaterFall */,
 				EF42A570211D8D7D00EB4A4E /* HotFix */,
@@ -3027,9 +3090,15 @@
 				EF7F2CA7210972F800AC6755 /* img.jpg in Resources */,
 				EFDBCDC91F2B159700C542AD /* Assets.xcassets in Resources */,
 				EF7F2CA42108176E00AC6755 /* news_pop_six_winged_demon@3x.png in Resources */,
+				411B2BF3215B734F009747D8 /* Cairo-Light.ttf in Resources */,
+				411B2BF6215B734F009747D8 /* Cairo-Bold.ttf in Resources */,
 				EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */,
+				411B2BF5215B734F009747D8 /* Cairo-SemiBold.ttf in Resources */,
 				EF14C7ED2101E121007CC07B /* modelA3.plist in Resources */,
+				411B2BF4215B734F009747D8 /* Cairo-Regular.ttf in Resources */,
 				EFFC13561F3454D300E6F664 /* myPlayer.mp4 in Resources */,
+				411B2BF7215B734F009747D8 /* Cairo-ExtraLight.ttf in Resources */,
+				411B2BF2215B734F009747D8 /* Cairo-Black.ttf in Resources */,
 				EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */,
 				EFDBCDC71F2B159700C542AD /* Main.storyboard in Resources */,
 				EFFCE4A21F62330F008E2375 /* unicode_to_hanyu_pinyin.txt in Resources */,
@@ -3203,6 +3272,7 @@
 				EF58F69E214509180000CDC7 /* ZGVAKDiscoverController.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
+				411B2BEA215B7275009747D8 /* ZGFontController.m in Sources */,
 				EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */,
 				EF42A576211D8D9100EB4A4E /* ZGHotFixController.m in Sources */,
 				EF2F668F1FFF638800EA4F6F /* ZGTbTestController.m in Sources */,

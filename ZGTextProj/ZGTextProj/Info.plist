@@ -4,6 +4,15 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Cairo-Black.ttf</string>
+		<string>Cairo-Bold.ttf</string>
+		<string>Cairo-ExtraLight.ttf</string>
+		<string>Cairo-Light.ttf</string>
+		<string>Cairo-Regular.ttf</string>
+		<string>Cairo-SemiBold.ttf</string>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
