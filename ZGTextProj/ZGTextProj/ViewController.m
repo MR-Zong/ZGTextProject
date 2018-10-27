@@ -23,7 +23,11 @@
 #import "ZGCategoryController.h"
 #import "ZGCategoryExtendController.h"
 
+// avfoundation
 #import "ZGAVAudioTrackController.h"
+#import "ZGAVAudioClipController.h"
+
+
 #import "ZGInstanceController.h"
 #import "ZGBlockController.h"
 #import "ZGProtocolController.h"
@@ -89,6 +93,9 @@
 
 #import "ZGFontController.h"
 
+#import "ZGBezierController.h"
+#import "ZGAutoScrollLabelController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -122,7 +129,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 55;
+    return 58;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -238,6 +245,12 @@
         cell.textLabel.text = @"gZip";
     }else if(indexPath.row == 54){
         cell.textLabel.text = @"font";
+    }else if(indexPath.row == 55){
+        cell.textLabel.text = @"audioClip";
+    }else if(indexPath.row == 56){
+        cell.textLabel.text = @"bezierPath";
+    }else if(indexPath.row == 57){
+        cell.textLabel.text = @"autoScrollLabel";
     }
 
 
@@ -416,6 +429,15 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 54){
         ZGFontController *con = [[ZGFontController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 55){
+        ZGAVAudioClipController *con = [[ZGAVAudioClipController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 56){
+        ZGBezierController *con = [[ZGBezierController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 57){
+        ZGAutoScrollLabelController *con = [[ZGAutoScrollLabelController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
