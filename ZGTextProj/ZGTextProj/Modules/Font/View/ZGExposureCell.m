@@ -9,8 +9,6 @@
 #import "ZGExposureCell.h"
 #import "ZGExposureManager.h"
 
-NSString *const ZGExposureContentOffsetChangeNotify = @"ZGExposureContentOffsetChangeNotify";
-NSString *const ZGExposureStatisticNotify = @"ZGExposureStatisticNotify";
 
 @interface ZGExposureCell ()
 
@@ -32,9 +30,9 @@ NSString *const ZGExposureStatisticNotify = @"ZGExposureStatisticNotify";
     if (self = [super initWithFrame:frame]) {
         
         self.backgroundColor = [UIColor blueColor];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didContentOffsetChange:) name:ZGExposureContentOffsetChangeNotify object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didStatistics:) name:ZGExposureStatisticNotify object:nil];
-        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didContentOffsetChange:) name:[ZGExposureManager zg_exposure_contentOffsetChangeNotifyNameWithUniqueID:@"ZGFontController"] object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didStatistics:) name:[ZGExposureManager zg_exposure_statisticNotifyNameWithUniqueID:@"ZGFontController"] object:nil];
+
         _corverImgView = [[UIImageView alloc] init];
         [self.contentView addSubview:_corverImgView];
         
@@ -67,9 +65,9 @@ NSString *const ZGExposureStatisticNotify = @"ZGExposureStatisticNotify";
 #pragma mark - - - -  -
 - (void)didContentOffsetChange:(NSNotification *)note
 {
-    CGFloat y = [note.userInfo[@"contentOffset_y"] floatValue];
-    
-    CGRect scrollViewBounds = CGRectMake(0, y, 375, 667);
+  
+    CGRect scrollViewBounds = [note.userInfo[@"zg_scrollViewBounds"] CGRectValue];
+
     //    NSLog(@"contentOffset_y %f",y);
 //        NSLog(@"self.frame %@",NSStringFromCGRect(self.frame));
     

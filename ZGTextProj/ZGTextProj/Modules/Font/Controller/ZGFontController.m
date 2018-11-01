@@ -27,9 +27,7 @@
 {
     [super viewDidAppear:animated];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:ZGExposureContentOffsetChangeNotify object:nil userInfo:@{@"contentOffset_y":@(self.collectionView.contentOffset.y)}];
-    [self zg_exposureOnScrollDidEnd];
-    
+    [self.exposureManager zg_exposure_viewDidAppearWithScrollViewBounds:self.collectionView.bounds];
 }
 
 - (void)viewDidLoad {
@@ -60,7 +58,7 @@
 
 - (void)testExposure
 {
-    _exposureManager = [[ZGExposureManager alloc] init];
+    _exposureManager = [ZGExposureManager managerWithUniqueID:@"ZGFontController"];
     _exp_dataModelDic = [NSMutableDictionary dictionary];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -146,28 +144,21 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     // contentOffset 必须传到cell
-    [[NSNotificationCenter defaultCenter] postNotificationName:ZGExposureContentOffsetChangeNotify object:nil userInfo:@{@"contentOffset_y":@(scrollView.contentOffset.y)}];
-//    NSLog(@"contentOffset.y %f",scrollView.contentOffset.y);
+    //    NSLog(@"contentOffset.y %f",scrollView.contentOffset.y);
+    [self.exposureManager zg_exposure_scrollViewDidScrollWithScrollViewBounds:CGRectMake(0, scrollView.contentOffset.y, scrollView.bounds.size.width, scrollView.bounds.size.height)];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    [self zg_exposureOnScrollDidEnd];
+    [self.exposureManager zg_exposure_scrollDidEnd];
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    if (!decelerate) {
-        [self zg_exposureOnScrollDidEnd];
+    if (!decelerate)
+    {
+        [self.exposureManager zg_exposure_scrollDidEnd];
     }
-}
-
-- (void)zg_exposureOnScrollDidEnd
-{
-    // 500ms 统计一次曝光
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:ZGExposureStatisticNotify object:nil];
-    });
 }
 
 @end
