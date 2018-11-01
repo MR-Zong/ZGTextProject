@@ -27,7 +27,9 @@
 {
     [super viewDidAppear:animated];
     
-    [self.exposureManager zg_exposure_viewDidAppearWithScrollViewBounds:self.collectionView.bounds];
+//    [self.exposureManager zg_exposure_viewDidAppearWithScrollViewBounds:CGRectMake(0, self.collectionView.contentOffset.y, self.collectionView.bounds.size.width, self.collectionView.bounds.size.height)];
+        [self.exposureManager zg_exposure_viewDidAppearWithScrollViewBounds:self.collectionView.bounds];
+
 }
 
 - (void)viewDidLoad {
@@ -62,9 +64,10 @@
     _exp_dataModelDic = [NSMutableDictionary dictionary];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-//    CGFloat itemWidth = ([UIScreen mainScreen].bounds.size.width - 2) / 3.0;
-     CGFloat itemWidth = [UIScreen mainScreen].bounds.size.width;
-    CGFloat itemHeight = [UIScreen mainScreen].bounds.size.height;
+    CGFloat itemWidth = ([UIScreen mainScreen].bounds.size.width - 2) / 3.0;
+    CGFloat itemHeight = itemWidth;
+//     CGFloat itemWidth = [UIScreen mainScreen].bounds.size.width;
+//    CGFloat itemHeight = [UIScreen mainScreen].bounds.size.height;
     flowLayout.itemSize = CGSizeMake(itemWidth, itemHeight);
     flowLayout.minimumLineSpacing = 1;
     flowLayout.minimumInteritemSpacing = 1;
