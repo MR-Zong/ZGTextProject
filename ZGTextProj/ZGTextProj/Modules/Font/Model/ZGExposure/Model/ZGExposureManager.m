@@ -105,7 +105,7 @@ typedef NS_ENUM(NSInteger,ZGCellAppearBeginType) {
         apperLen = CGRectGetMaxY(cellFrame) - scrollViewBounds.origin.y;
     }
     dataModel.exposure_persent = apperLen / cellFrame.size.height;
-    NSLog(@"exposure_persent %f, item %zd",dataModel.exposure_persent,dataModel.indexPath.item);
+//    NSLog(@"exposure_persent %f, item %zd",dataModel.exposure_persent,dataModel.indexPath.item);
     [self processExposureTimeWithDataModel:dataModel exposureBlock:exposureBlock];
 }
 
