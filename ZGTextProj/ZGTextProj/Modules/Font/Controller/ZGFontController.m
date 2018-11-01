@@ -70,6 +70,7 @@
     flowLayout.itemSize = CGSizeMake(itemWidth, itemHeight);
     flowLayout.minimumLineSpacing = 1;
     flowLayout.minimumInteritemSpacing = 1;
+    flowLayout.headerReferenceSize = CGSizeMake(100, 200);
     
     
     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];

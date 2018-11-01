@@ -16,6 +16,7 @@ NSString *const ZGExposureStatisticNotify = @"ZGExposureStatisticNotify";
 
 @property (nonatomic, strong) UIImageView *corverImgView;
 @property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIView *lineView;
 
 @end
 
@@ -40,6 +41,10 @@ NSString *const ZGExposureStatisticNotify = @"ZGExposureStatisticNotify";
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:_titleLabel];
+        
+        _lineView = [[UIView alloc] init];
+        _lineView.backgroundColor = [UIColor redColor];
+        [self.contentView addSubview:_lineView];
     }
     return self;
 }
@@ -49,6 +54,8 @@ NSString *const ZGExposureStatisticNotify = @"ZGExposureStatisticNotify";
     [super layoutSubviews];
     self.corverImgView.frame = self.bounds;
     self.titleLabel.frame = self.bounds;
+    CGFloat lineH = 2;
+    self.lineView.frame = CGRectMake(0, (self.bounds.size.height - lineH)/2.0, self.bounds.size.width, lineH);
 }
 
 - (void)setExp_dataModel:(ZGExposureDataModel *)exp_dataModel
@@ -62,7 +69,7 @@ NSString *const ZGExposureStatisticNotify = @"ZGExposureStatisticNotify";
 {
     CGFloat y = [note.userInfo[@"contentOffset_y"] floatValue];
     
-    CGRect scrollViewBounds = CGRectMake(0, y+64, 375, 667);
+    CGRect scrollViewBounds = CGRectMake(0, y, 375, 667);
     //    NSLog(@"contentOffset_y %f",y);
 //        NSLog(@"self.frame %@",NSStringFromCGRect(self.frame));
     
