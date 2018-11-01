@@ -10,6 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+UIKIT_EXTERN NSString *const ZGExposure_scrollViewBounds_key;
+UIKIT_EXTERN NSString *const ZGExposure_indexPath_key;
+
+
 typedef void(^ZGRectUtilExposureBlock)(void);
 
 @interface ZGExposureDataModel : NSObject

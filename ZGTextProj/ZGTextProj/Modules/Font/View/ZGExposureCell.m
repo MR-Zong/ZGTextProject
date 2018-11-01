@@ -66,7 +66,7 @@
 - (void)didContentOffsetChange:(NSNotification *)note
 {
   
-    CGRect scrollViewBounds = [note.userInfo[@"zg_scrollViewBounds"] CGRectValue];
+    CGRect scrollViewBounds = [note.userInfo[ZGExposure_scrollViewBounds_key] CGRectValue];
 
     //    NSLog(@"contentOffset_y %f",y);
 //        NSLog(@"self.frame %@",NSStringFromCGRect(self.frame));

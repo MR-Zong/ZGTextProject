@@ -8,6 +8,10 @@
 
 #import "ZGExposureManager.h"
 
+NSString *const ZGExposure_scrollViewBounds_key = @"ZGExposure_scrollViewBounds_key";
+NSString *const ZGExposure_indexPath_key = @"ZGExposure_indexPath_key";
+
+
 typedef NS_ENUM(NSInteger,ZGCellAppearBeginType) {
     ZGCellAppearBeginTypeTop, // 从cell的top开始出现
     ZGCellAppearBeginTypeBottm,
@@ -175,12 +179,12 @@ typedef NS_ENUM(NSInteger,ZGCellAppearBeginType) {
 - (void)zg_exposure_viewDidAppearWithScrollViewBounds:(CGRect)scrollViewBounds
 {
     [self zg_exposure_scrollViewDidScrollWithScrollViewBounds:scrollViewBounds];
-    [self zg_exposure_scrollDidEnd];
+    [self zg_exposure_statisticOption];
 }
 
 - (void)zg_exposure_scrollViewDidScrollWithScrollViewBounds:(CGRect)scrollViewBounds
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:_exposureContentOffsetChangeNotifyName object:nil userInfo:@{@"zg_scrollViewBounds":[NSValue valueWithCGRect:scrollViewBounds]}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:_exposureContentOffsetChangeNotifyName object:nil userInfo:@{ZGExposure_scrollViewBounds_key:[NSValue valueWithCGRect:scrollViewBounds]}];
 }
 
 - (void)zg_exposure_scrollDidEnd
@@ -200,7 +204,7 @@ typedef NS_ENUM(NSInteger,ZGCellAppearBeginType) {
 {
     // 500ms 统计一次曝光
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:self.exposureStatisticNotifyName object:nil userInfo:@{@"zg_indexPath":indexPath}];
+        [[NSNotificationCenter defaultCenter] postNotificationName:self.exposureStatisticNotifyName object:nil userInfo:@{ZGExposure_indexPath_key:indexPath}];
     });
 }
 
