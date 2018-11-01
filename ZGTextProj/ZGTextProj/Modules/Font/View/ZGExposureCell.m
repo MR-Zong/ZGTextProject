@@ -76,7 +76,7 @@ NSString *const ZGExposureStatisticNotify = @"ZGExposureStatisticNotify";
 - (void)didStatistics:(NSNotification *)note
 {
      __weak typeof(self) weakSelf = self;
-    [self.exposureMgr zg_exposureStatisticWithDataModel:self.exp_dataModel exposureBlock:^{
+    [self.exposureMgr zg_exposure_statisticWithDataModel:self.exp_dataModel exposureBlock:^{
         // 日志打点
         NSLog(@"item %zd exposure",weakSelf.exp_dataModel.indexPath.item);
     }];

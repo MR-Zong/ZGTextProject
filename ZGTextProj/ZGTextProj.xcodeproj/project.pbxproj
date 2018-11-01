@@ -23,7 +23,7 @@
 		41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */; };
 		41CDAA512176048600D0DE9B /* ZGBezierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA502176048600D0DE9B /* ZGBezierController.m */; };
 		41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE518C218989C400F17BF5 /* ZGExposureCell.m */; };
-		41FE5190218992C000F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE518F218992C000F17BF5 /* ZGExposureManager.m */; };
+		41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE519C218B138900F17BF5 /* ZGExposureManager.m */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
 		EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */; };
 		EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E220AE6E310023B282 /* ZGNavTestController.m */; };
@@ -284,8 +284,8 @@
 		41CDAA502176048600D0DE9B /* ZGBezierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBezierController.m; sourceTree = "<group>"; };
 		41FE518B218989C400F17BF5 /* ZGExposureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExposureCell.h; sourceTree = "<group>"; };
 		41FE518C218989C400F17BF5 /* ZGExposureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExposureCell.m; sourceTree = "<group>"; };
-		41FE518E218992C000F17BF5 /* ZGExposureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExposureManager.h; sourceTree = "<group>"; };
-		41FE518F218992C000F17BF5 /* ZGExposureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExposureManager.m; sourceTree = "<group>"; };
+		41FE519B218B138900F17BF5 /* ZGExposureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGExposureManager.h; sourceTree = "<group>"; };
+		41FE519C218B138900F17BF5 /* ZGExposureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGExposureManager.m; sourceTree = "<group>"; };
 		EF01D5B220AC08170023B282 /* ZGSafeAreaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSafeAreaController.h; sourceTree = "<group>"; };
 		EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSafeAreaController.m; sourceTree = "<group>"; };
 		EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZGSAExample.storyboard; sourceTree = "<group>"; };
@@ -763,8 +763,7 @@
 		411B2BE6215B7264009747D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				41FE518E218992C000F17BF5 /* ZGExposureManager.h */,
-				41FE518F218992C000F17BF5 /* ZGExposureManager.m */,
+				41FE5191218AF8D100F17BF5 /* ZGExposure */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -877,6 +876,23 @@
 				4189406821798637008C13D8 /* YGRecordView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		41FE5191218AF8D100F17BF5 /* ZGExposure */ = {
+			isa = PBXGroup;
+			children = (
+				41FE5192218AF8D100F17BF5 /* Model */,
+			);
+			path = ZGExposure;
+			sourceTree = "<group>";
+		};
+		41FE5192218AF8D100F17BF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41FE519B218B138900F17BF5 /* ZGExposureManager.h */,
+				41FE519C218B138900F17BF5 /* ZGExposureManager.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EF01D5AE20AC070B0023B282 /* SafeArea */ = {
@@ -3275,6 +3291,7 @@
 				EF72319F20DA40B600999D3A /* ZGAnimationsCollectionViewController.m in Sources */,
 				EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */,
 				EF77D76B21527AA80069DE80 /* ZGScrollAndPopController.m in Sources */,
+				41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */,
 				EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */,
 				EF25CBC020E284E3005A7F8C /* ZGNestPageDController.m in Sources */,
 				EF2F66921FFF651F00EA4F6F /* ZGTbBaseTableView.m in Sources */,
@@ -3350,7 +3367,6 @@
 				EFFCE4C71F64D67C008E2375 /* ZGChineseDate.m in Sources */,
 				EF58F6952143BA590000CDC7 /* ZGWaterFallController.m in Sources */,
 				EF7231AA20DB478200999D3A /* ZGTopicHeaderView.m in Sources */,
-				41FE5190218992C000F17BF5 /* ZGExposureManager.m in Sources */,
 				EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */,
 				EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */,
 				EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */,
