@@ -9,25 +9,40 @@
 #import "ZGAutoScrollLabelController.h"
 #import "AutoScrollLabel.h"
 #import "ZGAutoScrollLabel.h"
+#import "ZGWeakSetterModel.h"
 
 @interface ZGAutoScrollLabelController () <UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) ZGAutoScrollLabel *autoScrollLabel;
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) ZGWeakSetterModel *weakModel;
 
 @end
 
 @implementation ZGAutoScrollLabelController
+
+- (void)dealloc
+{
+    NSLog(@"dealloc");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self testAutoScrollLabel];
+    [self testWeakSetter];
+    
+//    [self testAutoScrollLabel];
     
 //    [self testCellForRow];
     
+}
+
+- (void)testWeakSetter
+{
+    _weakModel = [[ZGWeakSetterModel alloc] init];
+    _weakModel.delegate = self;
 }
 
 

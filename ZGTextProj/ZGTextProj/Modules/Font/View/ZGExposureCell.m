@@ -66,13 +66,13 @@
 - (void)didContentOffsetChange:(NSNotification *)note
 {
   
-    CGRect scrollViewBounds = [note.userInfo[ZGExposure_scrollViewBounds_key] CGRectValue];
+    CGRect scrollVieaawBounds = [note.userInfo[ZGExposure_scrollViewBounds_key] CGRectValue];
 
     //    NSLog(@"contentOffset_y %f",y);
 //        NSLog(@"self.frame %@",NSStringFromCGRect(self.frame));
     
     __weak typeof(self) weakSelf = self;
-    [self.exposureMgr zg_exposureWithDataModel:self.exp_dataModel scrollViewBounds:scrollViewBounds cellFrame:self.frame exposureBlock:^{
+    [self.exposureMgr zg_exposureWithDataModel:self.exp_dataModel scrollViewBounds:scrollVieaawBounds cellFrame:self.frame exposureBlock:^{
         // 日志打点
         NSLog(@"item %zd exposure",weakSelf.exp_dataModel.indexPath.item);
     }];

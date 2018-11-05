@@ -14,6 +14,7 @@
 		411B2BF5215B734F009747D8 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BEF215B734E009747D8 /* Cairo-SemiBold.ttf */; };
 		411B2BF6215B734F009747D8 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BF0215B734E009747D8 /* Cairo-Bold.ttf */; };
 		411B2BF7215B734F009747D8 /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BF1215B734F009747D8 /* Cairo-ExtraLight.ttf */; };
+		4137F2C32190209C003B6D60 /* ZGWeakSetterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2C22190209C003B6D60 /* ZGWeakSetterModel.m */; };
 		415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B2D2181C851000A8213 /* AutoScrollLabel.m */; };
 		415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */; };
 		415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */; };
@@ -268,6 +269,8 @@
 		411B2BEF215B734E009747D8 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
 		411B2BF0215B734E009747D8 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
 		411B2BF1215B734F009747D8 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4137F2C12190209C003B6D60 /* ZGWeakSetterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWeakSetterModel.h; sourceTree = "<group>"; };
+		4137F2C22190209C003B6D60 /* ZGWeakSetterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWeakSetterModel.m; sourceTree = "<group>"; };
 		415D8B2D2181C851000A8213 /* AutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoScrollLabel.m; sourceTree = "<group>"; };
 		415D8B2E2181C851000A8213 /* AutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoScrollLabel.h; sourceTree = "<group>"; };
 		415D8B312181C872000A8213 /* ZGAutoScrollLabelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAutoScrollLabelController.h; sourceTree = "<group>"; };
@@ -790,9 +793,19 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		4137F2C021902083003B6D60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4137F2C12190209C003B6D60 /* ZGWeakSetterModel.h */,
+				4137F2C22190209C003B6D60 /* ZGWeakSetterModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		415D8B2A2181C845000A8213 /* AutoScrollLabel */ = {
 			isa = PBXGroup;
 			children = (
+				4137F2C021902083003B6D60 /* Model */,
 				415D8B302181C864000A8213 /* Controller */,
 				415D8B2B2181C845000A8213 /* View */,
 			);
@@ -3465,6 +3478,7 @@
 				EFF1DA5C20D118D900CBC680 /* ZGPageDController.m in Sources */,
 				EF266127214DFDF800B8DA30 /* ZGGzipController.m in Sources */,
 				EF7AC49D211F247600ED7982 /* ZGPSHIModelA.m in Sources */,
+				4137F2C32190209C003B6D60 /* ZGWeakSetterModel.m in Sources */,
 				EFDBCDBE1F2B159700C542AD /* main.m in Sources */,
 				EF25CBB420E28077005A7F8C /* ZGNestScrollView.m in Sources */,
 				EFC4FA9E206C98D000F42842 /* ZGNSProxyController.m in Sources */,
