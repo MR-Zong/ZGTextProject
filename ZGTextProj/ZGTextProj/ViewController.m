@@ -95,6 +95,7 @@
 
 #import "ZGBezierController.h"
 #import "ZGAutoScrollLabelController.h"
+#import "ZGPhotoPickController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -129,7 +130,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 58;
+    return 59;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -251,6 +252,8 @@
         cell.textLabel.text = @"bezierPath";
     }else if(indexPath.row == 57){
         cell.textLabel.text = @"autoScrollLabel";
+    }else if(indexPath.row == 58){
+        cell.textLabel.text = @"photoKit";
     }
 
 
@@ -438,6 +441,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 57){
         ZGAutoScrollLabelController *con = [[ZGAutoScrollLabelController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 58){
+        ZGPhotoPickController *con = [[ZGPhotoPickController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
