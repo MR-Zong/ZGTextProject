@@ -85,10 +85,23 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    [self testCollectionView];
+    [self testAyncOnMain];
+//    [self testCollectionView];
     
     // gzip
 //    testGzip();
+}
+
+- (void)testAyncOnMain
+{
+    /**
+     * 为什么这样就可以了呢
+     */
+    NSLog(@"aaaaaaaa");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"cccccccc");
+    });
+    NSLog(@"bbbbbbbb");
 }
 
 - (void)testCollectionView
