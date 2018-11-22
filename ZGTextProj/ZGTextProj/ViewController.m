@@ -97,6 +97,8 @@
 #import "ZGAutoScrollLabelController.h"
 #import "ZGPhotoPickController.h"
 
+#import "ZGAssertController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -130,7 +132,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 59;
+    return 60;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -254,7 +256,10 @@
         cell.textLabel.text = @"autoScrollLabel";
     }else if(indexPath.row == 58){
         cell.textLabel.text = @"photoKit";
+    }else if(indexPath.row == 59){
+        cell.textLabel.text = @"assert";
     }
+
 
 
 
@@ -444,6 +449,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 58){
         ZGPhotoPickController *con = [[ZGPhotoPickController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 59){
+        ZGAssertController *con = [[ZGAssertController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

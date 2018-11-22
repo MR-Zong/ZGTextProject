@@ -26,6 +26,7 @@
 		41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA13217496A900D0DE9B /* audioClipTest.m4a */; };
 		41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */; };
 		41CDAA512176048600D0DE9B /* ZGBezierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA502176048600D0DE9B /* ZGBezierController.m */; };
+		41D439B021A68EBB00C16FCA /* ZGAssertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D439AF21A68EBB00C16FCA /* ZGAssertController.m */; };
 		41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE518C218989C400F17BF5 /* ZGExposureCell.m */; };
 		41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE519C218B138900F17BF5 /* ZGExposureManager.m */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
@@ -294,6 +295,8 @@
 		41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioClipTest2.mp3; sourceTree = "<group>"; };
 		41CDAA4F2176048600D0DE9B /* ZGBezierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBezierController.h; sourceTree = "<group>"; };
 		41CDAA502176048600D0DE9B /* ZGBezierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBezierController.m; sourceTree = "<group>"; };
+		41D439AE21A68EBB00C16FCA /* ZGAssertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAssertController.h; sourceTree = "<group>"; };
+		41D439AF21A68EBB00C16FCA /* ZGAssertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAssertController.m; sourceTree = "<group>"; };
 		41FE518B218989C400F17BF5 /* ZGExposureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExposureCell.h; sourceTree = "<group>"; };
 		41FE518C218989C400F17BF5 /* ZGExposureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExposureCell.m; sourceTree = "<group>"; };
 		41FE519B218B138900F17BF5 /* ZGExposureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGExposureManager.h; sourceTree = "<group>"; };
@@ -933,6 +936,39 @@
 			children = (
 				4189406721798637008C13D8 /* YGRecordView.h */,
 				4189406821798637008C13D8 /* YGRecordView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41D439AA21A68EA700C16FCA /* Assert */ = {
+			isa = PBXGroup;
+			children = (
+				41D439AB21A68EA700C16FCA /* Controller */,
+				41D439AC21A68EA700C16FCA /* Model */,
+				41D439AD21A68EA700C16FCA /* View */,
+			);
+			path = Assert;
+			sourceTree = "<group>";
+		};
+		41D439AB21A68EA700C16FCA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41D439AE21A68EBB00C16FCA /* ZGAssertController.h */,
+				41D439AF21A68EBB00C16FCA /* ZGAssertController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41D439AC21A68EA700C16FCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41D439AD21A68EA700C16FCA /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2633,6 +2669,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41D439AA21A68EA700C16FCA /* Assert */,
 				4137F2E62192B90F003B6D60 /* PhotoKit */,
 				415D8B2A2181C845000A8213 /* AutoScrollLabel */,
 				41CDAA4B2176046900D0DE9B /* BezierPath */,
@@ -3512,6 +3549,7 @@
 				EF0A0EAB2006FE240095779B /* ZGOHeaderScrollView.m in Sources */,
 				EF58F6982143BA990000CDC7 /* ZGWaterfallCollectionViewLayout.m in Sources */,
 				EF7F2CDF210AF88500AC6755 /* ZGSTIBaseController.m in Sources */,
+				41D439B021A68EBB00C16FCA /* ZGAssertController.m in Sources */,
 				EFE4308E20D5305F006930E5 /* ZGAnimationCellNormalController.m in Sources */,
 				EF7231A420DB413200999D3A /* ZGHeaderCollectionViewCell.m in Sources */,
 				EF3CAA8F20BD616800FCC752 /* MGSwipeButton.m in Sources */,
