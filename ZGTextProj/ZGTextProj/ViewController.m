@@ -98,6 +98,7 @@
 #import "ZGPhotoPickController.h"
 
 #import "ZGAssertController.h"
+#import "ZGIMessageController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -132,7 +133,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 60;
+    return 61;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -258,6 +259,8 @@
         cell.textLabel.text = @"photoKit";
     }else if(indexPath.row == 59){
         cell.textLabel.text = @"assert";
+    }else if(indexPath.row == 60){
+        cell.textLabel.text = @"IMessage";
     }
 
 
@@ -452,6 +455,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 59){
         ZGAssertController *con = [[ZGAssertController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 60){
+        ZGIMessageController *con = [[ZGIMessageController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

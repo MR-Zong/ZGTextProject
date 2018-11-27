@@ -21,12 +21,14 @@
 		415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B2D2181C851000A8213 /* AutoScrollLabel.m */; };
 		415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */; };
 		415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */; };
+		417115B221AB93130068079B /* ZGIMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B121AB93130068079B /* ZGIMessageController.m */; };
 		4189406921798637008C13D8 /* YGRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4189406821798637008C13D8 /* YGRecordView.m */; };
 		41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */; };
 		41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA13217496A900D0DE9B /* audioClipTest.m4a */; };
 		41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */; };
 		41CDAA512176048600D0DE9B /* ZGBezierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA502176048600D0DE9B /* ZGBezierController.m */; };
 		41D439B021A68EBB00C16FCA /* ZGAssertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D439AF21A68EBB00C16FCA /* ZGAssertController.m */; };
+		41DEED7B21A6D9910017579A /* export.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DEED7A21A6D9910017579A /* export.plist */; };
 		41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE518C218989C400F17BF5 /* ZGExposureCell.m */; };
 		41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE519C218B138900F17BF5 /* ZGExposureManager.m */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
@@ -287,6 +289,8 @@
 		415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAutoScrollLabelController.m; sourceTree = "<group>"; };
 		415D8B352181F6F9000A8213 /* ZGAutoScrollLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAutoScrollLabel.h; sourceTree = "<group>"; };
 		415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAutoScrollLabel.m; sourceTree = "<group>"; };
+		417115B021AB93130068079B /* ZGIMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMessageController.h; sourceTree = "<group>"; };
+		417115B121AB93130068079B /* ZGIMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMessageController.m; sourceTree = "<group>"; };
 		4189406721798637008C13D8 /* YGRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordView.h; sourceTree = "<group>"; };
 		4189406821798637008C13D8 /* YGRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordView.m; sourceTree = "<group>"; };
 		41CDAA102174910300D0DE9B /* ZGAVAudioClipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioClipController.h; sourceTree = "<group>"; };
@@ -297,6 +301,7 @@
 		41CDAA502176048600D0DE9B /* ZGBezierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBezierController.m; sourceTree = "<group>"; };
 		41D439AE21A68EBB00C16FCA /* ZGAssertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAssertController.h; sourceTree = "<group>"; };
 		41D439AF21A68EBB00C16FCA /* ZGAssertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAssertController.m; sourceTree = "<group>"; };
+		41DEED7A21A6D9910017579A /* export.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = export.plist; sourceTree = "<group>"; };
 		41FE518B218989C400F17BF5 /* ZGExposureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExposureCell.h; sourceTree = "<group>"; };
 		41FE518C218989C400F17BF5 /* ZGExposureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExposureCell.m; sourceTree = "<group>"; };
 		41FE519B218B138900F17BF5 /* ZGExposureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGExposureManager.h; sourceTree = "<group>"; };
@@ -897,6 +902,39 @@
 			path = ZGAutoScrollLabel;
 			sourceTree = "<group>";
 		};
+		417115AC21AB92F00068079B /* IMessage */ = {
+			isa = PBXGroup;
+			children = (
+				417115AD21AB92F00068079B /* Controller */,
+				417115AE21AB92F00068079B /* Model */,
+				417115AF21AB92F00068079B /* View */,
+			);
+			path = IMessage;
+			sourceTree = "<group>";
+		};
+		417115AD21AB92F00068079B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				417115B021AB93130068079B /* ZGIMessageController.h */,
+				417115B121AB93130068079B /* ZGIMessageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		417115AE21AB92F00068079B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417115AF21AB92F00068079B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		41CDAA1521749C3600D0DE9B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -962,6 +1000,7 @@
 		41D439AC21A68EA700C16FCA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				41DEED7A21A6D9910017579A /* export.plist */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2669,6 +2708,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				417115AC21AB92F00068079B /* IMessage */,
 				41D439AA21A68EA700C16FCA /* Assert */,
 				4137F2E62192B90F003B6D60 /* PhotoKit */,
 				415D8B2A2181C845000A8213 /* AutoScrollLabel */,
@@ -3343,6 +3383,7 @@
 				EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */,
 				EFDBCDC71F2B159700C542AD /* Main.storyboard in Resources */,
 				EFFCE4A21F62330F008E2375 /* unicode_to_hanyu_pinyin.txt in Resources */,
+				41DEED7B21A6D9910017579A /* export.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3372,6 +3413,7 @@
 				EFFCE4A11F62330F008E2375 /* PinyinHelper.m in Sources */,
 				EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */,
 				EF64EEBF20E4DAC0009B5767 /* ZGEventChainController.m in Sources */,
+				417115B221AB93130068079B /* ZGIMessageController.m in Sources */,
 				EF2EEAC020F495D300C9FBAD /* ZGKVOODataModel.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
 				EF083A2F21182D380037D17C /* ZGTimerProcess.m in Sources */,
