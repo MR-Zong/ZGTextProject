@@ -24,9 +24,23 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self testCollectionView];
+    [self testShow];
+    
+//    [self testCollectionView];
     
 //    [self sendIMessage];
+}
+
+- (void)testShow
+{
+    NSShadow *liShow = [[NSShadow alloc] init];
+    //        liShow.shadowBlurRadius = 100.0;
+    liShow.shadowColor = [UIColor blackColor];
+    liShow.shadowOffset = CGSizeMake(0, 1);
+    
+    UILabel *la = [[UILabel alloc] initWithFrame:CGRectMake(50, 200, 100, 20)];
+    la.attributedText = [[NSAttributedString alloc] initWithString:@"北京欢迎你" attributes:@{NSShadowAttributeName:liShow,NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self.view addSubview:la];
 }
 
 - (void)testCollectionView

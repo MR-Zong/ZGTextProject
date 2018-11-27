@@ -31,9 +31,10 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self testWeakSetter];
+    // 测试重写weak 属性的 setter方法
+//    [self testWeakSetter];
     
-//    [self testAutoScrollLabel];
+    [self testAutoScrollLabel];
     
 //    [self testCellForRow];
     

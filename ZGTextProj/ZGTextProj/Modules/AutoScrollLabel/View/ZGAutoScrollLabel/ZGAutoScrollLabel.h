@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger,ZGAutoScrollDirection) {
     ZGAutoScrollDirectionRightToLeft, // 从右往左
 };
 
+
 /**
  * 注意 ： 目前只支持frame 布局 不支持 auto layout
  */
@@ -57,6 +58,17 @@ typedef NS_ENUM(NSInteger,ZGAutoScrollDirection) {
  * 开始滚动动画 with text
  */
 - (void)startAnimationWithText:(NSString *)text;
+/**
+ * 继续动画
+ */
+- (void)continueAnimation;
+
+/**
+ * 停止动画
+ */
+- (void)stopAnimation;
+
+-(void)reset;
 
 @end
 

@@ -59,9 +59,25 @@
         return;
     }
     
+    [self stopAnimation];
+    
     [self layoutLabels];
-
+    
     [self animation];
+}
+
+- (void)continueAnimation
+{
+    [self animation];
+}
+
+- (void)stopAnimation
+{
+    [self.layer removeAllAnimations];
+}
+
+-(void)reset{
+    [self layoutLabels];
 }
 
 - (void)layoutLabels
@@ -115,7 +131,7 @@
     }else if (self.scrollDirection == ZGAutoScrollDirectionRightToLeft){
         self.contentOffset = CGPointMake(self.labelsAry[0].frame.size.width + self.spaceBetweenLabels,0);
     }
-
+    
     
     [UIView beginAnimations:@"autoScroll" context:@"移动"];
     [UIView setAnimationDuration:self.labelsAry[0].frame.size.width/self.scrollSpeed];
@@ -162,7 +178,14 @@
 {
     _text = text;
     for (UILabel *lab in self.labelsAry) {
-        lab.text = text;
+        
+//        NSShadow *liShow = [[NSShadow alloc] init];
+//        liShow.shadowBlurRadius = 3.0;
+//        liShow.shadowColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];
+//        liShow.shadowOffset = CGSizeMake(0, 1);
+//        NSAttributedString *at = [[NSAttributedString alloc] initWithString:text attributes:@{NSShadowAttributeName:liShow,NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont cairo_regular_with_size:10]}];
+//        lab.attributedText = at;
+                lab.text = text;
     }
 }
 
