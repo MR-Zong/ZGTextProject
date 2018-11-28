@@ -16,9 +16,6 @@ typedef NS_ENUM(NSInteger,ZGAutoScrollDirection) {
 };
 
 
-/**
- * 注意 ： 目前只支持frame 布局 不支持 auto layout
- */
 @interface ZGAutoScrollLabel : UIScrollView
 
 /**

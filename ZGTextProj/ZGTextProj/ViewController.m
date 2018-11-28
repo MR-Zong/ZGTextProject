@@ -99,6 +99,7 @@
 
 #import "ZGAssertController.h"
 #import "ZGIMessageController.h"
+#import "ZGWebKitTestController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -133,7 +134,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 61;
+    return 62;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -261,6 +262,8 @@
         cell.textLabel.text = @"assert";
     }else if(indexPath.row == 60){
         cell.textLabel.text = @"IMessage";
+    }else if(indexPath.row == 61){
+        cell.textLabel.text = @"WebKit";
     }
 
 
@@ -458,6 +461,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 60){
         ZGIMessageController *con = [[ZGIMessageController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 61){
+        ZGWebKitTestController *con = [[ZGWebKitTestController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

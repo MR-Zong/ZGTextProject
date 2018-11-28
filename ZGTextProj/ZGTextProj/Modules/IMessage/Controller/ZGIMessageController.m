@@ -11,10 +11,14 @@
 
 
 #define kStakeWid 10
+#define kLRMargin 18
 
 @interface ZGIMessageController () <MFMessageComposeViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, assign) CGFloat lastItemWidth;
+@property (nonatomic, assign) CGFloat collectionViewLRMargin;
+@property (nonatomic, assign) CGSize cellSize;
 
 @end
 
@@ -24,9 +28,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self testShow];
+//    [self testShow];
     
-//    [self testCollectionView];
+    [self testCollectionView];
     
 //    [self sendIMessage];
 }
@@ -48,7 +52,7 @@
     UICollectionViewFlowLayout *collectionViewLayout = [[UICollectionViewFlowLayout alloc] init];
 
     collectionViewLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake((self.view.bounds.size.width - 300)/2.0, 260, 300, 100) collectionViewLayout:collectionViewLayout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:collectionViewLayout];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"testcolllllll"];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
@@ -58,12 +62,20 @@
     self.collectionView.showsVerticalScrollIndicator = NO;
     self.collectionView.showsHorizontalScrollIndicator = NO;
     self.collectionView.bounces = YES;
-    self.collectionView.contentInset = UIEdgeInsetsMake(0, kStakeWid, 0, kStakeWid);
+    self.collectionView.contentInset = UIEdgeInsetsMake(0, kStakeWid +kLRMargin, 0, kStakeWid + kLRMargin);
     self.collectionView.alwaysBounceHorizontal = YES;
     self.collectionView.alwaysBounceVertical = NO;
     self.collectionView.layer.cornerRadius = 4;
     self.collectionView.layer.masksToBounds = YES;
     [self.view addSubview:self.collectionView];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+    self.collectionView.frame = CGRectMake((self.view.bounds.size.width - 300)/2.0, 260, 300, 100);
+    [self caculateCellSize];
 }
 
 - (void)sendIMessage
@@ -120,9 +132,9 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"testcolllllll" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor redColor];
     
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:cell.bounds];
-    imgView.image = [UIImage imageNamed:@"longzhu2"];
-    [cell addSubview:imgView];
+//    UIImageView *imgView = [[UIImageView alloc] initWithFrame:cell.bounds];
+//    imgView.image = [UIImage imageNamed:@"longzhu2"];
+//    [cell addSubview:imgView];
     return cell;
 }
 
@@ -132,7 +144,7 @@
     if (indexPath.item == 10)
     {
         NSLog(@"left left left left left left left left left left ");
-        return CGSizeMake(cellSize.width/2.0, cellSize.height);
+        return CGSizeMake(self.lastItemWidth, cellSize.height);
         //        return CGSizeMake(cellSize.width * secs.doubleValue/self.zg_secondsPerFrame, cellSize.height); //kSecondsPerFrame
     }
     else
@@ -158,11 +170,28 @@
 }
 
 
-- (CGSize)cellSize
+//- (CGSize)cellSize
+//{
+//    return self.cellSize;
+//}
+
+- (void)caculateCellSize
 {
-    CGFloat avaiableWid = CGRectGetWidth(self.collectionView.bounds) - 2*kStakeWid;
-    CGFloat cellWidth = (avaiableWid  *2.0) /21.0;
-    return CGSizeMake(cellWidth, CGRectGetHeight(self.collectionView.bounds));
+    CGFloat avaiableWid = CGRectGetWidth(self.collectionView.bounds) - 2*(kStakeWid+kLRMargin);
+    CGFloat itemWidth = avaiableWid / (11 - 0.5);
+    
+    CGFloat fixValue = 1 / [UIScreen mainScreen].scale;
+    CGFloat realItemWidth = floor(itemWidth) + fixValue;
+    if (realItemWidth < itemWidth) {
+        realItemWidth += fixValue;
+    }
+    
+    self.cellSize = CGSizeMake(realItemWidth, self.collectionView.bounds.size.height);
+    self.lastItemWidth = floor(realItemWidth / 2.0) + fixValue;
+    
+//    CGFloat realWidth = (11-1) * realItemWidth + self.lastItemWidth;
+//    CGFloat offsetWidth = realWidth - avaiableWid;
+//    self.collectionViewLRMargin -= offsetWidth /2.0;
 }
 
 @end

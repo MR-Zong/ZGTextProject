@@ -48,6 +48,12 @@
     }
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self strartAnimation];
+}
+
 - (void)strartAnimation
 {
     [self startAnimationWithText:self.text];
@@ -179,6 +185,7 @@
     _text = text;
     for (UILabel *lab in self.labelsAry) {
         
+        // 文字加阴影
 //        NSShadow *liShow = [[NSShadow alloc] init];
 //        liShow.shadowBlurRadius = 3.0;
 //        liShow.shadowColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];

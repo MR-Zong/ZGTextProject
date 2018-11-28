@@ -40,6 +40,12 @@
     
 }
 
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    self.autoScrollLabel.frame = CGRectMake(100, 100, 200, 40);
+}
+
 - (void)testWeakSetter
 {
     _weakModel = [[ZGWeakSetterModel alloc] init];
@@ -49,7 +55,7 @@
 
 - (void)testAutoScrollLabel
 {
-    _autoScrollLabel = [[ZGAutoScrollLabel alloc] initWithFrame:CGRectMake(100, 100, 200, 40)];
+    _autoScrollLabel = [[ZGAutoScrollLabel alloc] initWithFrame:CGRectZero];
     _autoScrollLabel.scrollDirection = ZGAutoScrollDirectionRightToLeft;
     _autoScrollLabel.backgroundColor = [UIColor redColor];
     //    _autoScrollLabel.delayInterval = 5;

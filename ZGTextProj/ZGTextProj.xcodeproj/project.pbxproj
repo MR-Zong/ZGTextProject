@@ -22,6 +22,7 @@
 		415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */; };
 		415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */; };
 		417115B221AB93130068079B /* ZGIMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B121AB93130068079B /* ZGIMessageController.m */; };
+		417115B921AD4E2D0068079B /* ZGWebKitTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B821AD4E2D0068079B /* ZGWebKitTestController.m */; };
 		4189406921798637008C13D8 /* YGRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4189406821798637008C13D8 /* YGRecordView.m */; };
 		41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */; };
 		41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA13217496A900D0DE9B /* audioClipTest.m4a */; };
@@ -291,6 +292,8 @@
 		415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAutoScrollLabel.m; sourceTree = "<group>"; };
 		417115B021AB93130068079B /* ZGIMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMessageController.h; sourceTree = "<group>"; };
 		417115B121AB93130068079B /* ZGIMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMessageController.m; sourceTree = "<group>"; };
+		417115B721AD4E2D0068079B /* ZGWebKitTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWebKitTestController.h; sourceTree = "<group>"; };
+		417115B821AD4E2D0068079B /* ZGWebKitTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWebKitTestController.m; sourceTree = "<group>"; };
 		4189406721798637008C13D8 /* YGRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordView.h; sourceTree = "<group>"; };
 		4189406821798637008C13D8 /* YGRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordView.m; sourceTree = "<group>"; };
 		41CDAA102174910300D0DE9B /* ZGAVAudioClipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioClipController.h; sourceTree = "<group>"; };
@@ -929,6 +932,39 @@
 			sourceTree = "<group>";
 		};
 		417115AF21AB92F00068079B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417115B321AD4E1C0068079B /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				417115B421AD4E1C0068079B /* Controller */,
+				417115B521AD4E1C0068079B /* Model */,
+				417115B621AD4E1C0068079B /* View */,
+			);
+			path = WebKit;
+			sourceTree = "<group>";
+		};
+		417115B421AD4E1C0068079B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				417115B721AD4E2D0068079B /* ZGWebKitTestController.h */,
+				417115B821AD4E2D0068079B /* ZGWebKitTestController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		417115B521AD4E1C0068079B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417115B621AD4E1C0068079B /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -2708,6 +2744,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				417115B321AD4E1C0068079B /* WebKit */,
 				417115AC21AB92F00068079B /* IMessage */,
 				41D439AA21A68EA700C16FCA /* Assert */,
 				4137F2E62192B90F003B6D60 /* PhotoKit */,
@@ -3442,6 +3479,7 @@
 				EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */,
 				EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */,
 				EF0A0EB1200701DF0095779B /* ZGSubTabBarView.m in Sources */,
+				417115B921AD4E2D0068079B /* ZGWebKitTestController.m in Sources */,
 				EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */,
 				4137F2F22192BB2B003B6D60 /* ZGPHResourceManager.m in Sources */,
 				EF7F2CD0210AF4CD00AC6755 /* ZGSTIScrollManager.m in Sources */,
