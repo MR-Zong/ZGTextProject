@@ -23,6 +23,8 @@
 		415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */; };
 		417115B221AB93130068079B /* ZGIMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B121AB93130068079B /* ZGIMessageController.m */; };
 		417115B921AD4E2D0068079B /* ZGWebKitTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B821AD4E2D0068079B /* ZGWebKitTestController.m */; };
+		417115BC21AE7C910068079B /* ZGWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115BB21AE7C910068079B /* ZGWKWebViewController.m */; };
+		417115BF21AE8E0B0068079B /* ZGWKWebNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115BE21AE8E0B0068079B /* ZGWKWebNoDataView.m */; };
 		4189406921798637008C13D8 /* YGRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4189406821798637008C13D8 /* YGRecordView.m */; };
 		41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */; };
 		41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA13217496A900D0DE9B /* audioClipTest.m4a */; };
@@ -294,6 +296,10 @@
 		417115B121AB93130068079B /* ZGIMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMessageController.m; sourceTree = "<group>"; };
 		417115B721AD4E2D0068079B /* ZGWebKitTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWebKitTestController.h; sourceTree = "<group>"; };
 		417115B821AD4E2D0068079B /* ZGWebKitTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWebKitTestController.m; sourceTree = "<group>"; };
+		417115BA21AE7C910068079B /* ZGWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWKWebViewController.h; sourceTree = "<group>"; };
+		417115BB21AE7C910068079B /* ZGWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWKWebViewController.m; sourceTree = "<group>"; };
+		417115BD21AE8E0B0068079B /* ZGWKWebNoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWKWebNoDataView.h; sourceTree = "<group>"; };
+		417115BE21AE8E0B0068079B /* ZGWKWebNoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWKWebNoDataView.m; sourceTree = "<group>"; };
 		4189406721798637008C13D8 /* YGRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordView.h; sourceTree = "<group>"; };
 		4189406821798637008C13D8 /* YGRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordView.m; sourceTree = "<group>"; };
 		41CDAA102174910300D0DE9B /* ZGAVAudioClipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioClipController.h; sourceTree = "<group>"; };
@@ -953,6 +959,8 @@
 			children = (
 				417115B721AD4E2D0068079B /* ZGWebKitTestController.h */,
 				417115B821AD4E2D0068079B /* ZGWebKitTestController.m */,
+				417115BA21AE7C910068079B /* ZGWKWebViewController.h */,
+				417115BB21AE7C910068079B /* ZGWKWebViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -967,6 +975,8 @@
 		417115B621AD4E1C0068079B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				417115BD21AE8E0B0068079B /* ZGWKWebNoDataView.h */,
+				417115BE21AE8E0B0068079B /* ZGWKWebNoDataView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3478,6 +3488,7 @@
 				EFFCE4841F62253C008E2375 /* ZGAddressListController.m in Sources */,
 				EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */,
 				EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */,
+				417115BF21AE8E0B0068079B /* ZGWKWebNoDataView.m in Sources */,
 				EF0A0EB1200701DF0095779B /* ZGSubTabBarView.m in Sources */,
 				417115B921AD4E2D0068079B /* ZGWebKitTestController.m in Sources */,
 				EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */,
@@ -3612,6 +3623,7 @@
 				EF3C47C81F384D610039AA5C /* ZGboy.m in Sources */,
 				EFDBCDC11F2B159700C542AD /* AppDelegate.m in Sources */,
 				EF0A0E892004C2490095779B /* ZGSTestController.m in Sources */,
+				417115BC21AE7C910068079B /* ZGWKWebViewController.m in Sources */,
 				EF85FF3A204A4E9000F5186A /* ZGGCDTestController.m in Sources */,
 				EF261CF62063AA600002BFB2 /* ZGFPSProbeView.m in Sources */,
 				EF67D6722057648B00FA65DC /* ZGINSubObject+initialize.m in Sources */,

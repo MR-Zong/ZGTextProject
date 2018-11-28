@@ -7,62 +7,43 @@
 //
 
 #import "ZGWebKitTestController.h"
-#import <WebKit/WebKit.h>
+#import "ZGWKWebViewController.h"
 
-@interface ZGWebKitTestController () <WKNavigationDelegate,WKUIDelegate>
+@interface ZGWebKitTestController ()
 
-@property (nonatomic, strong) WKWebView *webView;
-@property (nonatomic, strong) UIProgressView *progressView;
+@property (nonatomic, strong) UIButton *btnWeb;
+
 
 @end
 
 @implementation ZGWebKitTestController
 
-- (void)dealloc
-{
-    [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
     [self testWebKit];
 }
 
 - (void)testWebKit
 {
-    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
-    _webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
-    _webView.navigationDelegate = self;
-    _webView.backgroundColor = [UIColor redColor];
-    [_webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
-    
-    [_webView loadRequest:req];
-    [self.view addSubview:_webView];
-    
-    _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 10)];
-    _progressView.hidden = YES;
-    [self.view addSubview:_progressView];
+    _btnWeb = [UIButton buttonWithType:UIButtonTypeCustom];
+    _btnWeb.frame = CGRectMake(50, 200, 100, 40);
+    _btnWeb.backgroundColor = [UIColor redColor];
+    [_btnWeb setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal
+     ];
+    [_btnWeb setTitle:@"testWKWebView" forState:UIControlStateNormal];
+    [_btnWeb addTarget:self action:@selector(didBtnWeb) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_btnWeb];
 }
 
-#pragma mark - kvo
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+- (void)didBtnWeb
 {
-    if ([keyPath isEqualToString:@"estimatedProgress"]) {
-        self.progressView.hidden = (self.webView.estimatedProgress == 1);
-        [self.progressView setProgress:(CGFloat)self.webView.estimatedProgress animated:YES];
-    }
+    ZGWKWebViewController *webVC = [[ZGWKWebViewController alloc] init];
+    webVC.urlString = @"https://www.baidu.com";
+    [self.navigationController pushViewController:webVC animated:YES];
 }
 
-#pragma mark - WKNavigationDelegate
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation
-{
-    self.progressView.progress = 0;
-}
 
-- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error
-{
-    ;
-}
 
 @end
