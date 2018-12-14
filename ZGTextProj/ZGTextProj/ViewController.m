@@ -101,6 +101,8 @@
 #import "ZGIMessageController.h"
 #import "ZGWebKitTestController.h"
 
+#import "ZGTextCollectionviewController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -134,7 +136,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 62;
+    return 63;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -264,6 +266,8 @@
         cell.textLabel.text = @"IMessage";
     }else if(indexPath.row == 61){
         cell.textLabel.text = @"WebKit";
+    }else if(indexPath.row == 62){
+        cell.textLabel.text = @"UICollectionView";
     }
 
 
@@ -464,6 +468,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 61){
         ZGWebKitTestController *con = [[ZGWebKitTestController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 62){
+        ZGTextCollectionviewController *con = [[ZGTextCollectionviewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

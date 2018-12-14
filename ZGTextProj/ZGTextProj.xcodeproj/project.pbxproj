@@ -30,6 +30,8 @@
 		41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA13217496A900D0DE9B /* audioClipTest.m4a */; };
 		41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */; };
 		41CDAA512176048600D0DE9B /* ZGBezierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA502176048600D0DE9B /* ZGBezierController.m */; };
+		41D0A99D21C2707800BD543C /* ZGTextCollectionviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0A99C21C2707800BD543C /* ZGTextCollectionviewController.m */; };
+		41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0A99F21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m */; };
 		41D439B021A68EBB00C16FCA /* ZGAssertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D439AF21A68EBB00C16FCA /* ZGAssertController.m */; };
 		41DEED7B21A6D9910017579A /* export.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DEED7A21A6D9910017579A /* export.plist */; };
 		41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE518C218989C400F17BF5 /* ZGExposureCell.m */; };
@@ -308,6 +310,10 @@
 		41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioClipTest2.mp3; sourceTree = "<group>"; };
 		41CDAA4F2176048600D0DE9B /* ZGBezierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBezierController.h; sourceTree = "<group>"; };
 		41CDAA502176048600D0DE9B /* ZGBezierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBezierController.m; sourceTree = "<group>"; };
+		41D0A99B21C2707800BD543C /* ZGTextCollectionviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTextCollectionviewController.h; sourceTree = "<group>"; };
+		41D0A99C21C2707800BD543C /* ZGTextCollectionviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTextCollectionviewController.m; sourceTree = "<group>"; };
+		41D0A99E21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFixItemSpaceFlowLayout.h; sourceTree = "<group>"; };
+		41D0A99F21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFixItemSpaceFlowLayout.m; sourceTree = "<group>"; };
 		41D439AE21A68EBB00C16FCA /* ZGAssertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAssertController.h; sourceTree = "<group>"; };
 		41D439AF21A68EBB00C16FCA /* ZGAssertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAssertController.m; sourceTree = "<group>"; };
 		41DEED7A21A6D9910017579A /* export.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = export.plist; sourceTree = "<group>"; };
@@ -1020,6 +1026,41 @@
 			children = (
 				4189406721798637008C13D8 /* YGRecordView.h */,
 				4189406821798637008C13D8 /* YGRecordView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41D0A99721C2704D00BD543C /* UICollectionview */ = {
+			isa = PBXGroup;
+			children = (
+				41D0A99821C2704D00BD543C /* Controller */,
+				41D0A99921C2704D00BD543C /* Model */,
+				41D0A99A21C2704D00BD543C /* View */,
+			);
+			path = UICollectionview;
+			sourceTree = "<group>";
+		};
+		41D0A99821C2704D00BD543C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41D0A99B21C2707800BD543C /* ZGTextCollectionviewController.h */,
+				41D0A99C21C2707800BD543C /* ZGTextCollectionviewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41D0A99921C2704D00BD543C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41D0A99E21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.h */,
+				41D0A99F21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41D0A99A21C2704D00BD543C /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2754,6 +2795,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41D0A99721C2704D00BD543C /* UICollectionview */,
 				417115B321AD4E1C0068079B /* WebKit */,
 				417115AC21AB92F00068079B /* IMessage */,
 				41D439AA21A68EA700C16FCA /* Assert */,
@@ -3522,10 +3564,12 @@
 				EF2F66771FFC6B1100EA4F6F /* ZGBlockController.m in Sources */,
 				EFA9A62320AA765A00E73288 /* ZGMainOperation.m in Sources */,
 				EFFCE4BB1F62828C008E2375 /* ZGCalendarManager.m in Sources */,
+				41D0A99D21C2707800BD543C /* ZGTextCollectionviewController.m in Sources */,
 				EF0A0E8F2005C41F0095779B /* ZGSBaseScrollView.m in Sources */,
 				EF7F2CCA210AF49F00AC6755 /* ZGScrollTabIndicatorController.m in Sources */,
 				EFE4308520D501CF006930E5 /* ZGHeaderCell.m in Sources */,
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
+				41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */,
 				EF7F2CD6210AF7BF00AC6755 /* ZGSTIHotController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
