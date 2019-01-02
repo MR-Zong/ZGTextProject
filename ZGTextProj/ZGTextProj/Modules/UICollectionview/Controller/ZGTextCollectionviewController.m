@@ -8,6 +8,7 @@
 
 #import "ZGTextCollectionviewController.h"
 #import "ZGFixItemSpaceFlowLayout.h"
+#import "ZGTextFixCollectionViewCell.h"
 
 @interface ZGTextCollectionviewController () <UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -24,6 +25,9 @@
 }
 
 
+/** 测试UICollectionView item 的间隔问题
+ * 怎么让item 间隔 有个最大值-我们设定的值
+*/
 - (void)setupViews
 {
     ZGFixItemSpaceFlowLayout *flowLayout = [[ZGFixItemSpaceFlowLayout alloc] init];
@@ -36,11 +40,12 @@
 //    flowLayout.headerReferenceSize = CGSizeMake(100, 142+22);
     
     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
+    _collectionView.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
     _collectionView.backgroundColor = [UIColor blackColor];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
     _collectionView.showsVerticalScrollIndicator = NO;
-    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"testUICollectionViewCellReusedId"];
+    [_collectionView registerClass:[ZGTextFixCollectionViewCell class] forCellWithReuseIdentifier:@"testUICollectionViewCellReusedId"];
     [self.view addSubview:_collectionView];
     
 }
@@ -48,13 +53,13 @@
 #pragma mark - UICollectionViewDelegate,UICollectionViewDataSources
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 2;
+    return 10;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"testUICollectionViewCellReusedId" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor redColor];
+    ZGTextFixCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"testUICollectionViewCellReusedId" forIndexPath:indexPath];
+    cell.indexPath = indexPath;
     return cell;
 }
 

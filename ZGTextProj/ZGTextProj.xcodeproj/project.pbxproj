@@ -32,6 +32,7 @@
 		41CDAA512176048600D0DE9B /* ZGBezierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA502176048600D0DE9B /* ZGBezierController.m */; };
 		41D0A99D21C2707800BD543C /* ZGTextCollectionviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0A99C21C2707800BD543C /* ZGTextCollectionviewController.m */; };
 		41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0A99F21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m */; };
+		41D0A9A621C3586E00BD543C /* ZGTextFixCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0A9A521C3586E00BD543C /* ZGTextFixCollectionViewCell.m */; };
 		41D439B021A68EBB00C16FCA /* ZGAssertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D439AF21A68EBB00C16FCA /* ZGAssertController.m */; };
 		41DEED7B21A6D9910017579A /* export.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DEED7A21A6D9910017579A /* export.plist */; };
 		41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE518C218989C400F17BF5 /* ZGExposureCell.m */; };
@@ -314,6 +315,8 @@
 		41D0A99C21C2707800BD543C /* ZGTextCollectionviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTextCollectionviewController.m; sourceTree = "<group>"; };
 		41D0A99E21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFixItemSpaceFlowLayout.h; sourceTree = "<group>"; };
 		41D0A99F21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFixItemSpaceFlowLayout.m; sourceTree = "<group>"; };
+		41D0A9A421C3586E00BD543C /* ZGTextFixCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTextFixCollectionViewCell.h; sourceTree = "<group>"; };
+		41D0A9A521C3586E00BD543C /* ZGTextFixCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTextFixCollectionViewCell.m; sourceTree = "<group>"; };
 		41D439AE21A68EBB00C16FCA /* ZGAssertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAssertController.h; sourceTree = "<group>"; };
 		41D439AF21A68EBB00C16FCA /* ZGAssertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAssertController.m; sourceTree = "<group>"; };
 		41DEED7A21A6D9910017579A /* export.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = export.plist; sourceTree = "<group>"; };
@@ -1061,6 +1064,8 @@
 		41D0A99A21C2704D00BD543C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				41D0A9A421C3586E00BD543C /* ZGTextFixCollectionViewCell.h */,
+				41D0A9A521C3586E00BD543C /* ZGTextFixCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3574,6 +3579,7 @@
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,
+				41D0A9A621C3586E00BD543C /* ZGTextFixCollectionViewCell.m in Sources */,
 				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
 				EF64EEB320E48778009B5767 /* ZGCellopGestureScrollView.m in Sources */,
 				EF819FC7212918C3009B959A /* ZGWeakMutableDictionary.m in Sources */,
