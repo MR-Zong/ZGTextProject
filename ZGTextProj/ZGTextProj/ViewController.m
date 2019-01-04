@@ -103,6 +103,9 @@
 
 #import "ZGTextCollectionviewController.h"
 
+#import "ZGAVAudioQueueController.h"
+#import "ZGAVAudioUnitController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -136,7 +139,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 63;
+    return 65;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -268,6 +271,10 @@
         cell.textLabel.text = @"WebKit";
     }else if(indexPath.row == 62){
         cell.textLabel.text = @"UICollectionView";
+    }else if(indexPath.row == 63){
+        cell.textLabel.text = @"AVAudioQueue";
+    }else if(indexPath.row == 64){
+        cell.textLabel.text = @"AVAudioUnit";
     }
 
 
@@ -471,6 +478,12 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 62){
         ZGTextCollectionviewController *con = [[ZGTextCollectionviewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 63){
+        ZGAVAudioQueueController *con = [[ZGAVAudioQueueController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 64){
+        ZGAVAudioUnitController *con = [[ZGAVAudioUnitController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
