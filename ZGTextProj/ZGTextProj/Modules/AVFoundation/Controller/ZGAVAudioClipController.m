@@ -30,11 +30,15 @@
 - (void)audioClip
 {
     //AVURLAsset是AVAsset的子类,AVAsset类专门用于获取多媒体的相关信息,包括获取多媒体的画面、声音等信息.而AVURLAsset子类的作用则是根据NSURL来初始化AVAsset对象.
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"audioClipTest2" ofType:@"mp3"];
+//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"audioClipTest2" ofType:@"mp3"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"testZong" ofType:@"wav"];
+
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
+//    NSString *resultPath =  [documentsDirectory stringByAppendingPathComponent:
+//                             [NSString stringWithFormat:@"audioClipOk2.m4a"]];
     NSString *resultPath =  [documentsDirectory stringByAppendingPathComponent:
-                             [NSString stringWithFormat:@"audioClipOk2.m4a"]];
+                             [NSString stringWithFormat:@"result.wav"]];
     NSLog(@"resultPath %@",resultPath);
     AVURLAsset *videoAsset = [AVURLAsset assetWithURL:[NSURL fileURLWithPath:filePath]];
     //音频输出会话

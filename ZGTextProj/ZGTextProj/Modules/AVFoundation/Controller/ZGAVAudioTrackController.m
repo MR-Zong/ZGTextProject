@@ -25,12 +25,13 @@
     // Do any additional setup after loading the view.
     
     self.title = @"AVFoundation";
+    self.view.backgroundColor = [UIColor whiteColor];
     
     
     /**
      * 从视频里，提取音频
      */
-    [self testAudioFromVideo];
+//    [self testAudioFromVideo];
     
 }
 

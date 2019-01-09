@@ -30,6 +30,7 @@
 		4174DD9321DCB46A007C89E6 /* AudioQueueRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */; };
 		4174DD9621DCBC89007C89E6 /* AudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */; };
 		4189406921798637008C13D8 /* YGRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4189406821798637008C13D8 /* YGRecordView.m */; };
+		418E959121E4CF1A00349982 /* testZong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 418E959021E4CF1A00349982 /* testZong.wav */; };
 		41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */; };
 		41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA13217496A900D0DE9B /* audioClipTest.m4a */; };
 		41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */; };
@@ -317,6 +318,7 @@
 		4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueuePlayer.m; sourceTree = "<group>"; };
 		4189406721798637008C13D8 /* YGRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordView.h; sourceTree = "<group>"; };
 		4189406821798637008C13D8 /* YGRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordView.m; sourceTree = "<group>"; };
+		418E959021E4CF1A00349982 /* testZong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = testZong.wav; sourceTree = "<group>"; };
 		41CDAA102174910300D0DE9B /* ZGAVAudioClipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioClipController.h; sourceTree = "<group>"; };
 		41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAVAudioClipController.m; sourceTree = "<group>"; };
 		41CDAA13217496A900D0DE9B /* audioClipTest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = audioClipTest.m4a; sourceTree = "<group>"; };
@@ -2847,6 +2849,7 @@
 				EFDBCDC31F2B159700C542AD /* ViewController.m */,
 				41CDAA13217496A900D0DE9B /* audioClipTest.m4a */,
 				EFFC13551F3454D300E6F664 /* myPlayer.mp4 */,
+				418E959021E4CF1A00349982 /* testZong.wav */,
 				EF7F2CA6210972F800AC6755 /* img.jpg */,
 				EFDBCDC51F2B159700C542AD /* Main.storyboard */,
 				EFDBCDC81F2B159700C542AD /* Assets.xcassets */,
@@ -3549,6 +3552,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418E959121E4CF1A00349982 /* testZong.wav in Resources */,
 				41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */,
 				EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */,
 				EFDBCDCC1F2B159700C542AD /* LaunchScreen.storyboard in Resources */,
