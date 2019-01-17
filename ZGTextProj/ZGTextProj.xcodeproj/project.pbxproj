@@ -29,6 +29,17 @@
 		4174DD9021DC9C81007C89E6 /* ZGAVAudioUnitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD8F21DC9C81007C89E6 /* ZGAVAudioUnitController.m */; };
 		4174DD9321DCB46A007C89E6 /* AudioQueueRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */; };
 		4174DD9621DCBC89007C89E6 /* AudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */; };
+		417F201721F0643600471B03 /* singing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 417F201621F0643600471B03 /* singing.wav */; };
+		417F202221F0647C00471B03 /* fmod_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201C21F0647C00471B03 /* fmod_player.cpp */; };
+		417F202321F0647C00471B03 /* fmod_player_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201F21F0647C00471B03 /* fmod_player_effect.cpp */; };
+		417F202421F0647C00471B03 /* FMAudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 417F202021F0647C00471B03 /* FMAudioPlayer.mm */; };
+		417F203621F0648900471B03 /* libfmod_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F203221F0648900471B03 /* libfmod_iphonesimulator.a */; };
+		417F203721F0648900471B03 /* libfmodL_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F203321F0648900471B03 /* libfmodL_iphonesimulator.a */; };
+		417F203821F0648900471B03 /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F203421F0648900471B03 /* libfmodL_iphoneos.a */; };
+		417F203921F0648900471B03 /* libfmod_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F203521F0648900471B03 /* libfmod_iphoneos.a */; };
+		417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F203B21F064A500471B03 /* ZGFmodDemoController.m */; };
+		417F203F21F064CA00471B03 /* ZGBottomToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F203D21F064CA00471B03 /* ZGBottomToolBar.m */; };
+		417F204221F064D900471B03 /* ZGRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F204121F064D900471B03 /* ZGRecorder.m */; };
 		4189406921798637008C13D8 /* YGRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4189406821798637008C13D8 /* YGRecordView.m */; };
 		418E959121E4CF1A00349982 /* testZong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 418E959021E4CF1A00349982 /* testZong.wav */; };
 		41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */; };
@@ -316,6 +327,32 @@
 		4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueueRecorder.m; sourceTree = "<group>"; };
 		4174DD9421DCBC89007C89E6 /* AudioQueuePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioQueuePlayer.h; sourceTree = "<group>"; };
 		4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueuePlayer.m; sourceTree = "<group>"; };
+		417F201621F0643600471B03 /* singing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = singing.wav; sourceTree = "<group>"; };
+		417F201C21F0647C00471B03 /* fmod_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fmod_player.cpp; sourceTree = "<group>"; };
+		417F201D21F0647C00471B03 /* fmod_player_effect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_player_effect.hpp; sourceTree = "<group>"; };
+		417F201E21F0647C00471B03 /* FMAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMAudioPlayer.h; sourceTree = "<group>"; };
+		417F201F21F0647C00471B03 /* fmod_player_effect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fmod_player_effect.cpp; sourceTree = "<group>"; };
+		417F202021F0647C00471B03 /* FMAudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FMAudioPlayer.mm; sourceTree = "<group>"; };
+		417F202121F0647C00471B03 /* fmod_player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_player.hpp; sourceTree = "<group>"; };
+		417F202821F0648900471B03 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
+		417F202921F0648900471B03 /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
+		417F202A21F0648900471B03 /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
+		417F202B21F0648900471B03 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
+		417F202C21F0648900471B03 /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
+		417F202D21F0648900471B03 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
+		417F202E21F0648900471B03 /* fmod_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_ios.h; sourceTree = "<group>"; };
+		417F202F21F0648900471B03 /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
+		417F203021F0648900471B03 /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
+		417F203221F0648900471B03 /* libfmod_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphonesimulator.a; sourceTree = "<group>"; };
+		417F203321F0648900471B03 /* libfmodL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphonesimulator.a; sourceTree = "<group>"; };
+		417F203421F0648900471B03 /* libfmodL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphoneos.a; sourceTree = "<group>"; };
+		417F203521F0648900471B03 /* libfmod_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphoneos.a; sourceTree = "<group>"; };
+		417F203A21F064A500471B03 /* ZGFmodDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFmodDemoController.h; sourceTree = "<group>"; };
+		417F203B21F064A500471B03 /* ZGFmodDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFmodDemoController.m; sourceTree = "<group>"; };
+		417F203D21F064CA00471B03 /* ZGBottomToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGBottomToolBar.m; sourceTree = "<group>"; };
+		417F203E21F064CA00471B03 /* ZGBottomToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGBottomToolBar.h; sourceTree = "<group>"; };
+		417F204021F064D900471B03 /* ZGRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGRecorder.h; sourceTree = "<group>"; };
+		417F204121F064D900471B03 /* ZGRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGRecorder.m; sourceTree = "<group>"; };
 		4189406721798637008C13D8 /* YGRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordView.h; sourceTree = "<group>"; };
 		4189406821798637008C13D8 /* YGRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordView.m; sourceTree = "<group>"; };
 		418E959021E4CF1A00349982 /* testZong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = testZong.wav; sourceTree = "<group>"; };
@@ -772,6 +809,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417F203721F0648900471B03 /* libfmodL_iphonesimulator.a in Frameworks */,
+				417F203821F0648900471B03 /* libfmodL_iphoneos.a in Frameworks */,
+				417F203921F0648900471B03 /* libfmod_iphoneos.a in Frameworks */,
+				417F203621F0648900471B03 /* libfmod_iphonesimulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,6 +1122,102 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		417F201521F0641F00471B03 /* FmodDemo */ = {
+			isa = PBXGroup;
+			children = (
+				417F202521F0648900471B03 /* OpenSource */,
+				417F201B21F0647C00471B03 /* FMAudioPlayer */,
+				417F201A21F0646B00471B03 /* Controller */,
+				417F201921F0646400471B03 /* View */,
+				417F201821F0645D00471B03 /* Model */,
+			);
+			path = FmodDemo;
+			sourceTree = "<group>";
+		};
+		417F201821F0645D00471B03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				417F204021F064D900471B03 /* ZGRecorder.h */,
+				417F204121F064D900471B03 /* ZGRecorder.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417F201921F0646400471B03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				417F203E21F064CA00471B03 /* ZGBottomToolBar.h */,
+				417F203D21F064CA00471B03 /* ZGBottomToolBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417F201A21F0646B00471B03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				417F203A21F064A500471B03 /* ZGFmodDemoController.h */,
+				417F203B21F064A500471B03 /* ZGFmodDemoController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		417F201B21F0647C00471B03 /* FMAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				417F201C21F0647C00471B03 /* fmod_player.cpp */,
+				417F201D21F0647C00471B03 /* fmod_player_effect.hpp */,
+				417F201E21F0647C00471B03 /* FMAudioPlayer.h */,
+				417F201F21F0647C00471B03 /* fmod_player_effect.cpp */,
+				417F202021F0647C00471B03 /* FMAudioPlayer.mm */,
+				417F202121F0647C00471B03 /* fmod_player.hpp */,
+			);
+			path = FMAudioPlayer;
+			sourceTree = "<group>";
+		};
+		417F202521F0648900471B03 /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				417F202621F0648900471B03 /* FMOD */,
+			);
+			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		417F202621F0648900471B03 /* FMOD */ = {
+			isa = PBXGroup;
+			children = (
+				417F202721F0648900471B03 /* inc */,
+				417F203121F0648900471B03 /* lib */,
+			);
+			path = FMOD;
+			sourceTree = "<group>";
+		};
+		417F202721F0648900471B03 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				417F202821F0648900471B03 /* fmod_output.h */,
+				417F202921F0648900471B03 /* fmod_dsp.h */,
+				417F202A21F0648900471B03 /* fmod_errors.h */,
+				417F202B21F0648900471B03 /* fmod.h */,
+				417F202C21F0648900471B03 /* fmod_codec.h */,
+				417F202D21F0648900471B03 /* fmod.hpp */,
+				417F202E21F0648900471B03 /* fmod_ios.h */,
+				417F202F21F0648900471B03 /* fmod_common.h */,
+				417F203021F0648900471B03 /* fmod_dsp_effects.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		417F203121F0648900471B03 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				417F203221F0648900471B03 /* libfmod_iphonesimulator.a */,
+				417F203321F0648900471B03 /* libfmodL_iphonesimulator.a */,
+				417F203421F0648900471B03 /* libfmodL_iphoneos.a */,
+				417F203521F0648900471B03 /* libfmod_iphoneos.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		41CDAA1521749C3600D0DE9B /* Resource */ = {
@@ -2849,6 +2986,7 @@
 				EFDBCDC31F2B159700C542AD /* ViewController.m */,
 				41CDAA13217496A900D0DE9B /* audioClipTest.m4a */,
 				EFFC13551F3454D300E6F664 /* myPlayer.mp4 */,
+				417F201621F0643600471B03 /* singing.wav */,
 				418E959021E4CF1A00349982 /* testZong.wav */,
 				EF7F2CA6210972F800AC6755 /* img.jpg */,
 				EFDBCDC51F2B159700C542AD /* Main.storyboard */,
@@ -2894,6 +3032,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				417F201521F0641F00471B03 /* FmodDemo */,
 				4174DD8221DC9BCC007C89E6 /* AVAudio */,
 				41D0A99721C2704D00BD543C /* UICollectionview */,
 				417115B321AD4E1C0068079B /* WebKit */,
@@ -3563,6 +3702,7 @@
 				EF7F2CA42108176E00AC6755 /* news_pop_six_winged_demon@3x.png in Resources */,
 				411B2BF3215B734F009747D8 /* Cairo-Light.ttf in Resources */,
 				411B2BF6215B734F009747D8 /* Cairo-Bold.ttf in Resources */,
+				417F201721F0643600471B03 /* singing.wav in Resources */,
 				EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */,
 				411B2BF5215B734F009747D8 /* Cairo-SemiBold.ttf in Resources */,
 				EF14C7ED2101E121007CC07B /* modelA3.plist in Resources */,
@@ -3626,6 +3766,7 @@
 				EF25CBC020E284E3005A7F8C /* ZGNestPageDController.m in Sources */,
 				EF2F66921FFF651F00EA4F6F /* ZGTbBaseTableView.m in Sources */,
 				4174DD9021DC9C81007C89E6 /* ZGAVAudioUnitController.m in Sources */,
+				417F202321F0647C00471B03 /* fmod_player_effect.cpp in Sources */,
 				EFE4308820D50F82006930E5 /* ZGAnimationCell.m in Sources */,
 				EF570B122022F08200E14BC9 /* ZGKVODataModel.m in Sources */,
 				EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */,
@@ -3674,6 +3815,7 @@
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
 				41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */,
 				EF7F2CD6210AF7BF00AC6755 /* ZGSTIHotController.m in Sources */,
+				417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,
@@ -3696,6 +3838,7 @@
 				EF2EEAAD20F4593B00C9FBAD /* ZGKVOResearchObserverB.m in Sources */,
 				EFFCE48D1F622804008E2375 /* ZGAddressListCell.m in Sources */,
 				41CDAA512176048600D0DE9B /* ZGBezierController.m in Sources */,
+				417F204221F064D900471B03 /* ZGRecorder.m in Sources */,
 				EFFCE47D1F60F6AD008E2375 /* ZGOffScreenController.m in Sources */,
 				EF0A0EA52006FD9E0095779B /* ZGOneScrollViewController.m in Sources */,
 				EF67D66F2057644D00FA65DC /* ZGINSubObject.m in Sources */,
@@ -3705,6 +3848,7 @@
 				EF58F6952143BA590000CDC7 /* ZGWaterFallController.m in Sources */,
 				EF7231AA20DB478200999D3A /* ZGTopicHeaderView.m in Sources */,
 				4137F2EC2192B92E003B6D60 /* ZGPhotoPickController.m in Sources */,
+				417F203F21F064CA00471B03 /* ZGBottomToolBar.m in Sources */,
 				EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */,
 				EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */,
 				EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */,
@@ -3752,6 +3896,7 @@
 				EF31F9682070BE8700B1B148 /* ZGOperationQueueController.m in Sources */,
 				EFAC58221F340D2E00B94D93 /* ZGComposeAudioModel.m in Sources */,
 				EFC56B93201DBB8000BA5487 /* ZGMsgForwardController.m in Sources */,
+				417F202221F0647C00471B03 /* fmod_player.cpp in Sources */,
 				EF7231A720DB44E100999D3A /* ZGAniCollectionViewNormalController.m in Sources */,
 				EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */,
 				EF25CBC320E28522005A7F8C /* ZGNestSubScrollView.m in Sources */,
@@ -3814,6 +3959,7 @@
 				EFC4FA9E206C98D000F42842 /* ZGNSProxyController.m in Sources */,
 				EF33525E2091B261003D4344 /* ZGIFUBaseObject.m in Sources */,
 				EFFF331D1FFF69600086BE7D /* ZGNoDataView.m in Sources */,
+				417F202421F0647C00471B03 /* FMAudioPlayer.mm in Sources */,
 				EF2F66851FFF585000EA4F6F /* ZGPLman.m in Sources */,
 				EF3352612091B272003D4344 /* ZGIFUAObject.m in Sources */,
 				EFF1DA8820D3BE2500CBC680 /* ZGAnimationsTableController.m in Sources */,
@@ -3979,6 +4125,10 @@
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/FmodDemo/OpenSource/FMOD/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3992,6 +4142,10 @@
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/FmodDemo/OpenSource/FMOD/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
