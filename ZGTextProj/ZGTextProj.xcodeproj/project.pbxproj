@@ -40,6 +40,14 @@
 		417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F203B21F064A500471B03 /* ZGFmodDemoController.m */; };
 		417F203F21F064CA00471B03 /* ZGBottomToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F203D21F064CA00471B03 /* ZGBottomToolBar.m */; };
 		417F204221F064D900471B03 /* ZGRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F204121F064D900471B03 /* ZGRecorder.m */; };
+		417F204B21F1674D00471B03 /* ZGAudioConvertController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 417F204A21F1674D00471B03 /* ZGAudioConvertController.mm */; };
+		417F204E21F167CE00471B03 /* ZGFAACWav2AAc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F204C21F167CE00471B03 /* ZGFAACWav2AAc.cpp */; };
+		417F205621F169E400471B03 /* libfaac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F205521F169E400471B03 /* libfaac.a */; };
+		417F206021F169EC00471B03 /* libmp4ff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F205E21F169EC00471B03 /* libmp4ff.a */; };
+		417F206121F169EC00471B03 /* libfaad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F205F21F169EC00471B03 /* libfaad.a */; };
+		417F206421F16A2800471B03 /* wavreader.c in Sources */ = {isa = PBXBuildFile; fileRef = 417F206221F16A2700471B03 /* wavreader.c */; };
+		417F206721F16A3700471B03 /* MZCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F206621F16A3700471B03 /* MZCodec.cpp */; };
+		417F206A21F17C4800471B03 /* gamesound.aac in Resources */ = {isa = PBXBuildFile; fileRef = 417F206921F17C4800471B03 /* gamesound.aac */; };
 		4189406921798637008C13D8 /* YGRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4189406821798637008C13D8 /* YGRecordView.m */; };
 		418E959121E4CF1A00349982 /* testZong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 418E959021E4CF1A00349982 /* testZong.wav */; };
 		41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */; };
@@ -353,6 +361,24 @@
 		417F203E21F064CA00471B03 /* ZGBottomToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGBottomToolBar.h; sourceTree = "<group>"; };
 		417F204021F064D900471B03 /* ZGRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGRecorder.h; sourceTree = "<group>"; };
 		417F204121F064D900471B03 /* ZGRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGRecorder.m; sourceTree = "<group>"; };
+		417F204921F1674D00471B03 /* ZGAudioConvertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioConvertController.h; sourceTree = "<group>"; };
+		417F204A21F1674D00471B03 /* ZGAudioConvertController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZGAudioConvertController.mm; sourceTree = "<group>"; };
+		417F204C21F167CE00471B03 /* ZGFAACWav2AAc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ZGFAACWav2AAc.cpp; sourceTree = "<group>"; };
+		417F204D21F167CE00471B03 /* ZGFAACWav2AAc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ZGFAACWav2AAc.hpp; sourceTree = "<group>"; };
+		417F205221F169E400471B03 /* faac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faac.h; sourceTree = "<group>"; };
+		417F205321F169E400471B03 /* faaccfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faaccfg.h; sourceTree = "<group>"; };
+		417F205521F169E400471B03 /* libfaac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfaac.a; sourceTree = "<group>"; };
+		417F205921F169EC00471B03 /* neaacdec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neaacdec.h; sourceTree = "<group>"; };
+		417F205A21F169EC00471B03 /* mp4ff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp4ff.h; sourceTree = "<group>"; };
+		417F205B21F169EC00471B03 /* mp4ffint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp4ffint.h; sourceTree = "<group>"; };
+		417F205C21F169EC00471B03 /* faad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faad.h; sourceTree = "<group>"; };
+		417F205E21F169EC00471B03 /* libmp4ff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp4ff.a; sourceTree = "<group>"; };
+		417F205F21F169EC00471B03 /* libfaad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfaad.a; sourceTree = "<group>"; };
+		417F206221F16A2700471B03 /* wavreader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wavreader.c; sourceTree = "<group>"; };
+		417F206321F16A2700471B03 /* wavreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wavreader.h; sourceTree = "<group>"; };
+		417F206521F16A3700471B03 /* MZCodec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MZCodec.hpp; sourceTree = "<group>"; };
+		417F206621F16A3700471B03 /* MZCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MZCodec.cpp; sourceTree = "<group>"; };
+		417F206921F17C4800471B03 /* gamesound.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = gamesound.aac; sourceTree = "<group>"; };
 		4189406721798637008C13D8 /* YGRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordView.h; sourceTree = "<group>"; };
 		4189406821798637008C13D8 /* YGRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordView.m; sourceTree = "<group>"; };
 		418E959021E4CF1A00349982 /* testZong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = testZong.wav; sourceTree = "<group>"; };
@@ -812,7 +838,10 @@
 				417F203721F0648900471B03 /* libfmodL_iphonesimulator.a in Frameworks */,
 				417F203821F0648900471B03 /* libfmodL_iphoneos.a in Frameworks */,
 				417F203921F0648900471B03 /* libfmod_iphoneos.a in Frameworks */,
+				417F206021F169EC00471B03 /* libmp4ff.a in Frameworks */,
 				417F203621F0648900471B03 /* libfmod_iphonesimulator.a in Frameworks */,
+				417F205621F169E400471B03 /* libfaac.a in Frameworks */,
+				417F206121F169EC00471B03 /* libfaad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,6 +1077,7 @@
 		4174DD8221DC9BCC007C89E6 /* AVAudio */ = {
 			isa = PBXGroup;
 			children = (
+				417F204521F1673B00471B03 /* AudioConvert */,
 				4174DD8321DC9BCC007C89E6 /* AVAudioUnit */,
 				4174DD8721DC9BCC007C89E6 /* AVAudioQueue */,
 			);
@@ -1216,6 +1246,110 @@
 				417F203321F0648900471B03 /* libfmodL_iphonesimulator.a */,
 				417F203421F0648900471B03 /* libfmodL_iphoneos.a */,
 				417F203521F0648900471B03 /* libfmod_iphoneos.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		417F204521F1673B00471B03 /* AudioConvert */ = {
+			isa = PBXGroup;
+			children = (
+				417F204F21F169CC00471B03 /* FAAC */,
+				417F204621F1673B00471B03 /* Controller */,
+				417F204721F1673B00471B03 /* Model */,
+				417F204821F1673B00471B03 /* View */,
+			);
+			path = AudioConvert;
+			sourceTree = "<group>";
+		};
+		417F204621F1673B00471B03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				417F204921F1674D00471B03 /* ZGAudioConvertController.h */,
+				417F204A21F1674D00471B03 /* ZGAudioConvertController.mm */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		417F204721F1673B00471B03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				417F206621F16A3700471B03 /* MZCodec.cpp */,
+				417F206521F16A3700471B03 /* MZCodec.hpp */,
+				417F206221F16A2700471B03 /* wavreader.c */,
+				417F206321F16A2700471B03 /* wavreader.h */,
+				417F204C21F167CE00471B03 /* ZGFAACWav2AAc.cpp */,
+				417F204D21F167CE00471B03 /* ZGFAACWav2AAc.hpp */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417F204821F1673B00471B03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417F204F21F169CC00471B03 /* FAAC */ = {
+			isa = PBXGroup;
+			children = (
+				417F205721F169EC00471B03 /* faad */,
+				417F205021F169E400471B03 /* faac */,
+			);
+			path = FAAC;
+			sourceTree = "<group>";
+		};
+		417F205021F169E400471B03 /* faac */ = {
+			isa = PBXGroup;
+			children = (
+				417F205121F169E400471B03 /* include */,
+				417F205421F169E400471B03 /* lib */,
+			);
+			path = faac;
+			sourceTree = "<group>";
+		};
+		417F205121F169E400471B03 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				417F205221F169E400471B03 /* faac.h */,
+				417F205321F169E400471B03 /* faaccfg.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		417F205421F169E400471B03 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				417F205521F169E400471B03 /* libfaac.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		417F205721F169EC00471B03 /* faad */ = {
+			isa = PBXGroup;
+			children = (
+				417F205821F169EC00471B03 /* include */,
+				417F205D21F169EC00471B03 /* lib */,
+			);
+			path = faad;
+			sourceTree = "<group>";
+		};
+		417F205821F169EC00471B03 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				417F205921F169EC00471B03 /* neaacdec.h */,
+				417F205A21F169EC00471B03 /* mp4ff.h */,
+				417F205B21F169EC00471B03 /* mp4ffint.h */,
+				417F205C21F169EC00471B03 /* faad.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		417F205D21F169EC00471B03 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				417F205E21F169EC00471B03 /* libmp4ff.a */,
+				417F205F21F169EC00471B03 /* libfaad.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -2988,6 +3122,7 @@
 				EFFC13551F3454D300E6F664 /* myPlayer.mp4 */,
 				417F201621F0643600471B03 /* singing.wav */,
 				418E959021E4CF1A00349982 /* testZong.wav */,
+				417F206921F17C4800471B03 /* gamesound.aac */,
 				EF7F2CA6210972F800AC6755 /* img.jpg */,
 				EFDBCDC51F2B159700C542AD /* Main.storyboard */,
 				EFDBCDC81F2B159700C542AD /* Assets.xcassets */,
@@ -3710,6 +3845,7 @@
 				EFFC13561F3454D300E6F664 /* myPlayer.mp4 in Resources */,
 				411B2BF7215B734F009747D8 /* Cairo-ExtraLight.ttf in Resources */,
 				411B2BF2215B734F009747D8 /* Cairo-Black.ttf in Resources */,
+				417F206A21F17C4800471B03 /* gamesound.aac in Resources */,
 				EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */,
 				EFDBCDC71F2B159700C542AD /* Main.storyboard in Resources */,
 				EFFCE4A21F62330F008E2375 /* unicode_to_hanyu_pinyin.txt in Resources */,
@@ -3776,6 +3912,7 @@
 				EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */,
 				417115BF21AE8E0B0068079B /* ZGWKWebNoDataView.m in Sources */,
 				EF0A0EB1200701DF0095779B /* ZGSubTabBarView.m in Sources */,
+				417F206721F16A3700471B03 /* MZCodec.cpp in Sources */,
 				417115B921AD4E2D0068079B /* ZGWebKitTestController.m in Sources */,
 				EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */,
 				4137F2F22192BB2B003B6D60 /* ZGPHResourceManager.m in Sources */,
@@ -3785,6 +3922,7 @@
 				EFFCE49D1F62330F008E2375 /* ChineseToPinyinResource.m in Sources */,
 				415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */,
 				EF7F2CA12108117900AC6755 /* ZGImageController.m in Sources */,
+				417F204B21F1674D00471B03 /* ZGAudioConvertController.mm in Sources */,
 				EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */,
 				EF7F2CD9210AF7D000AC6755 /* ZGSTIDiscoveryController.m in Sources */,
 				EF192AA8210C152400868D5B /* ZGLockAndSemaphoreController.m in Sources */,
@@ -3822,6 +3960,7 @@
 				41D0A9A621C3586E00BD543C /* ZGTextFixCollectionViewCell.m in Sources */,
 				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
 				EF64EEB320E48778009B5767 /* ZGCellopGestureScrollView.m in Sources */,
+				417F204E21F167CE00471B03 /* ZGFAACWav2AAc.cpp in Sources */,
 				EF819FC7212918C3009B959A /* ZGWeakMutableDictionary.m in Sources */,
 				EF58F69B2143BADB0000CDC7 /* ZGTestCollectionViewCell.m in Sources */,
 				EF2EEAC620F495F900C9FBAD /* ZGKVOOObserverB.m in Sources */,
@@ -3929,6 +4068,7 @@
 				EFFCE4B21F6271F9008E2375 /* ZGCalendarHeaderView.m in Sources */,
 				EF7F2CCD210AF4B700AC6755 /* ZGSTITabView.m in Sources */,
 				EFAC581C1F30B61F00B94D93 /* ZGTestBlockViewController.m in Sources */,
+				417F206421F16A2800471B03 /* wavreader.c in Sources */,
 				EF3CFB4420F09DB200FCE02E /* ZGSTestDragingController.m in Sources */,
 				EF3C47C51F384D530039AA5C /* ZGPeople.m in Sources */,
 				EF7A7A242100393D00B79368 /* ZGPropertyController.m in Sources */,
@@ -4122,12 +4262,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BVF5F2U9J;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZGTextProj/Modules/FmodDemo/OpenSource/FMOD/lib",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4139,12 +4282,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BVF5F2U9J;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZGTextProj/Modules/FmodDemo/OpenSource/FMOD/lib",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";

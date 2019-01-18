@@ -106,6 +106,7 @@
 #import "ZGAVAudioQueueController.h"
 #import "ZGAVAudioUnitController.h"
 #import "ZGFmodDemoController.h"
+#import "ZGAudioConvertController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -140,7 +141,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 66;
+    return 67;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -278,6 +279,8 @@
         cell.textLabel.text = @"AVAudioUnit";
     }else if(indexPath.row == 65){
         cell.textLabel.text = @"FmodDemo";
+    }else if(indexPath.row == 66){
+        cell.textLabel.text = @"AudioConvert";
     }
 
 
@@ -490,6 +493,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 65){
         ZGFmodDemoController *con = [[ZGFmodDemoController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 66){
+        ZGAudioConvertController *con = [[ZGAudioConvertController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
