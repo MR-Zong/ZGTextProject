@@ -9,6 +9,7 @@
 #import "ZGAudioConvertController.h"
 #include "MZCodec.hpp"
 #import <AVFoundation/AVFoundation.h>
+#import "wavreader.h"
 
 @interface ZGAudioConvertController ()
 
@@ -92,10 +93,35 @@
     
 }
 
-- (void)doWAV2AACAction:(id)sender {
+/**
+ * 读取wav头文件信息
+ */
+- (void)readWAVHeader
+{
+    int format;
+    int channels;
+    int sample_rate;
+    int bits_per_sample;
+    unsigned int  data_length;
     
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *resPath = [bundle pathForResource:@"testZong" ofType:@"wav"];
+   void *fp = wav_read_open([resPath UTF8String]);
+    wav_get_header(fp, &format, &channels, &sample_rate, &bits_per_sample, &data_length);
+    wav_read_close(fp);
+    
+    NSLog(@"format %d, channels %d, sample_rate %d, bits_per_sample %d, data_length %d",format,channels,sample_rate,bits_per_sample,data_length);
+}
+
+- (void)doWAV2AACAction:(id)sender {
+    [self readWAVHeader];
+    return;
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *resPath = [bundle pathForResource:@"testZong" ofType:@"wav"];
+    
+    
+    
     NSLog(@"The path of wav file: %@", resPath);
     
     NSArray<NSString *> *docPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
