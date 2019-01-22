@@ -111,9 +111,15 @@
     wav_read_close(fp);
     
     NSLog(@"format %d, channels %d, sample_rate %d, bits_per_sample %d, data_length %d",format,channels,sample_rate,bits_per_sample,data_length);
+    
+    CGFloat bytePerSecond = sample_rate*(bits_per_sample/8.0)*channels;
+    CGFloat duration = data_length / bytePerSecond;
+    NSLog(@"duration %f",duration);
 }
 
 - (void)doWAV2AACAction:(id)sender {
+    
+    // 测试读取wav头文件
     [self readWAVHeader];
     return;
     
