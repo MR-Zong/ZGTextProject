@@ -18,6 +18,7 @@
 		4137F2EC2192B92E003B6D60 /* ZGPhotoPickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2EB2192B92E003B6D60 /* ZGPhotoPickController.m */; };
 		4137F2EF2192BA71003B6D60 /* ZGPHVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2EE2192BA71003B6D60 /* ZGPHVideoCell.m */; };
 		4137F2F22192BB2B003B6D60 /* ZGPHResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2F12192BB2B003B6D60 /* ZGPHResourceManager.m */; };
+		4151344921F7111F0054D972 /* ZGAudioRmoteControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */; };
 		415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B2D2181C851000A8213 /* AutoScrollLabel.m */; };
 		415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */; };
 		415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */; };
@@ -313,6 +314,8 @@
 		4137F2EE2192BA71003B6D60 /* ZGPHVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPHVideoCell.m; sourceTree = "<group>"; };
 		4137F2F02192BB2B003B6D60 /* ZGPHResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPHResourceManager.h; sourceTree = "<group>"; };
 		4137F2F12192BB2B003B6D60 /* ZGPHResourceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPHResourceManager.m; sourceTree = "<group>"; };
+		4151344721F7111F0054D972 /* ZGAudioRmoteControlController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioRmoteControlController.h; sourceTree = "<group>"; };
+		4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAudioRmoteControlController.m; sourceTree = "<group>"; };
 		415D8B2D2181C851000A8213 /* AutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoScrollLabel.m; sourceTree = "<group>"; };
 		415D8B2E2181C851000A8213 /* AutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoScrollLabel.h; sourceTree = "<group>"; };
 		415D8B312181C872000A8213 /* ZGAutoScrollLabelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAutoScrollLabelController.h; sourceTree = "<group>"; };
@@ -958,6 +961,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4151344321F710FD0054D972 /* AudioRemoteControl */ = {
+			isa = PBXGroup;
+			children = (
+				4151344421F710FD0054D972 /* Controller */,
+				4151344521F710FD0054D972 /* Model */,
+				4151344621F710FD0054D972 /* View */,
+			);
+			path = AudioRemoteControl;
+			sourceTree = "<group>";
+		};
+		4151344421F710FD0054D972 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4151344721F7111F0054D972 /* ZGAudioRmoteControlController.h */,
+				4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4151344521F710FD0054D972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4151344621F710FD0054D972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		415D8B2A2181C845000A8213 /* AutoScrollLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1077,6 +1113,7 @@
 		4174DD8221DC9BCC007C89E6 /* AVAudio */ = {
 			isa = PBXGroup;
 			children = (
+				4151344321F710FD0054D972 /* AudioRemoteControl */,
 				417F204521F1673B00471B03 /* AudioConvert */,
 				4174DD8321DC9BCC007C89E6 /* AVAudioUnit */,
 				4174DD8721DC9BCC007C89E6 /* AVAudioQueue */,
@@ -4017,6 +4054,7 @@
 				EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */,
 				EFF1DA5020D0FECA00CBC680 /* ZGPVCTestController.m in Sources */,
 				EF64EEB820E4D6B6009B5767 /* ZGCellOpCell.m in Sources */,
+				4151344921F7111F0054D972 /* ZGAudioRmoteControlController.m in Sources */,
 				4174DD9621DCBC89007C89E6 /* AudioQueuePlayer.m in Sources */,
 				EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */,
 				EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */,

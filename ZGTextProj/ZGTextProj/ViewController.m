@@ -107,6 +107,7 @@
 #import "ZGAVAudioUnitController.h"
 #import "ZGFmodDemoController.h"
 #import "ZGAudioConvertController.h"
+#import "ZGAudioRmoteControlController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -141,7 +142,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 67;
+    return 68;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -281,6 +282,8 @@
         cell.textLabel.text = @"FmodDemo";
     }else if(indexPath.row == 66){
         cell.textLabel.text = @"AudioConvert";
+    }else if(indexPath.row == 67){
+        cell.textLabel.text = @"AudioRemoteControl";
     }
 
 
@@ -496,6 +499,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 66){
         ZGAudioConvertController *con = [[ZGAudioConvertController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 67){
+        ZGAudioRmoteControlController *con = [[ZGAudioRmoteControlController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
