@@ -109,6 +109,8 @@
 #import "ZGAudioConvertController.h"
 #import "ZGAudioRmoteControlController.h"
 
+#import "ZGIMDesignController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -142,7 +144,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 68;
+    return 69;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -284,6 +286,8 @@
         cell.textLabel.text = @"AudioConvert";
     }else if(indexPath.row == 67){
         cell.textLabel.text = @"AudioRemoteControl";
+    }else if(indexPath.row == 68){
+        cell.textLabel.text = @"IMDesign";
     }
 
 
@@ -502,6 +506,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 67){
         ZGAudioRmoteControlController *con = [[ZGAudioRmoteControlController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 68){
+        ZGIMDesignController *con = [[ZGIMDesignController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

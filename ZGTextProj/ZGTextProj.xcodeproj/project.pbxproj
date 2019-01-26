@@ -19,6 +19,13 @@
 		4137F2EF2192BA71003B6D60 /* ZGPHVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2EE2192BA71003B6D60 /* ZGPHVideoCell.m */; };
 		4137F2F22192BB2B003B6D60 /* ZGPHResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2F12192BB2B003B6D60 /* ZGPHResourceManager.m */; };
 		4151344921F7111F0054D972 /* ZGAudioRmoteControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */; };
+		4151345021F8734E0054D972 /* ZGIMDesignController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151344F21F8734E0054D972 /* ZGIMDesignController.m */; };
+		4151345321F9EA340054D972 /* ZGIMBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345221F9EA340054D972 /* ZGIMBaseCell.m */; };
+		4151345621F9EB430054D972 /* ZGIMContainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345521F9EB430054D972 /* ZGIMContainView.m */; };
+		4151345921F9EB750054D972 /* ZGIMTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345821F9EB750054D972 /* ZGIMTextCell.m */; };
+		4151345C21F9EC200054D972 /* ZGIMTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345B21F9EC200054D972 /* ZGIMTimeCell.m */; };
+		4151345F21F9EC350054D972 /* ZGIMUndefinedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345E21F9EC350054D972 /* ZGIMUndefinedCell.m */; };
+		4151346221F9EC750054D972 /* ZGIMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151346121F9EC750054D972 /* ZGIMMessage.m */; };
 		415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B2D2181C851000A8213 /* AutoScrollLabel.m */; };
 		415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */; };
 		415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */; };
@@ -316,6 +323,20 @@
 		4137F2F12192BB2B003B6D60 /* ZGPHResourceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPHResourceManager.m; sourceTree = "<group>"; };
 		4151344721F7111F0054D972 /* ZGAudioRmoteControlController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioRmoteControlController.h; sourceTree = "<group>"; };
 		4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAudioRmoteControlController.m; sourceTree = "<group>"; };
+		4151344E21F8734E0054D972 /* ZGIMDesignController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMDesignController.h; sourceTree = "<group>"; };
+		4151344F21F8734E0054D972 /* ZGIMDesignController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMDesignController.m; sourceTree = "<group>"; };
+		4151345121F9EA340054D972 /* ZGIMBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMBaseCell.h; sourceTree = "<group>"; };
+		4151345221F9EA340054D972 /* ZGIMBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMBaseCell.m; sourceTree = "<group>"; };
+		4151345421F9EB430054D972 /* ZGIMContainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMContainView.h; sourceTree = "<group>"; };
+		4151345521F9EB430054D972 /* ZGIMContainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMContainView.m; sourceTree = "<group>"; };
+		4151345721F9EB750054D972 /* ZGIMTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMTextCell.h; sourceTree = "<group>"; };
+		4151345821F9EB750054D972 /* ZGIMTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMTextCell.m; sourceTree = "<group>"; };
+		4151345A21F9EC200054D972 /* ZGIMTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMTimeCell.h; sourceTree = "<group>"; };
+		4151345B21F9EC200054D972 /* ZGIMTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMTimeCell.m; sourceTree = "<group>"; };
+		4151345D21F9EC350054D972 /* ZGIMUndefinedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMUndefinedCell.h; sourceTree = "<group>"; };
+		4151345E21F9EC350054D972 /* ZGIMUndefinedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMUndefinedCell.m; sourceTree = "<group>"; };
+		4151346021F9EC750054D972 /* ZGIMMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMMessage.h; sourceTree = "<group>"; };
+		4151346121F9EC750054D972 /* ZGIMMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMMessage.m; sourceTree = "<group>"; };
 		415D8B2D2181C851000A8213 /* AutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoScrollLabel.m; sourceTree = "<group>"; };
 		415D8B2E2181C851000A8213 /* AutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoScrollLabel.h; sourceTree = "<group>"; };
 		415D8B312181C872000A8213 /* ZGAutoScrollLabelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAutoScrollLabelController.h; sourceTree = "<group>"; };
@@ -990,6 +1011,51 @@
 		4151344621F710FD0054D972 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4151344A21F8733C0054D972 /* IMDesign */ = {
+			isa = PBXGroup;
+			children = (
+				4151344B21F8733C0054D972 /* Controller */,
+				4151344C21F8733C0054D972 /* Model */,
+				4151344D21F8733C0054D972 /* View */,
+			);
+			path = IMDesign;
+			sourceTree = "<group>";
+		};
+		4151344B21F8733C0054D972 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4151344E21F8734E0054D972 /* ZGIMDesignController.h */,
+				4151344F21F8734E0054D972 /* ZGIMDesignController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4151344C21F8733C0054D972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4151346021F9EC750054D972 /* ZGIMMessage.h */,
+				4151346121F9EC750054D972 /* ZGIMMessage.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4151344D21F8733C0054D972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4151345121F9EA340054D972 /* ZGIMBaseCell.h */,
+				4151345221F9EA340054D972 /* ZGIMBaseCell.m */,
+				4151345421F9EB430054D972 /* ZGIMContainView.h */,
+				4151345521F9EB430054D972 /* ZGIMContainView.m */,
+				4151345721F9EB750054D972 /* ZGIMTextCell.h */,
+				4151345821F9EB750054D972 /* ZGIMTextCell.m */,
+				4151345A21F9EC200054D972 /* ZGIMTimeCell.h */,
+				4151345B21F9EC200054D972 /* ZGIMTimeCell.m */,
+				4151345D21F9EC350054D972 /* ZGIMUndefinedCell.h */,
+				4151345E21F9EC350054D972 /* ZGIMUndefinedCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3204,6 +3270,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4151344A21F8733C0054D972 /* IMDesign */,
 				417F201521F0641F00471B03 /* FmodDemo */,
 				4174DD8221DC9BCC007C89E6 /* AVAudio */,
 				41D0A99721C2704D00BD543C /* UICollectionview */,
@@ -3954,6 +4021,7 @@
 				EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */,
 				4137F2F22192BB2B003B6D60 /* ZGPHResourceManager.m in Sources */,
 				EF7F2CD0210AF4CD00AC6755 /* ZGSTIScrollManager.m in Sources */,
+				4151345321F9EA340054D972 /* ZGIMBaseCell.m in Sources */,
 				EF2F667A1FFC6B5D00EA4F6F /* ZGBlockPeople.m in Sources */,
 				EF7AC499211F21AA00ED7982 /* ZGPEteModelA.m in Sources */,
 				EFFCE49D1F62330F008E2375 /* ChineseToPinyinResource.m in Sources */,
@@ -3969,6 +4037,7 @@
 				EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */,
 				EFFCE4A81F623F9E008E2375 /* ZGLetterSectionModel.m in Sources */,
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
+				4151345921F9EB750054D972 /* ZGIMTextCell.m in Sources */,
 				EFE4308220D5017C006930E5 /* ZGAnimationsCellController.m in Sources */,
 				EF64EEB020E485A3009B5767 /* ZGCellOpGestureTable.m in Sources */,
 				EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */,
@@ -3989,6 +4058,7 @@
 				EFE4308520D501CF006930E5 /* ZGHeaderCell.m in Sources */,
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
 				41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */,
+				4151345C21F9EC200054D972 /* ZGIMTimeCell.m in Sources */,
 				EF7F2CD6210AF7BF00AC6755 /* ZGSTIHotController.m in Sources */,
 				417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
@@ -4003,6 +4073,7 @@
 				EF2EEAC620F495F900C9FBAD /* ZGKVOOObserverB.m in Sources */,
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
+				4151345F21F9EC350054D972 /* ZGIMUndefinedCell.m in Sources */,
 				EF570B322024625600E14BC9 /* ZGKEDataModel.m in Sources */,
 				EF64EEAD20E4806E009B5767 /* ZGCellOptionGestureController.m in Sources */,
 				EF64EEC220E4E5DA009B5767 /* ZGEventChainView.m in Sources */,
@@ -4083,8 +4154,11 @@
 				EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */,
 				EF58F69E214509180000CDC7 /* ZGVAKDiscoverController.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
+				4151346221F9EC750054D972 /* ZGIMMessage.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
 				411B2BEA215B7275009747D8 /* ZGFontController.m in Sources */,
+				4151345621F9EB430054D972 /* ZGIMContainView.m in Sources */,
+				4151345021F8734E0054D972 /* ZGIMDesignController.m in Sources */,
 				EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */,
 				415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */,
 				EF42A576211D8D9100EB4A4E /* ZGHotFixController.m in Sources */,
