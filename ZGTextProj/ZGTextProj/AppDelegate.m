@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "UncaughtExceptionHandler.h"
+#import "LMJIntroductoryPagesHelper.h"
 
 @interface AppDelegate ()
 
@@ -37,6 +38,10 @@
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:view];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    // 欢迎视图
+    [LMJIntroductoryPagesHelper showIntroductoryPageView:@[@"intro_0.jpg", @"intro_1.jpg", @"intro_2.jpg", @"intro_3.jpg"]];
 
     return YES;
 }

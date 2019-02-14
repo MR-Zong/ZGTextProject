@@ -61,6 +61,12 @@
 		417F206A21F17C4800471B03 /* gamesound.aac in Resources */ = {isa = PBXBuildFile; fileRef = 417F206921F17C4800471B03 /* gamesound.aac */; };
 		4189406921798637008C13D8 /* YGRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4189406821798637008C13D8 /* YGRecordView.m */; };
 		418E959121E4CF1A00349982 /* testZong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 418E959021E4CF1A00349982 /* testZong.wav */; };
+		41BDBB9122157A9500043C33 /* intro_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB8D22157A9500043C33 /* intro_0.jpg */; };
+		41BDBB9222157A9500043C33 /* intro_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB8E22157A9500043C33 /* intro_1.jpg */; };
+		41BDBB9322157A9500043C33 /* intro_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB8F22157A9500043C33 /* intro_3.jpg */; };
+		41BDBB9422157A9500043C33 /* intro_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB9022157A9500043C33 /* intro_2.jpg */; };
+		41BDBB9922157AA400043C33 /* LMJIntroductoryPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBB9522157AA400043C33 /* LMJIntroductoryPagesView.m */; };
+		41BDBB9A22157AA400043C33 /* LMJIntroductoryPagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBB9622157AA400043C33 /* LMJIntroductoryPagesHelper.m */; };
 		41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */; };
 		41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA13217496A900D0DE9B /* audioClipTest.m4a */; };
 		41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */; };
@@ -415,6 +421,14 @@
 		4189406721798637008C13D8 /* YGRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordView.h; sourceTree = "<group>"; };
 		4189406821798637008C13D8 /* YGRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordView.m; sourceTree = "<group>"; };
 		418E959021E4CF1A00349982 /* testZong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = testZong.wav; sourceTree = "<group>"; };
+		41BDBB8D22157A9500043C33 /* intro_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro_0.jpg; sourceTree = "<group>"; };
+		41BDBB8E22157A9500043C33 /* intro_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro_1.jpg; sourceTree = "<group>"; };
+		41BDBB8F22157A9500043C33 /* intro_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro_3.jpg; sourceTree = "<group>"; };
+		41BDBB9022157A9500043C33 /* intro_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro_2.jpg; sourceTree = "<group>"; };
+		41BDBB9522157AA400043C33 /* LMJIntroductoryPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJIntroductoryPagesView.m; sourceTree = "<group>"; };
+		41BDBB9622157AA400043C33 /* LMJIntroductoryPagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJIntroductoryPagesHelper.m; sourceTree = "<group>"; };
+		41BDBB9722157AA400043C33 /* LMJIntroductoryPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJIntroductoryPagesView.h; sourceTree = "<group>"; };
+		41BDBB9822157AA400043C33 /* LMJIntroductoryPagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJIntroductoryPagesHelper.h; sourceTree = "<group>"; };
 		41CDAA102174910300D0DE9B /* ZGAVAudioClipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioClipController.h; sourceTree = "<group>"; };
 		41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAVAudioClipController.m; sourceTree = "<group>"; };
 		41CDAA13217496A900D0DE9B /* audioClipTest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = audioClipTest.m4a; sourceTree = "<group>"; };
@@ -1501,6 +1515,61 @@
 				417F205F21F169EC00471B03 /* libfaad.a */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		41BDBB872215786A00043C33 /* welcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				41BDBB8B22157A8100043C33 /* LMPWelcome */,
+				41BDBB882215786A00043C33 /* Controller */,
+				41BDBB892215786A00043C33 /* Model */,
+				41BDBB8A2215786A00043C33 /* View */,
+			);
+			path = welcomePage;
+			sourceTree = "<group>";
+		};
+		41BDBB882215786A00043C33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41BDBB892215786A00043C33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41BDBB8A2215786A00043C33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41BDBB8B22157A8100043C33 /* LMPWelcome */ = {
+			isa = PBXGroup;
+			children = (
+				41BDBB9822157AA400043C33 /* LMJIntroductoryPagesHelper.h */,
+				41BDBB9622157AA400043C33 /* LMJIntroductoryPagesHelper.m */,
+				41BDBB9722157AA400043C33 /* LMJIntroductoryPagesView.h */,
+				41BDBB9522157AA400043C33 /* LMJIntroductoryPagesView.m */,
+				41BDBB8C22157A9500043C33 /* PLMMPRIKImages */,
+			);
+			path = LMPWelcome;
+			sourceTree = "<group>";
+		};
+		41BDBB8C22157A9500043C33 /* PLMMPRIKImages */ = {
+			isa = PBXGroup;
+			children = (
+				41BDBB8D22157A9500043C33 /* intro_0.jpg */,
+				41BDBB8E22157A9500043C33 /* intro_1.jpg */,
+				41BDBB8F22157A9500043C33 /* intro_3.jpg */,
+				41BDBB9022157A9500043C33 /* intro_2.jpg */,
+			);
+			path = PLMMPRIKImages;
 			sourceTree = "<group>";
 		};
 		41CDAA1521749C3600D0DE9B /* Resource */ = {
@@ -3316,6 +3385,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41BDBB872215786A00043C33 /* welcomePage */,
 				4110F9212213F48B006B9CEF /* UITabBarController */,
 				4151344A21F8733C0054D972 /* IMDesign */,
 				417F201521F0641F00471B03 /* FmodDemo */,
@@ -3977,6 +4047,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BDBB9222157A9500043C33 /* intro_1.jpg in Resources */,
 				418E959121E4CF1A00349982 /* testZong.wav in Resources */,
 				41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */,
 				EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */,
@@ -3987,6 +4058,7 @@
 				EFDBCDC91F2B159700C542AD /* Assets.xcassets in Resources */,
 				EF7F2CA42108176E00AC6755 /* news_pop_six_winged_demon@3x.png in Resources */,
 				411B2BF3215B734F009747D8 /* Cairo-Light.ttf in Resources */,
+				41BDBB9422157A9500043C33 /* intro_2.jpg in Resources */,
 				411B2BF6215B734F009747D8 /* Cairo-Bold.ttf in Resources */,
 				417F201721F0643600471B03 /* singing.wav in Resources */,
 				EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */,
@@ -3998,9 +4070,11 @@
 				411B2BF2215B734F009747D8 /* Cairo-Black.ttf in Resources */,
 				417F206A21F17C4800471B03 /* gamesound.aac in Resources */,
 				EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */,
+				41BDBB9122157A9500043C33 /* intro_0.jpg in Resources */,
 				EFDBCDC71F2B159700C542AD /* Main.storyboard in Resources */,
 				EFFCE4A21F62330F008E2375 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				41DEED7B21A6D9910017579A /* export.plist in Resources */,
+				41BDBB9322157A9500043C33 /* intro_3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4265,11 +4339,13 @@
 				EF2F66851FFF585000EA4F6F /* ZGPLman.m in Sources */,
 				EF3352612091B272003D4344 /* ZGIFUAObject.m in Sources */,
 				EFF1DA8820D3BE2500CBC680 /* ZGAnimationsTableController.m in Sources */,
+				41BDBB9922157AA400043C33 /* LMJIntroductoryPagesView.m in Sources */,
 				EF3FE04C2010A5090088C2C9 /* ZGWeakSelfController.m in Sources */,
 				EF570B032022E57E00E14BC9 /* ZGNotificationController.m in Sources */,
 				EFC6EE201FF48CB500E1D2C5 /* ZGTestWindowController.m in Sources */,
 				EFAC581F1F332B5C00B94D93 /* ZGComposeVideoAndAudioViewController.m in Sources */,
 				EF0A0E9820060CED0095779B /* ZGSV1Delegate.m in Sources */,
+				41BDBB9A22157AA400043C33 /* LMJIntroductoryPagesHelper.m in Sources */,
 				415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */,
 				EFF1DA5620D1049E00CBC680 /* ZGPageBController.m in Sources */,
 				EF01D5E920AE70370023B282 /* ZGNRootController.m in Sources */,
