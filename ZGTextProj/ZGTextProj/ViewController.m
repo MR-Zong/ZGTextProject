@@ -110,6 +110,7 @@
 #import "ZGAudioRmoteControlController.h"
 
 #import "ZGIMDesignController.h"
+#import "ZGTabBarController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -144,7 +145,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 69;
+    return 70;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -288,6 +289,8 @@
         cell.textLabel.text = @"AudioRemoteControl";
     }else if(indexPath.row == 68){
         cell.textLabel.text = @"IMDesign";
+    }else if(indexPath.row == 69){
+        cell.textLabel.text = @"UITabBarController";
     }
 
 
@@ -510,6 +513,33 @@
     }else if(indexPath.row == 68){
         ZGIMDesignController *con = [[ZGIMDesignController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 69){
+        ZGTabBarController *tabBarController = [[ZGTabBarController alloc] init];
+        
+        UIViewController *first = [[UIViewController alloc]init];
+        first.view.backgroundColor = [UIColor greenColor];
+        [tabBarController addController:first withTitle:@"回应" imageName:@"kid_bottom_list_icon_clean" selectedImageName:@"tiaoman_d.png"];
+        
+        UIViewController *second = [[UIViewController alloc]init];
+        second.view.backgroundColor = [UIColor redColor];
+        [tabBarController addController:second withTitle:@"说说" imageName:@"kid_bottom_list_icon_clean" selectedImageName:@"faxian_d.png"];
+        
+        UIViewController *third = [[UIViewController alloc]init];
+         third.view.backgroundColor = [UIColor purpleColor];
+        [tabBarController addController:third withTitle:@"发现" imageName:@"kid_bottom_list_icon_clean" selectedImageName:@"wode_d.png"];
+        
+        UIViewController *foour = [[UIViewController alloc]init];
+        third.view.backgroundColor = [UIColor purpleColor];
+        [tabBarController addController:foour withTitle:@"我的" imageName:@"kid_bottom_list_icon_clean" selectedImageName:@"wode_d.png"];
+        
+        // 设置第几个被选中
+        tabBarController.selectedIndex = 0;
+        
+        // 这只centerView
+//        UIButton *center = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 60, 60)];
+//        [center setImage:[UIImage imageNamed:@"luffy1@2x.png"] forState:UIControlStateNormal];
+//        tabBarController.centerView = center;
+        [self.navigationController pushViewController:tabBarController animated:YES];
     }
 
 

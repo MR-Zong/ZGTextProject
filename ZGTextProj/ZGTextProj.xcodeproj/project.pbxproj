@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4110F9272213F4B6006B9CEF /* ZGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110F9262213F4B6006B9CEF /* ZGTabBarController.m */; };
+		4110F92A22141333006B9CEF /* ZGTabBarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110F92922141333006B9CEF /* ZGTabBarContentView.m */; };
+		4110F92D221418AD006B9CEF /* ZGTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110F92C221418AD006B9CEF /* ZGTabBarButton.m */; };
 		411B2BEA215B7275009747D8 /* ZGFontController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B2BE9215B7275009747D8 /* ZGFontController.m */; };
 		411B2BF2215B734F009747D8 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BEC215B734E009747D8 /* Cairo-Black.ttf */; };
 		411B2BF3215B734F009747D8 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BED215B734E009747D8 /* Cairo-Light.ttf */; };
@@ -305,6 +308,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4110F9252213F4B6006B9CEF /* ZGTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTabBarController.h; sourceTree = "<group>"; };
+		4110F9262213F4B6006B9CEF /* ZGTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTabBarController.m; sourceTree = "<group>"; };
+		4110F92822141333006B9CEF /* ZGTabBarContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTabBarContentView.h; sourceTree = "<group>"; };
+		4110F92922141333006B9CEF /* ZGTabBarContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTabBarContentView.m; sourceTree = "<group>"; };
+		4110F92B221418AD006B9CEF /* ZGTabBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTabBarButton.h; sourceTree = "<group>"; };
+		4110F92C221418AD006B9CEF /* ZGTabBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTabBarButton.m; sourceTree = "<group>"; };
 		411B2BE8215B7275009747D8 /* ZGFontController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFontController.h; sourceTree = "<group>"; };
 		411B2BE9215B7275009747D8 /* ZGFontController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFontController.m; sourceTree = "<group>"; };
 		411B2BEC215B734E009747D8 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
@@ -886,6 +895,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4110F9212213F48B006B9CEF /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				4110F9222213F48B006B9CEF /* Controller */,
+				4110F9232213F48B006B9CEF /* Model */,
+				4110F9242213F48B006B9CEF /* View */,
+			);
+			path = UITabBarController;
+			sourceTree = "<group>";
+		};
+		4110F9222213F48B006B9CEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4110F9252213F4B6006B9CEF /* ZGTabBarController.h */,
+				4110F9262213F4B6006B9CEF /* ZGTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4110F9232213F48B006B9CEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4110F9242213F48B006B9CEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4110F92822141333006B9CEF /* ZGTabBarContentView.h */,
+				4110F92922141333006B9CEF /* ZGTabBarContentView.m */,
+				4110F92B221418AD006B9CEF /* ZGTabBarButton.h */,
+				4110F92C221418AD006B9CEF /* ZGTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		411B2BE4215B7264009747D8 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -3270,6 +3316,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4110F9212213F48B006B9CEF /* UITabBarController */,
 				4151344A21F8733C0054D972 /* IMDesign */,
 				417F201521F0641F00471B03 /* FmodDemo */,
 				4174DD8221DC9BCC007C89E6 /* AVAudio */,
@@ -4060,6 +4107,7 @@
 				41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */,
 				4151345C21F9EC200054D972 /* ZGIMTimeCell.m in Sources */,
 				EF7F2CD6210AF7BF00AC6755 /* ZGSTIHotController.m in Sources */,
+				4110F92A22141333006B9CEF /* ZGTabBarContentView.m in Sources */,
 				417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
@@ -4100,6 +4148,7 @@
 				EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */,
 				EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */,
 				EFFCE49F1F62330F008E2375 /* NSString+PinYin4Cocoa.m in Sources */,
+				4110F9272213F4B6006B9CEF /* ZGTabBarController.m in Sources */,
 				EF33525B2091B1C6003D4344 /* ZGInitFunctionController.m in Sources */,
 				EF3CAA8420BD3C9D00FCC752 /* ZGCellOptionController.m in Sources */,
 				EF570B182022F0A200E14BC9 /* ZGKVOObserverB.m in Sources */,
@@ -4204,6 +4253,7 @@
 				EFE5F83420932CCD0065775D /* ZGClassFunctionController.m in Sources */,
 				EFF1DA5C20D118D900CBC680 /* ZGPageDController.m in Sources */,
 				EF266127214DFDF800B8DA30 /* ZGGzipController.m in Sources */,
+				4110F92D221418AD006B9CEF /* ZGTabBarButton.m in Sources */,
 				EF7AC49D211F247600ED7982 /* ZGPSHIModelA.m in Sources */,
 				4137F2C32190209C003B6D60 /* ZGWeakSetterModel.m in Sources */,
 				EFDBCDBE1F2B159700C542AD /* main.m in Sources */,
