@@ -101,6 +101,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGPoint offSet = scrollView.contentOffset;
+//    NSLog(@"page %f",offSet.x / (self.bounds.size.width));
     NSInteger page = (offSet.x / (self.bounds.size.width) + 0.5);
     self.pageControl.currentPage = page;//计算当前的页码
     self.pageControl.hidden = (page > self.imagesArray.count - 1);
@@ -108,6 +109,7 @@
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
+//    NSLog(@"ofx %f,sss %f",scrollView.contentOffset.x,(_imagesArray.count) * kScreenWidth);
     if (scrollView.contentOffset.x >= (_imagesArray.count) * kScreenWidth) {
         [self removeFromSuperview];
     }
