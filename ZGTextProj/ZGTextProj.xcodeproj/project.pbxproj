@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BEEAA5B6C55954C57254FBD /* libPods-ZGTextProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7302507167BBB7FEAD1BA85 /* libPods-ZGTextProjUITests.a */; };
 		4110F9272213F4B6006B9CEF /* ZGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110F9262213F4B6006B9CEF /* ZGTabBarController.m */; };
 		4110F92A22141333006B9CEF /* ZGTabBarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110F92922141333006B9CEF /* ZGTabBarContentView.m */; };
 		4110F92D221418AD006B9CEF /* ZGTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110F92C221418AD006B9CEF /* ZGTabBarButton.m */; };
@@ -23,12 +24,6 @@
 		4137F2F22192BB2B003B6D60 /* ZGPHResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2F12192BB2B003B6D60 /* ZGPHResourceManager.m */; };
 		4151344921F7111F0054D972 /* ZGAudioRmoteControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */; };
 		4151345021F8734E0054D972 /* ZGIMDesignController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151344F21F8734E0054D972 /* ZGIMDesignController.m */; };
-		4151345321F9EA340054D972 /* ZGIMBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345221F9EA340054D972 /* ZGIMBaseCell.m */; };
-		4151345621F9EB430054D972 /* ZGIMContainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345521F9EB430054D972 /* ZGIMContainView.m */; };
-		4151345921F9EB750054D972 /* ZGIMTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345821F9EB750054D972 /* ZGIMTextCell.m */; };
-		4151345C21F9EC200054D972 /* ZGIMTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345B21F9EC200054D972 /* ZGIMTimeCell.m */; };
-		4151345F21F9EC350054D972 /* ZGIMUndefinedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151345E21F9EC350054D972 /* ZGIMUndefinedCell.m */; };
-		4151346221F9EC750054D972 /* ZGIMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151346121F9EC750054D972 /* ZGIMMessage.m */; };
 		415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B2D2181C851000A8213 /* AutoScrollLabel.m */; };
 		415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */; };
 		415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */; };
@@ -40,6 +35,17 @@
 		4174DD9021DC9C81007C89E6 /* ZGAVAudioUnitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD8F21DC9C81007C89E6 /* ZGAVAudioUnitController.m */; };
 		4174DD9321DCB46A007C89E6 /* AudioQueueRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */; };
 		4174DD9621DCBC89007C89E6 /* AudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */; };
+		417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */; };
+		417EBCAD221A4D7300E86D8D /* ZGChatBaseBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */; };
+		417EBCB0221A4D8600E86D8D /* ZGChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */; };
+		417EBCB3221A4D9400E86D8D /* ZGChatAudioBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCB2221A4D9400E86D8D /* ZGChatAudioBubbleView.m */; };
+		417EBCB6221A4E4900E86D8D /* ZGChatBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCB5221A4E4900E86D8D /* ZGChatBaseCell.m */; };
+		417EBCB9221A4E8800E86D8D /* ZGChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCB8221A4E8800E86D8D /* ZGChatCell.m */; };
+		417EBCBC221A4EA200E86D8D /* ZGChatTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCBB221A4EA200E86D8D /* ZGChatTimeCell.m */; };
+		417EBCBF221A4EE300E86D8D /* ZGChatUndefineTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCBE221A4EE300E86D8D /* ZGChatUndefineTypeCell.m */; };
+		417EBCC2221A4F2100E86D8D /* ZGChatMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCC1221A4F2100E86D8D /* ZGChatMessageModel.m */; };
+		417EBCC5221A556800E86D8D /* ZGChatConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCC4221A556800E86D8D /* ZGChatConst.m */; };
+		417EBCC8221A84C500E86D8D /* ZGChatInputInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCC7221A84C500E86D8D /* ZGChatInputInfoModel.m */; };
 		417F201721F0643600471B03 /* singing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 417F201621F0643600471B03 /* singing.wav */; };
 		417F202221F0647C00471B03 /* fmod_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201C21F0647C00471B03 /* fmod_player.cpp */; };
 		417F202321F0647C00471B03 /* fmod_player_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201F21F0647C00471B03 /* fmod_player_effect.cpp */; };
@@ -67,6 +73,11 @@
 		41BDBB9422157A9500043C33 /* intro_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB9022157A9500043C33 /* intro_2.jpg */; };
 		41BDBB9922157AA400043C33 /* LMJIntroductoryPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBB9522157AA400043C33 /* LMJIntroductoryPagesView.m */; };
 		41BDBB9A22157AA400043C33 /* LMJIntroductoryPagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBB9622157AA400043C33 /* LMJIntroductoryPagesHelper.m */; };
+		41BDBBAE2216A0BF00043C33 /* ZGMsgMenuPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBAD2216A0BF00043C33 /* ZGMsgMenuPopView.m */; };
+		41BDBBB12216A0DA00043C33 /* ZGMsgCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBB02216A0DA00043C33 /* ZGMsgCountDownView.m */; };
+		41BDBBB42216A11500043C33 /* ZGMsgBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBB32216A11500043C33 /* ZGMsgBottomView.m */; };
+		41BDBBB72216C52A00043C33 /* ZGReportPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBB62216C52A00043C33 /* ZGReportPopView.m */; };
+		41BDBBBA2217DC3800043C33 /* ZGAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBB92217DC3800043C33 /* ZGAlertPopView.m */; };
 		41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */; };
 		41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA13217496A900D0DE9B /* audioClipTest.m4a */; };
 		41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */; };
@@ -78,6 +89,8 @@
 		41DEED7B21A6D9910017579A /* export.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DEED7A21A6D9910017579A /* export.plist */; };
 		41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE518C218989C400F17BF5 /* ZGExposureCell.m */; };
 		41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE519C218B138900F17BF5 /* ZGExposureManager.m */; };
+		6E315BDC31DCCCC5930B0BEC /* libPods-ZGTextProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */; };
+		7222110966F2E76124B0BAC9 /* libPods-ZGTextProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
 		EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */; };
 		EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E220AE6E310023B282 /* ZGNavTestController.m */; };
@@ -314,6 +327,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19BE1B45B0B6A1FF1F99AF3B /* Pods-ZGTextProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjUITests/Pods-ZGTextProjUITests.release.xcconfig"; sourceTree = "<group>"; };
+		213D48EC0B318889D325B619 /* Pods-ZGTextProjTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjTests/Pods-ZGTextProjTests.release.xcconfig"; sourceTree = "<group>"; };
 		4110F9252213F4B6006B9CEF /* ZGTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTabBarController.h; sourceTree = "<group>"; };
 		4110F9262213F4B6006B9CEF /* ZGTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTabBarController.m; sourceTree = "<group>"; };
 		4110F92822141333006B9CEF /* ZGTabBarContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTabBarContentView.h; sourceTree = "<group>"; };
@@ -340,18 +356,6 @@
 		4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAudioRmoteControlController.m; sourceTree = "<group>"; };
 		4151344E21F8734E0054D972 /* ZGIMDesignController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMDesignController.h; sourceTree = "<group>"; };
 		4151344F21F8734E0054D972 /* ZGIMDesignController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMDesignController.m; sourceTree = "<group>"; };
-		4151345121F9EA340054D972 /* ZGIMBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMBaseCell.h; sourceTree = "<group>"; };
-		4151345221F9EA340054D972 /* ZGIMBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMBaseCell.m; sourceTree = "<group>"; };
-		4151345421F9EB430054D972 /* ZGIMContainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMContainView.h; sourceTree = "<group>"; };
-		4151345521F9EB430054D972 /* ZGIMContainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMContainView.m; sourceTree = "<group>"; };
-		4151345721F9EB750054D972 /* ZGIMTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMTextCell.h; sourceTree = "<group>"; };
-		4151345821F9EB750054D972 /* ZGIMTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMTextCell.m; sourceTree = "<group>"; };
-		4151345A21F9EC200054D972 /* ZGIMTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMTimeCell.h; sourceTree = "<group>"; };
-		4151345B21F9EC200054D972 /* ZGIMTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMTimeCell.m; sourceTree = "<group>"; };
-		4151345D21F9EC350054D972 /* ZGIMUndefinedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMUndefinedCell.h; sourceTree = "<group>"; };
-		4151345E21F9EC350054D972 /* ZGIMUndefinedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMUndefinedCell.m; sourceTree = "<group>"; };
-		4151346021F9EC750054D972 /* ZGIMMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMMessage.h; sourceTree = "<group>"; };
-		4151346121F9EC750054D972 /* ZGIMMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMMessage.m; sourceTree = "<group>"; };
 		415D8B2D2181C851000A8213 /* AutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoScrollLabel.m; sourceTree = "<group>"; };
 		415D8B2E2181C851000A8213 /* AutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoScrollLabel.h; sourceTree = "<group>"; };
 		415D8B312181C872000A8213 /* ZGAutoScrollLabelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAutoScrollLabelController.h; sourceTree = "<group>"; };
@@ -374,6 +378,28 @@
 		4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueueRecorder.m; sourceTree = "<group>"; };
 		4174DD9421DCBC89007C89E6 /* AudioQueuePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioQueuePlayer.h; sourceTree = "<group>"; };
 		4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueuePlayer.m; sourceTree = "<group>"; };
+		417EBCA7221A4D0900E86D8D /* ZGChatTextInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTextInputView.h; sourceTree = "<group>"; };
+		417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTextInputView.m; sourceTree = "<group>"; };
+		417EBCAB221A4D7300E86D8D /* ZGChatBaseBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatBaseBubbleView.h; sourceTree = "<group>"; };
+		417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatBaseBubbleView.m; sourceTree = "<group>"; };
+		417EBCAE221A4D8600E86D8D /* ZGChatTextBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTextBubbleView.h; sourceTree = "<group>"; };
+		417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTextBubbleView.m; sourceTree = "<group>"; };
+		417EBCB1221A4D9400E86D8D /* ZGChatAudioBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatAudioBubbleView.h; sourceTree = "<group>"; };
+		417EBCB2221A4D9400E86D8D /* ZGChatAudioBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatAudioBubbleView.m; sourceTree = "<group>"; };
+		417EBCB4221A4E4900E86D8D /* ZGChatBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatBaseCell.h; sourceTree = "<group>"; };
+		417EBCB5221A4E4900E86D8D /* ZGChatBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatBaseCell.m; sourceTree = "<group>"; };
+		417EBCB7221A4E8800E86D8D /* ZGChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatCell.h; sourceTree = "<group>"; };
+		417EBCB8221A4E8800E86D8D /* ZGChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatCell.m; sourceTree = "<group>"; };
+		417EBCBA221A4EA200E86D8D /* ZGChatTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTimeCell.h; sourceTree = "<group>"; };
+		417EBCBB221A4EA200E86D8D /* ZGChatTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTimeCell.m; sourceTree = "<group>"; };
+		417EBCBD221A4EE300E86D8D /* ZGChatUndefineTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatUndefineTypeCell.h; sourceTree = "<group>"; };
+		417EBCBE221A4EE300E86D8D /* ZGChatUndefineTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatUndefineTypeCell.m; sourceTree = "<group>"; };
+		417EBCC0221A4F2100E86D8D /* ZGChatMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatMessageModel.h; sourceTree = "<group>"; };
+		417EBCC1221A4F2100E86D8D /* ZGChatMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatMessageModel.m; sourceTree = "<group>"; };
+		417EBCC3221A556800E86D8D /* ZGChatConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatConst.h; sourceTree = "<group>"; };
+		417EBCC4221A556800E86D8D /* ZGChatConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatConst.m; sourceTree = "<group>"; };
+		417EBCC6221A84C500E86D8D /* ZGChatInputInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatInputInfoModel.h; sourceTree = "<group>"; };
+		417EBCC7221A84C500E86D8D /* ZGChatInputInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatInputInfoModel.m; sourceTree = "<group>"; };
 		417F201621F0643600471B03 /* singing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = singing.wav; sourceTree = "<group>"; };
 		417F201C21F0647C00471B03 /* fmod_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fmod_player.cpp; sourceTree = "<group>"; };
 		417F201D21F0647C00471B03 /* fmod_player_effect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_player_effect.hpp; sourceTree = "<group>"; };
@@ -429,6 +455,16 @@
 		41BDBB9622157AA400043C33 /* LMJIntroductoryPagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJIntroductoryPagesHelper.m; sourceTree = "<group>"; };
 		41BDBB9722157AA400043C33 /* LMJIntroductoryPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJIntroductoryPagesView.h; sourceTree = "<group>"; };
 		41BDBB9822157AA400043C33 /* LMJIntroductoryPagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJIntroductoryPagesHelper.h; sourceTree = "<group>"; };
+		41BDBBAC2216A0BF00043C33 /* ZGMsgMenuPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMsgMenuPopView.h; sourceTree = "<group>"; };
+		41BDBBAD2216A0BF00043C33 /* ZGMsgMenuPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMsgMenuPopView.m; sourceTree = "<group>"; };
+		41BDBBAF2216A0DA00043C33 /* ZGMsgCountDownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMsgCountDownView.h; sourceTree = "<group>"; };
+		41BDBBB02216A0DA00043C33 /* ZGMsgCountDownView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMsgCountDownView.m; sourceTree = "<group>"; };
+		41BDBBB22216A11500043C33 /* ZGMsgBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMsgBottomView.h; sourceTree = "<group>"; };
+		41BDBBB32216A11500043C33 /* ZGMsgBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMsgBottomView.m; sourceTree = "<group>"; };
+		41BDBBB52216C52A00043C33 /* ZGReportPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGReportPopView.h; sourceTree = "<group>"; };
+		41BDBBB62216C52A00043C33 /* ZGReportPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGReportPopView.m; sourceTree = "<group>"; };
+		41BDBBB82217DC3800043C33 /* ZGAlertPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAlertPopView.h; sourceTree = "<group>"; };
+		41BDBBB92217DC3800043C33 /* ZGAlertPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAlertPopView.m; sourceTree = "<group>"; };
 		41CDAA102174910300D0DE9B /* ZGAVAudioClipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioClipController.h; sourceTree = "<group>"; };
 		41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAVAudioClipController.m; sourceTree = "<group>"; };
 		41CDAA13217496A900D0DE9B /* audioClipTest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = audioClipTest.m4a; sourceTree = "<group>"; };
@@ -448,6 +484,10 @@
 		41FE518C218989C400F17BF5 /* ZGExposureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExposureCell.m; sourceTree = "<group>"; };
 		41FE519B218B138900F17BF5 /* ZGExposureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGExposureManager.h; sourceTree = "<group>"; };
 		41FE519C218B138900F17BF5 /* ZGExposureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGExposureManager.m; sourceTree = "<group>"; };
+		6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.release.xcconfig"; sourceTree = "<group>"; };
+		720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjUITests/Pods-ZGTextProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.debug.xcconfig"; sourceTree = "<group>"; };
+		C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProjTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF01D5B220AC08170023B282 /* ZGSafeAreaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSafeAreaController.h; sourceTree = "<group>"; };
 		EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSafeAreaController.m; sourceTree = "<group>"; };
 		EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZGSAExample.storyboard; sourceTree = "<group>"; };
@@ -875,6 +915,8 @@
 		EFFCE4C91F651DB6008E2375 /* ZGHolidayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGHolidayManager.m; sourceTree = "<group>"; };
 		EFFF331B1FFF69600086BE7D /* ZGNoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNoDataView.h; sourceTree = "<group>"; };
 		EFFF331C1FFF69600086BE7D /* ZGNoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNoDataView.m; sourceTree = "<group>"; };
+		F7302507167BBB7FEAD1BA85 /* libPods-ZGTextProjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF622BD20AAA07F0741174C9 /* Pods-ZGTextProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjTests/Pods-ZGTextProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -889,6 +931,7 @@
 				417F203621F0648900471B03 /* libfmod_iphonesimulator.a in Frameworks */,
 				417F205621F169E400471B03 /* libfaac.a in Frameworks */,
 				417F206121F169EC00471B03 /* libfaad.a in Frameworks */,
+				6E315BDC31DCCCC5930B0BEC /* libPods-ZGTextProj.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -896,6 +939,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7222110966F2E76124B0BAC9 /* libPods-ZGTextProjTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,12 +947,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BEEAA5B6C55954C57254FBD /* libPods-ZGTextProjUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24CC7C66BCA6D3A9E2D0CAA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */,
+				6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */,
+				FF622BD20AAA07F0741174C9 /* Pods-ZGTextProjTests.debug.xcconfig */,
+				213D48EC0B318889D325B619 /* Pods-ZGTextProjTests.release.xcconfig */,
+				720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */,
+				19BE1B45B0B6A1FF1F99AF3B /* Pods-ZGTextProjUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4110F9212213F48B006B9CEF /* UITabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1097,8 +1155,10 @@
 		4151344C21F8733C0054D972 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4151346021F9EC750054D972 /* ZGIMMessage.h */,
-				4151346121F9EC750054D972 /* ZGIMMessage.m */,
+				417EBCC0221A4F2100E86D8D /* ZGChatMessageModel.h */,
+				417EBCC1221A4F2100E86D8D /* ZGChatMessageModel.m */,
+				417EBCC6221A84C500E86D8D /* ZGChatInputInfoModel.h */,
+				417EBCC7221A84C500E86D8D /* ZGChatInputInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1106,16 +1166,8 @@
 		4151344D21F8733C0054D972 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4151345121F9EA340054D972 /* ZGIMBaseCell.h */,
-				4151345221F9EA340054D972 /* ZGIMBaseCell.m */,
-				4151345421F9EB430054D972 /* ZGIMContainView.h */,
-				4151345521F9EB430054D972 /* ZGIMContainView.m */,
-				4151345721F9EB750054D972 /* ZGIMTextCell.h */,
-				4151345821F9EB750054D972 /* ZGIMTextCell.m */,
-				4151345A21F9EC200054D972 /* ZGIMTimeCell.h */,
-				4151345B21F9EC200054D972 /* ZGIMTimeCell.m */,
-				4151345D21F9EC350054D972 /* ZGIMUndefinedCell.h */,
-				4151345E21F9EC350054D972 /* ZGIMUndefinedCell.m */,
+				41BDBB9C22169F2400043C33 /* MsgCell */,
+				41BDBB9B22169F2400043C33 /* referenceView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1315,6 +1367,19 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		417EBCAA221A4D5D00E86D8D /* BubbleView */ = {
+			isa = PBXGroup;
+			children = (
+				417EBCAB221A4D7300E86D8D /* ZGChatBaseBubbleView.h */,
+				417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */,
+				417EBCAE221A4D8600E86D8D /* ZGChatTextBubbleView.h */,
+				417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */,
+				417EBCB1221A4D9400E86D8D /* ZGChatAudioBubbleView.h */,
+				417EBCB2221A4D9400E86D8D /* ZGChatAudioBubbleView.m */,
+			);
+			path = BubbleView;
 			sourceTree = "<group>";
 		};
 		417F201521F0641F00471B03 /* FmodDemo */ = {
@@ -1572,6 +1637,43 @@
 			path = PLMMPRIKImages;
 			sourceTree = "<group>";
 		};
+		41BDBB9B22169F2400043C33 /* referenceView */ = {
+			isa = PBXGroup;
+			children = (
+				41BDBBAC2216A0BF00043C33 /* ZGMsgMenuPopView.h */,
+				41BDBBAD2216A0BF00043C33 /* ZGMsgMenuPopView.m */,
+				41BDBBAF2216A0DA00043C33 /* ZGMsgCountDownView.h */,
+				41BDBBB02216A0DA00043C33 /* ZGMsgCountDownView.m */,
+				41BDBBB22216A11500043C33 /* ZGMsgBottomView.h */,
+				41BDBBB32216A11500043C33 /* ZGMsgBottomView.m */,
+				41BDBBB52216C52A00043C33 /* ZGReportPopView.h */,
+				41BDBBB62216C52A00043C33 /* ZGReportPopView.m */,
+				41BDBBB82217DC3800043C33 /* ZGAlertPopView.h */,
+				41BDBBB92217DC3800043C33 /* ZGAlertPopView.m */,
+				417EBCA7221A4D0900E86D8D /* ZGChatTextInputView.h */,
+				417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */,
+			);
+			path = referenceView;
+			sourceTree = "<group>";
+		};
+		41BDBB9C22169F2400043C33 /* MsgCell */ = {
+			isa = PBXGroup;
+			children = (
+				417EBCAA221A4D5D00E86D8D /* BubbleView */,
+				417EBCB4221A4E4900E86D8D /* ZGChatBaseCell.h */,
+				417EBCB5221A4E4900E86D8D /* ZGChatBaseCell.m */,
+				417EBCB7221A4E8800E86D8D /* ZGChatCell.h */,
+				417EBCB8221A4E8800E86D8D /* ZGChatCell.m */,
+				417EBCBA221A4EA200E86D8D /* ZGChatTimeCell.h */,
+				417EBCBB221A4EA200E86D8D /* ZGChatTimeCell.m */,
+				417EBCBD221A4EE300E86D8D /* ZGChatUndefineTypeCell.h */,
+				417EBCBE221A4EE300E86D8D /* ZGChatUndefineTypeCell.m */,
+				417EBCC3221A556800E86D8D /* ZGChatConst.h */,
+				417EBCC4221A556800E86D8D /* ZGChatConst.m */,
+			);
+			path = MsgCell;
+			sourceTree = "<group>";
+		};
 		41CDAA1521749C3600D0DE9B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1701,6 +1803,16 @@
 				41FE519C218B138900F17BF5 /* ZGExposureManager.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9400C24B02B6D573E382F8CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */,
+				C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */,
+				F7302507167BBB7FEAD1BA85 /* libPods-ZGTextProjUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EF01D5AE20AC070B0023B282 /* SafeArea */ = {
@@ -3313,6 +3425,8 @@
 				EFDBCDD51F2B159700C542AD /* ZGTextProjTests */,
 				EFDBCDE01F2B159700C542AD /* ZGTextProjUITests */,
 				EFDBCDBA1F2B159700C542AD /* Products */,
+				24CC7C66BCA6D3A9E2D0CAA5 /* Pods */,
+				9400C24B02B6D573E382F8CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3947,6 +4061,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFDBCDE61F2B159700C542AD /* Build configuration list for PBXNativeTarget "ZGTextProj" */;
 			buildPhases = (
+				6C6E7C5F404CC5EEBF67AE31 /* [CP] Check Pods Manifest.lock */,
 				EFDBCDB51F2B159700C542AD /* Sources */,
 				EFDBCDB61F2B159700C542AD /* Frameworks */,
 				EFDBCDB71F2B159700C542AD /* Resources */,
@@ -3964,6 +4079,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFDBCDE91F2B159700C542AD /* Build configuration list for PBXNativeTarget "ZGTextProjTests" */;
 			buildPhases = (
+				D72713258920E7FD664E8195 /* [CP] Check Pods Manifest.lock */,
 				EFDBCDCE1F2B159700C542AD /* Sources */,
 				EFDBCDCF1F2B159700C542AD /* Frameworks */,
 				EFDBCDD01F2B159700C542AD /* Resources */,
@@ -3982,6 +4098,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFDBCDEC1F2B159700C542AD /* Build configuration list for PBXNativeTarget "ZGTextProjUITests" */;
 			buildPhases = (
+				A8330D440DAFA5014D91F4AE /* [CP] Check Pods Manifest.lock */,
 				EFDBCDD91F2B159700C542AD /* Sources */,
 				EFDBCDDA1F2B159700C542AD /* Frameworks */,
 				EFDBCDDB1F2B159700C542AD /* Resources */,
@@ -4094,6 +4211,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C6E7C5F404CC5EEBF67AE31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGTextProj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8330D440DAFA5014D91F4AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGTextProjUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D72713258920E7FD664E8195 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGTextProjTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFDBCDB51F2B159700C542AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -4132,6 +4318,7 @@
 				EF570B122022F08200E14BC9 /* ZGKVODataModel.m in Sources */,
 				EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */,
 				EF7F2CD3210AF75700AC6755 /* ZGSTITabModel.m in Sources */,
+				417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */,
 				EFFCE4841F62253C008E2375 /* ZGAddressListController.m in Sources */,
 				EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */,
 				EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */,
@@ -4142,7 +4329,6 @@
 				EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */,
 				4137F2F22192BB2B003B6D60 /* ZGPHResourceManager.m in Sources */,
 				EF7F2CD0210AF4CD00AC6755 /* ZGSTIScrollManager.m in Sources */,
-				4151345321F9EA340054D972 /* ZGIMBaseCell.m in Sources */,
 				EF2F667A1FFC6B5D00EA4F6F /* ZGBlockPeople.m in Sources */,
 				EF7AC499211F21AA00ED7982 /* ZGPEteModelA.m in Sources */,
 				EFFCE49D1F62330F008E2375 /* ChineseToPinyinResource.m in Sources */,
@@ -4151,6 +4337,7 @@
 				417F204B21F1674D00471B03 /* ZGAudioConvertController.mm in Sources */,
 				EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */,
 				EF7F2CD9210AF7D000AC6755 /* ZGSTIDiscoveryController.m in Sources */,
+				417EBCAD221A4D7300E86D8D /* ZGChatBaseBubbleView.m in Sources */,
 				EF192AA8210C152400868D5B /* ZGLockAndSemaphoreController.m in Sources */,
 				EF0A0EAE2006FE3A0095779B /* ZGOScrollManager.m in Sources */,
 				EFC6EE281FF4E78D00E1D2C5 /* ZGCategoryController.m in Sources */,
@@ -4158,9 +4345,10 @@
 				EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */,
 				EFFCE4A81F623F9E008E2375 /* ZGLetterSectionModel.m in Sources */,
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
-				4151345921F9EB750054D972 /* ZGIMTextCell.m in Sources */,
+				417EBCB3221A4D9400E86D8D /* ZGChatAudioBubbleView.m in Sources */,
 				EFE4308220D5017C006930E5 /* ZGAnimationsCellController.m in Sources */,
 				EF64EEB020E485A3009B5767 /* ZGCellOpGestureTable.m in Sources */,
+				417EBCB6221A4E4900E86D8D /* ZGChatBaseCell.m in Sources */,
 				EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */,
 				EFE4308B20D51721006930E5 /* ZGAnimationsTableView.m in Sources */,
 				EF58F6A421450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.m in Sources */,
@@ -4169,17 +4357,19 @@
 				EF570B0C2022E94C00E14BC9 /* ZGNFObserverA.m in Sources */,
 				EF570B062022E5A500E14BC9 /* ZGKVOController.m in Sources */,
 				EF0A0E9B20060CF90095779B /* ZGSV2Delegate.m in Sources */,
+				417EBCB9221A4E8800E86D8D /* ZGChatCell.m in Sources */,
 				EF2EEAB920F4598600C9FBAD /* ZGKVOCSubObserver.m in Sources */,
 				EF2F66771FFC6B1100EA4F6F /* ZGBlockController.m in Sources */,
+				41BDBBAE2216A0BF00043C33 /* ZGMsgMenuPopView.m in Sources */,
 				EFA9A62320AA765A00E73288 /* ZGMainOperation.m in Sources */,
 				EFFCE4BB1F62828C008E2375 /* ZGCalendarManager.m in Sources */,
 				41D0A99D21C2707800BD543C /* ZGTextCollectionviewController.m in Sources */,
 				EF0A0E8F2005C41F0095779B /* ZGSBaseScrollView.m in Sources */,
 				EF7F2CCA210AF49F00AC6755 /* ZGScrollTabIndicatorController.m in Sources */,
 				EFE4308520D501CF006930E5 /* ZGHeaderCell.m in Sources */,
+				417EBCBC221A4EA200E86D8D /* ZGChatTimeCell.m in Sources */,
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
 				41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */,
-				4151345C21F9EC200054D972 /* ZGIMTimeCell.m in Sources */,
 				EF7F2CD6210AF7BF00AC6755 /* ZGSTIHotController.m in Sources */,
 				4110F92A22141333006B9CEF /* ZGTabBarContentView.m in Sources */,
 				417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */,
@@ -4188,6 +4378,7 @@
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,
 				41D0A9A621C3586E00BD543C /* ZGTextFixCollectionViewCell.m in Sources */,
 				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
+				41BDBBB42216A11500043C33 /* ZGMsgBottomView.m in Sources */,
 				EF64EEB320E48778009B5767 /* ZGCellopGestureScrollView.m in Sources */,
 				417F204E21F167CE00471B03 /* ZGFAACWav2AAc.cpp in Sources */,
 				EF819FC7212918C3009B959A /* ZGWeakMutableDictionary.m in Sources */,
@@ -4195,7 +4386,6 @@
 				EF2EEAC620F495F900C9FBAD /* ZGKVOOObserverB.m in Sources */,
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
-				4151345F21F9EC350054D972 /* ZGIMUndefinedCell.m in Sources */,
 				EF570B322024625600E14BC9 /* ZGKEDataModel.m in Sources */,
 				EF64EEAD20E4806E009B5767 /* ZGCellOptionGestureController.m in Sources */,
 				EF64EEC220E4E5DA009B5767 /* ZGEventChainView.m in Sources */,
@@ -4210,6 +4400,7 @@
 				417F204221F064D900471B03 /* ZGRecorder.m in Sources */,
 				EFFCE47D1F60F6AD008E2375 /* ZGOffScreenController.m in Sources */,
 				EF0A0EA52006FD9E0095779B /* ZGOneScrollViewController.m in Sources */,
+				417EBCB0221A4D8600E86D8D /* ZGChatTextBubbleView.m in Sources */,
 				EF67D66F2057644D00FA65DC /* ZGINSubObject.m in Sources */,
 				EF819FC4212915FF009B959A /* ZGDicCopyModel.m in Sources */,
 				EF7F2C9521070F9500AC6755 /* ZGProModelB.m in Sources */,
@@ -4227,6 +4418,7 @@
 				EF3CAA8420BD3C9D00FCC752 /* ZGCellOptionController.m in Sources */,
 				EF570B182022F0A200E14BC9 /* ZGKVOObserverB.m in Sources */,
 				EFC6EE2E1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.m in Sources */,
+				41BDBBB12216A0DA00043C33 /* ZGMsgCountDownView.m in Sources */,
 				EF570B352024626400E14BC9 /* ZGKEObserverA.m in Sources */,
 				41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */,
 				EF2F666D1FFB90EB00EA4F6F /* ZGInstanceController.m in Sources */,
@@ -4238,6 +4430,7 @@
 				EFDBCDC41F2B159700C542AD /* ViewController.m in Sources */,
 				EFDCEE3920DE43B40076C129 /* ZGAniTextCell.m in Sources */,
 				EFF1DA8520D3BA8900CBC680 /* ZGAnimationsController.m in Sources */,
+				417EBCC5221A556800E86D8D /* ZGChatConst.m in Sources */,
 				EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */,
 				4137F2EF2192BA71003B6D60 /* ZGPHVideoCell.m in Sources */,
 				EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */,
@@ -4257,6 +4450,7 @@
 				EF67D669205763FE00FA65DC /* ZGInitializeController.m in Sources */,
 				EFDCEE4020DF93600076C129 /* ZGAnisTestController.m in Sources */,
 				EFFCE4BE1F628C42008E2375 /* NSDate+Calendar.m in Sources */,
+				417EBCBF221A4EE300E86D8D /* ZGChatUndefineTypeCell.m in Sources */,
 				EF7F2C9621070F9500AC6755 /* ZGProModelA.m in Sources */,
 				4174DD9321DCB46A007C89E6 /* AudioQueueRecorder.m in Sources */,
 				EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */,
@@ -4270,6 +4464,7 @@
 				417F202221F0647C00471B03 /* fmod_player.cpp in Sources */,
 				EF7231A720DB44E100999D3A /* ZGAniCollectionViewNormalController.m in Sources */,
 				EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */,
+				41BDBBBA2217DC3800043C33 /* ZGAlertPopView.m in Sources */,
 				EF25CBC320E28522005A7F8C /* ZGNestSubScrollView.m in Sources */,
 				EF2EEAB620F4597700C9FBAD /* ZGKVOCBaseOberver.m in Sources */,
 				EFA9A62620AA770E00E73288 /* ZGStartOperation.m in Sources */,
@@ -4277,10 +4472,8 @@
 				EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */,
 				EF58F69E214509180000CDC7 /* ZGVAKDiscoverController.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
-				4151346221F9EC750054D972 /* ZGIMMessage.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
 				411B2BEA215B7275009747D8 /* ZGFontController.m in Sources */,
-				4151345621F9EB430054D972 /* ZGIMContainView.m in Sources */,
 				4151345021F8734E0054D972 /* ZGIMDesignController.m in Sources */,
 				EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */,
 				415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */,
@@ -4319,12 +4512,14 @@
 				EFFCE4C11F637C3D008E2375 /* ZGDayModel.m in Sources */,
 				EFFCE4B51F62722F008E2375 /* ZGCalendarCell.m in Sources */,
 				EFFCE49E1F62330F008E2375 /* HanyuPinyinOutputFormat.m in Sources */,
+				417EBCC8221A84C500E86D8D /* ZGChatInputInfoModel.m in Sources */,
 				EFDBCDF61F2B168000C542AD /* ZGMaskController.m in Sources */,
 				EF570B222024014A00E14BC9 /* ZGCopyObj.m in Sources */,
 				EF570B152022F09400E14BC9 /* ZGKVOObserverA.m in Sources */,
 				EF25CBBD20E28161005A7F8C /* ZGNestPageCController.m in Sources */,
 				EFC6EE2B1FF4E81500E1D2C5 /* ZGCategoryObject.m in Sources */,
 				EFE5F83420932CCD0065775D /* ZGClassFunctionController.m in Sources */,
+				417EBCC2221A4F2100E86D8D /* ZGChatMessageModel.m in Sources */,
 				EFF1DA5C20D118D900CBC680 /* ZGPageDController.m in Sources */,
 				EF266127214DFDF800B8DA30 /* ZGGzipController.m in Sources */,
 				4110F92D221418AD006B9CEF /* ZGTabBarButton.m in Sources */,
@@ -4349,6 +4544,7 @@
 				415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */,
 				EFF1DA5620D1049E00CBC680 /* ZGPageBController.m in Sources */,
 				EF01D5E920AE70370023B282 /* ZGNRootController.m in Sources */,
+				41BDBBB72216C52A00043C33 /* ZGReportPopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4497,6 +4693,7 @@
 		};
 		EFDBCDE71F2B159700C542AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BVF5F2U9J;
@@ -4517,6 +4714,7 @@
 		};
 		EFDBCDE81F2B159700C542AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BVF5F2U9J;
@@ -4537,6 +4735,7 @@
 		};
 		EFDBCDEA1F2B159700C542AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF622BD20AAA07F0741174C9 /* Pods-ZGTextProjTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZGTextProjTests/Info.plist;
@@ -4549,6 +4748,7 @@
 		};
 		EFDBCDEB1F2B159700C542AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213D48EC0B318889D325B619 /* Pods-ZGTextProjTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZGTextProjTests/Info.plist;
@@ -4561,6 +4761,7 @@
 		};
 		EFDBCDED1F2B159700C542AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZGTextProjUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -4572,6 +4773,7 @@
 		};
 		EFDBCDEE1F2B159700C542AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19BE1B45B0B6A1FF1F99AF3B /* Pods-ZGTextProjUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZGTextProjUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
