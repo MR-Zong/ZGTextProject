@@ -84,12 +84,7 @@ CGFloat kChatInputeBtnH = 20;
     return b;
 }
 
-#pragma mark - 事件监听
-/**
- *  键盘弹出
- *
- *  @param notice 通知
- */
+#pragma mark - 事件监听 键盘弹出
 - (void)keyboardWillShow:(NSNotification *)notice {
     self.showingSystemKeyboard = YES;
     
@@ -114,25 +109,6 @@ CGFloat kChatInputeBtnH = 20;
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, self.frame.size.height + _keyboardHeight+ZGCHAT_TABLEVIEW_CONTENTINESET_PADDING, 0);
     } completion:nil];
     
-//    // 添加动画
-//    if (self.emojiKeyboard) { // 当前展示的是表情键盘
-//        [UIView animateWithDuration:_animationDuration delay:0 options:(_animationCurve << 16 | UIViewAnimationOptionBeginFromCurrentState) animations:^{
-//            self.emojiView.y = SCREEN_H - kChatEmojiHeight;
-//            [self.superview layoutIfNeeded];
-//        } completion:^(BOOL finished) {
-//            self.emojiView.y = SCREEN_H;
-//            self.moreView.y = SCREEN_H - kChatMoreHeight;
-//            [self.emojiView removeFromSuperview];
-//        }];
-//
-//    } else if (self.isMoreKeyboard) { // 当前展示的是工具
-//        [UIView animateWithDuration:_animationDuration delay:0 options:(_animationCurve << 16 | UIViewAnimationOptionBeginFromCurrentState) animations:^{
-//            self.moreView.y = SCREEN_H - kChatMoreHeight;
-//            [self.superview layoutIfNeeded];
-//        } completion:^(BOOL finished) {
-//            [self.moreView removeFromSuperview];
-//        }];
-//    }
 }
 
 

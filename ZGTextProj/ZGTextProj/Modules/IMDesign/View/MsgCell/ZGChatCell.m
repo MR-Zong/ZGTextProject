@@ -101,7 +101,7 @@ CGFloat const SEND_STATUS_SIZE = 20.0f;
 //                     userInfo:@{kShouldResendCell : self}];
 }
 
-#pragma mark - private
+#pragma mark - override
 - (void)setupSubviewsForMessageModel:(ZGChatMessageModel *)messageModel
 {
     [super setupSubviewsForMessageModel:messageModel];

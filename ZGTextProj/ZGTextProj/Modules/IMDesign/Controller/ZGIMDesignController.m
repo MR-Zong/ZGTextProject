@@ -42,11 +42,17 @@ NSString *const kTableViewContentInset = @"contentInset";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initialize];
+    [self setupViews];
+}
 
-//    self.view.backgroundColor = [UIColor greenColor];
+- (void)initialize
+{
+    //    self.view.backgroundColor = [UIColor greenColor];
     self.title = @"zong";
     
-    [self setupViews];
+     _messgeAry = [NSMutableArray array];
 }
 
 - (void)setupRightBtn
@@ -63,8 +69,6 @@ NSString *const kTableViewContentInset = @"contentInset";
 - (void)setupViews
 {
     [self setupRightBtn];
-    
-    _messgeAry = [NSMutableArray array];
     
     // tableView
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64.0, ZG_SCREEN_W, ZG_SCREEN_H - 64.0)];
@@ -117,7 +121,6 @@ NSString *const kTableViewContentInset = @"contentInset";
         return timeCell;
     }
     
-    
     NSString *cellIdentifier = [ZGChatCell cellIdentifierForMessageModel:messageModel];
     ZGChatCell *messageCell = (ZGChatCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!messageCell) {
@@ -145,16 +148,16 @@ NSString *const kTableViewContentInset = @"contentInset";
 }
 
 
-//刷新并滑动到底部
+#pragma mark - 刷新并滑动到底部
 - (void)scrollToBottomAnimated:(BOOL)animated refresh:(BOOL)refresh {
-    // 表格滑动到底部
+    // tableview滑动到底部
     if (refresh) [self.tableView reloadData];
     if (!self.messgeAry.count) return;
     NSIndexPath *lastPath = [NSIndexPath indexPathForRow:self.messgeAry.count - 1 inSection:0];
     [self.tableView scrollToRowAtIndexPath:lastPath atScrollPosition:UITableViewScrollPositionBottom animated:animated];
 }
 
-#pragma mark - 事件监听
+#pragma mark - 监听
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if ([keyPath isEqualToString:kTableViewContentInset]) {
         CGRect newValue = [change[NSKeyValueChangeNewKey] CGRectValue];
@@ -168,7 +171,6 @@ NSString *const kTableViewContentInset = @"contentInset";
     }
     
 }
-
 
 #pragma mark - ZGMsgBottomViewDelegate
 - (void)bottomView:(ZGMsgBottomView *)bottomView didRecordBtn:(UIButton *)btn
@@ -219,6 +221,7 @@ NSString *const kTableViewContentInset = @"contentInset";
             break;
     }
     
+    // 数据库插入
     
     // insert time
     if (messageModel.creatTime - 3600  > self.lastMsgTime) {

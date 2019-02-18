@@ -76,7 +76,7 @@
 }
 
 + (NSString *)cellIdentifierForMessageModel:(ZGChatMessageModel *)model {
-    NSString *identifier = @"MessageCell";
+    NSString *identifier = @"ZGMessageCell";
     if (model.isSender) {
         identifier = [identifier stringByAppendingString:@"Sender"];
     } else {

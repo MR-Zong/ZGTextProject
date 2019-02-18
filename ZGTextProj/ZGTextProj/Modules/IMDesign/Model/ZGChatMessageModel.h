@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, ZGChatMessageType) {
     ZGChatMessageType_Text,
     ZGChatMessageType_Audio,
     ZGChatMessageType_time,
-    ZGChatMessageType_Undefine,
+    ZGChatMessageType_Undefine, // 未识别消息
 };
 
 typedef NS_ENUM(NSInteger,ZGChatMessageDeliveryState) {
@@ -26,19 +26,24 @@ typedef NS_ENUM(NSInteger,ZGChatMessageDeliveryState) {
 
 @interface ZGChatMessageModel : NSObject
 
+#pragma mark - 需要手动设置
 /** 是否是发送者 */
 @property (nonatomic, assign) BOOL isSender;
-/** 是否已读 */
+/** 是否已读 暂时没用*/
 @property (nonatomic) BOOL isRead;
-/** 是否是群聊 */
+/** 是否是群聊 暂时没用*/
 @property (nonatomic) BOOL isChatGroup;
-
+/** 消息类型*/
 @property (nonatomic, assign) ZGChatMessageType type;
+/** 消息发送状态*/
 @property (nonatomic, assign) ZGChatMessageDeliveryState status;
-//@property (nonatomic, strong) NSString *date;
-@property (nonatomic, assign) NSTimeInterval creatTime;
-//@property (nonatomic, strong) NSString *id;
 
+#pragma mark - 数据库字段
+@property (nonatomic, assign) NSTimeInterval creatTime;
+/** 消息唯一id*/
+//@property (nonatomic, strong) NSString *messageId;
+
+#pragma mark - 或许可以放到子类
 /** text */
 @property (nonatomic, strong) NSString *content;
 
