@@ -246,7 +246,7 @@ NSString *const kTableViewContentInset = @"contentInset";
         dbMessageModel.isSender = YES;
         dbMessageModel.isRead = YES;
         dbMessageModel.status = ZGChatMessageDeliveryState_Delivering;
-        dbMessageModel.creatTime = [[NSDate date] timeIntervalSince1970];
+        dbMessageModel.creatTime = messageModel.creatTime;
         dbMessageModel.type = type;
         switch (type) {
             case ZGChatMessageType_Text: {
