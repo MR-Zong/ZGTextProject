@@ -222,18 +222,10 @@ NSString *const kTableViewContentInset = @"contentInset";
     }
     
     // 数据库插入
+    ;
     
-    // insert time
-    if (messageModel.creatTime - 3600  > self.lastMsgTime) {
-        ZGChatMessageModel *timeMsgModel = [ZGChatMessageModel new];
-        timeMsgModel.type = ZGChatMessageType_time;
-        timeMsgModel.creatTime = messageModel.creatTime;
-        [self insertMessage:timeMsgModel];
-        
-    }
+    NSIndexPath *indexP = [self insertMessageByTime:messageModel];
     self.lastMsgTime = messageModel.creatTime;
-    
-    NSIndexPath *indexP = [self insertMessage:messageModel];
     [self.tableView scrollToRowAtIndexPath:indexP atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 #warning
     // 模仿延迟发送
@@ -276,10 +268,36 @@ NSString *const kTableViewContentInset = @"contentInset";
         // 模仿消息回复
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             dbMessageModel.isSender = NO;
-            NSIndexPath *index = [self insertMessage:dbMessageModel];
+            NSIndexPath *index = [self insertMessageByTime:dbMessageModel];
             [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
         });
     });
+}
+
+#pragma mark - receiveMessage
+- (void)receiveMessage:(ZGChatInputInfoModel *)inputInfoModel type:(ZGChatMessageType)type
+{
+    // 我先大概写了，到时候要实际调试
+    // 根据传进来数据 生成messageModel
+    ZGChatMessageModel *newMessage = [ZGChatMessageModel new];
+    // 然后 和发送差不多
+    NSIndexPath *indexP = [self insertMessageByTime:newMessage];
+    self.lastMsgTime = newMessage.creatTime;
+    [self.tableView scrollToRowAtIndexPath:indexP atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    
+}
+
+- (NSIndexPath *)insertMessageByTime:(ZGChatMessageModel *)newMessge
+{
+    // insert time
+    if (newMessge.creatTime - 3600  > self.lastMsgTime) {
+        ZGChatMessageModel *timeMsgModel = [ZGChatMessageModel new];
+        timeMsgModel.type = ZGChatMessageType_time;
+        timeMsgModel.creatTime = newMessge.creatTime;
+        [self insertMessage:timeMsgModel];
+        
+    }
+    return [self insertMessage:newMessge];
 }
 
 - (NSIndexPath *)insertMessage:(ZGChatMessageModel *)newMessge
@@ -289,6 +307,5 @@ NSString *const kTableViewContentInset = @"contentInset";
     [self.tableView insertRowsAtIndexPaths:@[indexP] withRowAnimation:UITableViewRowAnimationNone];
     return indexP;
 }
-
 
 @end
