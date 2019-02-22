@@ -19,10 +19,13 @@
 #import "ZGAlertPopView.h"
 
 #import "ZGChatTextInputView.h"
+#import "ZGChatTipMessageCell.h"
+#import <MJRefresh/MJRefresh.h>
+#import "ZGChatRefreshHeader.h"
 
 NSString *const kTableViewContentInset = @"contentInset";
 
-@interface ZGIMDesignController () <UITableViewDelegate,UITableViewDataSource,ZGMsgBottomViewDelegate>
+@interface ZGIMDesignController () <UITableViewDelegate,UITableViewDataSource,ZGMsgBottomViewDelegate,ZGChatCellDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) ZGChatTextInputView *textInpuView;
@@ -79,7 +82,13 @@ NSString *const kTableViewContentInset = @"contentInset";
     _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
     _tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     [_tableView addObserver:self forKeyPath:kTableViewContentInset options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    ZGChatRefreshHeader *header = [ZGChatRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(didRefresh)];
+    _tableView.mj_header = header;
     [self.view addSubview:_tableView];
+    
+    // 第一次从数据库加载消息后，需要判断是否还有历史消息 进而隐藏下拉Header
+//    self.tableView.mj_header.hidden = YES;
+
     
     // bottomView
     CGFloat bottomHeight = 100;
@@ -100,6 +109,37 @@ NSString *const kTableViewContentInset = @"contentInset";
     [_tableView addGestureRecognizer:tapGesture];
 }
 
+#pragma mark - refresh
+- (void)didRefresh
+{
+    NSLog(@"didRefresh");
+    // 模仿拉历史消息
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.tableView.mj_header endRefreshing];
+        
+        NSMutableArray *mergeAry = [NSMutableArray array];
+        for (int i= 0; i<20; i++) {
+            ZGChatMessageModel *messageModel = [ZGChatMessageModel new];
+            messageModel.isSender = YES;
+            messageModel.isRead = YES;
+            messageModel.status = ZGChatMessageDeliveryState_Failure;
+            messageModel.creatTime = [[NSDate date] timeIntervalSince1970];
+            messageModel.type = ZGChatMessageType_Text;
+            messageModel.content = @"refresh";
+            [mergeAry addObject:messageModel];
+        }
+        
+        // 此时的IndexP 已经包含时间cell
+        NSIndexPath *indexP = [NSIndexPath indexPathForRow:mergeAry.count-1 inSection:0];
+        [mergeAry addObjectsFromArray:self.messgeAry];
+        self.messgeAry = mergeAry;
+        [self  scrollToIndexPath:indexP animated:NO refresh:YES];
+        
+        // 每次拉历史消息后，都需要判断是否还有历史消息 进而隐藏下拉Header
+        self.tableView.mj_header.hidden = YES;
+    });
+}
+
 #pragma mark - UITableViewDelegate,UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -108,19 +148,29 @@ NSString *const kTableViewContentInset = @"contentInset";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ZGChatMessageModel *messageModel = [self.messgeAry objectAtIndex:indexPath.row];
+    id obj = [self.messgeAry objectAtIndex:indexPath.row];
     
-    if (messageModel.type == ZGChatMessageType_time) {
-        ZGChatTimeCell *timeCell = (ZGChatTimeCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ZGChatTimeCell class])];
-        if (!timeCell) {
-            timeCell = [[ZGChatTimeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([ZGChatTimeCell class])];
+    if ([obj isKindOfClass:[ZGChatTipMesageModel class]]) {
+        
+        ZGChatTipMesageModel *tipMsgModel = (ZGChatTipMesageModel *)obj;
+        if (tipMsgModel.tipType == ZGChatTipMesageType_Time) {
+            ZGChatTimeCell *timeCell = (ZGChatTimeCell *)[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ZGChatTimeCell class])];
+            if (!timeCell) {
+                timeCell = [[ZGChatTimeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([ZGChatTimeCell class])];
+            }
+            timeCell.time = tipMsgModel.creatTime;
+            return timeCell;
+        }else {
+            ZGChatTipMessageCell *tipMsgCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ZGChatTipMessageCell class])];
+            if (!tipMsgCell) {
+                tipMsgCell = [[ZGChatTipMessageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([ZGChatTipMessageCell class])];
+            }
+            tipMsgCell.tipModel = tipMsgModel;
+            return tipMsgCell;
         }
-        
-        timeCell.time = messageModel.creatTime;
-        
-        return timeCell;
     }
     
+    ZGChatMessageModel *messageModel = (ZGChatMessageModel *)obj;
     NSString *cellIdentifier = [ZGChatCell cellIdentifierForMessageModel:messageModel];
     ZGChatCell *messageCell = (ZGChatCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!messageCell) {
@@ -128,23 +178,31 @@ NSString *const kTableViewContentInset = @"contentInset";
     }
     
     messageCell.messageModel = messageModel;
+    messageCell.delegate = self;
     
     return messageCell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ZGChatMessageModel *messageModel = [self.messgeAry objectAtIndex:indexPath.row];
-    if (messageModel.type == ZGChatMessageType_time) {
-        return 31;
-    } else {
-        if (messageModel.rowHeight > 0) {
-            return messageModel.rowHeight;
+    id obj = [self.messgeAry objectAtIndex:indexPath.row];
+    
+    if ([obj isKindOfClass:[ZGChatTipMesageModel class]]) {
+        ZGChatTipMesageModel *tipMsgModel = (ZGChatTipMesageModel *)obj;
+        if (tipMsgModel.tipType == ZGChatTipMesageType_Time) {
+            return 30;
+        }else  {
+            return [ZGChatTipMessageCell tableView:tableView heightForRowAtIndexPath:indexPath withObject:tipMsgModel];
         }
-        messageModel.rowHeight = [ZGChatCell tableView:tableView heightForRowAtIndexPath:indexPath withObject:messageModel];
-
+    }
+    
+    ZGChatMessageModel *messageModel = (ZGChatMessageModel *)obj;
+    if (messageModel.rowHeight > 0) {
         return messageModel.rowHeight;
     }
+    messageModel.rowHeight = [ZGChatCell tableView:tableView heightForRowAtIndexPath:indexPath withObject:messageModel];
+    
+    return messageModel.rowHeight;
 }
 
 
@@ -155,6 +213,13 @@ NSString *const kTableViewContentInset = @"contentInset";
     if (!self.messgeAry.count) return;
     NSIndexPath *lastPath = [NSIndexPath indexPathForRow:self.messgeAry.count - 1 inSection:0];
     [self.tableView scrollToRowAtIndexPath:lastPath atScrollPosition:UITableViewScrollPositionBottom animated:animated];
+}
+
+- (void)scrollToIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated refresh:(BOOL)refresh {
+    // tableview滑动到底部
+    if (refresh) [self.tableView reloadData];
+    if (!self.messgeAry.count) return;
+    [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:animated];
 }
 
 #pragma mark - 监听
@@ -176,6 +241,25 @@ NSString *const kTableViewContentInset = @"contentInset";
 - (void)bottomView:(ZGMsgBottomView *)bottomView didRecordBtn:(UIButton *)btn
 {
     [self.textInpuView becomeFirstResponder];
+}
+#pragma mark - ZGChatCellDelegate
+- (void)chatCell:(ZGChatCell *)cell didTouchHeaderWithMsgModel:(ZGChatMessageModel *)model
+{
+    NSLog(@"头像被点击");
+}
+
+- (void)chatCell:(ZGChatCell *)cell didRetrybtnWithMsgModel:(ZGChatMessageModel *)model
+{
+    // 重发消息处理
+    NSLog(@"重发消息");
+}
+
+- (void)chatCell:(ZGChatCell *)cell didTouchBubbleWithMsgModel:(ZGChatMessageModel *)model
+{
+    NSLog(@"bubbleView被点击");
+    if (model.type == ZGChatMessageType_Audio) {
+        // 播放音频
+    }
 }
 
 #pragma mark - action
@@ -231,13 +315,10 @@ NSString *const kTableViewContentInset = @"contentInset";
     // 模仿延迟发送
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         messageModel.status = ZGChatMessageDeliveryState_Delivered;
-//        LHMessageModel *dbMessageModel = [[LHIMDBManager shareManager] searchModel:[LHMessageModel class] keyValues:@{@"date" : date, @"status" : @(MessageDeliveryState_Delivering)}];
-        
         
         ZGChatMessageModel *dbMessageModel = [ZGChatMessageModel new];
         dbMessageModel.isSender = YES;
         dbMessageModel.isRead = YES;
-        dbMessageModel.status = ZGChatMessageDeliveryState_Delivering;
         dbMessageModel.creatTime = messageModel.creatTime;
         dbMessageModel.type = type;
         switch (type) {
@@ -252,7 +333,7 @@ NSString *const kTableViewContentInset = @"contentInset";
             default:
                 break;
         }
-        dbMessageModel.status = ZGChatMessageDeliveryState_Delivered;
+        dbMessageModel.status = ZGChatMessageDeliveryState_Failure;
         NSArray *cells = [self.tableView visibleCells];
         [cells enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj isKindOfClass:[ZGChatCell class]]) {
@@ -265,12 +346,23 @@ NSString *const kTableViewContentInset = @"contentInset";
             }
         }];
         
-        // 模仿消息回复
+        // 模仿 被拉黑消息
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            dbMessageModel.isSender = NO;
-            NSIndexPath *index = [self insertMessageByTime:dbMessageModel];
+            
+            ZGChatTipMesageModel *tipModel = [[ZGChatTipMesageModel alloc] init];
+            tipModel.tipType = ZGChatTipMesageType_Be_Deleted_Friend;
+            // 时间需要是真实消息的时间，这里是随便写的
+            tipModel.creatTime = [[NSDate date] timeIntervalSince1970];
+            NSIndexPath *index = [self insertMessageByTime:tipModel];
             [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
         });
+        
+//        // 模仿消息回复
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            dbMessageModel.isSender = NO;
+//            NSIndexPath *index = [self insertMessageByTime:dbMessageModel];
+//            [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+//        });
     });
 }
 
@@ -287,20 +379,20 @@ NSString *const kTableViewContentInset = @"contentInset";
     
 }
 
-- (NSIndexPath *)insertMessageByTime:(ZGChatMessageModel *)newMessge
+- (NSIndexPath *)insertMessageByTime:(id)newMessge
 {
     // insert time
-    if (newMessge.creatTime - 3600  > self.lastMsgTime) {
-        ZGChatMessageModel *timeMsgModel = [ZGChatMessageModel new];
-        timeMsgModel.type = ZGChatMessageType_time;
-        timeMsgModel.creatTime = newMessge.creatTime;
+    if ([newMessge creatTime] - 3600  > self.lastMsgTime) {
+        ZGChatTipMesageModel *timeMsgModel = [ZGChatTipMesageModel new];
+        timeMsgModel.tipType = ZGChatTipMesageType_Time;
+        timeMsgModel.creatTime = [newMessge creatTime];
         [self insertMessage:timeMsgModel];
         
     }
     return [self insertMessage:newMessge];
 }
 
-- (NSIndexPath *)insertMessage:(ZGChatMessageModel *)newMessge
+- (NSIndexPath *)insertMessage:(id)newMessge
 {
     NSIndexPath *indexP = [NSIndexPath indexPathForRow:self.messgeAry.count inSection:0];
     [self.messgeAry addObject:newMessge];

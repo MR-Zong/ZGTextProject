@@ -12,11 +12,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class ZGChatCell;
+
+@protocol ZGChatCellDelegate <NSObject>
+
+- (void)chatCell:(ZGChatCell *)cell didTouchHeaderWithMsgModel:(ZGChatMessageModel *)model;
+- (void)chatCell:(ZGChatCell *)cell didTouchBubbleWithMsgModel:(ZGChatMessageModel *)model;
+- (void)chatCell:(ZGChatCell *)cell didRetrybtnWithMsgModel:(ZGChatMessageModel *)model;
+
+@end
+
 @interface ZGChatCell : ZGChatBaseCell
 
-@property (nonatomic, strong) UIActivityIndicatorView *activtiy;
-@property (nonatomic, strong) UIView *activityView;
-@property (nonatomic, strong) UIButton *retryButton;
+@property (nonatomic, weak) id <ZGChatCellDelegate> delegate;
+
 
 @end
 

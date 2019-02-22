@@ -57,8 +57,11 @@ NSString *const BUBBLE_RIGHT_IMAGE_NAME = @"IM_Chat_sender_bg";
     return 40;
 }
 
-- (void)bubbleViewPressed:(id)sender {
-//    [self routerEventWithName:kRouterEventChatCellBubbleTapEventName userInfo:@{kMessageKey : self.messageModel}];
+- (void)bubbleViewPressed:(id)sender
+{
+    if (self.didTouchBlock) {
+        self.didTouchBlock();
+    }
 }
 
 #pragma mark - lazy

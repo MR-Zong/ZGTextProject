@@ -11,6 +11,16 @@
 CGFloat const ACTIVTIYVIEW_BUBBLE_PADDING = 5.0f;
 CGFloat const SEND_STATUS_SIZE = 20.0f;
 
+@interface ZGChatCell ()
+
+@property (nonatomic, strong) UIActivityIndicatorView *activtiy;
+@property (nonatomic, strong) UIView *activityView;
+@property (nonatomic, strong) UIButton *retryButton;
+
+
+@end
+
+
 @implementation ZGChatCell
 
 - (id)initWithMessageModel:(ZGChatMessageModel *)model reuseIdentifier:(NSString *)reuseIdentifier {
@@ -94,12 +104,25 @@ CGFloat const SEND_STATUS_SIZE = 20.0f;
 }
 
 #pragma mark - action
-
-// 重发按钮事件
-- (void)retryButtonPressed:(UIButton *)sender {
-//    [self routerEventWithName:kRouterEventChatResendEventName
-//                     userInfo:@{kShouldResendCell : self}];
+- (void)retryButtonPressed:(UIButton *)sender
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(chatCell:didRetrybtnWithMsgModel:)]) {
+        [self.delegate chatCell:self didRetrybtnWithMsgModel:self.messageModel];
+    }
 }
+
+- (void)headImagePressed:(id)sender {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(chatCell:didTouchHeaderWithMsgModel:)]) {
+        [self.delegate chatCell:self didTouchHeaderWithMsgModel:self.messageModel];
+    }
+}
+
+- (void)bubbleViewPressed {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(chatCell:didTouchBubbleWithMsgModel:)]) {
+        [self.delegate chatCell:self didTouchBubbleWithMsgModel:self.messageModel];
+    }
+}
+
 
 #pragma mark - override
 - (void)setupSubviewsForMessageModel:(ZGChatMessageModel *)messageModel
@@ -126,6 +149,10 @@ CGFloat const SEND_STATUS_SIZE = 20.0f;
     }
     
     _bubbleView = [self bubbleViewForMessageModel:messageModel];
+    __weak typeof(self) weakSelf = self;
+    [_bubbleView setDidTouchBlock:^{
+        [weakSelf bubbleViewPressed];
+    }];
     [self.contentView addSubview:_bubbleView];
 }
 

@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, ZGChatMessageType) {
     ZGChatMessageType_Text,
     ZGChatMessageType_Audio,
-    ZGChatMessageType_time,
     ZGChatMessageType_Undefine, // 未识别消息
 };
 

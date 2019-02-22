@@ -46,6 +46,9 @@
 		417EBCC2221A4F2100E86D8D /* ZGChatMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCC1221A4F2100E86D8D /* ZGChatMessageModel.m */; };
 		417EBCC5221A556800E86D8D /* ZGChatConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCC4221A556800E86D8D /* ZGChatConst.m */; };
 		417EBCC8221A84C500E86D8D /* ZGChatInputInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCC7221A84C500E86D8D /* ZGChatInputInfoModel.m */; };
+		417EBD48221EA7C700E86D8D /* ZGChatTipMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD47221EA7C700E86D8D /* ZGChatTipMessageCell.m */; };
+		417EBD4B221EAA9800E86D8D /* ZGChatTipMesageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD4A221EAA9800E86D8D /* ZGChatTipMesageModel.m */; };
+		417EBD51221ED5BB00E86D8D /* ZGChatRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD50221ED5BB00E86D8D /* ZGChatRefreshHeader.m */; };
 		417F201721F0643600471B03 /* singing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 417F201621F0643600471B03 /* singing.wav */; };
 		417F202221F0647C00471B03 /* fmod_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201C21F0647C00471B03 /* fmod_player.cpp */; };
 		417F202321F0647C00471B03 /* fmod_player_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201F21F0647C00471B03 /* fmod_player_effect.cpp */; };
@@ -400,6 +403,12 @@
 		417EBCC4221A556800E86D8D /* ZGChatConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatConst.m; sourceTree = "<group>"; };
 		417EBCC6221A84C500E86D8D /* ZGChatInputInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatInputInfoModel.h; sourceTree = "<group>"; };
 		417EBCC7221A84C500E86D8D /* ZGChatInputInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatInputInfoModel.m; sourceTree = "<group>"; };
+		417EBD46221EA7C700E86D8D /* ZGChatTipMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTipMessageCell.h; sourceTree = "<group>"; };
+		417EBD47221EA7C700E86D8D /* ZGChatTipMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTipMessageCell.m; sourceTree = "<group>"; };
+		417EBD49221EAA9800E86D8D /* ZGChatTipMesageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTipMesageModel.h; sourceTree = "<group>"; };
+		417EBD4A221EAA9800E86D8D /* ZGChatTipMesageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTipMesageModel.m; sourceTree = "<group>"; };
+		417EBD4F221ED5BB00E86D8D /* ZGChatRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatRefreshHeader.h; sourceTree = "<group>"; };
+		417EBD50221ED5BB00E86D8D /* ZGChatRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatRefreshHeader.m; sourceTree = "<group>"; };
 		417F201621F0643600471B03 /* singing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = singing.wav; sourceTree = "<group>"; };
 		417F201C21F0647C00471B03 /* fmod_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fmod_player.cpp; sourceTree = "<group>"; };
 		417F201D21F0647C00471B03 /* fmod_player_effect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_player_effect.hpp; sourceTree = "<group>"; };
@@ -1159,6 +1168,8 @@
 				417EBCC1221A4F2100E86D8D /* ZGChatMessageModel.m */,
 				417EBCC6221A84C500E86D8D /* ZGChatInputInfoModel.h */,
 				417EBCC7221A84C500E86D8D /* ZGChatInputInfoModel.m */,
+				417EBD49221EAA9800E86D8D /* ZGChatTipMesageModel.h */,
+				417EBD4A221EAA9800E86D8D /* ZGChatTipMesageModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1652,6 +1663,8 @@
 				41BDBBB92217DC3800043C33 /* ZGAlertPopView.m */,
 				417EBCA7221A4D0900E86D8D /* ZGChatTextInputView.h */,
 				417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */,
+				417EBD4F221ED5BB00E86D8D /* ZGChatRefreshHeader.h */,
+				417EBD50221ED5BB00E86D8D /* ZGChatRefreshHeader.m */,
 			);
 			path = referenceView;
 			sourceTree = "<group>";
@@ -1670,6 +1683,8 @@
 				417EBCBE221A4EE300E86D8D /* ZGChatUndefineTypeCell.m */,
 				417EBCC3221A556800E86D8D /* ZGChatConst.h */,
 				417EBCC4221A556800E86D8D /* ZGChatConst.m */,
+				417EBD46221EA7C700E86D8D /* ZGChatTipMessageCell.h */,
+				417EBD47221EA7C700E86D8D /* ZGChatTipMessageCell.m */,
 			);
 			path = MsgCell;
 			sourceTree = "<group>";
@@ -4065,6 +4080,7 @@
 				EFDBCDB51F2B159700C542AD /* Sources */,
 				EFDBCDB61F2B159700C542AD /* Frameworks */,
 				EFDBCDB71F2B159700C542AD /* Resources */,
+				0AC3261652D4F115DAD5C882 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4212,6 +4228,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0AC3261652D4F115DAD5C882 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6C6E7C5F404CC5EEBF67AE31 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -4308,6 +4346,7 @@
 				EF72319F20DA40B600999D3A /* ZGAnimationsCollectionViewController.m in Sources */,
 				EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */,
 				EF77D76B21527AA80069DE80 /* ZGScrollAndPopController.m in Sources */,
+				417EBD51221ED5BB00E86D8D /* ZGChatRefreshHeader.m in Sources */,
 				41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */,
 				EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */,
 				EF25CBC020E284E3005A7F8C /* ZGNestPageDController.m in Sources */,
@@ -4383,6 +4422,7 @@
 				417F204E21F167CE00471B03 /* ZGFAACWav2AAc.cpp in Sources */,
 				EF819FC7212918C3009B959A /* ZGWeakMutableDictionary.m in Sources */,
 				EF58F69B2143BADB0000CDC7 /* ZGTestCollectionViewCell.m in Sources */,
+				417EBD48221EA7C700E86D8D /* ZGChatTipMessageCell.m in Sources */,
 				EF2EEAC620F495F900C9FBAD /* ZGKVOOObserverB.m in Sources */,
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
@@ -4488,6 +4528,7 @@
 				417115BC21AE7C910068079B /* ZGWKWebViewController.m in Sources */,
 				EF85FF3A204A4E9000F5186A /* ZGGCDTestController.m in Sources */,
 				EF261CF62063AA600002BFB2 /* ZGFPSProbeView.m in Sources */,
+				417EBD4B221EAA9800E86D8D /* ZGChatTipMesageModel.m in Sources */,
 				EF67D6722057648B00FA65DC /* ZGINSubObject+initialize.m in Sources */,
 				EF0A0EA82006FE140095779B /* ZGOBaseScrollView.m in Sources */,
 				EFC56B96201DBBF900BA5487 /* ZGMFPeople.m in Sources */,

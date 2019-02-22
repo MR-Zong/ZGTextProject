@@ -7,6 +7,7 @@ target 'ZGTextProj' do
 
   # Pods for ZGTextProj
   pod 'Masonry'
+  pod 'MJRefresh'
 
   target 'ZGTextProjTests' do
     inherit! :search_paths

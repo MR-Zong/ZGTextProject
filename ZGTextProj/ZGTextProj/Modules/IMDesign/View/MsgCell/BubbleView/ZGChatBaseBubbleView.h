@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) ZGChatMessageModel *messageModel;
 
 + (CGFloat)heightForBubbleWithObject:(ZGChatMessageModel *)object;
-//- (void)bubbleViewPressed:(id)sender;
+@property (nonatomic, copy) void(^didTouchBlock)(void);
 
 @end
 
