@@ -14,7 +14,6 @@
 @end
 
 @implementation ZGChatRefreshHeader
-#pragma mark - 懒加载子控
 - (UIActivityIndicatorView *)loadingView
 {
     if (!_loadingView) {
@@ -25,7 +24,7 @@
     return _loadingView;
 }
 
-#pragma mark - 公共方法
+#pragma mark -
 - (void)setActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)activityIndicatorViewStyle
 {
     _activityIndicatorViewStyle = activityIndicatorViewStyle;
@@ -39,14 +38,13 @@
     [self.loadingView stopAnimating];
 }
 
-#pragma mark - 重写父类的方法
+#pragma mark - override
 - (void)prepare
 {
     [super prepare];
     
     self.stateLabel.hidden = YES;
     self.lastUpdatedTimeLabel.hidden = YES;
-
     self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
 }
 
@@ -54,28 +52,19 @@
 {
     [super placeSubviews];
     
-    // 箭头的中心点
     CGFloat arrowCenterX = self.mj_w * 0.5;
     CGFloat arrowCenterY = self.mj_h * 0.5;
     CGPoint arrowCenter = CGPointMake(arrowCenterX, arrowCenterY);
-    
-    // 圈圈
     if (self.loadingView.constraints.count == 0) {
         self.loadingView.center = arrowCenter;
     }
-    
 }
 
 - (void)setState:(MJRefreshState)state
 {
-    MJRefreshCheckState
-    
-    // 根据状态做事情
-    NSLog(@"refreshState %zd",state);
     if (state == MJRefreshStateIdle) {
         [self.loadingView startAnimating];
 
     }
-    
 }
 @end

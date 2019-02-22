@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZGChatCellDelegate <NSObject>
 
-- (void)chatCell:(ZGChatCell *)cell didTouchHeaderWithMsgModel:(ZGChatMessageModel *)model;
-- (void)chatCell:(ZGChatCell *)cell didTouchBubbleWithMsgModel:(ZGChatMessageModel *)model;
-- (void)chatCell:(ZGChatCell *)cell didRetrybtnWithMsgModel:(ZGChatMessageModel *)model;
+- (void)chatCell:(ZGChatCell *)cell didTouchHeaderWithMsgModel:(ZGChatMessageModel *)messageModel;
+- (void)chatCell:(ZGChatCell *)cell didTouchBubbleWithMsgModel:(ZGChatMessageModel *)messageModel;
+- (void)chatCell:(ZGChatCell *)cell didRetrybtnWithMsgModel:(ZGChatMessageModel *)messageModel;
 
 @end
 
