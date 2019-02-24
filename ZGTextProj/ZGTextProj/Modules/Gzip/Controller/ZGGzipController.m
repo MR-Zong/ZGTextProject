@@ -24,7 +24,39 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    testGzip();
+//    testGzip();
+    
+    
+    UIView *ve = [[UIView alloc] init];
+    ve.frame = CGRectMake(100, 100, 100, 100);
+    ve.backgroundColor = [UIColor redColor];
+    [self.view addSubview:ve];
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = ve.bounds;
+    gradient.startPoint = CGPointMake(0, 0);
+    gradient.endPoint = CGPointMake(1, 1);
+    gradient.locations = @[@0.3, @0.6];
+    gradient.colors = [NSArray arrayWithObjects:
+                       (id)[UIColor redColor].CGColor,
+                       (id)[UIColor blueColor].CGColor,
+                       nil];
+    [ve.layer addSublayer:gradient];
+    
+    CAShapeLayer *layer = [CAShapeLayer layer] ;// (CAShapeLayer*)ve.layer.mask;
+    layer.backgroundColor = [UIColor whiteColor].CGColor;
+    CGFloat cornerRadius = 10;
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:ve.bounds byRoundingCorners:UIRectCornerTopRight|UIRectCornerBottomRight|UIRectCornerBottomLeft cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
+    [layer setPath:path.CGPath];
+    ve.layer.mask = layer;
+    
+    
+//    if(![layer isKindOfClass:[CAShapeLayer class]])
+//    {
+//        layer = [CAShapeLayer layer];
+//    }
+    
+    
 }
 
 
