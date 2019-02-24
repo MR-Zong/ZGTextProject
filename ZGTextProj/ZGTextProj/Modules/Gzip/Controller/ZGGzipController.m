@@ -13,6 +13,10 @@
 #include <stdio.h>
 #include <zlib.h>
 
+#import "ZGCornerRadiusView.h"
+#import "ZGGradiantView.h"
+#import "ZGCornerGradientView.h"
+
 @interface ZGGzipContainView : UIView <UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic, strong) UICollectionView *collectionView;
 @end
@@ -74,6 +78,7 @@
 @interface ZGGzipController ()
 
 @property (nonatomic, strong) ZGGzipContainView *containView;
+@property (nonatomic, strong) ZGCornerRadiusView *cornerRadiusView;
 
 @end
 
@@ -87,6 +92,25 @@
 //    testGzip();
     
     
+    [self testCornerRadiusAndGradiant2];
+    
+    
+//    if(![layer isKindOfClass:[CAShapeLayer class]])
+//    {
+//        layer = [CAShapeLayer layer];
+//    }
+    
+    
+    
+//    [self testAyncOnMain];
+//    [self testCollectionView];
+    
+    // gzip
+//    testGzip();
+}
+
+- (void)testCornerRadius
+{
     UIView *ve = [[UIView alloc] init];
     ve.frame = CGRectMake(100, 100, 100, 100);
     ve.backgroundColor = [UIColor redColor];
@@ -109,20 +133,62 @@
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:ve.bounds byRoundingCorners:UIRectCornerTopRight|UIRectCornerBottomRight|UIRectCornerBottomLeft cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
     [layer setPath:path.CGPath];
     ve.layer.mask = layer;
+}
+
+- (void)testCornerRadius2
+{
+    ZGCornerRadiusView *crView = [[ZGCornerRadiusView alloc] init];
+    crView.backgroundColor = [UIColor redColor];
+    crView.borderColor = [UIColor purpleColor];
+    crView.cornerRadius_topRight = 20;
+    crView.cornerRadius_topLeft = 10;
+    crView.cornerRadius_bottomRight = 20;
+    crView.cornerRadius_bottomLeft = 20;
+    crView.frame = CGRectMake(100, 100, 100, 100);
+    [self.view addSubview:crView];
+}
+
+- (void)testCornerRadiusAndGradiant
+{
     
+    ZGCornerGradientView *crView = [[ZGCornerGradientView alloc] init];
+    crView.backgroundColor = [UIColor redColor];
+    crView.borderColor = [UIColor purpleColor];
+    crView.cornerRadius_topRight = 20;
+    crView.cornerRadius_topLeft = 10;
+    crView.cornerRadius_bottomRight = 20;
+    crView.cornerRadius_bottomLeft = 20;
+    crView.frame = CGRectMake(100, 100, 100, 100);
+    [self.view addSubview:crView];
     
-//    if(![layer isKindOfClass:[CAShapeLayer class]])
-//    {
-//        layer = [CAShapeLayer layer];
-//    }
+//    ZGGradiantView *gView = [[ZGGradiantView alloc] init];
+//    gView.startPoint = CGPointMake(0, 0);
+//    gView.endPoint = CGPointMake(1, 1);
+//    gView.startColor = [UIColor redColor];
+//    gView.endColor = [UIColor greenColor];
+//    gView.backgroundColor = [UIColor redColor];
+//    gView.frame = CGRectMake(100, 100, 100, 100);
+//    [self.view addSubview:gView];
+}
+
+- (void)testCornerRadiusAndGradiant2
+{
+    ZGGradiantView *gView = [[ZGGradiantView alloc] init];
+    gView.startPoint = CGPointMake(0, 0);
+    gView.endPoint = CGPointMake(1, 1);
+    gView.startColor = [UIColor redColor];
+    gView.endColor = [UIColor greenColor];
+    gView.backgroundColor = [UIColor redColor];
+    gView.frame = CGRectMake(100, 100, 100, 100);
     
+    gView.cornerRadius_topRight = 20;
+    gView.cornerRadius_topLeft = 10;
+    gView.cornerRadius_bottomRight = 20;
+    gView.cornerRadius_bottomLeft = 20;
+    [self.view addSubview:gView];
     
+
     
-//    [self testAyncOnMain];
-//    [self testCollectionView];
-    
-    // gzip
-//    testGzip();
 }
 
 - (void)testAyncOnMain

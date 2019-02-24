@@ -151,6 +151,9 @@
 		EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF31F95D20707D5B00B1B148 /* ZGSafeDicController.m */; };
 		EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EF31F96020707DD000B1B148 /* ZGThreadSafeMutableDictionary.m */; };
 		EF31F9682070BE8700B1B148 /* ZGOperationQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF31F9672070BE8700B1B148 /* ZGOperationQueueController.m */; };
+		EF32B3A02222905A00272CAE /* ZGCornerRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF32B39F2222905A00272CAE /* ZGCornerRadiusView.m */; };
+		EF32B3A322229EEB00272CAE /* ZGGradiantView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF32B3A222229EEB00272CAE /* ZGGradiantView.m */; };
+		EF32B3A62222A5AD00272CAE /* ZGCornerGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF32B3A52222A5AD00272CAE /* ZGCornerGradientView.m */; };
 		EF33525B2091B1C6003D4344 /* ZGInitFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF33525A2091B1C6003D4344 /* ZGInitFunctionController.m */; };
 		EF33525E2091B261003D4344 /* ZGIFUBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF33525D2091B261003D4344 /* ZGIFUBaseObject.m */; };
 		EF3352612091B272003D4344 /* ZGIFUAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3352602091B272003D4344 /* ZGIFUAObject.m */; };
@@ -610,6 +613,12 @@
 		EF31F96020707DD000B1B148 /* ZGThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		EF31F9662070BE8700B1B148 /* ZGOperationQueueController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGOperationQueueController.h; sourceTree = "<group>"; };
 		EF31F9672070BE8700B1B148 /* ZGOperationQueueController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGOperationQueueController.m; sourceTree = "<group>"; };
+		EF32B39E2222905A00272CAE /* ZGCornerRadiusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCornerRadiusView.h; sourceTree = "<group>"; };
+		EF32B39F2222905A00272CAE /* ZGCornerRadiusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCornerRadiusView.m; sourceTree = "<group>"; };
+		EF32B3A122229EEB00272CAE /* ZGGradiantView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGGradiantView.h; sourceTree = "<group>"; };
+		EF32B3A222229EEB00272CAE /* ZGGradiantView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGGradiantView.m; sourceTree = "<group>"; };
+		EF32B3A42222A5AD00272CAE /* ZGCornerGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCornerGradientView.h; sourceTree = "<group>"; };
+		EF32B3A52222A5AD00272CAE /* ZGCornerGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCornerGradientView.m; sourceTree = "<group>"; };
 		EF3352592091B1C6003D4344 /* ZGInitFunctionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGInitFunctionController.h; sourceTree = "<group>"; };
 		EF33525A2091B1C6003D4344 /* ZGInitFunctionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGInitFunctionController.m; sourceTree = "<group>"; };
 		EF33525C2091B261003D4344 /* ZGIFUBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIFUBaseObject.h; sourceTree = "<group>"; };
@@ -2167,6 +2176,12 @@
 		EF266124214DFDE500B8DA30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF32B39E2222905A00272CAE /* ZGCornerRadiusView.h */,
+				EF32B39F2222905A00272CAE /* ZGCornerRadiusView.m */,
+				EF32B3A122229EEB00272CAE /* ZGGradiantView.h */,
+				EF32B3A222229EEB00272CAE /* ZGGradiantView.m */,
+				EF32B3A42222A5AD00272CAE /* ZGCornerGradientView.h */,
+				EF32B3A52222A5AD00272CAE /* ZGCornerGradientView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4375,6 +4390,7 @@
 				EF7F2CA12108117900AC6755 /* ZGImageController.m in Sources */,
 				417F204B21F1674D00471B03 /* ZGAudioConvertController.mm in Sources */,
 				EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */,
+				EF32B3A62222A5AD00272CAE /* ZGCornerGradientView.m in Sources */,
 				EF7F2CD9210AF7D000AC6755 /* ZGSTIDiscoveryController.m in Sources */,
 				417EBCAD221A4D7300E86D8D /* ZGChatBaseBubbleView.m in Sources */,
 				EF192AA8210C152400868D5B /* ZGLockAndSemaphoreController.m in Sources */,
@@ -4475,6 +4491,7 @@
 				4137F2EF2192BA71003B6D60 /* ZGPHVideoCell.m in Sources */,
 				EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */,
 				EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */,
+				EF32B3A322229EEB00272CAE /* ZGGradiantView.m in Sources */,
 				EF64EEC520E4E5E8009B5767 /* ZGEventChainSubView.m in Sources */,
 				EFAC58251F341BF000B94D93 /* ZGAudioManager.m in Sources */,
 				EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */,
@@ -4495,6 +4512,7 @@
 				4174DD9321DCB46A007C89E6 /* AudioQueueRecorder.m in Sources */,
 				EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */,
 				EFFCE4CA1F651DB7008E2375 /* ZGHolidayManager.m in Sources */,
+				EF32B3A02222905A00272CAE /* ZGCornerRadiusView.m in Sources */,
 				EF570B2F2024616700E14BC9 /* ZGKEViewController.m in Sources */,
 				EFF1DA9020D3C56F00CBC680 /* UIView+ZGExtension.m in Sources */,
 				EFFCE4B81F62725B008E2375 /* ZGCalendarMonthCell.m in Sources */,
