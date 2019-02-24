@@ -11,8 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZGChatInputInfoModel : NSObject
-
+/** text */
 @property (nonatomic, strong) NSString *text;
+
+/** audio */
+@property (nonatomic, strong) NSString *audio_localPath;
+@property (nonatomic, assign) NSInteger audio_duration;
+@property (nonatomic, strong) NSString *audio_text;
 
 @end
 

@@ -48,6 +48,7 @@ NSString *const kTableViewContentInset = @"contentInset";
     
     [self initialize];
     [self setupViews];
+    
 }
 
 - (void)initialize
@@ -302,7 +303,7 @@ NSString *const kTableViewContentInset = @"contentInset";
 - (void)sendMessageWithInputInfo:(ZGChatInputInfoModel *)inputInfoModel
 {
     if (inputInfoModel.text.length > 0) {
-        [self sendMessage:inputInfoModel type:ZGChatMessageType_Text];
+        [self sendMessage:inputInfoModel type:ZGChatMessageType_Audio];
     }
 }
 
@@ -321,7 +322,9 @@ NSString *const kTableViewContentInset = @"contentInset";
             break;
         }
         case ZGChatMessageType_Audio: {
-            ;
+            messageModel.audio_duration = 3;//inputInfoModel.audio_duration;
+            messageModel.audio_localPath = inputInfoModel.audio_localPath;
+            messageModel.audio_text = @"zong say hello";
             break;
         }
         default:
@@ -338,44 +341,46 @@ NSString *const kTableViewContentInset = @"contentInset";
     // 模仿延迟发送
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         messageModel.status = ZGChatMessageDeliveryState_Delivered;
+                [self refreshCellWithMessage:messageModel];
         
-        ZGChatMessageModel *dbMessageModel = [ZGChatMessageModel new];
-        dbMessageModel.isSender = YES;
-        dbMessageModel.isRead = YES;
-        dbMessageModel.creatTime = messageModel.creatTime;
-        dbMessageModel.type = type;
-        switch (type) {
-            case ZGChatMessageType_Text: {
-                dbMessageModel.content = inputInfoModel.text;
-                break;
-            }
-            case ZGChatMessageType_Audio: {
-                ;
-                break;
-            }
-            default:
-                break;
-        }
-        dbMessageModel.status = ZGChatMessageDeliveryState_Failure;
-        [self refreshCellWithMessage:dbMessageModel];
-        
-        // 模仿 被拉黑消息
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            
-            ZGChatTipMesageModel *tipModel = [[ZGChatTipMesageModel alloc] init];
-            tipModel.tipType = ZGChatTipMesageType_Be_Deleted_Friend;
-            // 时间需要是真实消息的时间，这里是随便写的
-            tipModel.creatTime = [[NSDate date] timeIntervalSince1970];
-            NSIndexPath *index = [self insertMessageByTime:tipModel];
-            [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
-        });
-        
-//        // 模仿消息回复
+//        // 模仿 被拉黑消息
 //        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            dbMessageModel.isSender = NO;
-//            NSIndexPath *index = [self insertMessageByTime:dbMessageModel];
+//
+//            ZGChatTipMesageModel *tipModel = [[ZGChatTipMesageModel alloc] init];
+//            tipModel.tipType = ZGChatTipMesageType_Be_Deleted_Friend;
+//            // 时间需要是真实消息的时间，这里是随便写的
+//            tipModel.creatTime = [[NSDate date] timeIntervalSince1970];
+//            NSIndexPath *index = [self insertMessageByTime:tipModel];
 //            [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 //        });
+        
+        // 模仿消息回复
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            ZGChatMessageModel *dbMessageModel = [ZGChatMessageModel new];
+            dbMessageModel.isSender = YES;
+            dbMessageModel.isRead = YES;
+            dbMessageModel.creatTime = messageModel.creatTime;
+            dbMessageModel.type = type;
+            switch (type) {
+                case ZGChatMessageType_Text: {
+                    dbMessageModel.content = inputInfoModel.text;
+                    break;
+                }
+                case ZGChatMessageType_Audio: {
+                    dbMessageModel.audio_duration = 3;//inputInfoModel.audio_duration;
+                    dbMessageModel.audio_localPath = inputInfoModel.audio_localPath;
+                    dbMessageModel.audio_text = @"zong say hello";
+                    
+                    break;
+                }
+                default:
+                    break;
+            }
+
+            dbMessageModel.isSender = NO;
+            NSIndexPath *index = [self insertMessageByTime:dbMessageModel];
+            [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+        });
     });
 }
 

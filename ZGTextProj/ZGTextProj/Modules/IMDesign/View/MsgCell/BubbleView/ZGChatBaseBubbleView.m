@@ -15,6 +15,7 @@ NSString *const BUBBLE_RIGHT_IMAGE_NAME = @"IM_Chat_sender_bg";
 @interface ZGChatBaseBubbleView ()
 
 @property (nonatomic, strong) UIImageView *backImageView;
+@property (nonatomic, strong) CAGradientLayer *gradientLayer;
 
 @end
 
@@ -24,6 +25,13 @@ NSString *const BUBBLE_RIGHT_IMAGE_NAME = @"IM_Chat_sender_bg";
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self addSubview:self.backImageView];
+
+        _gradientLayer = [CAGradientLayer layer];
+        _gradientLayer.colors = @[(__bridge id)[UIColor redColor].CGColor, (__bridge id)[UIColor greenColor].CGColor];
+        _gradientLayer.locations = @[@0.1, @1.0];
+        _gradientLayer.startPoint = CGPointMake(0, 0);
+        _gradientLayer.endPoint = CGPointMake(1.0, 0);
+        [self.layer addSublayer:_gradientLayer];
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bubbleViewPressed:)];
         [self addGestureRecognizer:tap];
@@ -50,6 +58,7 @@ NSString *const BUBBLE_RIGHT_IMAGE_NAME = @"IM_Chat_sender_bg";
 {
     [super layoutSubviews];
     self.backImageView.frame = self.bounds;
+    self.gradientLayer.frame = self.bounds;
 }
 
 #pragma mark - public
@@ -68,6 +77,7 @@ NSString *const BUBBLE_RIGHT_IMAGE_NAME = @"IM_Chat_sender_bg";
 - (UIImageView *)backImageView {
     if (!_backImageView) {
         _backImageView = [[UIImageView alloc] init];
+        _backImageView.hidden = YES;
         _backImageView.userInteractionEnabled = YES;
         _backImageView.multipleTouchEnabled = YES;
         _backImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;

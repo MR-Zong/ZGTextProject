@@ -46,6 +46,11 @@ typedef NS_ENUM(NSInteger,ZGChatMessageDeliveryState) {
 /** text */
 @property (nonatomic, strong) NSString *content;
 
+/** audio */
+@property (nonatomic, strong) NSString *audio_localPath;
+@property (nonatomic, assign) NSInteger audio_duration;
+@property (nonatomic, strong) NSString *audio_text;
+
 /** image */
 @property (nonatomic, assign) CGFloat width;
 @property (nonatomic, assign) CGFloat height;

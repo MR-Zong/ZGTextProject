@@ -49,6 +49,7 @@
 		417EBD48221EA7C700E86D8D /* ZGChatTipMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD47221EA7C700E86D8D /* ZGChatTipMessageCell.m */; };
 		417EBD4B221EAA9800E86D8D /* ZGChatTipMesageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD4A221EAA9800E86D8D /* ZGChatTipMesageModel.m */; };
 		417EBD51221ED5BB00E86D8D /* ZGChatRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD50221ED5BB00E86D8D /* ZGChatRefreshHeader.m */; };
+		417EBD5C22200CEE00E86D8D /* ZGCornerRadiuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD5B22200CEE00E86D8D /* ZGCornerRadiuController.m */; };
 		417F201721F0643600471B03 /* singing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 417F201621F0643600471B03 /* singing.wav */; };
 		417F202221F0647C00471B03 /* fmod_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201C21F0647C00471B03 /* fmod_player.cpp */; };
 		417F202321F0647C00471B03 /* fmod_player_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201F21F0647C00471B03 /* fmod_player_effect.cpp */; };
@@ -409,6 +410,8 @@
 		417EBD4A221EAA9800E86D8D /* ZGChatTipMesageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTipMesageModel.m; sourceTree = "<group>"; };
 		417EBD4F221ED5BB00E86D8D /* ZGChatRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatRefreshHeader.h; sourceTree = "<group>"; };
 		417EBD50221ED5BB00E86D8D /* ZGChatRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatRefreshHeader.m; sourceTree = "<group>"; };
+		417EBD5A22200CEE00E86D8D /* ZGCornerRadiuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCornerRadiuController.h; sourceTree = "<group>"; };
+		417EBD5B22200CEE00E86D8D /* ZGCornerRadiuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCornerRadiuController.m; sourceTree = "<group>"; };
 		417F201621F0643600471B03 /* singing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = singing.wav; sourceTree = "<group>"; };
 		417F201C21F0647C00471B03 /* fmod_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fmod_player.cpp; sourceTree = "<group>"; };
 		417F201D21F0647C00471B03 /* fmod_player_effect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_player_effect.hpp; sourceTree = "<group>"; };
@@ -1391,6 +1394,39 @@
 				417EBCB2221A4D9400E86D8D /* ZGChatAudioBubbleView.m */,
 			);
 			path = BubbleView;
+			sourceTree = "<group>";
+		};
+		417EBD5622200CDC00E86D8D /* CornerRadius */ = {
+			isa = PBXGroup;
+			children = (
+				417EBD5722200CDC00E86D8D /* Controller */,
+				417EBD5822200CDC00E86D8D /* Model */,
+				417EBD5922200CDC00E86D8D /* View */,
+			);
+			path = CornerRadius;
+			sourceTree = "<group>";
+		};
+		417EBD5722200CDC00E86D8D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				417EBD5A22200CEE00E86D8D /* ZGCornerRadiuController.h */,
+				417EBD5B22200CEE00E86D8D /* ZGCornerRadiuController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		417EBD5822200CDC00E86D8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417EBD5922200CDC00E86D8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		417F201521F0641F00471B03 /* FmodDemo */ = {
@@ -3514,6 +3550,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				417EBD5622200CDC00E86D8D /* CornerRadius */,
 				41BDBB872215786A00043C33 /* welcomePage */,
 				4110F9212213F48B006B9CEF /* UITabBarController */,
 				4151344A21F8733C0054D972 /* IMDesign */,
@@ -4474,6 +4511,7 @@
 				EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */,
 				4137F2EF2192BA71003B6D60 /* ZGPHVideoCell.m in Sources */,
 				EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */,
+				417EBD5C22200CEE00E86D8D /* ZGCornerRadiuController.m in Sources */,
 				EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */,
 				EF64EEC520E4E5E8009B5767 /* ZGEventChainSubView.m in Sources */,
 				EFAC58251F341BF000B94D93 /* ZGAudioManager.m in Sources */,

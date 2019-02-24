@@ -111,6 +111,7 @@
 
 #import "ZGIMDesignController.h"
 #import "ZGTabBarController.h"
+#import "ZGCornerRadiuController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -145,7 +146,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 70;
+    return 71;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -291,6 +292,8 @@
         cell.textLabel.text = @"IMDesign";
     }else if(indexPath.row == 69){
         cell.textLabel.text = @"UITabBarController";
+    }else if(indexPath.row == 70){
+        cell.textLabel.text = @"cornerRadiu";
     }
 
 
@@ -540,6 +543,9 @@
 //        [center setImage:[UIImage imageNamed:@"luffy1@2x.png"] forState:UIControlStateNormal];
 //        tabBarController.centerView = center;
         [self.navigationController pushViewController:tabBarController animated:YES];
+    }else if(indexPath.row == 70){
+        ZGCornerRadiuController *con = [[ZGCornerRadiuController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
 
 
