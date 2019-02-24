@@ -7,6 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BEEAA5B6C55954C57254FBD /* libPods-ZGTextProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7302507167BBB7FEAD1BA85 /* libPods-ZGTextProjUITests.a */; };
+		4110F9272213F4B6006B9CEF /* ZGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110F9262213F4B6006B9CEF /* ZGTabBarController.m */; };
+		4110F92A22141333006B9CEF /* ZGTabBarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110F92922141333006B9CEF /* ZGTabBarContentView.m */; };
+		4110F92D221418AD006B9CEF /* ZGTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110F92C221418AD006B9CEF /* ZGTabBarButton.m */; };
+		411B2BEA215B7275009747D8 /* ZGFontController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411B2BE9215B7275009747D8 /* ZGFontController.m */; };
+		411B2BF2215B734F009747D8 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BEC215B734E009747D8 /* Cairo-Black.ttf */; };
+		411B2BF3215B734F009747D8 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BED215B734E009747D8 /* Cairo-Light.ttf */; };
+		411B2BF4215B734F009747D8 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BEE215B734E009747D8 /* Cairo-Regular.ttf */; };
+		411B2BF5215B734F009747D8 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BEF215B734E009747D8 /* Cairo-SemiBold.ttf */; };
+		411B2BF6215B734F009747D8 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BF0215B734E009747D8 /* Cairo-Bold.ttf */; };
+		411B2BF7215B734F009747D8 /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 411B2BF1215B734F009747D8 /* Cairo-ExtraLight.ttf */; };
+		4137F2C32190209C003B6D60 /* ZGWeakSetterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2C22190209C003B6D60 /* ZGWeakSetterModel.m */; };
+		4137F2EC2192B92E003B6D60 /* ZGPhotoPickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2EB2192B92E003B6D60 /* ZGPhotoPickController.m */; };
+		4137F2EF2192BA71003B6D60 /* ZGPHVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2EE2192BA71003B6D60 /* ZGPHVideoCell.m */; };
+		4137F2F22192BB2B003B6D60 /* ZGPHResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4137F2F12192BB2B003B6D60 /* ZGPHResourceManager.m */; };
+		4151344921F7111F0054D972 /* ZGAudioRmoteControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */; };
+		4151345021F8734E0054D972 /* ZGIMDesignController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4151344F21F8734E0054D972 /* ZGIMDesignController.m */; };
+		415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B2D2181C851000A8213 /* AutoScrollLabel.m */; };
+		415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */; };
+		415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */; };
+		417115B221AB93130068079B /* ZGIMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B121AB93130068079B /* ZGIMessageController.m */; };
+		417115B921AD4E2D0068079B /* ZGWebKitTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B821AD4E2D0068079B /* ZGWebKitTestController.m */; };
+		417115BC21AE7C910068079B /* ZGWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115BB21AE7C910068079B /* ZGWKWebViewController.m */; };
+		417115BF21AE8E0B0068079B /* ZGWKWebNoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115BE21AE8E0B0068079B /* ZGWKWebNoDataView.m */; };
+		4174DD8D21DC9C29007C89E6 /* ZGAVAudioQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD8C21DC9C29007C89E6 /* ZGAVAudioQueueController.m */; };
+		4174DD9021DC9C81007C89E6 /* ZGAVAudioUnitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD8F21DC9C81007C89E6 /* ZGAVAudioUnitController.m */; };
+		4174DD9321DCB46A007C89E6 /* AudioQueueRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */; };
+		4174DD9621DCBC89007C89E6 /* AudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */; };
+		417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */; };
+		417EBCAD221A4D7300E86D8D /* ZGChatBaseBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */; };
+		417EBCB0221A4D8600E86D8D /* ZGChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */; };
+		417EBCB3221A4D9400E86D8D /* ZGChatAudioBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCB2221A4D9400E86D8D /* ZGChatAudioBubbleView.m */; };
+		417EBCB6221A4E4900E86D8D /* ZGChatBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCB5221A4E4900E86D8D /* ZGChatBaseCell.m */; };
+		417EBCB9221A4E8800E86D8D /* ZGChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCB8221A4E8800E86D8D /* ZGChatCell.m */; };
+		417EBCBC221A4EA200E86D8D /* ZGChatTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCBB221A4EA200E86D8D /* ZGChatTimeCell.m */; };
+		417EBCBF221A4EE300E86D8D /* ZGChatUndefineTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCBE221A4EE300E86D8D /* ZGChatUndefineTypeCell.m */; };
+		417EBCC2221A4F2100E86D8D /* ZGChatMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCC1221A4F2100E86D8D /* ZGChatMessageModel.m */; };
+		417EBCC5221A556800E86D8D /* ZGChatConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCC4221A556800E86D8D /* ZGChatConst.m */; };
+		417EBCC8221A84C500E86D8D /* ZGChatInputInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCC7221A84C500E86D8D /* ZGChatInputInfoModel.m */; };
+		417EBD48221EA7C700E86D8D /* ZGChatTipMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD47221EA7C700E86D8D /* ZGChatTipMessageCell.m */; };
+		417EBD4B221EAA9800E86D8D /* ZGChatTipMesageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD4A221EAA9800E86D8D /* ZGChatTipMesageModel.m */; };
+		417EBD51221ED5BB00E86D8D /* ZGChatRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBD50221ED5BB00E86D8D /* ZGChatRefreshHeader.m */; };
+		417F201721F0643600471B03 /* singing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 417F201621F0643600471B03 /* singing.wav */; };
+		417F202221F0647C00471B03 /* fmod_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201C21F0647C00471B03 /* fmod_player.cpp */; };
+		417F202321F0647C00471B03 /* fmod_player_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F201F21F0647C00471B03 /* fmod_player_effect.cpp */; };
+		417F202421F0647C00471B03 /* FMAudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 417F202021F0647C00471B03 /* FMAudioPlayer.mm */; };
+		417F203621F0648900471B03 /* libfmod_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F203221F0648900471B03 /* libfmod_iphonesimulator.a */; };
+		417F203721F0648900471B03 /* libfmodL_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F203321F0648900471B03 /* libfmodL_iphonesimulator.a */; };
+		417F203821F0648900471B03 /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F203421F0648900471B03 /* libfmodL_iphoneos.a */; };
+		417F203921F0648900471B03 /* libfmod_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F203521F0648900471B03 /* libfmod_iphoneos.a */; };
+		417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F203B21F064A500471B03 /* ZGFmodDemoController.m */; };
+		417F203F21F064CA00471B03 /* ZGBottomToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F203D21F064CA00471B03 /* ZGBottomToolBar.m */; };
+		417F204221F064D900471B03 /* ZGRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 417F204121F064D900471B03 /* ZGRecorder.m */; };
+		417F204B21F1674D00471B03 /* ZGAudioConvertController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 417F204A21F1674D00471B03 /* ZGAudioConvertController.mm */; };
+		417F204E21F167CE00471B03 /* ZGFAACWav2AAc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F204C21F167CE00471B03 /* ZGFAACWav2AAc.cpp */; };
+		417F205621F169E400471B03 /* libfaac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F205521F169E400471B03 /* libfaac.a */; };
+		417F206021F169EC00471B03 /* libmp4ff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F205E21F169EC00471B03 /* libmp4ff.a */; };
+		417F206121F169EC00471B03 /* libfaad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F205F21F169EC00471B03 /* libfaad.a */; };
+		417F206421F16A2800471B03 /* wavreader.c in Sources */ = {isa = PBXBuildFile; fileRef = 417F206221F16A2700471B03 /* wavreader.c */; };
+		417F206721F16A3700471B03 /* MZCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F206621F16A3700471B03 /* MZCodec.cpp */; };
+		417F206A21F17C4800471B03 /* gamesound.aac in Resources */ = {isa = PBXBuildFile; fileRef = 417F206921F17C4800471B03 /* gamesound.aac */; };
+		4189406921798637008C13D8 /* YGRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4189406821798637008C13D8 /* YGRecordView.m */; };
+		418E959121E4CF1A00349982 /* testZong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 418E959021E4CF1A00349982 /* testZong.wav */; };
+		41BDBB9122157A9500043C33 /* intro_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB8D22157A9500043C33 /* intro_0.jpg */; };
+		41BDBB9222157A9500043C33 /* intro_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB8E22157A9500043C33 /* intro_1.jpg */; };
+		41BDBB9322157A9500043C33 /* intro_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB8F22157A9500043C33 /* intro_3.jpg */; };
+		41BDBB9422157A9500043C33 /* intro_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB9022157A9500043C33 /* intro_2.jpg */; };
+		41BDBB9922157AA400043C33 /* LMJIntroductoryPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBB9522157AA400043C33 /* LMJIntroductoryPagesView.m */; };
+		41BDBB9A22157AA400043C33 /* LMJIntroductoryPagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBB9622157AA400043C33 /* LMJIntroductoryPagesHelper.m */; };
+		41BDBBAE2216A0BF00043C33 /* ZGMsgMenuPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBAD2216A0BF00043C33 /* ZGMsgMenuPopView.m */; };
+		41BDBBB12216A0DA00043C33 /* ZGMsgCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBB02216A0DA00043C33 /* ZGMsgCountDownView.m */; };
+		41BDBBB42216A11500043C33 /* ZGMsgBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBB32216A11500043C33 /* ZGMsgBottomView.m */; };
+		41BDBBB72216C52A00043C33 /* ZGReportPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBB62216C52A00043C33 /* ZGReportPopView.m */; };
+		41BDBBBA2217DC3800043C33 /* ZGAlertPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BDBBB92217DC3800043C33 /* ZGAlertPopView.m */; };
+		41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */; };
+		41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA13217496A900D0DE9B /* audioClipTest.m4a */; };
+		41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */; };
+		41CDAA512176048600D0DE9B /* ZGBezierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CDAA502176048600D0DE9B /* ZGBezierController.m */; };
+		41D0A99D21C2707800BD543C /* ZGTextCollectionviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0A99C21C2707800BD543C /* ZGTextCollectionviewController.m */; };
+		41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0A99F21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m */; };
+		41D0A9A621C3586E00BD543C /* ZGTextFixCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0A9A521C3586E00BD543C /* ZGTextFixCollectionViewCell.m */; };
+		41D439B021A68EBB00C16FCA /* ZGAssertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D439AF21A68EBB00C16FCA /* ZGAssertController.m */; };
+		41DEED7B21A6D9910017579A /* export.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DEED7A21A6D9910017579A /* export.plist */; };
+		41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE518C218989C400F17BF5 /* ZGExposureCell.m */; };
+		41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE519C218B138900F17BF5 /* ZGExposureManager.m */; };
+		6E315BDC31DCCCC5930B0BEC /* libPods-ZGTextProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */; };
+		7222110966F2E76124B0BAC9 /* libPods-ZGTextProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
 		EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */; };
 		EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E220AE6E310023B282 /* ZGNavTestController.m */; };
@@ -243,6 +330,173 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19BE1B45B0B6A1FF1F99AF3B /* Pods-ZGTextProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjUITests/Pods-ZGTextProjUITests.release.xcconfig"; sourceTree = "<group>"; };
+		213D48EC0B318889D325B619 /* Pods-ZGTextProjTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjTests/Pods-ZGTextProjTests.release.xcconfig"; sourceTree = "<group>"; };
+		4110F9252213F4B6006B9CEF /* ZGTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTabBarController.h; sourceTree = "<group>"; };
+		4110F9262213F4B6006B9CEF /* ZGTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTabBarController.m; sourceTree = "<group>"; };
+		4110F92822141333006B9CEF /* ZGTabBarContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTabBarContentView.h; sourceTree = "<group>"; };
+		4110F92922141333006B9CEF /* ZGTabBarContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTabBarContentView.m; sourceTree = "<group>"; };
+		4110F92B221418AD006B9CEF /* ZGTabBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTabBarButton.h; sourceTree = "<group>"; };
+		4110F92C221418AD006B9CEF /* ZGTabBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTabBarButton.m; sourceTree = "<group>"; };
+		411B2BE8215B7275009747D8 /* ZGFontController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFontController.h; sourceTree = "<group>"; };
+		411B2BE9215B7275009747D8 /* ZGFontController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFontController.m; sourceTree = "<group>"; };
+		411B2BEC215B734E009747D8 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
+		411B2BED215B734E009747D8 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		411B2BEE215B734E009747D8 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		411B2BEF215B734E009747D8 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		411B2BF0215B734E009747D8 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		411B2BF1215B734F009747D8 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4137F2C12190209C003B6D60 /* ZGWeakSetterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWeakSetterModel.h; sourceTree = "<group>"; };
+		4137F2C22190209C003B6D60 /* ZGWeakSetterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWeakSetterModel.m; sourceTree = "<group>"; };
+		4137F2EA2192B92E003B6D60 /* ZGPhotoPickController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPhotoPickController.h; sourceTree = "<group>"; };
+		4137F2EB2192B92E003B6D60 /* ZGPhotoPickController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPhotoPickController.m; sourceTree = "<group>"; };
+		4137F2ED2192BA71003B6D60 /* ZGPHVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPHVideoCell.h; sourceTree = "<group>"; };
+		4137F2EE2192BA71003B6D60 /* ZGPHVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPHVideoCell.m; sourceTree = "<group>"; };
+		4137F2F02192BB2B003B6D60 /* ZGPHResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPHResourceManager.h; sourceTree = "<group>"; };
+		4137F2F12192BB2B003B6D60 /* ZGPHResourceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPHResourceManager.m; sourceTree = "<group>"; };
+		4151344721F7111F0054D972 /* ZGAudioRmoteControlController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioRmoteControlController.h; sourceTree = "<group>"; };
+		4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAudioRmoteControlController.m; sourceTree = "<group>"; };
+		4151344E21F8734E0054D972 /* ZGIMDesignController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMDesignController.h; sourceTree = "<group>"; };
+		4151344F21F8734E0054D972 /* ZGIMDesignController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMDesignController.m; sourceTree = "<group>"; };
+		415D8B2D2181C851000A8213 /* AutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoScrollLabel.m; sourceTree = "<group>"; };
+		415D8B2E2181C851000A8213 /* AutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoScrollLabel.h; sourceTree = "<group>"; };
+		415D8B312181C872000A8213 /* ZGAutoScrollLabelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAutoScrollLabelController.h; sourceTree = "<group>"; };
+		415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAutoScrollLabelController.m; sourceTree = "<group>"; };
+		415D8B352181F6F9000A8213 /* ZGAutoScrollLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAutoScrollLabel.h; sourceTree = "<group>"; };
+		415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAutoScrollLabel.m; sourceTree = "<group>"; };
+		417115B021AB93130068079B /* ZGIMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMessageController.h; sourceTree = "<group>"; };
+		417115B121AB93130068079B /* ZGIMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMessageController.m; sourceTree = "<group>"; };
+		417115B721AD4E2D0068079B /* ZGWebKitTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWebKitTestController.h; sourceTree = "<group>"; };
+		417115B821AD4E2D0068079B /* ZGWebKitTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWebKitTestController.m; sourceTree = "<group>"; };
+		417115BA21AE7C910068079B /* ZGWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWKWebViewController.h; sourceTree = "<group>"; };
+		417115BB21AE7C910068079B /* ZGWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWKWebViewController.m; sourceTree = "<group>"; };
+		417115BD21AE8E0B0068079B /* ZGWKWebNoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWKWebNoDataView.h; sourceTree = "<group>"; };
+		417115BE21AE8E0B0068079B /* ZGWKWebNoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWKWebNoDataView.m; sourceTree = "<group>"; };
+		4174DD8B21DC9C29007C89E6 /* ZGAVAudioQueueController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioQueueController.h; sourceTree = "<group>"; };
+		4174DD8C21DC9C29007C89E6 /* ZGAVAudioQueueController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAVAudioQueueController.m; sourceTree = "<group>"; };
+		4174DD8E21DC9C81007C89E6 /* ZGAVAudioUnitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioUnitController.h; sourceTree = "<group>"; };
+		4174DD8F21DC9C81007C89E6 /* ZGAVAudioUnitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAVAudioUnitController.m; sourceTree = "<group>"; };
+		4174DD9121DCB46A007C89E6 /* AudioQueueRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioQueueRecorder.h; sourceTree = "<group>"; };
+		4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueueRecorder.m; sourceTree = "<group>"; };
+		4174DD9421DCBC89007C89E6 /* AudioQueuePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioQueuePlayer.h; sourceTree = "<group>"; };
+		4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueuePlayer.m; sourceTree = "<group>"; };
+		417EBCA7221A4D0900E86D8D /* ZGChatTextInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTextInputView.h; sourceTree = "<group>"; };
+		417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTextInputView.m; sourceTree = "<group>"; };
+		417EBCAB221A4D7300E86D8D /* ZGChatBaseBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatBaseBubbleView.h; sourceTree = "<group>"; };
+		417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatBaseBubbleView.m; sourceTree = "<group>"; };
+		417EBCAE221A4D8600E86D8D /* ZGChatTextBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTextBubbleView.h; sourceTree = "<group>"; };
+		417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTextBubbleView.m; sourceTree = "<group>"; };
+		417EBCB1221A4D9400E86D8D /* ZGChatAudioBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatAudioBubbleView.h; sourceTree = "<group>"; };
+		417EBCB2221A4D9400E86D8D /* ZGChatAudioBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatAudioBubbleView.m; sourceTree = "<group>"; };
+		417EBCB4221A4E4900E86D8D /* ZGChatBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatBaseCell.h; sourceTree = "<group>"; };
+		417EBCB5221A4E4900E86D8D /* ZGChatBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatBaseCell.m; sourceTree = "<group>"; };
+		417EBCB7221A4E8800E86D8D /* ZGChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatCell.h; sourceTree = "<group>"; };
+		417EBCB8221A4E8800E86D8D /* ZGChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatCell.m; sourceTree = "<group>"; };
+		417EBCBA221A4EA200E86D8D /* ZGChatTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTimeCell.h; sourceTree = "<group>"; };
+		417EBCBB221A4EA200E86D8D /* ZGChatTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTimeCell.m; sourceTree = "<group>"; };
+		417EBCBD221A4EE300E86D8D /* ZGChatUndefineTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatUndefineTypeCell.h; sourceTree = "<group>"; };
+		417EBCBE221A4EE300E86D8D /* ZGChatUndefineTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatUndefineTypeCell.m; sourceTree = "<group>"; };
+		417EBCC0221A4F2100E86D8D /* ZGChatMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatMessageModel.h; sourceTree = "<group>"; };
+		417EBCC1221A4F2100E86D8D /* ZGChatMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatMessageModel.m; sourceTree = "<group>"; };
+		417EBCC3221A556800E86D8D /* ZGChatConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatConst.h; sourceTree = "<group>"; };
+		417EBCC4221A556800E86D8D /* ZGChatConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatConst.m; sourceTree = "<group>"; };
+		417EBCC6221A84C500E86D8D /* ZGChatInputInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatInputInfoModel.h; sourceTree = "<group>"; };
+		417EBCC7221A84C500E86D8D /* ZGChatInputInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatInputInfoModel.m; sourceTree = "<group>"; };
+		417EBD46221EA7C700E86D8D /* ZGChatTipMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTipMessageCell.h; sourceTree = "<group>"; };
+		417EBD47221EA7C700E86D8D /* ZGChatTipMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTipMessageCell.m; sourceTree = "<group>"; };
+		417EBD49221EAA9800E86D8D /* ZGChatTipMesageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTipMesageModel.h; sourceTree = "<group>"; };
+		417EBD4A221EAA9800E86D8D /* ZGChatTipMesageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTipMesageModel.m; sourceTree = "<group>"; };
+		417EBD4F221ED5BB00E86D8D /* ZGChatRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatRefreshHeader.h; sourceTree = "<group>"; };
+		417EBD50221ED5BB00E86D8D /* ZGChatRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatRefreshHeader.m; sourceTree = "<group>"; };
+		417F201621F0643600471B03 /* singing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = singing.wav; sourceTree = "<group>"; };
+		417F201C21F0647C00471B03 /* fmod_player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fmod_player.cpp; sourceTree = "<group>"; };
+		417F201D21F0647C00471B03 /* fmod_player_effect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_player_effect.hpp; sourceTree = "<group>"; };
+		417F201E21F0647C00471B03 /* FMAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMAudioPlayer.h; sourceTree = "<group>"; };
+		417F201F21F0647C00471B03 /* fmod_player_effect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fmod_player_effect.cpp; sourceTree = "<group>"; };
+		417F202021F0647C00471B03 /* FMAudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FMAudioPlayer.mm; sourceTree = "<group>"; };
+		417F202121F0647C00471B03 /* fmod_player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_player.hpp; sourceTree = "<group>"; };
+		417F202821F0648900471B03 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
+		417F202921F0648900471B03 /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
+		417F202A21F0648900471B03 /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
+		417F202B21F0648900471B03 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
+		417F202C21F0648900471B03 /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
+		417F202D21F0648900471B03 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
+		417F202E21F0648900471B03 /* fmod_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_ios.h; sourceTree = "<group>"; };
+		417F202F21F0648900471B03 /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
+		417F203021F0648900471B03 /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
+		417F203221F0648900471B03 /* libfmod_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphonesimulator.a; sourceTree = "<group>"; };
+		417F203321F0648900471B03 /* libfmodL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphonesimulator.a; sourceTree = "<group>"; };
+		417F203421F0648900471B03 /* libfmodL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphoneos.a; sourceTree = "<group>"; };
+		417F203521F0648900471B03 /* libfmod_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphoneos.a; sourceTree = "<group>"; };
+		417F203A21F064A500471B03 /* ZGFmodDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFmodDemoController.h; sourceTree = "<group>"; };
+		417F203B21F064A500471B03 /* ZGFmodDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFmodDemoController.m; sourceTree = "<group>"; };
+		417F203D21F064CA00471B03 /* ZGBottomToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGBottomToolBar.m; sourceTree = "<group>"; };
+		417F203E21F064CA00471B03 /* ZGBottomToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGBottomToolBar.h; sourceTree = "<group>"; };
+		417F204021F064D900471B03 /* ZGRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGRecorder.h; sourceTree = "<group>"; };
+		417F204121F064D900471B03 /* ZGRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGRecorder.m; sourceTree = "<group>"; };
+		417F204921F1674D00471B03 /* ZGAudioConvertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioConvertController.h; sourceTree = "<group>"; };
+		417F204A21F1674D00471B03 /* ZGAudioConvertController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ZGAudioConvertController.mm; sourceTree = "<group>"; };
+		417F204C21F167CE00471B03 /* ZGFAACWav2AAc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ZGFAACWav2AAc.cpp; sourceTree = "<group>"; };
+		417F204D21F167CE00471B03 /* ZGFAACWav2AAc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ZGFAACWav2AAc.hpp; sourceTree = "<group>"; };
+		417F205221F169E400471B03 /* faac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faac.h; sourceTree = "<group>"; };
+		417F205321F169E400471B03 /* faaccfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faaccfg.h; sourceTree = "<group>"; };
+		417F205521F169E400471B03 /* libfaac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfaac.a; sourceTree = "<group>"; };
+		417F205921F169EC00471B03 /* neaacdec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neaacdec.h; sourceTree = "<group>"; };
+		417F205A21F169EC00471B03 /* mp4ff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp4ff.h; sourceTree = "<group>"; };
+		417F205B21F169EC00471B03 /* mp4ffint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp4ffint.h; sourceTree = "<group>"; };
+		417F205C21F169EC00471B03 /* faad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faad.h; sourceTree = "<group>"; };
+		417F205E21F169EC00471B03 /* libmp4ff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp4ff.a; sourceTree = "<group>"; };
+		417F205F21F169EC00471B03 /* libfaad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfaad.a; sourceTree = "<group>"; };
+		417F206221F16A2700471B03 /* wavreader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wavreader.c; sourceTree = "<group>"; };
+		417F206321F16A2700471B03 /* wavreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wavreader.h; sourceTree = "<group>"; };
+		417F206521F16A3700471B03 /* MZCodec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MZCodec.hpp; sourceTree = "<group>"; };
+		417F206621F16A3700471B03 /* MZCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MZCodec.cpp; sourceTree = "<group>"; };
+		417F206921F17C4800471B03 /* gamesound.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = gamesound.aac; sourceTree = "<group>"; };
+		4189406721798637008C13D8 /* YGRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordView.h; sourceTree = "<group>"; };
+		4189406821798637008C13D8 /* YGRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordView.m; sourceTree = "<group>"; };
+		418E959021E4CF1A00349982 /* testZong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = testZong.wav; sourceTree = "<group>"; };
+		41BDBB8D22157A9500043C33 /* intro_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro_0.jpg; sourceTree = "<group>"; };
+		41BDBB8E22157A9500043C33 /* intro_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro_1.jpg; sourceTree = "<group>"; };
+		41BDBB8F22157A9500043C33 /* intro_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro_3.jpg; sourceTree = "<group>"; };
+		41BDBB9022157A9500043C33 /* intro_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro_2.jpg; sourceTree = "<group>"; };
+		41BDBB9522157AA400043C33 /* LMJIntroductoryPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJIntroductoryPagesView.m; sourceTree = "<group>"; };
+		41BDBB9622157AA400043C33 /* LMJIntroductoryPagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJIntroductoryPagesHelper.m; sourceTree = "<group>"; };
+		41BDBB9722157AA400043C33 /* LMJIntroductoryPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJIntroductoryPagesView.h; sourceTree = "<group>"; };
+		41BDBB9822157AA400043C33 /* LMJIntroductoryPagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJIntroductoryPagesHelper.h; sourceTree = "<group>"; };
+		41BDBBAC2216A0BF00043C33 /* ZGMsgMenuPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMsgMenuPopView.h; sourceTree = "<group>"; };
+		41BDBBAD2216A0BF00043C33 /* ZGMsgMenuPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMsgMenuPopView.m; sourceTree = "<group>"; };
+		41BDBBAF2216A0DA00043C33 /* ZGMsgCountDownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMsgCountDownView.h; sourceTree = "<group>"; };
+		41BDBBB02216A0DA00043C33 /* ZGMsgCountDownView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMsgCountDownView.m; sourceTree = "<group>"; };
+		41BDBBB22216A11500043C33 /* ZGMsgBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMsgBottomView.h; sourceTree = "<group>"; };
+		41BDBBB32216A11500043C33 /* ZGMsgBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMsgBottomView.m; sourceTree = "<group>"; };
+		41BDBBB52216C52A00043C33 /* ZGReportPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGReportPopView.h; sourceTree = "<group>"; };
+		41BDBBB62216C52A00043C33 /* ZGReportPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGReportPopView.m; sourceTree = "<group>"; };
+		41BDBBB82217DC3800043C33 /* ZGAlertPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAlertPopView.h; sourceTree = "<group>"; };
+		41BDBBB92217DC3800043C33 /* ZGAlertPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAlertPopView.m; sourceTree = "<group>"; };
+		41CDAA102174910300D0DE9B /* ZGAVAudioClipController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAVAudioClipController.h; sourceTree = "<group>"; };
+		41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAVAudioClipController.m; sourceTree = "<group>"; };
+		41CDAA13217496A900D0DE9B /* audioClipTest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = audioClipTest.m4a; sourceTree = "<group>"; };
+		41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioClipTest2.mp3; sourceTree = "<group>"; };
+		41CDAA4F2176048600D0DE9B /* ZGBezierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBezierController.h; sourceTree = "<group>"; };
+		41CDAA502176048600D0DE9B /* ZGBezierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBezierController.m; sourceTree = "<group>"; };
+		41D0A99B21C2707800BD543C /* ZGTextCollectionviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTextCollectionviewController.h; sourceTree = "<group>"; };
+		41D0A99C21C2707800BD543C /* ZGTextCollectionviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTextCollectionviewController.m; sourceTree = "<group>"; };
+		41D0A99E21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFixItemSpaceFlowLayout.h; sourceTree = "<group>"; };
+		41D0A99F21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFixItemSpaceFlowLayout.m; sourceTree = "<group>"; };
+		41D0A9A421C3586E00BD543C /* ZGTextFixCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTextFixCollectionViewCell.h; sourceTree = "<group>"; };
+		41D0A9A521C3586E00BD543C /* ZGTextFixCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTextFixCollectionViewCell.m; sourceTree = "<group>"; };
+		41D439AE21A68EBB00C16FCA /* ZGAssertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAssertController.h; sourceTree = "<group>"; };
+		41D439AF21A68EBB00C16FCA /* ZGAssertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAssertController.m; sourceTree = "<group>"; };
+		41DEED7A21A6D9910017579A /* export.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = export.plist; sourceTree = "<group>"; };
+		41FE518B218989C400F17BF5 /* ZGExposureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExposureCell.h; sourceTree = "<group>"; };
+		41FE518C218989C400F17BF5 /* ZGExposureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExposureCell.m; sourceTree = "<group>"; };
+		41FE519B218B138900F17BF5 /* ZGExposureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGExposureManager.h; sourceTree = "<group>"; };
+		41FE519C218B138900F17BF5 /* ZGExposureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGExposureManager.m; sourceTree = "<group>"; };
+		6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.release.xcconfig"; sourceTree = "<group>"; };
+		720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjUITests/Pods-ZGTextProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.debug.xcconfig"; sourceTree = "<group>"; };
+		C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProjTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF01D5B220AC08170023B282 /* ZGSafeAreaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSafeAreaController.h; sourceTree = "<group>"; };
 		EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSafeAreaController.m; sourceTree = "<group>"; };
 		EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZGSAExample.storyboard; sourceTree = "<group>"; };
@@ -670,6 +924,8 @@
 		EFFCE4C91F651DB6008E2375 /* ZGHolidayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGHolidayManager.m; sourceTree = "<group>"; };
 		EFFF331B1FFF69600086BE7D /* ZGNoDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNoDataView.h; sourceTree = "<group>"; };
 		EFFF331C1FFF69600086BE7D /* ZGNoDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNoDataView.m; sourceTree = "<group>"; };
+		F7302507167BBB7FEAD1BA85 /* libPods-ZGTextProjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF622BD20AAA07F0741174C9 /* Pods-ZGTextProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjTests/Pods-ZGTextProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -677,6 +933,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417F203721F0648900471B03 /* libfmodL_iphonesimulator.a in Frameworks */,
+				417F203821F0648900471B03 /* libfmodL_iphoneos.a in Frameworks */,
+				417F203921F0648900471B03 /* libfmod_iphoneos.a in Frameworks */,
+				417F206021F169EC00471B03 /* libmp4ff.a in Frameworks */,
+				417F203621F0648900471B03 /* libfmod_iphonesimulator.a in Frameworks */,
+				417F205621F169E400471B03 /* libfaac.a in Frameworks */,
+				417F206121F169EC00471B03 /* libfaad.a in Frameworks */,
+				6E315BDC31DCCCC5930B0BEC /* libPods-ZGTextProj.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +948,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7222110966F2E76124B0BAC9 /* libPods-ZGTextProjTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,12 +956,880 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BEEAA5B6C55954C57254FBD /* libPods-ZGTextProjUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24CC7C66BCA6D3A9E2D0CAA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */,
+				6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */,
+				FF622BD20AAA07F0741174C9 /* Pods-ZGTextProjTests.debug.xcconfig */,
+				213D48EC0B318889D325B619 /* Pods-ZGTextProjTests.release.xcconfig */,
+				720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */,
+				19BE1B45B0B6A1FF1F99AF3B /* Pods-ZGTextProjUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4110F9212213F48B006B9CEF /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				4110F9222213F48B006B9CEF /* Controller */,
+				4110F9232213F48B006B9CEF /* Model */,
+				4110F9242213F48B006B9CEF /* View */,
+			);
+			path = UITabBarController;
+			sourceTree = "<group>";
+		};
+		4110F9222213F48B006B9CEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4110F9252213F4B6006B9CEF /* ZGTabBarController.h */,
+				4110F9262213F4B6006B9CEF /* ZGTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4110F9232213F48B006B9CEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4110F9242213F48B006B9CEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4110F92822141333006B9CEF /* ZGTabBarContentView.h */,
+				4110F92922141333006B9CEF /* ZGTabBarContentView.m */,
+				4110F92B221418AD006B9CEF /* ZGTabBarButton.h */,
+				4110F92C221418AD006B9CEF /* ZGTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		411B2BE4215B7264009747D8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				411B2BEB215B72ED009747D8 /* Source */,
+				411B2BE5215B7264009747D8 /* Controller */,
+				411B2BE6215B7264009747D8 /* Model */,
+				411B2BE7215B7264009747D8 /* View */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		411B2BE5215B7264009747D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				411B2BE8215B7275009747D8 /* ZGFontController.h */,
+				411B2BE9215B7275009747D8 /* ZGFontController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		411B2BE6215B7264009747D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41FE5191218AF8D100F17BF5 /* ZGExposure */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		411B2BE7215B7264009747D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41FE518B218989C400F17BF5 /* ZGExposureCell.h */,
+				41FE518C218989C400F17BF5 /* ZGExposureCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		411B2BEB215B72ED009747D8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				411B2BEC215B734E009747D8 /* Cairo-Black.ttf */,
+				411B2BF0215B734E009747D8 /* Cairo-Bold.ttf */,
+				411B2BF1215B734F009747D8 /* Cairo-ExtraLight.ttf */,
+				411B2BED215B734E009747D8 /* Cairo-Light.ttf */,
+				411B2BEE215B734E009747D8 /* Cairo-Regular.ttf */,
+				411B2BEF215B734E009747D8 /* Cairo-SemiBold.ttf */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4137F2C021902083003B6D60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4137F2C12190209C003B6D60 /* ZGWeakSetterModel.h */,
+				4137F2C22190209C003B6D60 /* ZGWeakSetterModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4137F2E62192B90F003B6D60 /* PhotoKit */ = {
+			isa = PBXGroup;
+			children = (
+				4137F2E72192B90F003B6D60 /* Controller */,
+				4137F2E82192B90F003B6D60 /* Model */,
+				4137F2E92192B90F003B6D60 /* View */,
+			);
+			path = PhotoKit;
+			sourceTree = "<group>";
+		};
+		4137F2E72192B90F003B6D60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4137F2EA2192B92E003B6D60 /* ZGPhotoPickController.h */,
+				4137F2EB2192B92E003B6D60 /* ZGPhotoPickController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4137F2E82192B90F003B6D60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4137F2F02192BB2B003B6D60 /* ZGPHResourceManager.h */,
+				4137F2F12192BB2B003B6D60 /* ZGPHResourceManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4137F2E92192B90F003B6D60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4137F2ED2192BA71003B6D60 /* ZGPHVideoCell.h */,
+				4137F2EE2192BA71003B6D60 /* ZGPHVideoCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4151344321F710FD0054D972 /* AudioRemoteControl */ = {
+			isa = PBXGroup;
+			children = (
+				4151344421F710FD0054D972 /* Controller */,
+				4151344521F710FD0054D972 /* Model */,
+				4151344621F710FD0054D972 /* View */,
+			);
+			path = AudioRemoteControl;
+			sourceTree = "<group>";
+		};
+		4151344421F710FD0054D972 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4151344721F7111F0054D972 /* ZGAudioRmoteControlController.h */,
+				4151344821F7111F0054D972 /* ZGAudioRmoteControlController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4151344521F710FD0054D972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4151344621F710FD0054D972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4151344A21F8733C0054D972 /* IMDesign */ = {
+			isa = PBXGroup;
+			children = (
+				4151344B21F8733C0054D972 /* Controller */,
+				4151344C21F8733C0054D972 /* Model */,
+				4151344D21F8733C0054D972 /* View */,
+			);
+			path = IMDesign;
+			sourceTree = "<group>";
+		};
+		4151344B21F8733C0054D972 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4151344E21F8734E0054D972 /* ZGIMDesignController.h */,
+				4151344F21F8734E0054D972 /* ZGIMDesignController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4151344C21F8733C0054D972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				417EBCC0221A4F2100E86D8D /* ZGChatMessageModel.h */,
+				417EBCC1221A4F2100E86D8D /* ZGChatMessageModel.m */,
+				417EBCC6221A84C500E86D8D /* ZGChatInputInfoModel.h */,
+				417EBCC7221A84C500E86D8D /* ZGChatInputInfoModel.m */,
+				417EBD49221EAA9800E86D8D /* ZGChatTipMesageModel.h */,
+				417EBD4A221EAA9800E86D8D /* ZGChatTipMesageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4151344D21F8733C0054D972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41BDBB9C22169F2400043C33 /* MsgCell */,
+				41BDBB9B22169F2400043C33 /* referenceView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		415D8B2A2181C845000A8213 /* AutoScrollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				4137F2C021902083003B6D60 /* Model */,
+				415D8B302181C864000A8213 /* Controller */,
+				415D8B2B2181C845000A8213 /* View */,
+			);
+			path = AutoScrollLabel;
+			sourceTree = "<group>";
+		};
+		415D8B2B2181C845000A8213 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				415D8B342181F6AC000A8213 /* ZGAutoScrollLabel */,
+				415D8B2C2181C851000A8213 /* AutoScrollLabel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		415D8B2C2181C851000A8213 /* AutoScrollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				415D8B2D2181C851000A8213 /* AutoScrollLabel.m */,
+				415D8B2E2181C851000A8213 /* AutoScrollLabel.h */,
+			);
+			path = AutoScrollLabel;
+			sourceTree = "<group>";
+		};
+		415D8B302181C864000A8213 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				415D8B312181C872000A8213 /* ZGAutoScrollLabelController.h */,
+				415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		415D8B342181F6AC000A8213 /* ZGAutoScrollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				415D8B352181F6F9000A8213 /* ZGAutoScrollLabel.h */,
+				415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */,
+			);
+			path = ZGAutoScrollLabel;
+			sourceTree = "<group>";
+		};
+		417115AC21AB92F00068079B /* IMessage */ = {
+			isa = PBXGroup;
+			children = (
+				417115AD21AB92F00068079B /* Controller */,
+				417115AE21AB92F00068079B /* Model */,
+				417115AF21AB92F00068079B /* View */,
+			);
+			path = IMessage;
+			sourceTree = "<group>";
+		};
+		417115AD21AB92F00068079B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				417115B021AB93130068079B /* ZGIMessageController.h */,
+				417115B121AB93130068079B /* ZGIMessageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		417115AE21AB92F00068079B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417115AF21AB92F00068079B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417115B321AD4E1C0068079B /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				417115B421AD4E1C0068079B /* Controller */,
+				417115B521AD4E1C0068079B /* Model */,
+				417115B621AD4E1C0068079B /* View */,
+			);
+			path = WebKit;
+			sourceTree = "<group>";
+		};
+		417115B421AD4E1C0068079B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				417115B721AD4E2D0068079B /* ZGWebKitTestController.h */,
+				417115B821AD4E2D0068079B /* ZGWebKitTestController.m */,
+				417115BA21AE7C910068079B /* ZGWKWebViewController.h */,
+				417115BB21AE7C910068079B /* ZGWKWebViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		417115B521AD4E1C0068079B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417115B621AD4E1C0068079B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				417115BD21AE8E0B0068079B /* ZGWKWebNoDataView.h */,
+				417115BE21AE8E0B0068079B /* ZGWKWebNoDataView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4174DD8221DC9BCC007C89E6 /* AVAudio */ = {
+			isa = PBXGroup;
+			children = (
+				4151344321F710FD0054D972 /* AudioRemoteControl */,
+				417F204521F1673B00471B03 /* AudioConvert */,
+				4174DD8321DC9BCC007C89E6 /* AVAudioUnit */,
+				4174DD8721DC9BCC007C89E6 /* AVAudioQueue */,
+			);
+			path = AVAudio;
+			sourceTree = "<group>";
+		};
+		4174DD8321DC9BCC007C89E6 /* AVAudioUnit */ = {
+			isa = PBXGroup;
+			children = (
+				4174DD8421DC9BCC007C89E6 /* Controller */,
+				4174DD8521DC9BCC007C89E6 /* Model */,
+				4174DD8621DC9BCC007C89E6 /* View */,
+			);
+			path = AVAudioUnit;
+			sourceTree = "<group>";
+		};
+		4174DD8421DC9BCC007C89E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4174DD8E21DC9C81007C89E6 /* ZGAVAudioUnitController.h */,
+				4174DD8F21DC9C81007C89E6 /* ZGAVAudioUnitController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4174DD8521DC9BCC007C89E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4174DD8621DC9BCC007C89E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4174DD8721DC9BCC007C89E6 /* AVAudioQueue */ = {
+			isa = PBXGroup;
+			children = (
+				4174DD8821DC9BCC007C89E6 /* Controller */,
+				4174DD8921DC9BCC007C89E6 /* Model */,
+				4174DD8A21DC9BCC007C89E6 /* View */,
+			);
+			path = AVAudioQueue;
+			sourceTree = "<group>";
+		};
+		4174DD8821DC9BCC007C89E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4174DD8B21DC9C29007C89E6 /* ZGAVAudioQueueController.h */,
+				4174DD8C21DC9C29007C89E6 /* ZGAVAudioQueueController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4174DD8921DC9BCC007C89E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4174DD9121DCB46A007C89E6 /* AudioQueueRecorder.h */,
+				4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */,
+				4174DD9421DCBC89007C89E6 /* AudioQueuePlayer.h */,
+				4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4174DD8A21DC9BCC007C89E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417EBCAA221A4D5D00E86D8D /* BubbleView */ = {
+			isa = PBXGroup;
+			children = (
+				417EBCAB221A4D7300E86D8D /* ZGChatBaseBubbleView.h */,
+				417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */,
+				417EBCAE221A4D8600E86D8D /* ZGChatTextBubbleView.h */,
+				417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */,
+				417EBCB1221A4D9400E86D8D /* ZGChatAudioBubbleView.h */,
+				417EBCB2221A4D9400E86D8D /* ZGChatAudioBubbleView.m */,
+			);
+			path = BubbleView;
+			sourceTree = "<group>";
+		};
+		417F201521F0641F00471B03 /* FmodDemo */ = {
+			isa = PBXGroup;
+			children = (
+				417F202521F0648900471B03 /* OpenSource */,
+				417F201B21F0647C00471B03 /* FMAudioPlayer */,
+				417F201A21F0646B00471B03 /* Controller */,
+				417F201921F0646400471B03 /* View */,
+				417F201821F0645D00471B03 /* Model */,
+			);
+			path = FmodDemo;
+			sourceTree = "<group>";
+		};
+		417F201821F0645D00471B03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				417F204021F064D900471B03 /* ZGRecorder.h */,
+				417F204121F064D900471B03 /* ZGRecorder.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417F201921F0646400471B03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				417F203E21F064CA00471B03 /* ZGBottomToolBar.h */,
+				417F203D21F064CA00471B03 /* ZGBottomToolBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417F201A21F0646B00471B03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				417F203A21F064A500471B03 /* ZGFmodDemoController.h */,
+				417F203B21F064A500471B03 /* ZGFmodDemoController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		417F201B21F0647C00471B03 /* FMAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				417F201C21F0647C00471B03 /* fmod_player.cpp */,
+				417F201D21F0647C00471B03 /* fmod_player_effect.hpp */,
+				417F201E21F0647C00471B03 /* FMAudioPlayer.h */,
+				417F201F21F0647C00471B03 /* fmod_player_effect.cpp */,
+				417F202021F0647C00471B03 /* FMAudioPlayer.mm */,
+				417F202121F0647C00471B03 /* fmod_player.hpp */,
+			);
+			path = FMAudioPlayer;
+			sourceTree = "<group>";
+		};
+		417F202521F0648900471B03 /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				417F202621F0648900471B03 /* FMOD */,
+			);
+			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		417F202621F0648900471B03 /* FMOD */ = {
+			isa = PBXGroup;
+			children = (
+				417F202721F0648900471B03 /* inc */,
+				417F203121F0648900471B03 /* lib */,
+			);
+			path = FMOD;
+			sourceTree = "<group>";
+		};
+		417F202721F0648900471B03 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				417F202821F0648900471B03 /* fmod_output.h */,
+				417F202921F0648900471B03 /* fmod_dsp.h */,
+				417F202A21F0648900471B03 /* fmod_errors.h */,
+				417F202B21F0648900471B03 /* fmod.h */,
+				417F202C21F0648900471B03 /* fmod_codec.h */,
+				417F202D21F0648900471B03 /* fmod.hpp */,
+				417F202E21F0648900471B03 /* fmod_ios.h */,
+				417F202F21F0648900471B03 /* fmod_common.h */,
+				417F203021F0648900471B03 /* fmod_dsp_effects.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		417F203121F0648900471B03 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				417F203221F0648900471B03 /* libfmod_iphonesimulator.a */,
+				417F203321F0648900471B03 /* libfmodL_iphonesimulator.a */,
+				417F203421F0648900471B03 /* libfmodL_iphoneos.a */,
+				417F203521F0648900471B03 /* libfmod_iphoneos.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		417F204521F1673B00471B03 /* AudioConvert */ = {
+			isa = PBXGroup;
+			children = (
+				417F204F21F169CC00471B03 /* FAAC */,
+				417F204621F1673B00471B03 /* Controller */,
+				417F204721F1673B00471B03 /* Model */,
+				417F204821F1673B00471B03 /* View */,
+			);
+			path = AudioConvert;
+			sourceTree = "<group>";
+		};
+		417F204621F1673B00471B03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				417F204921F1674D00471B03 /* ZGAudioConvertController.h */,
+				417F204A21F1674D00471B03 /* ZGAudioConvertController.mm */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		417F204721F1673B00471B03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				417F206621F16A3700471B03 /* MZCodec.cpp */,
+				417F206521F16A3700471B03 /* MZCodec.hpp */,
+				417F206221F16A2700471B03 /* wavreader.c */,
+				417F206321F16A2700471B03 /* wavreader.h */,
+				417F204C21F167CE00471B03 /* ZGFAACWav2AAc.cpp */,
+				417F204D21F167CE00471B03 /* ZGFAACWav2AAc.hpp */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		417F204821F1673B00471B03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		417F204F21F169CC00471B03 /* FAAC */ = {
+			isa = PBXGroup;
+			children = (
+				417F205721F169EC00471B03 /* faad */,
+				417F205021F169E400471B03 /* faac */,
+			);
+			path = FAAC;
+			sourceTree = "<group>";
+		};
+		417F205021F169E400471B03 /* faac */ = {
+			isa = PBXGroup;
+			children = (
+				417F205121F169E400471B03 /* include */,
+				417F205421F169E400471B03 /* lib */,
+			);
+			path = faac;
+			sourceTree = "<group>";
+		};
+		417F205121F169E400471B03 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				417F205221F169E400471B03 /* faac.h */,
+				417F205321F169E400471B03 /* faaccfg.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		417F205421F169E400471B03 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				417F205521F169E400471B03 /* libfaac.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		417F205721F169EC00471B03 /* faad */ = {
+			isa = PBXGroup;
+			children = (
+				417F205821F169EC00471B03 /* include */,
+				417F205D21F169EC00471B03 /* lib */,
+			);
+			path = faad;
+			sourceTree = "<group>";
+		};
+		417F205821F169EC00471B03 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				417F205921F169EC00471B03 /* neaacdec.h */,
+				417F205A21F169EC00471B03 /* mp4ff.h */,
+				417F205B21F169EC00471B03 /* mp4ffint.h */,
+				417F205C21F169EC00471B03 /* faad.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		417F205D21F169EC00471B03 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				417F205E21F169EC00471B03 /* libmp4ff.a */,
+				417F205F21F169EC00471B03 /* libfaad.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		41BDBB872215786A00043C33 /* welcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				41BDBB8B22157A8100043C33 /* LMPWelcome */,
+				41BDBB882215786A00043C33 /* Controller */,
+				41BDBB892215786A00043C33 /* Model */,
+				41BDBB8A2215786A00043C33 /* View */,
+			);
+			path = welcomePage;
+			sourceTree = "<group>";
+		};
+		41BDBB882215786A00043C33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41BDBB892215786A00043C33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41BDBB8A2215786A00043C33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41BDBB8B22157A8100043C33 /* LMPWelcome */ = {
+			isa = PBXGroup;
+			children = (
+				41BDBB9822157AA400043C33 /* LMJIntroductoryPagesHelper.h */,
+				41BDBB9622157AA400043C33 /* LMJIntroductoryPagesHelper.m */,
+				41BDBB9722157AA400043C33 /* LMJIntroductoryPagesView.h */,
+				41BDBB9522157AA400043C33 /* LMJIntroductoryPagesView.m */,
+				41BDBB8C22157A9500043C33 /* PLMMPRIKImages */,
+			);
+			path = LMPWelcome;
+			sourceTree = "<group>";
+		};
+		41BDBB8C22157A9500043C33 /* PLMMPRIKImages */ = {
+			isa = PBXGroup;
+			children = (
+				41BDBB8D22157A9500043C33 /* intro_0.jpg */,
+				41BDBB8E22157A9500043C33 /* intro_1.jpg */,
+				41BDBB8F22157A9500043C33 /* intro_3.jpg */,
+				41BDBB9022157A9500043C33 /* intro_2.jpg */,
+			);
+			path = PLMMPRIKImages;
+			sourceTree = "<group>";
+		};
+		41BDBB9B22169F2400043C33 /* referenceView */ = {
+			isa = PBXGroup;
+			children = (
+				41BDBBAC2216A0BF00043C33 /* ZGMsgMenuPopView.h */,
+				41BDBBAD2216A0BF00043C33 /* ZGMsgMenuPopView.m */,
+				41BDBBAF2216A0DA00043C33 /* ZGMsgCountDownView.h */,
+				41BDBBB02216A0DA00043C33 /* ZGMsgCountDownView.m */,
+				41BDBBB22216A11500043C33 /* ZGMsgBottomView.h */,
+				41BDBBB32216A11500043C33 /* ZGMsgBottomView.m */,
+				41BDBBB52216C52A00043C33 /* ZGReportPopView.h */,
+				41BDBBB62216C52A00043C33 /* ZGReportPopView.m */,
+				41BDBBB82217DC3800043C33 /* ZGAlertPopView.h */,
+				41BDBBB92217DC3800043C33 /* ZGAlertPopView.m */,
+				417EBCA7221A4D0900E86D8D /* ZGChatTextInputView.h */,
+				417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */,
+				417EBD4F221ED5BB00E86D8D /* ZGChatRefreshHeader.h */,
+				417EBD50221ED5BB00E86D8D /* ZGChatRefreshHeader.m */,
+			);
+			path = referenceView;
+			sourceTree = "<group>";
+		};
+		41BDBB9C22169F2400043C33 /* MsgCell */ = {
+			isa = PBXGroup;
+			children = (
+				417EBCAA221A4D5D00E86D8D /* BubbleView */,
+				417EBCB4221A4E4900E86D8D /* ZGChatBaseCell.h */,
+				417EBCB5221A4E4900E86D8D /* ZGChatBaseCell.m */,
+				417EBCB7221A4E8800E86D8D /* ZGChatCell.h */,
+				417EBCB8221A4E8800E86D8D /* ZGChatCell.m */,
+				417EBCBA221A4EA200E86D8D /* ZGChatTimeCell.h */,
+				417EBCBB221A4EA200E86D8D /* ZGChatTimeCell.m */,
+				417EBCBD221A4EE300E86D8D /* ZGChatUndefineTypeCell.h */,
+				417EBCBE221A4EE300E86D8D /* ZGChatUndefineTypeCell.m */,
+				417EBCC3221A556800E86D8D /* ZGChatConst.h */,
+				417EBCC4221A556800E86D8D /* ZGChatConst.m */,
+				417EBD46221EA7C700E86D8D /* ZGChatTipMessageCell.h */,
+				417EBD47221EA7C700E86D8D /* ZGChatTipMessageCell.m */,
+			);
+			path = MsgCell;
+			sourceTree = "<group>";
+		};
+		41CDAA1521749C3600D0DE9B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				41CDAA1621749C4800D0DE9B /* audioClipTest2.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		41CDAA4B2176046900D0DE9B /* BezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				41CDAA4C2176046900D0DE9B /* Controller */,
+				41CDAA4D2176046900D0DE9B /* Model */,
+				41CDAA4E2176046900D0DE9B /* View */,
+			);
+			path = BezierPath;
+			sourceTree = "<group>";
+		};
+		41CDAA4C2176046900D0DE9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41CDAA4F2176048600D0DE9B /* ZGBezierController.h */,
+				41CDAA502176048600D0DE9B /* ZGBezierController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41CDAA4D2176046900D0DE9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41CDAA4E2176046900D0DE9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4189406721798637008C13D8 /* YGRecordView.h */,
+				4189406821798637008C13D8 /* YGRecordView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41D0A99721C2704D00BD543C /* UICollectionview */ = {
+			isa = PBXGroup;
+			children = (
+				41D0A99821C2704D00BD543C /* Controller */,
+				41D0A99921C2704D00BD543C /* Model */,
+				41D0A99A21C2704D00BD543C /* View */,
+			);
+			path = UICollectionview;
+			sourceTree = "<group>";
+		};
+		41D0A99821C2704D00BD543C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41D0A99B21C2707800BD543C /* ZGTextCollectionviewController.h */,
+				41D0A99C21C2707800BD543C /* ZGTextCollectionviewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41D0A99921C2704D00BD543C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41D0A99E21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.h */,
+				41D0A99F21C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41D0A99A21C2704D00BD543C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41D0A9A421C3586E00BD543C /* ZGTextFixCollectionViewCell.h */,
+				41D0A9A521C3586E00BD543C /* ZGTextFixCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41D439AA21A68EA700C16FCA /* Assert */ = {
+			isa = PBXGroup;
+			children = (
+				41D439AB21A68EA700C16FCA /* Controller */,
+				41D439AC21A68EA700C16FCA /* Model */,
+				41D439AD21A68EA700C16FCA /* View */,
+			);
+			path = Assert;
+			sourceTree = "<group>";
+		};
+		41D439AB21A68EA700C16FCA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41D439AE21A68EBB00C16FCA /* ZGAssertController.h */,
+				41D439AF21A68EBB00C16FCA /* ZGAssertController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41D439AC21A68EA700C16FCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41DEED7A21A6D9910017579A /* export.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41D439AD21A68EA700C16FCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41FE5191218AF8D100F17BF5 /* ZGExposure */ = {
+			isa = PBXGroup;
+			children = (
+				41FE5192218AF8D100F17BF5 /* Model */,
+			);
+			path = ZGExposure;
+			sourceTree = "<group>";
+		};
+		41FE5192218AF8D100F17BF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41FE519B218B138900F17BF5 /* ZGExposureManager.h */,
+				41FE519C218B138900F17BF5 /* ZGExposureManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9400C24B02B6D573E382F8CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */,
+				C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */,
+				F7302507167BBB7FEAD1BA85 /* libPods-ZGTextProjUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF01D5AE20AC070B0023B282 /* SafeArea */ = {
 			isa = PBXGroup;
 			children = (
@@ -2307,6 +3440,8 @@
 				EFDBCDD51F2B159700C542AD /* ZGTextProjTests */,
 				EFDBCDE01F2B159700C542AD /* ZGTextProjUITests */,
 				EFDBCDBA1F2B159700C542AD /* Products */,
+				24CC7C66BCA6D3A9E2D0CAA5 /* Pods */,
+				9400C24B02B6D573E382F8CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2323,13 +3458,18 @@
 		EFDBCDBB1F2B159700C542AD /* ZGTextProj */ = {
 			isa = PBXGroup;
 			children = (
+				41CDAA1521749C3600D0DE9B /* Resource */,
 				EFF1DA8C20D3C56100CBC680 /* Libraries */,
 				EFDBCDEF1F2B15FD00C542AD /* Modules */,
 				EFDBCDBF1F2B159700C542AD /* AppDelegate.h */,
 				EFDBCDC01F2B159700C542AD /* AppDelegate.m */,
 				EFDBCDC21F2B159700C542AD /* ViewController.h */,
 				EFDBCDC31F2B159700C542AD /* ViewController.m */,
+				41CDAA13217496A900D0DE9B /* audioClipTest.m4a */,
 				EFFC13551F3454D300E6F664 /* myPlayer.mp4 */,
+				417F201621F0643600471B03 /* singing.wav */,
+				418E959021E4CF1A00349982 /* testZong.wav */,
+				417F206921F17C4800471B03 /* gamesound.aac */,
 				EF7F2CA6210972F800AC6755 /* img.jpg */,
 				EFDBCDC51F2B159700C542AD /* Main.storyboard */,
 				EFDBCDC81F2B159700C542AD /* Assets.xcassets */,
@@ -2374,6 +3514,19 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41BDBB872215786A00043C33 /* welcomePage */,
+				4110F9212213F48B006B9CEF /* UITabBarController */,
+				4151344A21F8733C0054D972 /* IMDesign */,
+				417F201521F0641F00471B03 /* FmodDemo */,
+				4174DD8221DC9BCC007C89E6 /* AVAudio */,
+				41D0A99721C2704D00BD543C /* UICollectionview */,
+				417115B321AD4E1C0068079B /* WebKit */,
+				417115AC21AB92F00068079B /* IMessage */,
+				41D439AA21A68EA700C16FCA /* Assert */,
+				4137F2E62192B90F003B6D60 /* PhotoKit */,
+				415D8B2A2181C845000A8213 /* AutoScrollLabel */,
+				41CDAA4B2176046900D0DE9B /* BezierPath */,
+				411B2BE4215B7264009747D8 /* Font */,
 				EF266121214DFDE500B8DA30 /* Gzip */,
 				EF58F68F2143B9740000CDC7 /* WaterFall */,
 				EF42A570211D8D7D00EB4A4E /* HotFix */,
@@ -2740,6 +3893,8 @@
 			children = (
 				EFFA9C431FFB25A400280573 /* ZGAVAudioTrackController.h */,
 				EFFA9C441FFB25A400280573 /* ZGAVAudioTrackController.m */,
+				41CDAA102174910300D0DE9B /* ZGAVAudioClipController.h */,
+				41CDAA112174910300D0DE9B /* ZGAVAudioClipController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2921,9 +4076,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFDBCDE61F2B159700C542AD /* Build configuration list for PBXNativeTarget "ZGTextProj" */;
 			buildPhases = (
+				6C6E7C5F404CC5EEBF67AE31 /* [CP] Check Pods Manifest.lock */,
 				EFDBCDB51F2B159700C542AD /* Sources */,
 				EFDBCDB61F2B159700C542AD /* Frameworks */,
 				EFDBCDB71F2B159700C542AD /* Resources */,
+				0AC3261652D4F115DAD5C882 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2938,6 +4095,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFDBCDE91F2B159700C542AD /* Build configuration list for PBXNativeTarget "ZGTextProjTests" */;
 			buildPhases = (
+				D72713258920E7FD664E8195 /* [CP] Check Pods Manifest.lock */,
 				EFDBCDCE1F2B159700C542AD /* Sources */,
 				EFDBCDCF1F2B159700C542AD /* Frameworks */,
 				EFDBCDD01F2B159700C542AD /* Resources */,
@@ -2956,6 +4114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFDBCDEC1F2B159700C542AD /* Build configuration list for PBXNativeTarget "ZGTextProjUITests" */;
 			buildPhases = (
+				A8330D440DAFA5014D91F4AE /* [CP] Check Pods Manifest.lock */,
 				EFDBCDD91F2B159700C542AD /* Sources */,
 				EFDBCDDA1F2B159700C542AD /* Frameworks */,
 				EFDBCDDB1F2B159700C542AD /* Resources */,
@@ -3021,18 +4180,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BDBB9222157A9500043C33 /* intro_1.jpg in Resources */,
+				418E959121E4CF1A00349982 /* testZong.wav in Resources */,
+				41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */,
 				EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */,
 				EFDBCDCC1F2B159700C542AD /* LaunchScreen.storyboard in Resources */,
 				EF14C7F2210428EE007CC07B /* moreData2.plist in Resources */,
+				41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */,
 				EF7F2CA7210972F800AC6755 /* img.jpg in Resources */,
 				EFDBCDC91F2B159700C542AD /* Assets.xcassets in Resources */,
 				EF7F2CA42108176E00AC6755 /* news_pop_six_winged_demon@3x.png in Resources */,
+				411B2BF3215B734F009747D8 /* Cairo-Light.ttf in Resources */,
+				41BDBB9422157A9500043C33 /* intro_2.jpg in Resources */,
+				411B2BF6215B734F009747D8 /* Cairo-Bold.ttf in Resources */,
+				417F201721F0643600471B03 /* singing.wav in Resources */,
 				EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */,
+				411B2BF5215B734F009747D8 /* Cairo-SemiBold.ttf in Resources */,
 				EF14C7ED2101E121007CC07B /* modelA3.plist in Resources */,
+				411B2BF4215B734F009747D8 /* Cairo-Regular.ttf in Resources */,
 				EFFC13561F3454D300E6F664 /* myPlayer.mp4 in Resources */,
+				411B2BF7215B734F009747D8 /* Cairo-ExtraLight.ttf in Resources */,
+				411B2BF2215B734F009747D8 /* Cairo-Black.ttf in Resources */,
+				417F206A21F17C4800471B03 /* gamesound.aac in Resources */,
 				EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */,
+				41BDBB9122157A9500043C33 /* intro_0.jpg in Resources */,
 				EFDBCDC71F2B159700C542AD /* Main.storyboard in Resources */,
 				EFFCE4A21F62330F008E2375 /* unicode_to_hanyu_pinyin.txt in Resources */,
+				41DEED7B21A6D9910017579A /* export.plist in Resources */,
+				41BDBB9322157A9500043C33 /* intro_3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3052,6 +4227,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AC3261652D4F115DAD5C882 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C6E7C5F404CC5EEBF67AE31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGTextProj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8330D440DAFA5014D91F4AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGTextProjUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D72713258920E7FD664E8195 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGTextProjTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFDBCDB51F2B159700C542AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -3062,8 +4328,10 @@
 				EFFCE4A11F62330F008E2375 /* PinyinHelper.m in Sources */,
 				EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */,
 				EF64EEBF20E4DAC0009B5767 /* ZGEventChainController.m in Sources */,
+				417115B221AB93130068079B /* ZGIMessageController.m in Sources */,
 				EF2EEAC020F495D300C9FBAD /* ZGKVOODataModel.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
+				4174DD8D21DC9C29007C89E6 /* ZGAVAudioQueueController.m in Sources */,
 				EF083A2F21182D380037D17C /* ZGTimerProcess.m in Sources */,
 				EF14C7EB2101D419007CC07B /* ZGArchiveModelA.m in Sources */,
 				EF58F6A121450B420000CDC7 /* ZGVAKDiscoverReusableViewHeader.m in Sources */,
@@ -3072,30 +4340,43 @@
 				EFFCE4AF1F624D3F008E2375 /* ZGCalendarController.m in Sources */,
 				EF7F2C9A2107106600AC6755 /* ZGPAUTModelA.m in Sources */,
 				EF570B252024015300E14BC9 /* ZGTestCopyViewController.m in Sources */,
+				4189406921798637008C13D8 /* YGRecordView.m in Sources */,
 				EFC56B7F20181FA400BA5487 /* ZGHFGirl.m in Sources */,
 				EF01D5E620AE6FC00023B282 /* ZGNTestController.m in Sources */,
 				EF72319F20DA40B600999D3A /* ZGAnimationsCollectionViewController.m in Sources */,
 				EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */,
 				EF77D76B21527AA80069DE80 /* ZGScrollAndPopController.m in Sources */,
+				417EBD51221ED5BB00E86D8D /* ZGChatRefreshHeader.m in Sources */,
+				41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */,
 				EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */,
 				EF25CBC020E284E3005A7F8C /* ZGNestPageDController.m in Sources */,
 				EF2F66921FFF651F00EA4F6F /* ZGTbBaseTableView.m in Sources */,
+				4174DD9021DC9C81007C89E6 /* ZGAVAudioUnitController.m in Sources */,
+				417F202321F0647C00471B03 /* fmod_player_effect.cpp in Sources */,
 				EFE4308820D50F82006930E5 /* ZGAnimationCell.m in Sources */,
 				EF570B122022F08200E14BC9 /* ZGKVODataModel.m in Sources */,
 				EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */,
 				EF7F2CD3210AF75700AC6755 /* ZGSTITabModel.m in Sources */,
+				417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */,
 				EFFCE4841F62253C008E2375 /* ZGAddressListController.m in Sources */,
 				EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */,
 				EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */,
+				417115BF21AE8E0B0068079B /* ZGWKWebNoDataView.m in Sources */,
 				EF0A0EB1200701DF0095779B /* ZGSubTabBarView.m in Sources */,
+				417F206721F16A3700471B03 /* MZCodec.cpp in Sources */,
+				417115B921AD4E2D0068079B /* ZGWebKitTestController.m in Sources */,
 				EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */,
+				4137F2F22192BB2B003B6D60 /* ZGPHResourceManager.m in Sources */,
 				EF7F2CD0210AF4CD00AC6755 /* ZGSTIScrollManager.m in Sources */,
 				EF2F667A1FFC6B5D00EA4F6F /* ZGBlockPeople.m in Sources */,
 				EF7AC499211F21AA00ED7982 /* ZGPEteModelA.m in Sources */,
 				EFFCE49D1F62330F008E2375 /* ChineseToPinyinResource.m in Sources */,
+				415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */,
 				EF7F2CA12108117900AC6755 /* ZGImageController.m in Sources */,
+				417F204B21F1674D00471B03 /* ZGAudioConvertController.mm in Sources */,
 				EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */,
 				EF7F2CD9210AF7D000AC6755 /* ZGSTIDiscoveryController.m in Sources */,
+				417EBCAD221A4D7300E86D8D /* ZGChatBaseBubbleView.m in Sources */,
 				EF192AA8210C152400868D5B /* ZGLockAndSemaphoreController.m in Sources */,
 				EF0A0EAE2006FE3A0095779B /* ZGOScrollManager.m in Sources */,
 				EFC6EE281FF4E78D00E1D2C5 /* ZGCategoryController.m in Sources */,
@@ -3103,8 +4384,10 @@
 				EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */,
 				EFFCE4A81F623F9E008E2375 /* ZGLetterSectionModel.m in Sources */,
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
+				417EBCB3221A4D9400E86D8D /* ZGChatAudioBubbleView.m in Sources */,
 				EFE4308220D5017C006930E5 /* ZGAnimationsCellController.m in Sources */,
 				EF64EEB020E485A3009B5767 /* ZGCellOpGestureTable.m in Sources */,
+				417EBCB6221A4E4900E86D8D /* ZGChatBaseCell.m in Sources */,
 				EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */,
 				EFE4308B20D51721006930E5 /* ZGAnimationsTableView.m in Sources */,
 				EF58F6A421450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.m in Sources */,
@@ -3113,22 +4396,33 @@
 				EF570B0C2022E94C00E14BC9 /* ZGNFObserverA.m in Sources */,
 				EF570B062022E5A500E14BC9 /* ZGKVOController.m in Sources */,
 				EF0A0E9B20060CF90095779B /* ZGSV2Delegate.m in Sources */,
+				417EBCB9221A4E8800E86D8D /* ZGChatCell.m in Sources */,
 				EF2EEAB920F4598600C9FBAD /* ZGKVOCSubObserver.m in Sources */,
 				EF2F66771FFC6B1100EA4F6F /* ZGBlockController.m in Sources */,
+				41BDBBAE2216A0BF00043C33 /* ZGMsgMenuPopView.m in Sources */,
 				EFA9A62320AA765A00E73288 /* ZGMainOperation.m in Sources */,
 				EFFCE4BB1F62828C008E2375 /* ZGCalendarManager.m in Sources */,
+				41D0A99D21C2707800BD543C /* ZGTextCollectionviewController.m in Sources */,
 				EF0A0E8F2005C41F0095779B /* ZGSBaseScrollView.m in Sources */,
 				EF7F2CCA210AF49F00AC6755 /* ZGScrollTabIndicatorController.m in Sources */,
 				EFE4308520D501CF006930E5 /* ZGHeaderCell.m in Sources */,
+				417EBCBC221A4EA200E86D8D /* ZGChatTimeCell.m in Sources */,
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
+				41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */,
 				EF7F2CD6210AF7BF00AC6755 /* ZGSTIHotController.m in Sources */,
+				4110F92A22141333006B9CEF /* ZGTabBarContentView.m in Sources */,
+				417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,
+				41D0A9A621C3586E00BD543C /* ZGTextFixCollectionViewCell.m in Sources */,
 				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
+				41BDBBB42216A11500043C33 /* ZGMsgBottomView.m in Sources */,
 				EF64EEB320E48778009B5767 /* ZGCellopGestureScrollView.m in Sources */,
+				417F204E21F167CE00471B03 /* ZGFAACWav2AAc.cpp in Sources */,
 				EF819FC7212918C3009B959A /* ZGWeakMutableDictionary.m in Sources */,
 				EF58F69B2143BADB0000CDC7 /* ZGTestCollectionViewCell.m in Sources */,
+				417EBD48221EA7C700E86D8D /* ZGChatTipMessageCell.m in Sources */,
 				EF2EEAC620F495F900C9FBAD /* ZGKVOOObserverB.m in Sources */,
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
@@ -3142,23 +4436,31 @@
 				EFC56B7C20181F9900BA5487 /* ZGHFMan.m in Sources */,
 				EF2EEAAD20F4593B00C9FBAD /* ZGKVOResearchObserverB.m in Sources */,
 				EFFCE48D1F622804008E2375 /* ZGAddressListCell.m in Sources */,
+				41CDAA512176048600D0DE9B /* ZGBezierController.m in Sources */,
+				417F204221F064D900471B03 /* ZGRecorder.m in Sources */,
 				EFFCE47D1F60F6AD008E2375 /* ZGOffScreenController.m in Sources */,
 				EF0A0EA52006FD9E0095779B /* ZGOneScrollViewController.m in Sources */,
+				417EBCB0221A4D8600E86D8D /* ZGChatTextBubbleView.m in Sources */,
 				EF67D66F2057644D00FA65DC /* ZGINSubObject.m in Sources */,
 				EF819FC4212915FF009B959A /* ZGDicCopyModel.m in Sources */,
 				EF7F2C9521070F9500AC6755 /* ZGProModelB.m in Sources */,
 				EFFCE4C71F64D67C008E2375 /* ZGChineseDate.m in Sources */,
 				EF58F6952143BA590000CDC7 /* ZGWaterFallController.m in Sources */,
 				EF7231AA20DB478200999D3A /* ZGTopicHeaderView.m in Sources */,
+				4137F2EC2192B92E003B6D60 /* ZGPhotoPickController.m in Sources */,
+				417F203F21F064CA00471B03 /* ZGBottomToolBar.m in Sources */,
 				EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */,
 				EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */,
 				EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */,
 				EFFCE49F1F62330F008E2375 /* NSString+PinYin4Cocoa.m in Sources */,
+				4110F9272213F4B6006B9CEF /* ZGTabBarController.m in Sources */,
 				EF33525B2091B1C6003D4344 /* ZGInitFunctionController.m in Sources */,
 				EF3CAA8420BD3C9D00FCC752 /* ZGCellOptionController.m in Sources */,
 				EF570B182022F0A200E14BC9 /* ZGKVOObserverB.m in Sources */,
 				EFC6EE2E1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.m in Sources */,
+				41BDBBB12216A0DA00043C33 /* ZGMsgCountDownView.m in Sources */,
 				EF570B352024626400E14BC9 /* ZGKEObserverA.m in Sources */,
+				41CDAA122174910300D0DE9B /* ZGAVAudioClipController.m in Sources */,
 				EF2F666D1FFB90EB00EA4F6F /* ZGInstanceController.m in Sources */,
 				EF570B1F2024004D00E14BC9 /* ZGCYViewController.m in Sources */,
 				EF7F2CDC210AF7DD00AC6755 /* ZGSTIStoryController.m in Sources */,
@@ -3168,7 +4470,9 @@
 				EFDBCDC41F2B159700C542AD /* ViewController.m in Sources */,
 				EFDCEE3920DE43B40076C129 /* ZGAniTextCell.m in Sources */,
 				EFF1DA8520D3BA8900CBC680 /* ZGAnimationsController.m in Sources */,
+				417EBCC5221A556800E86D8D /* ZGChatConst.m in Sources */,
 				EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */,
+				4137F2EF2192BA71003B6D60 /* ZGPHVideoCell.m in Sources */,
 				EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */,
 				EFE0B317207CB9420020B143 /* ZGExtendLayoutController.m in Sources */,
 				EF64EEC520E4E5E8009B5767 /* ZGEventChainSubView.m in Sources */,
@@ -3177,6 +4481,8 @@
 				EF0A0E922005C6AD0095779B /* ZGSSubScrollView.m in Sources */,
 				EFF1DA5020D0FECA00CBC680 /* ZGPVCTestController.m in Sources */,
 				EF64EEB820E4D6B6009B5767 /* ZGCellOpCell.m in Sources */,
+				4151344921F7111F0054D972 /* ZGAudioRmoteControlController.m in Sources */,
+				4174DD9621DCBC89007C89E6 /* AudioQueuePlayer.m in Sources */,
 				EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */,
 				EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */,
 				EF261CF32063A9050002BFB2 /* ZGPerformanceController.m in Sources */,
@@ -3184,7 +4490,9 @@
 				EF67D669205763FE00FA65DC /* ZGInitializeController.m in Sources */,
 				EFDCEE4020DF93600076C129 /* ZGAnisTestController.m in Sources */,
 				EFFCE4BE1F628C42008E2375 /* NSDate+Calendar.m in Sources */,
+				417EBCBF221A4EE300E86D8D /* ZGChatUndefineTypeCell.m in Sources */,
 				EF7F2C9621070F9500AC6755 /* ZGProModelA.m in Sources */,
+				4174DD9321DCB46A007C89E6 /* AudioQueueRecorder.m in Sources */,
 				EFF1DA5320D1048D00CBC680 /* ZGPageAController.m in Sources */,
 				EFFCE4CA1F651DB7008E2375 /* ZGHolidayManager.m in Sources */,
 				EF570B2F2024616700E14BC9 /* ZGKEViewController.m in Sources */,
@@ -3193,8 +4501,10 @@
 				EF31F9682070BE8700B1B148 /* ZGOperationQueueController.m in Sources */,
 				EFAC58221F340D2E00B94D93 /* ZGComposeAudioModel.m in Sources */,
 				EFC56B93201DBB8000BA5487 /* ZGMsgForwardController.m in Sources */,
+				417F202221F0647C00471B03 /* fmod_player.cpp in Sources */,
 				EF7231A720DB44E100999D3A /* ZGAniCollectionViewNormalController.m in Sources */,
 				EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */,
+				41BDBBBA2217DC3800043C33 /* ZGAlertPopView.m in Sources */,
 				EF25CBC320E28522005A7F8C /* ZGNestSubScrollView.m in Sources */,
 				EF2EEAB620F4597700C9FBAD /* ZGKVOCBaseOberver.m in Sources */,
 				EFA9A62620AA770E00E73288 /* ZGStartOperation.m in Sources */,
@@ -3203,16 +4513,22 @@
 				EF58F69E214509180000CDC7 /* ZGVAKDiscoverController.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
+				411B2BEA215B7275009747D8 /* ZGFontController.m in Sources */,
+				4151345021F8734E0054D972 /* ZGIMDesignController.m in Sources */,
 				EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */,
+				415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */,
 				EF42A576211D8D9100EB4A4E /* ZGHotFixController.m in Sources */,
 				EF2F668F1FFF638800EA4F6F /* ZGTbTestController.m in Sources */,
+				41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */,
 				EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */,
 				EF2EEAAF20F4593B00C9FBAD /* ZGKVOResearchObserverA.m in Sources */,
 				EF3C47C81F384D610039AA5C /* ZGboy.m in Sources */,
 				EFDBCDC11F2B159700C542AD /* AppDelegate.m in Sources */,
 				EF0A0E892004C2490095779B /* ZGSTestController.m in Sources */,
+				417115BC21AE7C910068079B /* ZGWKWebViewController.m in Sources */,
 				EF85FF3A204A4E9000F5186A /* ZGGCDTestController.m in Sources */,
 				EF261CF62063AA600002BFB2 /* ZGFPSProbeView.m in Sources */,
+				417EBD4B221EAA9800E86D8D /* ZGChatTipMesageModel.m in Sources */,
 				EF67D6722057648B00FA65DC /* ZGINSubObject+initialize.m in Sources */,
 				EF0A0EA82006FE140095779B /* ZGOBaseScrollView.m in Sources */,
 				EFC56B96201DBBF900BA5487 /* ZGMFPeople.m in Sources */,
@@ -3221,6 +4537,7 @@
 				EFFCE4B21F6271F9008E2375 /* ZGCalendarHeaderView.m in Sources */,
 				EF7F2CCD210AF4B700AC6755 /* ZGSTITabView.m in Sources */,
 				EFAC581C1F30B61F00B94D93 /* ZGTestBlockViewController.m in Sources */,
+				417F206421F16A2800471B03 /* wavreader.c in Sources */,
 				EF3CFB4420F09DB200FCE02E /* ZGSTestDragingController.m in Sources */,
 				EF3C47C51F384D530039AA5C /* ZGPeople.m in Sources */,
 				EF7A7A242100393D00B79368 /* ZGPropertyController.m in Sources */,
@@ -3228,6 +4545,7 @@
 				EF0A0EAB2006FE240095779B /* ZGOHeaderScrollView.m in Sources */,
 				EF58F6982143BA990000CDC7 /* ZGWaterfallCollectionViewLayout.m in Sources */,
 				EF7F2CDF210AF88500AC6755 /* ZGSTIBaseController.m in Sources */,
+				41D439B021A68EBB00C16FCA /* ZGAssertController.m in Sources */,
 				EFE4308E20D5305F006930E5 /* ZGAnimationCellNormalController.m in Sources */,
 				EF7231A420DB413200999D3A /* ZGHeaderCollectionViewCell.m in Sources */,
 				EF3CAA8F20BD616800FCC752 /* MGSwipeButton.m in Sources */,
@@ -3235,30 +4553,39 @@
 				EFFCE4C11F637C3D008E2375 /* ZGDayModel.m in Sources */,
 				EFFCE4B51F62722F008E2375 /* ZGCalendarCell.m in Sources */,
 				EFFCE49E1F62330F008E2375 /* HanyuPinyinOutputFormat.m in Sources */,
+				417EBCC8221A84C500E86D8D /* ZGChatInputInfoModel.m in Sources */,
 				EFDBCDF61F2B168000C542AD /* ZGMaskController.m in Sources */,
 				EF570B222024014A00E14BC9 /* ZGCopyObj.m in Sources */,
 				EF570B152022F09400E14BC9 /* ZGKVOObserverA.m in Sources */,
 				EF25CBBD20E28161005A7F8C /* ZGNestPageCController.m in Sources */,
 				EFC6EE2B1FF4E81500E1D2C5 /* ZGCategoryObject.m in Sources */,
 				EFE5F83420932CCD0065775D /* ZGClassFunctionController.m in Sources */,
+				417EBCC2221A4F2100E86D8D /* ZGChatMessageModel.m in Sources */,
 				EFF1DA5C20D118D900CBC680 /* ZGPageDController.m in Sources */,
 				EF266127214DFDF800B8DA30 /* ZGGzipController.m in Sources */,
+				4110F92D221418AD006B9CEF /* ZGTabBarButton.m in Sources */,
 				EF7AC49D211F247600ED7982 /* ZGPSHIModelA.m in Sources */,
+				4137F2C32190209C003B6D60 /* ZGWeakSetterModel.m in Sources */,
 				EFDBCDBE1F2B159700C542AD /* main.m in Sources */,
 				EF25CBB420E28077005A7F8C /* ZGNestScrollView.m in Sources */,
 				EFC4FA9E206C98D000F42842 /* ZGNSProxyController.m in Sources */,
 				EF33525E2091B261003D4344 /* ZGIFUBaseObject.m in Sources */,
 				EFFF331D1FFF69600086BE7D /* ZGNoDataView.m in Sources */,
+				417F202421F0647C00471B03 /* FMAudioPlayer.mm in Sources */,
 				EF2F66851FFF585000EA4F6F /* ZGPLman.m in Sources */,
 				EF3352612091B272003D4344 /* ZGIFUAObject.m in Sources */,
 				EFF1DA8820D3BE2500CBC680 /* ZGAnimationsTableController.m in Sources */,
+				41BDBB9922157AA400043C33 /* LMJIntroductoryPagesView.m in Sources */,
 				EF3FE04C2010A5090088C2C9 /* ZGWeakSelfController.m in Sources */,
 				EF570B032022E57E00E14BC9 /* ZGNotificationController.m in Sources */,
 				EFC6EE201FF48CB500E1D2C5 /* ZGTestWindowController.m in Sources */,
 				EFAC581F1F332B5C00B94D93 /* ZGComposeVideoAndAudioViewController.m in Sources */,
 				EF0A0E9820060CED0095779B /* ZGSV1Delegate.m in Sources */,
+				41BDBB9A22157AA400043C33 /* LMJIntroductoryPagesHelper.m in Sources */,
+				415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */,
 				EFF1DA5620D1049E00CBC680 /* ZGPageBController.m in Sources */,
 				EF01D5E920AE70370023B282 /* ZGNRootController.m in Sources */,
+				41BDBBB72216C52A00043C33 /* ZGReportPopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3407,12 +4734,20 @@
 		};
 		EFDBCDE71F2B159700C542AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BVF5F2U9J;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/FmodDemo/OpenSource/FMOD/lib",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3420,12 +4755,20 @@
 		};
 		EFDBCDE81F2B159700C542AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BVF5F2U9J;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/FmodDemo/OpenSource/FMOD/lib",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
+					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3433,6 +4776,7 @@
 		};
 		EFDBCDEA1F2B159700C542AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF622BD20AAA07F0741174C9 /* Pods-ZGTextProjTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZGTextProjTests/Info.plist;
@@ -3445,6 +4789,7 @@
 		};
 		EFDBCDEB1F2B159700C542AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213D48EC0B318889D325B619 /* Pods-ZGTextProjTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZGTextProjTests/Info.plist;
@@ -3457,6 +4802,7 @@
 		};
 		EFDBCDED1F2B159700C542AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZGTextProjUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -3468,6 +4814,7 @@
 		};
 		EFDBCDEE1F2B159700C542AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19BE1B45B0B6A1FF1F99AF3B /* Pods-ZGTextProjUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZGTextProjUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

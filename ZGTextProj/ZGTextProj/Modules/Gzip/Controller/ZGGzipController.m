@@ -13,7 +13,67 @@
 #include <stdio.h>
 #include <zlib.h>
 
+@interface ZGGzipContainView : UIView <UICollectionViewDelegate,UICollectionViewDataSource>
+@property (nonatomic, strong) UICollectionView *collectionView;
+@end
+
+@implementation ZGGzipContainView
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        
+        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        flowLayout.itemSize = CGSizeMake(100, 100);
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"testCollectionViewCell"];
+        [self addSubview:_collectionView];
+
+    }
+    return self;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+//    self.collectionView.frame = self.bounds;
+    
+//    [self.collectionView reloadData];
+    
+    
+    /**
+     * 为什么这样就可以了呢
+     */
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.collectionView reloadData];
+    });
+}
+
+
+#pragma mark - UICollectionViewDelegate,UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    NSLog(@"reloadData");
+    return 100;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"testCollectionViewCell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor redColor];
+    return cell;
+}
+
+@end
+
+
+#pragma mark -- - - -  - - - -  -
 @interface ZGGzipController ()
+
+@property (nonatomic, strong) ZGGzipContainView *containView;
 
 @end
 
@@ -57,8 +117,32 @@
 //    }
     
     
+    
+//    [self testAyncOnMain];
+//    [self testCollectionView];
+    
+    // gzip
+//    testGzip();
 }
 
+- (void)testAyncOnMain
+{
+    /**
+     * 为什么这样就可以了呢
+     */
+    NSLog(@"aaaaaaaa");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"cccccccc");
+    });
+    NSLog(@"bbbbbbbb");
+
+}
+
+- (void)testCollectionView
+{
+    _containView = [[ZGGzipContainView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_containView];
+}
 
 
 int testGzip()
@@ -104,5 +188,7 @@ int testGzip()
     
     return 0;
 }
+
+
 
 @end

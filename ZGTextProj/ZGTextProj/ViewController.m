@@ -23,7 +23,11 @@
 #import "ZGCategoryController.h"
 #import "ZGCategoryExtendController.h"
 
+// avfoundation
 #import "ZGAVAudioTrackController.h"
+#import "ZGAVAudioClipController.h"
+
+
 #import "ZGInstanceController.h"
 #import "ZGBlockController.h"
 #import "ZGProtocolController.h"
@@ -87,6 +91,27 @@
 #import "ZGGzipController.h"
 #import "ZGScrollAndPopController.h"
 
+#import "ZGFontController.h"
+
+#import "ZGBezierController.h"
+#import "ZGAutoScrollLabelController.h"
+#import "ZGPhotoPickController.h"
+
+#import "ZGAssertController.h"
+#import "ZGIMessageController.h"
+#import "ZGWebKitTestController.h"
+
+#import "ZGTextCollectionviewController.h"
+
+#import "ZGAVAudioQueueController.h"
+#import "ZGAVAudioUnitController.h"
+#import "ZGFmodDemoController.h"
+#import "ZGAudioConvertController.h"
+#import "ZGAudioRmoteControlController.h"
+
+#import "ZGIMDesignController.h"
+#import "ZGTabBarController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -120,7 +145,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 54;
+    return 70;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -234,7 +259,40 @@
         cell.textLabel.text = @"waterfall";
     }else if(indexPath.row == 53){
         cell.textLabel.text = @"gZip";
+    }else if(indexPath.row == 54){
+        cell.textLabel.text = @"font";
+    }else if(indexPath.row == 55){
+        cell.textLabel.text = @"audioClip";
+    }else if(indexPath.row == 56){
+        cell.textLabel.text = @"bezierPath";
+    }else if(indexPath.row == 57){
+        cell.textLabel.text = @"autoScrollLabel";
+    }else if(indexPath.row == 58){
+        cell.textLabel.text = @"photoKit";
+    }else if(indexPath.row == 59){
+        cell.textLabel.text = @"assert";
+    }else if(indexPath.row == 60){
+        cell.textLabel.text = @"IMessage";
+    }else if(indexPath.row == 61){
+        cell.textLabel.text = @"WebKit";
+    }else if(indexPath.row == 62){
+        cell.textLabel.text = @"UICollectionView";
+    }else if(indexPath.row == 63){
+        cell.textLabel.text = @"AVAudioQueue";
+    }else if(indexPath.row == 64){
+        cell.textLabel.text = @"AVAudioUnit";
+    }else if(indexPath.row == 65){
+        cell.textLabel.text = @"FmodDemo";
+    }else if(indexPath.row == 66){
+        cell.textLabel.text = @"AudioConvert";
+    }else if(indexPath.row == 67){
+        cell.textLabel.text = @"AudioRemoteControl";
+    }else if(indexPath.row == 68){
+        cell.textLabel.text = @"IMDesign";
+    }else if(indexPath.row == 69){
+        cell.textLabel.text = @"UITabBarController";
     }
+
 
 
 
@@ -410,6 +468,78 @@
     }else if(indexPath.row == 53){
         ZGGzipController *con = [[ZGGzipController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 54){
+        ZGFontController *con = [[ZGFontController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 55){
+        ZGAVAudioClipController *con = [[ZGAVAudioClipController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 56){
+        ZGBezierController *con = [[ZGBezierController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 57){
+        ZGAutoScrollLabelController *con = [[ZGAutoScrollLabelController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 58){
+        ZGPhotoPickController *con = [[ZGPhotoPickController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 59){
+        ZGAssertController *con = [[ZGAssertController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 60){
+        ZGIMessageController *con = [[ZGIMessageController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 61){
+        ZGWebKitTestController *con = [[ZGWebKitTestController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 62){
+        ZGTextCollectionviewController *con = [[ZGTextCollectionviewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 63){
+        ZGAVAudioQueueController *con = [[ZGAVAudioQueueController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 64){
+        ZGAVAudioUnitController *con = [[ZGAVAudioUnitController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 65){
+        ZGFmodDemoController *con = [[ZGFmodDemoController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 66){
+        ZGAudioConvertController *con = [[ZGAudioConvertController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 67){
+        ZGAudioRmoteControlController *con = [[ZGAudioRmoteControlController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 68){
+        ZGIMDesignController *con = [[ZGIMDesignController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 69){
+        ZGTabBarController *tabBarController = [[ZGTabBarController alloc] init];
+        
+        UIViewController *first = [[UIViewController alloc]init];
+        first.view.backgroundColor = [UIColor greenColor];
+        [tabBarController addController:first withTitle:@"回应" imageName:@"kid_bottom_list_icon_clean" selectedImageName:@"tiaoman_d.png"];
+        
+        UIViewController *second = [[UIViewController alloc]init];
+        second.view.backgroundColor = [UIColor redColor];
+        [tabBarController addController:second withTitle:@"说说" imageName:@"kid_bottom_list_icon_clean" selectedImageName:@"faxian_d.png"];
+        
+        UIViewController *third = [[UIViewController alloc]init];
+         third.view.backgroundColor = [UIColor purpleColor];
+        [tabBarController addController:third withTitle:@"发现" imageName:@"kid_bottom_list_icon_clean" selectedImageName:@"wode_d.png"];
+        
+        UIViewController *foour = [[UIViewController alloc]init];
+        third.view.backgroundColor = [UIColor purpleColor];
+        [tabBarController addController:foour withTitle:@"我的" imageName:@"kid_bottom_list_icon_clean" selectedImageName:@"wode_d.png"];
+        
+        // 设置第几个被选中
+        tabBarController.selectedIndex = 0;
+        
+        // 这只centerView
+//        UIButton *center = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 60, 60)];
+//        [center setImage:[UIImage imageNamed:@"luffy1@2x.png"] forState:UIControlStateNormal];
+//        tabBarController.centerView = center;
+        [self.navigationController pushViewController:tabBarController animated:YES];
     }
 
 
