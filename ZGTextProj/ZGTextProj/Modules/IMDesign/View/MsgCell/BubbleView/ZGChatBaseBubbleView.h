@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ZGChatMessageModel.h"
 #import "ZGChatConst.h"
+#import "ZGCornerView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZGChatBaseBubbleView : UIView
+@interface ZGChatBaseBubbleView : ZGCornerView
 
 @property (nonatomic, strong) ZGChatMessageModel *messageModel;
 

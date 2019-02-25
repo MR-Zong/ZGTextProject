@@ -35,6 +35,7 @@
 		4174DD9021DC9C81007C89E6 /* ZGAVAudioUnitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD8F21DC9C81007C89E6 /* ZGAVAudioUnitController.m */; };
 		4174DD9321DCB46A007C89E6 /* AudioQueueRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */; };
 		4174DD9621DCBC89007C89E6 /* AudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */; };
+		41759F8022238C5F00B91F43 /* ZGCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41759F7F22238C5F00B91F43 /* ZGCornerView.m */; };
 		417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */; };
 		417EBCAD221A4D7300E86D8D /* ZGChatBaseBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */; };
 		417EBCB0221A4D8600E86D8D /* ZGChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */; };
@@ -385,6 +386,8 @@
 		4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueueRecorder.m; sourceTree = "<group>"; };
 		4174DD9421DCBC89007C89E6 /* AudioQueuePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioQueuePlayer.h; sourceTree = "<group>"; };
 		4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueuePlayer.m; sourceTree = "<group>"; };
+		41759F7E22238C5F00B91F43 /* ZGCornerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCornerView.h; sourceTree = "<group>"; };
+		41759F7F22238C5F00B91F43 /* ZGCornerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCornerView.m; sourceTree = "<group>"; };
 		417EBCA7221A4D0900E86D8D /* ZGChatTextInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTextInputView.h; sourceTree = "<group>"; };
 		417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTextInputView.m; sourceTree = "<group>"; };
 		417EBCAB221A4D7300E86D8D /* ZGChatBaseBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatBaseBubbleView.h; sourceTree = "<group>"; };
@@ -1710,6 +1713,8 @@
 				417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */,
 				417EBD4F221ED5BB00E86D8D /* ZGChatRefreshHeader.h */,
 				417EBD50221ED5BB00E86D8D /* ZGChatRefreshHeader.m */,
+				41759F7E22238C5F00B91F43 /* ZGCornerView.h */,
+				41759F7F22238C5F00B91F43 /* ZGCornerView.m */,
 			);
 			path = referenceView;
 			sourceTree = "<group>";
@@ -4609,6 +4614,7 @@
 				EFFCE4C11F637C3D008E2375 /* ZGDayModel.m in Sources */,
 				EFFCE4B51F62722F008E2375 /* ZGCalendarCell.m in Sources */,
 				EFFCE49E1F62330F008E2375 /* HanyuPinyinOutputFormat.m in Sources */,
+				41759F8022238C5F00B91F43 /* ZGCornerView.m in Sources */,
 				417EBCC8221A84C500E86D8D /* ZGChatInputInfoModel.m in Sources */,
 				EFDBCDF61F2B168000C542AD /* ZGMaskController.m in Sources */,
 				EF570B222024014A00E14BC9 /* ZGCopyObj.m in Sources */,

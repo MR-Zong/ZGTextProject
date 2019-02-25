@@ -62,9 +62,10 @@
 
 - (void)setState:(MJRefreshState)state
 {
+    MJRefreshCheckState
     if (state == MJRefreshStateIdle) {
         [self.loadingView startAnimating];
-
+        
     }
 }
 @end

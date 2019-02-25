@@ -67,7 +67,7 @@
 
 + (CGFloat)heightForBubbleWithObject:(ZGChatMessageModel *)object
 {
-    return 30;
+    return 38;
 }
 
 - (CGSize)sizeThatFits:(CGSize)size {
