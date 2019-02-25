@@ -144,7 +144,7 @@ CGFloat const kMaxTextViewHeight = 68;
 
     [UIView animateWithDuration:0.25 animations:^{
 
-        _textView_h = textView.contentSize.height;
+        _textView_h = textView.contentSize.height +textView.textContainerInset.top;
         if (_textView_h > kMaxTextViewHeight) {
             _textView_h = kMaxTextViewHeight;
         }
