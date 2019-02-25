@@ -13,6 +13,7 @@
 CGFloat ZGChatTextInputView_H = 65;
 CGFloat kChatInputeBtnH = 20;
 CGFloat const kMaxTextViewHeight = 68;
+NSString *const kTextViewContentSize = @"contentSize";
 
 @interface ZGChatTextInputView () <UITextViewDelegate>{
     UIViewAnimationCurve _animationCurve;
@@ -37,6 +38,7 @@ CGFloat const kMaxTextViewHeight = 68;
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [_textView removeObserver:self forKeyPath:kTextViewContentSize];
 }
 
 
@@ -50,6 +52,7 @@ CGFloat const kMaxTextViewHeight = 68;
         _textView = [[UITextView alloc] init];
         _textView.backgroundColor = [UIColor purpleColor];
         _textView.delegate = self;
+        [_textView addObserver:self forKeyPath:kTextViewContentSize options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
         [self addSubview:_textView];
         
         _audioInputBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -138,24 +141,33 @@ CGFloat const kMaxTextViewHeight = 68;
     } completion:nil];
 }
 
-
-#pragma mark - UITextViewDelegate
-- (void)textViewDidChange:(UITextView *)textView {
+#pragma mark -
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    CGSize contentSize_old = [change[NSKeyValueChangeOldKey] CGSizeValue];
+    if (contentSize_old.height < 0) {
+        return;
+    }
+    CGSize contentSize_new = [change[NSKeyValueChangeNewKey] CGSizeValue];
+    CGFloat offsetH = self.textView.textContainerInset.top;
+    if (contentSize_new.height == 30) {
+        offsetH = 0;
+    }
 
     [UIView animateWithDuration:0.25 animations:^{
-
-        _textView_h = textView.contentSize.height +textView.textContainerInset.top;
+        
+        _textView_h = contentSize_new.height +offsetH;
         if (_textView_h > kMaxTextViewHeight) {
             _textView_h = kMaxTextViewHeight;
         }
-        CGRect tmpF = textView.frame;
+        CGRect tmpF = self.textView.frame;
         tmpF.size.height = _textView_h;
-        textView.frame = tmpF;
+        self.textView.frame = tmpF;
         
         self.audioInputBtn.frame = CGRectMake(10, CGRectGetMaxY(self.textView.frame)+5, kChatInputeBtnH, kChatInputeBtnH);
         CGFloat sendbt_w = 60;
         self.sendBtn.frame = CGRectMake(self.frame.size.width-sendbt_w -10, CGRectGetMaxY(self.textView.frame)+5, sendbt_w, kChatInputeBtnH);
-
+        
         
         tmpF = self.frame;
         tmpF.size.height = _textView_h + kChatInputeBtnH + 3*5;
@@ -163,7 +175,13 @@ CGFloat const kMaxTextViewHeight = 68;
         self.frame = tmpF;
         
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, self.keyboardShowBaseContentInsetBottom+(tmpF.size.height - ZGChatTextInputView_H), 0);
-    } completion:nil];
+    }];
+}
+#pragma mark - UITextViewDelegate
+- (void)textViewDidChange:(UITextView *)textView {
+
+    
+    ;
 }
 
 
