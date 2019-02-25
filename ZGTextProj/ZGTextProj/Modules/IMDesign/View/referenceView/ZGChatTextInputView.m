@@ -177,10 +177,11 @@ NSString *const kTextViewContentSize = @"contentSize";
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, self.keyboardShowBaseContentInsetBottom+(tmpF.size.height - ZGChatTextInputView_H), 0);
     }];
 }
+
+
 #pragma mark - UITextViewDelegate
 - (void)textViewDidChange:(UITextView *)textView {
 
-    
     ;
 }
 
