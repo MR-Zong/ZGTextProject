@@ -36,6 +36,19 @@
 		4174DD9321DCB46A007C89E6 /* AudioQueueRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */; };
 		4174DD9621DCBC89007C89E6 /* AudioQueuePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */; };
 		41759F8022238C5F00B91F43 /* ZGCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41759F7F22238C5F00B91F43 /* ZGCornerView.m */; };
+		4175A01822262B7100B91F43 /* ZGDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A01722262B7100B91F43 /* ZGDiscoverController.m */; };
+		4175A01B22262D9900B91F43 /* ZGShuoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A01A22262D9800B91F43 /* ZGShuoCell.m */; };
+		4175A01E22262EBC00B91F43 /* ZGLevitateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A01D22262EBC00B91F43 /* ZGLevitateView.m */; };
+		4175A0212226320B00B91F43 /* ZGDiscoverConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A0202226320B00B91F43 /* ZGDiscoverConst.m */; };
+		4175A024222632D700B91F43 /* ZGShuoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A023222632D700B91F43 /* ZGShuoModel.m */; };
+		4175A0282226365F00B91F43 /* ZGShuoTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A0272226365F00B91F43 /* ZGShuoTopView.m */; };
+		4175A02B222636C400B91F43 /* ZGShuoBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A02A222636C400B91F43 /* ZGShuoBottomView.m */; };
+		4175A02E2226371100B91F43 /* ZGShuoHashTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A02D2226371100B91F43 /* ZGShuoHashTagView.m */; };
+		4175A0312226376300B91F43 /* ZGShuoBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A0302226376300B91F43 /* ZGShuoBaseCell.m */; };
+		4175A03422263B4500B91F43 /* ZGCommentShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A03322263B4500B91F43 /* ZGCommentShowView.m */; };
+		4175A03722263B5600B91F43 /* ZGAudioWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A03622263B5600B91F43 /* ZGAudioWaveView.m */; };
+		4175A03A2226649500B91F43 /* ZGShuoTextShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A0392226649500B91F43 /* ZGShuoTextShowView.m */; };
+		4175A03D222665C900B91F43 /* ZGShuoUsersListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A03C222665C900B91F43 /* ZGShuoUsersListView.m */; };
 		417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */; };
 		417EBCAD221A4D7300E86D8D /* ZGChatBaseBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */; };
 		417EBCB0221A4D8600E86D8D /* ZGChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */; };
@@ -388,6 +401,32 @@
 		4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioQueuePlayer.m; sourceTree = "<group>"; };
 		41759F7E22238C5F00B91F43 /* ZGCornerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCornerView.h; sourceTree = "<group>"; };
 		41759F7F22238C5F00B91F43 /* ZGCornerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCornerView.m; sourceTree = "<group>"; };
+		4175A01622262B7100B91F43 /* ZGDiscoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGDiscoverController.h; sourceTree = "<group>"; };
+		4175A01722262B7100B91F43 /* ZGDiscoverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGDiscoverController.m; sourceTree = "<group>"; };
+		4175A01A22262D9800B91F43 /* ZGShuoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGShuoCell.m; sourceTree = "<group>"; };
+		4175A01C22262EBC00B91F43 /* ZGLevitateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGLevitateView.h; sourceTree = "<group>"; };
+		4175A01D22262EBC00B91F43 /* ZGLevitateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGLevitateView.m; sourceTree = "<group>"; };
+		4175A01F2226320B00B91F43 /* ZGDiscoverConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGDiscoverConst.h; sourceTree = "<group>"; };
+		4175A0202226320B00B91F43 /* ZGDiscoverConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGDiscoverConst.m; sourceTree = "<group>"; };
+		4175A022222632D700B91F43 /* ZGShuoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGShuoModel.h; sourceTree = "<group>"; };
+		4175A023222632D700B91F43 /* ZGShuoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGShuoModel.m; sourceTree = "<group>"; };
+		4175A0252226348500B91F43 /* ZGShuoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGShuoCell.h; sourceTree = "<group>"; };
+		4175A0262226365F00B91F43 /* ZGShuoTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGShuoTopView.h; sourceTree = "<group>"; };
+		4175A0272226365F00B91F43 /* ZGShuoTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGShuoTopView.m; sourceTree = "<group>"; };
+		4175A029222636C400B91F43 /* ZGShuoBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGShuoBottomView.h; sourceTree = "<group>"; };
+		4175A02A222636C400B91F43 /* ZGShuoBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGShuoBottomView.m; sourceTree = "<group>"; };
+		4175A02C2226371100B91F43 /* ZGShuoHashTagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGShuoHashTagView.h; sourceTree = "<group>"; };
+		4175A02D2226371100B91F43 /* ZGShuoHashTagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGShuoHashTagView.m; sourceTree = "<group>"; };
+		4175A02F2226376300B91F43 /* ZGShuoBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGShuoBaseCell.h; sourceTree = "<group>"; };
+		4175A0302226376300B91F43 /* ZGShuoBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGShuoBaseCell.m; sourceTree = "<group>"; };
+		4175A03222263B4500B91F43 /* ZGCommentShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCommentShowView.h; sourceTree = "<group>"; };
+		4175A03322263B4500B91F43 /* ZGCommentShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCommentShowView.m; sourceTree = "<group>"; };
+		4175A03522263B5600B91F43 /* ZGAudioWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioWaveView.h; sourceTree = "<group>"; };
+		4175A03622263B5600B91F43 /* ZGAudioWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAudioWaveView.m; sourceTree = "<group>"; };
+		4175A0382226649500B91F43 /* ZGShuoTextShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGShuoTextShowView.h; sourceTree = "<group>"; };
+		4175A0392226649500B91F43 /* ZGShuoTextShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGShuoTextShowView.m; sourceTree = "<group>"; };
+		4175A03B222665C900B91F43 /* ZGShuoUsersListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGShuoUsersListView.h; sourceTree = "<group>"; };
+		4175A03C222665C900B91F43 /* ZGShuoUsersListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGShuoUsersListView.m; sourceTree = "<group>"; };
 		417EBCA7221A4D0900E86D8D /* ZGChatTextInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTextInputView.h; sourceTree = "<group>"; };
 		417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTextInputView.m; sourceTree = "<group>"; };
 		417EBCAB221A4D7300E86D8D /* ZGChatBaseBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatBaseBubbleView.h; sourceTree = "<group>"; };
@@ -1391,6 +1430,63 @@
 		4174DD8A21DC9BCC007C89E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4175A01222262B4F00B91F43 /* QERDiscover */ = {
+			isa = PBXGroup;
+			children = (
+				4175A01322262B4F00B91F43 /* Controller */,
+				4175A01422262B4F00B91F43 /* Model */,
+				4175A01522262B4F00B91F43 /* View */,
+			);
+			path = QERDiscover;
+			sourceTree = "<group>";
+		};
+		4175A01322262B4F00B91F43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4175A01622262B7100B91F43 /* ZGDiscoverController.h */,
+				4175A01722262B7100B91F43 /* ZGDiscoverController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4175A01422262B4F00B91F43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4175A01F2226320B00B91F43 /* ZGDiscoverConst.h */,
+				4175A0202226320B00B91F43 /* ZGDiscoverConst.m */,
+				4175A022222632D700B91F43 /* ZGShuoModel.h */,
+				4175A023222632D700B91F43 /* ZGShuoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4175A01522262B4F00B91F43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4175A0252226348500B91F43 /* ZGShuoCell.h */,
+				4175A01A22262D9800B91F43 /* ZGShuoCell.m */,
+				4175A01C22262EBC00B91F43 /* ZGLevitateView.h */,
+				4175A01D22262EBC00B91F43 /* ZGLevitateView.m */,
+				4175A0262226365F00B91F43 /* ZGShuoTopView.h */,
+				4175A0272226365F00B91F43 /* ZGShuoTopView.m */,
+				4175A029222636C400B91F43 /* ZGShuoBottomView.h */,
+				4175A02A222636C400B91F43 /* ZGShuoBottomView.m */,
+				4175A02C2226371100B91F43 /* ZGShuoHashTagView.h */,
+				4175A02D2226371100B91F43 /* ZGShuoHashTagView.m */,
+				4175A02F2226376300B91F43 /* ZGShuoBaseCell.h */,
+				4175A0302226376300B91F43 /* ZGShuoBaseCell.m */,
+				4175A03222263B4500B91F43 /* ZGCommentShowView.h */,
+				4175A03322263B4500B91F43 /* ZGCommentShowView.m */,
+				4175A03522263B5600B91F43 /* ZGAudioWaveView.h */,
+				4175A03622263B5600B91F43 /* ZGAudioWaveView.m */,
+				4175A0382226649500B91F43 /* ZGShuoTextShowView.h */,
+				4175A0392226649500B91F43 /* ZGShuoTextShowView.m */,
+				4175A03B222665C900B91F43 /* ZGShuoUsersListView.h */,
+				4175A03C222665C900B91F43 /* ZGShuoUsersListView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3570,6 +3666,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4175A01222262B4F00B91F43 /* QERDiscover */,
 				417EBD5622200CDC00E86D8D /* CornerRadius */,
 				41BDBB872215786A00043C33 /* welcomePage */,
 				4110F9212213F48B006B9CEF /* UITabBarController */,
@@ -4399,6 +4496,7 @@
 				EF570B252024015300E14BC9 /* ZGTestCopyViewController.m in Sources */,
 				4189406921798637008C13D8 /* YGRecordView.m in Sources */,
 				EFC56B7F20181FA400BA5487 /* ZGHFGirl.m in Sources */,
+				4175A0212226320B00B91F43 /* ZGDiscoverConst.m in Sources */,
 				EF01D5E620AE6FC00023B282 /* ZGNTestController.m in Sources */,
 				EF72319F20DA40B600999D3A /* ZGAnimationsCollectionViewController.m in Sources */,
 				EF1C33021FBBEC0000FB43F9 /* ZGTestViewBoundsController.m in Sources */,
@@ -4411,13 +4509,17 @@
 				4174DD9021DC9C81007C89E6 /* ZGAVAudioUnitController.m in Sources */,
 				417F202321F0647C00471B03 /* fmod_player_effect.cpp in Sources */,
 				EFE4308820D50F82006930E5 /* ZGAnimationCell.m in Sources */,
+				4175A03422263B4500B91F43 /* ZGCommentShowView.m in Sources */,
 				EF570B122022F08200E14BC9 /* ZGKVODataModel.m in Sources */,
+				4175A02B222636C400B91F43 /* ZGShuoBottomView.m in Sources */,
 				EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */,
 				EF7F2CD3210AF75700AC6755 /* ZGSTITabModel.m in Sources */,
 				417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */,
 				EFFCE4841F62253C008E2375 /* ZGAddressListController.m in Sources */,
 				EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */,
 				EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */,
+				4175A024222632D700B91F43 /* ZGShuoModel.m in Sources */,
+				4175A02E2226371100B91F43 /* ZGShuoHashTagView.m in Sources */,
 				417115BF21AE8E0B0068079B /* ZGWKWebNoDataView.m in Sources */,
 				EF0A0EB1200701DF0095779B /* ZGSubTabBarView.m in Sources */,
 				417F206721F16A3700471B03 /* MZCodec.cpp in Sources */,
@@ -4440,7 +4542,9 @@
 				EFC6EE281FF4E78D00E1D2C5 /* ZGCategoryController.m in Sources */,
 				EF2EEAC320F495E900C9FBAD /* ZGKVOOObserverA.m in Sources */,
 				EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */,
+				4175A01822262B7100B91F43 /* ZGDiscoverController.m in Sources */,
 				EFFCE4A81F623F9E008E2375 /* ZGLetterSectionModel.m in Sources */,
+				4175A0282226365F00B91F43 /* ZGShuoTopView.m in Sources */,
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
 				417EBCB3221A4D9400E86D8D /* ZGChatAudioBubbleView.m in Sources */,
 				EFE4308220D5017C006930E5 /* ZGAnimationsCellController.m in Sources */,
@@ -4491,7 +4595,10 @@
 				EF083A2C21182BBC0037D17C /* ZGTimerController.m in Sources */,
 				EF2EEAAE20F4593B00C9FBAD /* ZGKVOResearchData.m in Sources */,
 				EF25CBBA20E28155005A7F8C /* ZGNestPageBController.m in Sources */,
+				4175A03D222665C900B91F43 /* ZGShuoUsersListView.m in Sources */,
 				EFC56B7C20181F9900BA5487 /* ZGHFMan.m in Sources */,
+				4175A01B22262D9900B91F43 /* ZGShuoCell.m in Sources */,
+				4175A03A2226649500B91F43 /* ZGShuoTextShowView.m in Sources */,
 				EF2EEAAD20F4593B00C9FBAD /* ZGKVOResearchObserverB.m in Sources */,
 				EFFCE48D1F622804008E2375 /* ZGAddressListCell.m in Sources */,
 				41CDAA512176048600D0DE9B /* ZGBezierController.m in Sources */,
@@ -4499,6 +4606,7 @@
 				EFFCE47D1F60F6AD008E2375 /* ZGOffScreenController.m in Sources */,
 				EF0A0EA52006FD9E0095779B /* ZGOneScrollViewController.m in Sources */,
 				417EBCB0221A4D8600E86D8D /* ZGChatTextBubbleView.m in Sources */,
+				4175A0312226376300B91F43 /* ZGShuoBaseCell.m in Sources */,
 				EF67D66F2057644D00FA65DC /* ZGINSubObject.m in Sources */,
 				EF819FC4212915FF009B959A /* ZGDicCopyModel.m in Sources */,
 				EF7F2C9521070F9500AC6755 /* ZGProModelB.m in Sources */,
@@ -4508,6 +4616,7 @@
 				4137F2EC2192B92E003B6D60 /* ZGPhotoPickController.m in Sources */,
 				417F203F21F064CA00471B03 /* ZGBottomToolBar.m in Sources */,
 				EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */,
+				4175A03722263B5600B91F43 /* ZGAudioWaveView.m in Sources */,
 				EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */,
 				EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */,
 				EFFCE49F1F62330F008E2375 /* NSString+PinYin4Cocoa.m in Sources */,
@@ -4573,6 +4682,7 @@
 				EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */,
 				EF58F69E214509180000CDC7 /* ZGVAKDiscoverController.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
+				4175A01E22262EBC00B91F43 /* ZGLevitateView.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
 				411B2BEA215B7275009747D8 /* ZGFontController.m in Sources */,
 				4151345021F8734E0054D972 /* ZGIMDesignController.m in Sources */,

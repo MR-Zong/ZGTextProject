@@ -113,6 +113,8 @@
 #import "ZGTabBarController.h"
 #import "ZGCornerRadiuController.h"
 
+#import "ZGDiscoverController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -146,7 +148,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 71;
+    return 72;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -294,6 +296,8 @@
         cell.textLabel.text = @"UITabBarController";
     }else if(indexPath.row == 70){
         cell.textLabel.text = @"cornerRadiu";
+    }else if(indexPath.row == 71){
+        cell.textLabel.text = @"QERDiscover";
     }
 
 
@@ -545,6 +549,9 @@
         [self.navigationController pushViewController:tabBarController animated:YES];
     }else if(indexPath.row == 70){
         ZGCornerRadiuController *con = [[ZGCornerRadiuController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 71){
+        ZGDiscoverController *con = [[ZGDiscoverController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
