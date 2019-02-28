@@ -14,10 +14,13 @@
 #import "ZGShuoModel.h"
 #import "ZGDiscoverConst.h"
 
+#import "ZGShuoDetailController.h"
+
 @interface ZGDiscoverController () <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *shuosAry;
+@property (nonatomic, assign) CGFloat progress;
 
 @end
 
@@ -26,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(doTimer) userInfo:nil repeats:YES];
     [self initialze];
     [self setupViews];
 }
@@ -94,6 +98,26 @@
     shuoModel.rowHeight = [ZGShuoCell tableView:tableView heightForRowAtIndexPath:indexPath withObject:shuoModel];
     
     return shuoModel.rowHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    ZGShuoModel *shuoModel = [self.shuosAry objectAtIndex:indexPath.row];
+
+    ZGShuoDetailController *shuoDetailVC = [[ZGShuoDetailController alloc] init];
+    shuoDetailVC.shuo_id = shuoModel.shuo_id;
+    [self.navigationController pushViewController:shuoDetailVC animated:YES];
+}
+
+#pragma mark - doTimer
+- (void)doTimer
+{
+    self.progress += 0.05;
+    NSLog(@"progress %f",self.progress);
+    ZGShuoCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    cell.progress = self.progress;
 }
 
 @end

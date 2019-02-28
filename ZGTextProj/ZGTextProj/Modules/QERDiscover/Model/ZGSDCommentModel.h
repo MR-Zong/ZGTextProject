@@ -1,5 +1,5 @@
 //
-//  ZGShuoModel.h
+//  ZGSDCommentModel.h
 //  ZGTextProj
 //
 //  Created by ali on 2019/2/27.
@@ -10,12 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZGShuoModel : NSObject
+@interface ZGSDCommentModel : NSObject
 
-@property (nonatomic, assign) NSInteger shuo_id;
 @property (nonatomic, assign) CGFloat rowHeight;
-@property (nonatomic, strong) NSString *content;
-@property (nonatomic, strong) NSString *hashTag;
 
 @end
 
