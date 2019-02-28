@@ -15,12 +15,14 @@
 #import "ZGDiscoverConst.h"
 
 #import "ZGShuoDetailController.h"
+#import "ZGLevitateView.h"
 
 @interface ZGDiscoverController () <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *shuosAry;
 @property (nonatomic, assign) CGFloat progress;
+@property (nonatomic, strong) ZGLevitateView *levitateView;
 
 @end
 
@@ -62,6 +64,9 @@
     _tableView.mj_header = header;
     _tableView.mj_footer = [MJRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(didLoadMore)];
     [self.view addSubview:_tableView];
+    
+    _levitateView = [[ZGLevitateView alloc] initWithFrame:CGRectMake(10, ZG_SCREEN_H-52-44-8, 187, 52)];
+    [self.view addSubview:_levitateView];
 }
 
 #pragma mark -

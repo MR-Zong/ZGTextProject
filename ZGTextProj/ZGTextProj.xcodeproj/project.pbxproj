@@ -57,6 +57,7 @@
 		4175A06F2226BABA00B91F43 /* ZGSDBaseComentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A06E2226BABA00B91F43 /* ZGSDBaseComentCell.m */; };
 		4175A0722226C09E00B91F43 /* ZGSDCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A0712226C09E00B91F43 /* ZGSDCommentModel.m */; };
 		4175A0752227883B00B91F43 /* ZGSDMorePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A0742227883B00B91F43 /* ZGSDMorePopView.m */; };
+		4175A0782227C0AB00B91F43 /* ZGRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A0772227C0AB00B91F43 /* ZGRotateView.m */; };
 		417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */; };
 		417EBCAD221A4D7300E86D8D /* ZGChatBaseBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */; };
 		417EBCB0221A4D8600E86D8D /* ZGChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */; };
@@ -451,6 +452,8 @@
 		4175A0712226C09E00B91F43 /* ZGSDCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSDCommentModel.m; sourceTree = "<group>"; };
 		4175A0732227883B00B91F43 /* ZGSDMorePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSDMorePopView.h; sourceTree = "<group>"; };
 		4175A0742227883B00B91F43 /* ZGSDMorePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSDMorePopView.m; sourceTree = "<group>"; };
+		4175A0762227C0AB00B91F43 /* ZGRotateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGRotateView.h; sourceTree = "<group>"; };
+		4175A0772227C0AB00B91F43 /* ZGRotateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGRotateView.m; sourceTree = "<group>"; };
 		417EBCA7221A4D0900E86D8D /* ZGChatTextInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTextInputView.h; sourceTree = "<group>"; };
 		417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTextInputView.m; sourceTree = "<group>"; };
 		417EBCAB221A4D7300E86D8D /* ZGChatBaseBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatBaseBubbleView.h; sourceTree = "<group>"; };
@@ -1524,6 +1527,8 @@
 				4175A0442226916C00B91F43 /* ZGShuoTextShowView.m */,
 				4175A0482226916C00B91F43 /* ZGShuoBottomView.h */,
 				4175A0512226916C00B91F43 /* ZGShuoBottomView.m */,
+				4175A0762227C0AB00B91F43 /* ZGRotateView.h */,
+				4175A0772227C0AB00B91F43 /* ZGRotateView.m */,
 			);
 			path = shuoList;
 			sourceTree = "<group>";
@@ -4747,6 +4752,7 @@
 				4151345021F8734E0054D972 /* ZGIMDesignController.m in Sources */,
 				EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */,
 				415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */,
+				4175A0782227C0AB00B91F43 /* ZGRotateView.m in Sources */,
 				EF42A576211D8D9100EB4A4E /* ZGHotFixController.m in Sources */,
 				EF2F668F1FFF638800EA4F6F /* ZGTbTestController.m in Sources */,
 				41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */,
