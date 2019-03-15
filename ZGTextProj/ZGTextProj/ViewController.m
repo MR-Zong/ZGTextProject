@@ -114,6 +114,7 @@
 #import "ZGCornerRadiuController.h"
 
 #import "ZGDiscoverController.h"
+#import "ZGAliyunTestController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -148,7 +149,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 72;
+    return 73;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -298,6 +299,8 @@
         cell.textLabel.text = @"cornerRadiu";
     }else if(indexPath.row == 71){
         cell.textLabel.text = @"QERDiscover";
+    }else if(indexPath.row == 72){
+        cell.textLabel.text = @"AliyunText";
     }
 
 
@@ -552,6 +555,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 71){
         ZGDiscoverController *con = [[ZGDiscoverController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 72){
+        ZGAliyunTestController *con = [[ZGAliyunTestController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

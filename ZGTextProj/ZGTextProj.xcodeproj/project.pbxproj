@@ -27,6 +27,11 @@
 		415D8B2F2181C851000A8213 /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B2D2181C851000A8213 /* AutoScrollLabel.m */; };
 		415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */; };
 		415D8B372181F6F9000A8213 /* ZGAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */; };
+		4163862B223BA351008E09C3 /* ZGAliyunRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4163862A223BA351008E09C3 /* ZGAliyunRecognizer.m */; };
+		4163862E223BA372008E09C3 /* ZGAliyunTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4163862D223BA372008E09C3 /* ZGAliyunTestController.m */; };
+		41638635223BA8D2008E09C3 /* AliyunNlsSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */; };
+		41638636223BAAC1008E09C3 /* AliyunNlsSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */; };
+		41638637223BAAC1008E09C3 /* AliyunNlsSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		417115B221AB93130068079B /* ZGIMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B121AB93130068079B /* ZGIMessageController.m */; };
 		417115B921AD4E2D0068079B /* ZGWebKitTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B821AD4E2D0068079B /* ZGWebKitTestController.m */; };
 		417115BC21AE7C910068079B /* ZGWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115BB21AE7C910068079B /* ZGWKWebViewController.m */; };
@@ -356,6 +361,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		41638638223BAAC2008E09C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41638637223BAAC1008E09C3 /* AliyunNlsSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BE1B45B0B6A1FF1F99AF3B /* Pods-ZGTextProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjUITests/Pods-ZGTextProjUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -392,6 +411,12 @@
 		415D8B322181C872000A8213 /* ZGAutoScrollLabelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAutoScrollLabelController.m; sourceTree = "<group>"; };
 		415D8B352181F6F9000A8213 /* ZGAutoScrollLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAutoScrollLabel.h; sourceTree = "<group>"; };
 		415D8B362181F6F9000A8213 /* ZGAutoScrollLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAutoScrollLabel.m; sourceTree = "<group>"; };
+		41638629223BA351008E09C3 /* ZGAliyunRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAliyunRecognizer.h; sourceTree = "<group>"; };
+		4163862A223BA351008E09C3 /* ZGAliyunRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAliyunRecognizer.m; sourceTree = "<group>"; };
+		4163862C223BA372008E09C3 /* ZGAliyunTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAliyunTestController.h; sourceTree = "<group>"; };
+		4163862D223BA372008E09C3 /* ZGAliyunTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAliyunTestController.m; sourceTree = "<group>"; };
+		41638632223BA8AF008E09C3 /* AliyunNlsSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AliyunNlsSdk.framework; path = "../../../../../Downloads/临时切图/头像/AliyunNlsSdk.framework"; sourceTree = "<group>"; };
+		41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunNlsSdk.framework; sourceTree = "<group>"; };
 		417115B021AB93130068079B /* ZGIMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMessageController.h; sourceTree = "<group>"; };
 		417115B121AB93130068079B /* ZGIMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMessageController.m; sourceTree = "<group>"; };
 		417115B721AD4E2D0068079B /* ZGWebKitTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWebKitTestController.h; sourceTree = "<group>"; };
@@ -1016,10 +1041,12 @@
 			files = (
 				417F203721F0648900471B03 /* libfmodL_iphonesimulator.a in Frameworks */,
 				417F203821F0648900471B03 /* libfmodL_iphoneos.a in Frameworks */,
+				41638635223BA8D2008E09C3 /* AliyunNlsSdk.framework in Frameworks */,
 				417F203921F0648900471B03 /* libfmod_iphoneos.a in Frameworks */,
 				417F206021F169EC00471B03 /* libmp4ff.a in Frameworks */,
 				417F203621F0648900471B03 /* libfmod_iphonesimulator.a in Frameworks */,
 				417F205621F169E400471B03 /* libfaac.a in Frameworks */,
+				41638636223BAAC1008E09C3 /* AliyunNlsSdk.framework in Frameworks */,
 				417F206121F169EC00471B03 /* libfaad.a in Frameworks */,
 				6E315BDC31DCCCC5930B0BEC /* libPods-ZGTextProj.a in Frameworks */,
 			);
@@ -1310,6 +1337,14 @@
 			path = ZGAutoScrollLabel;
 			sourceTree = "<group>";
 		};
+		41638626223BA068008E09C3 /* AliyunSDK */ = {
+			isa = PBXGroup;
+			children = (
+				41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */,
+			);
+			path = AliyunSDK;
+			sourceTree = "<group>";
+		};
 		417115AC21AB92F00068079B /* IMessage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1439,6 +1474,8 @@
 			children = (
 				4174DD8B21DC9C29007C89E6 /* ZGAVAudioQueueController.h */,
 				4174DD8C21DC9C29007C89E6 /* ZGAVAudioQueueController.m */,
+				4163862C223BA372008E09C3 /* ZGAliyunTestController.h */,
+				4163862D223BA372008E09C3 /* ZGAliyunTestController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1450,6 +1487,8 @@
 				4174DD9221DCB46A007C89E6 /* AudioQueueRecorder.m */,
 				4174DD9421DCBC89007C89E6 /* AudioQueuePlayer.h */,
 				4174DD9521DCBC89007C89E6 /* AudioQueuePlayer.m */,
+				41638629223BA351008E09C3 /* ZGAliyunRecognizer.h */,
+				4163862A223BA351008E09C3 /* ZGAliyunRecognizer.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2030,6 +2069,7 @@
 		9400C24B02B6D573E382F8CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41638632223BA8AF008E09C3 /* AliyunNlsSdk.framework */,
 				0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */,
 				C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */,
 				F7302507167BBB7FEAD1BA85 /* libPods-ZGTextProjUITests.a */,
@@ -4077,6 +4117,7 @@
 		EFF1DA8C20D3C56100CBC680 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				41638626223BA068008E09C3 /* AliyunSDK */,
 				EFF1DA8D20D3C56100CBC680 /* Category */,
 			);
 			path = Libraries;
@@ -4296,6 +4337,7 @@
 				EFDBCDB61F2B159700C542AD /* Frameworks */,
 				EFDBCDB71F2B159700C542AD /* Resources */,
 				0AC3261652D4F115DAD5C882 /* [CP] Copy Pods Resources */,
+				41638638223BAAC2008E09C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -4611,6 +4653,7 @@
 				417EBCB3221A4D9400E86D8D /* ZGChatAudioBubbleView.m in Sources */,
 				EFE4308220D5017C006930E5 /* ZGAnimationsCellController.m in Sources */,
 				EF64EEB020E485A3009B5767 /* ZGCellOpGestureTable.m in Sources */,
+				4163862B223BA351008E09C3 /* ZGAliyunRecognizer.m in Sources */,
 				417EBCB6221A4E4900E86D8D /* ZGChatBaseCell.m in Sources */,
 				EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */,
 				EFE4308B20D51721006930E5 /* ZGAnimationsTableView.m in Sources */,
@@ -4635,6 +4678,7 @@
 				EFFA9C451FFB25A400280573 /* ZGAVAudioTrackController.m in Sources */,
 				41D0A9A021C2920D00BD543C /* ZGFixItemSpaceFlowLayout.m in Sources */,
 				EF7F2CD6210AF7BF00AC6755 /* ZGSTIHotController.m in Sources */,
+				4163862E223BA372008E09C3 /* ZGAliyunTestController.m in Sources */,
 				4110F92A22141333006B9CEF /* ZGTabBarContentView.m in Sources */,
 				417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
@@ -4981,6 +5025,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BVF5F2U9J;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGTextProj/Libraries/AliyunSDK",
+				);
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -5002,6 +5050,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BVF5F2U9J;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZGTextProj/Libraries/AliyunSDK",
+				);
 				INFOPLIST_FILE = ZGTextProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
