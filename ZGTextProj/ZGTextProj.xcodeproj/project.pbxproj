@@ -32,6 +32,8 @@
 		41638635223BA8D2008E09C3 /* AliyunNlsSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */; };
 		41638636223BAAC1008E09C3 /* AliyunNlsSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */; };
 		41638637223BAAC1008E09C3 /* AliyunNlsSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4163863E223E4D3E008E09C3 /* ZGShapeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4163863D223E4D3D008E09C3 /* ZGShapeAnimationController.m */; };
+		41638642223E4F48008E09C3 /* ZGWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41638641223E4F48008E09C3 /* ZGWaterWaveView.m */; };
 		417115B221AB93130068079B /* ZGIMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B121AB93130068079B /* ZGIMessageController.m */; };
 		417115B921AD4E2D0068079B /* ZGWebKitTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115B821AD4E2D0068079B /* ZGWebKitTestController.m */; };
 		417115BC21AE7C910068079B /* ZGWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 417115BB21AE7C910068079B /* ZGWKWebViewController.m */; };
@@ -417,6 +419,10 @@
 		4163862D223BA372008E09C3 /* ZGAliyunTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAliyunTestController.m; sourceTree = "<group>"; };
 		41638632223BA8AF008E09C3 /* AliyunNlsSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AliyunNlsSdk.framework; path = "../../../../../Downloads/临时切图/头像/AliyunNlsSdk.framework"; sourceTree = "<group>"; };
 		41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunNlsSdk.framework; sourceTree = "<group>"; };
+		4163863C223E4D3D008E09C3 /* ZGShapeAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGShapeAnimationController.h; sourceTree = "<group>"; };
+		4163863D223E4D3D008E09C3 /* ZGShapeAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGShapeAnimationController.m; sourceTree = "<group>"; };
+		41638640223E4F48008E09C3 /* ZGWaterWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWaterWaveView.h; sourceTree = "<group>"; };
+		41638641223E4F48008E09C3 /* ZGWaterWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGWaterWaveView.m; sourceTree = "<group>"; };
 		417115B021AB93130068079B /* ZGIMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGIMessageController.h; sourceTree = "<group>"; };
 		417115B121AB93130068079B /* ZGIMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGIMessageController.m; sourceTree = "<group>"; };
 		417115B721AD4E2D0068079B /* ZGWebKitTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGWebKitTestController.h; sourceTree = "<group>"; };
@@ -1343,6 +1349,15 @@
 				41638634223BA8D2008E09C3 /* AliyunNlsSdk.framework */,
 			);
 			path = AliyunSDK;
+			sourceTree = "<group>";
+		};
+		4163863F223E4F11008E09C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41638640223E4F48008E09C3 /* ZGWaterWaveView.h */,
+				41638641223E4F48008E09C3 /* ZGWaterWaveView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		417115AC21AB92F00068079B /* IMessage */ = {
@@ -3484,9 +3499,8 @@
 		EFC4FA872069EDC900F42842 /* CAAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				4163863F223E4F11008E09C3 /* View */,
 				EFC4FA882069EDC900F42842 /* Controller */,
-				EFC4FA892069EDC900F42842 /* Model */,
-				EFC4FA8A2069EDC900F42842 /* View */,
 			);
 			path = CAAnimation;
 			sourceTree = "<group>";
@@ -3496,22 +3510,10 @@
 			children = (
 				EFC4FA8B2069EDE000F42842 /* ZGCAAnimationController.h */,
 				EFC4FA8C2069EDE000F42842 /* ZGCAAnimationController.m */,
+				4163863C223E4D3D008E09C3 /* ZGShapeAnimationController.h */,
+				4163863D223E4D3D008E09C3 /* ZGShapeAnimationController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		EFC4FA892069EDC900F42842 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EFC4FA8A2069EDC900F42842 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		EFC4FA8E206B46B600F42842 /* Crash */ = {
@@ -4589,6 +4591,7 @@
 				417115B221AB93130068079B /* ZGIMessageController.m in Sources */,
 				EF2EEAC020F495D300C9FBAD /* ZGKVOODataModel.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
+				4163863E223E4D3E008E09C3 /* ZGShapeAnimationController.m in Sources */,
 				4174DD8D21DC9C29007C89E6 /* ZGAVAudioQueueController.m in Sources */,
 				EF083A2F21182D380037D17C /* ZGTimerProcess.m in Sources */,
 				EF14C7EB2101D419007CC07B /* ZGArchiveModelA.m in Sources */,
@@ -4621,6 +4624,7 @@
 				417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */,
 				EFFCE4841F62253C008E2375 /* ZGAddressListController.m in Sources */,
 				EFF1DA5920D104AC00CBC680 /* ZGPageCController.m in Sources */,
+				41638642223E4F48008E09C3 /* ZGWaterWaveView.m in Sources */,
 				EF3FE04F2010B2200088C2C9 /* ZGWeakSelfManager.m in Sources */,
 				4175A024222632D700B91F43 /* ZGShuoModel.m in Sources */,
 				4175A0572226916C00B91F43 /* ZGShuoHashTagView.m in Sources */,

@@ -115,6 +115,7 @@
 
 #import "ZGDiscoverController.h"
 #import "ZGAliyunTestController.h"
+#import "ZGShapeAnimationController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -404,7 +405,8 @@
         ZGPerformanceController *con = [[ZGPerformanceController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 29){
-        ZGCAAnimationController *con = [[ZGCAAnimationController alloc] init];
+//        ZGCAAnimationController
+        ZGShapeAnimationController *con = [[ZGShapeAnimationController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 30){
         ZGCrashController *con = [[ZGCrashController alloc] init];
