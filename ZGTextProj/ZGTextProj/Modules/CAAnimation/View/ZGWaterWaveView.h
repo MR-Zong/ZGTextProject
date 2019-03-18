@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *secondWaveColor;
 
 -(void)startWave;
+-(void)stopWave;
 
 @end
 
