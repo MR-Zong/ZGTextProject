@@ -99,6 +99,7 @@
 		417F206421F16A2800471B03 /* wavreader.c in Sources */ = {isa = PBXBuildFile; fileRef = 417F206221F16A2700471B03 /* wavreader.c */; };
 		417F206721F16A3700471B03 /* MZCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F206621F16A3700471B03 /* MZCodec.cpp */; };
 		417F206A21F17C4800471B03 /* gamesound.aac in Resources */ = {isa = PBXBuildFile; fileRef = 417F206921F17C4800471B03 /* gamesound.aac */; };
+		41893A202240C64600BE83D7 /* ZGPlayAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41893A1E2240C64500BE83D7 /* ZGPlayAnimationView.m */; };
 		4189406921798637008C13D8 /* YGRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4189406821798637008C13D8 /* YGRecordView.m */; };
 		418E959121E4CF1A00349982 /* testZong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 418E959021E4CF1A00349982 /* testZong.wav */; };
 		41BDBB9122157A9500043C33 /* intro_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BDBB8D22157A9500043C33 /* intro_0.jpg */; };
@@ -559,6 +560,8 @@
 		417F206521F16A3700471B03 /* MZCodec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MZCodec.hpp; sourceTree = "<group>"; };
 		417F206621F16A3700471B03 /* MZCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MZCodec.cpp; sourceTree = "<group>"; };
 		417F206921F17C4800471B03 /* gamesound.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = gamesound.aac; sourceTree = "<group>"; };
+		41893A1E2240C64500BE83D7 /* ZGPlayAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGPlayAnimationView.m; sourceTree = "<group>"; };
+		41893A1F2240C64500BE83D7 /* ZGPlayAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGPlayAnimationView.h; sourceTree = "<group>"; };
 		4189406721798637008C13D8 /* YGRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGRecordView.h; sourceTree = "<group>"; };
 		4189406821798637008C13D8 /* YGRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YGRecordView.m; sourceTree = "<group>"; };
 		418E959021E4CF1A00349982 /* testZong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = testZong.wav; sourceTree = "<group>"; };
@@ -1354,6 +1357,8 @@
 		4163863F223E4F11008E09C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				41893A1F2240C64500BE83D7 /* ZGPlayAnimationView.h */,
+				41893A1E2240C64500BE83D7 /* ZGPlayAnimationView.m */,
 				41638640223E4F48008E09C3 /* ZGWaterWaveView.h */,
 				41638641223E4F48008E09C3 /* ZGWaterWaveView.m */,
 			);
@@ -4853,6 +4858,7 @@
 				EFF1DA5C20D118D900CBC680 /* ZGPageDController.m in Sources */,
 				EF266127214DFDF800B8DA30 /* ZGGzipController.m in Sources */,
 				4110F92D221418AD006B9CEF /* ZGTabBarButton.m in Sources */,
+				41893A202240C64600BE83D7 /* ZGPlayAnimationView.m in Sources */,
 				EF7AC49D211F247600ED7982 /* ZGPSHIModelA.m in Sources */,
 				4137F2C32190209C003B6D60 /* ZGWeakSetterModel.m in Sources */,
 				EFDBCDBE1F2B159700C542AD /* main.m in Sources */,
