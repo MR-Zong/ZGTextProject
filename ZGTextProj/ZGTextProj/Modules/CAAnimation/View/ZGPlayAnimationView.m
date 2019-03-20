@@ -21,6 +21,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         
+        self.hidden = YES;
         _radius1 = 20;
         _radius2 = 10;
         _duration1 = 10;
@@ -77,12 +78,14 @@
 #pragma mark - - - -
 - (void)startAnimation
 {
+    self.hidden = NO;
     [self animationCircleWithLayer:self.circle1 radius:self.radius1 duration:self.duration1];
     [self animationCircleWithLayer:self.circle2 radius:self.radius2 duration:self.duration2];
 }
 
 - (void)stopAnimation
 {
+    self.hidden = YES;
     [self.circle1 removeAllAnimations];
     [self.circle2 removeAllAnimations];
 }
