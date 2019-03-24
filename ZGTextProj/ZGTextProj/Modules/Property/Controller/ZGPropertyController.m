@@ -13,6 +13,7 @@
 
 #import "ZGPEteModelA.h"
 #import "ZGPSHIModelA.h"
+#import "ZGPCopyModel.h"
 
 /**
  * 匿名分类 不在.m模块里 也不能定义实例变量 效果和不是匿名分类一个效果
@@ -75,7 +76,14 @@
      * 测试
      * Property 默认都是什么修饰
      */
-        [self testDefaultProperty];
+//        [self testDefaultProperty];
+    
+    /**
+     * 测试
+     * Property copy修饰的话，get方法是否有copy
+     */
+    [self testPropertyCopy];
+    
     
     
     
@@ -172,7 +180,7 @@
     ZGPEteModelA *a = [[ZGPEteModelA alloc] init];
     
     /**
-     * 匿名分类在 类定义.m 外，和其他分类效果一样
+     * 匿名分类在 类定义.m 外，和其他分类效果一样，没有合成get set方法和实例变量
      */
 //    a.address = @"dabu";
 //    NSLog(@"a.address %@",a);
@@ -205,4 +213,17 @@
     NSLog(@"s %@",t);
     NSLog(@"a.name %@",a.name);
 }
+
+#pragma mark - testPropertyCopy
+- (void)testPropertyCopy
+{
+    /**
+     *  证明 copy 只有set方法才会copy get是不会copy的
+     */
+    ZGPCopyModel *md = [[ZGPCopyModel alloc] init];
+    md.py = [ZGPCopyModelPy new];
+    
+    NSLog(@"md.py %@",md.py);
+}
+
 @end

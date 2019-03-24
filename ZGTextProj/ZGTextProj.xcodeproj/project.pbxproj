@@ -126,6 +126,7 @@
 		41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE519C218B138900F17BF5 /* ZGExposureManager.m */; };
 		6E315BDC31DCCCC5930B0BEC /* libPods-ZGTextProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */; };
 		7222110966F2E76124B0BAC9 /* libPods-ZGTextProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */; };
+		EF0015AD224768A000A7A73E /* ZGPCopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0015AC224768A000A7A73E /* ZGPCopyModel.m */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
 		EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */; };
 		EF01D5E320AE6E310023B282 /* ZGNavTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5E220AE6E310023B282 /* ZGNavTestController.m */; };
@@ -606,6 +607,8 @@
 		720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjUITests/Pods-ZGTextProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.debug.xcconfig"; sourceTree = "<group>"; };
 		C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProjTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0015AB224768A000A7A73E /* ZGPCopyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPCopyModel.h; sourceTree = "<group>"; };
+		EF0015AC224768A000A7A73E /* ZGPCopyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPCopyModel.m; sourceTree = "<group>"; };
 		EF01D5B220AC08170023B282 /* ZGSafeAreaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGSafeAreaController.h; sourceTree = "<group>"; };
 		EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGSafeAreaController.m; sourceTree = "<group>"; };
 		EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZGSAExample.storyboard; sourceTree = "<group>"; };
@@ -2097,6 +2100,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF0015AA2247688300A7A73E /* copy */ = {
+			isa = PBXGroup;
+			children = (
+				EF0015AB224768A000A7A73E /* ZGPCopyModel.h */,
+				EF0015AC224768A000A7A73E /* ZGPCopyModel.m */,
+			);
+			path = copy;
+			sourceTree = "<group>";
+		};
 		EF01D5AE20AC070B0023B282 /* SafeArea */ = {
 			isa = PBXGroup;
 			children = (
@@ -3285,6 +3297,7 @@
 		EF7A7A202100392B00B79368 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EF0015AA2247688300A7A73E /* copy */,
 				EF7AC49A211F246200ED7982 /* shareInstance */,
 				EF7AC496211F215E00ED7982 /* extend */,
 				EF7F2C9721070FA500AC6755 /* automic */,
@@ -4729,6 +4742,7 @@
 				4137F2EC2192B92E003B6D60 /* ZGPhotoPickController.m in Sources */,
 				4175A0552226916C00B91F43 /* ZGShuoTextShowView.m in Sources */,
 				417F203F21F064CA00471B03 /* ZGBottomToolBar.m in Sources */,
+				EF0015AD224768A000A7A73E /* ZGPCopyModel.m in Sources */,
 				EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */,
 				EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */,
 				EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */,
