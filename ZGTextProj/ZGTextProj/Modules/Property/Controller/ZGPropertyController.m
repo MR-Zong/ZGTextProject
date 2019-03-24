@@ -58,7 +58,7 @@
      * 结论：实践证明 runloop唤醒后 一定会先执行完 睡眠前未执行完的任务，然后再执行唤醒runloop的
      * timer dispatch_asyn source1 的对应回调
      */
-//    [self testRunLoop];
+    [self testRunLoop];
     
     
     /**
@@ -82,7 +82,7 @@
      * 测试
      * Property copy修饰的话，get方法是否有copy
      */
-    [self testPropertyCopy];
+//    [self testPropertyCopy];
     
     
     
