@@ -1,70 +1,77 @@
 //
-//  ZGAudioRmoteControlController.m
+//  ZGRemoteController.m
 //  ZGTextProj
 //
-//  Created by ali on 2019/1/22.
+//  Created by ali on 2019/3/26.
 //  Copyright © 2019 XuZonggen. All rights reserved.
 //
 
-#import "ZGAudioRmoteControlController.h"
-#import <AVFoundation/AVFoundation.h>
 #import "ZGRemoteController.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface ZGAudioRmoteControlController ()
+@implementation ZGRemoteController
 
-@property (nonatomic, strong) AVPlayer *player;
-
-@end
-
-@implementation ZGAudioRmoteControlController
-
-- (void) viewWillAppear:(BOOL)animated
+- (void)dealloc
 {
-    [super viewWillAppear:animated];
-    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    [self becomeFirstResponder];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void) viewWillDisappear:(BOOL)animated
++ (instancetype)shareInstance
 {
-    [super viewWillDisappear:animated];
-    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
-    [self resignFirstResponder];
+    static dispatch_once_t onceToken;
+    static ZGRemoteController *_zg_remoteController_;
+    dispatch_once(&onceToken, ^{
+        _zg_remoteController_ = [[ZGRemoteController alloc] init];
+    });
+    
+    return _zg_remoteController_;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-//    [[ZGRemoteController shareInstance] setup];
-    
-
-    AVAudioSession *as = [AVAudioSession sharedInstance];
-    NSError *error;
-    [as setCategory:AVAudioSessionCategoryPlayback error:&error];
-    [as setActive:YES error:&error];
-    
-    NSURL *fileUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"testZong.wav" ofType:nil]];
-    _player = [[AVPlayer alloc] initWithURL:fileUrl];
-    
-    [_player play];
-
+- (instancetype)init
+{
+    if (self = [super init]) {
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didAppWillResignActiveNotification:) name:UIApplicationWillResignActiveNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didAppWillEnterForegroundNotification:) name:UIApplicationWillEnterForegroundNotification object:nil];
+    }
+    return self;
 }
 
+- (void)setup
+{
+    ;
+}
 
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
 }
 
-//received remote event
+
+#pragma mark - notify
+- (void)didAppWillResignActiveNotification:(NSNotification *)note
+{
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [self becomeFirstResponder];
+    
+    AVAudioSession *as = [AVAudioSession sharedInstance];
+    NSError *error;
+    [as setCategory:AVAudioSessionCategoryPlayback error:&error];
+    [as setActive:YES error:&error];
+}
+
+- (void)didAppWillEnterForegroundNotification:(NSNotification *)note
+{
+    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
+}
+
+#pragma mark - -
 -(void)remoteControlReceivedWithEvent:(UIEvent *)event{
     NSLog(@"event tyipe:::%ld   subtype:::%ld",(long)event.type,(long)event.subtype);
     //type==2  subtype==单击暂停键：103，双击暂停键104
     if (event.type == UIEventTypeRemoteControl) {
         switch (event.subtype) {
-
+                
             case UIEventSubtypeRemoteControlPlay:{
                 NSLog(@"play---------");
             }break;
@@ -96,7 +103,5 @@
         }
     }
 }
-
-
 
 @end
