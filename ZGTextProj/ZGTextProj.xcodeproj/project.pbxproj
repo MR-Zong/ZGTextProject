@@ -66,6 +66,7 @@
 		4175A0752227883B00B91F43 /* ZGSDMorePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A0742227883B00B91F43 /* ZGSDMorePopView.m */; };
 		4175A0782227C0AB00B91F43 /* ZGRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4175A0772227C0AB00B91F43 /* ZGRotateView.m */; };
 		4177D78E224A4F9200B5C863 /* ZGRemoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4177D78D224A4F9200B5C863 /* ZGRemoteController.m */; };
+		4177D798224F110300B5C863 /* ZGAuthorizationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4177D796224F110300B5C863 /* ZGAuthorizationHelper.m */; };
 		417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */; };
 		417EBCAD221A4D7300E86D8D /* ZGChatBaseBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAC221A4D7300E86D8D /* ZGChatBaseBubbleView.m */; };
 		417EBCB0221A4D8600E86D8D /* ZGChatTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EBCAF221A4D8600E86D8D /* ZGChatTextBubbleView.m */; };
@@ -490,6 +491,8 @@
 		4175A0772227C0AB00B91F43 /* ZGRotateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGRotateView.m; sourceTree = "<group>"; };
 		4177D78C224A4F9200B5C863 /* ZGRemoteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGRemoteController.h; sourceTree = "<group>"; };
 		4177D78D224A4F9200B5C863 /* ZGRemoteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGRemoteController.m; sourceTree = "<group>"; };
+		4177D796224F110300B5C863 /* ZGAuthorizationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAuthorizationHelper.m; sourceTree = "<group>"; };
+		4177D797224F110300B5C863 /* ZGAuthorizationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAuthorizationHelper.h; sourceTree = "<group>"; };
 		417EBCA7221A4D0900E86D8D /* ZGChatTextInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatTextInputView.h; sourceTree = "<group>"; };
 		417EBCA8221A4D0900E86D8D /* ZGChatTextInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChatTextInputView.m; sourceTree = "<group>"; };
 		417EBCAB221A4D7300E86D8D /* ZGChatBaseBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChatBaseBubbleView.h; sourceTree = "<group>"; };
@@ -1617,6 +1620,39 @@
 				4175A0742227883B00B91F43 /* ZGSDMorePopView.m */,
 			);
 			path = shuoDetail;
+			sourceTree = "<group>";
+		};
+		4177D792224F10ED00B5C863 /* Authorize */ = {
+			isa = PBXGroup;
+			children = (
+				4177D793224F10ED00B5C863 /* Controller */,
+				4177D794224F10ED00B5C863 /* Model */,
+				4177D795224F10ED00B5C863 /* View */,
+			);
+			path = Authorize;
+			sourceTree = "<group>";
+		};
+		4177D793224F10ED00B5C863 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4177D794224F10ED00B5C863 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4177D797224F110300B5C863 /* ZGAuthorizationHelper.h */,
+				4177D796224F110300B5C863 /* ZGAuthorizationHelper.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4177D795224F10ED00B5C863 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		417EBCAA221A4D5D00E86D8D /* BubbleView */ = {
@@ -3792,6 +3828,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4177D792224F10ED00B5C863 /* Authorize */,
 				4175A01222262B4F00B91F43 /* QERDiscover */,
 				417EBD5622200CDC00E86D8D /* CornerRadius */,
 				41BDBB872215786A00043C33 /* welcomePage */,
@@ -4630,6 +4667,7 @@
 				EFFCE4AF1F624D3F008E2375 /* ZGCalendarController.m in Sources */,
 				EF7F2C9A2107106600AC6755 /* ZGPAUTModelA.m in Sources */,
 				EF570B252024015300E14BC9 /* ZGTestCopyViewController.m in Sources */,
+				4177D798224F110300B5C863 /* ZGAuthorizationHelper.m in Sources */,
 				4189406921798637008C13D8 /* YGRecordView.m in Sources */,
 				EFC56B7F20181FA400BA5487 /* ZGHFGirl.m in Sources */,
 				4175A0212226320B00B91F43 /* ZGDiscoverConst.m in Sources */,
