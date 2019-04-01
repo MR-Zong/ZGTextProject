@@ -124,6 +124,7 @@
 		41D0A9A621C3586E00BD543C /* ZGTextFixCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0A9A521C3586E00BD543C /* ZGTextFixCollectionViewCell.m */; };
 		41D439B021A68EBB00C16FCA /* ZGAssertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D439AF21A68EBB00C16FCA /* ZGAssertController.m */; };
 		41DEED7B21A6D9910017579A /* export.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DEED7A21A6D9910017579A /* export.plist */; };
+		41EE603522523D7E00D5ACC9 /* ZGBlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EE603422523D7E00D5ACC9 /* ZGBlockModel.m */; };
 		41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE518C218989C400F17BF5 /* ZGExposureCell.m */; };
 		41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE519C218B138900F17BF5 /* ZGExposureManager.m */; };
 		6E315BDC31DCCCC5930B0BEC /* libPods-ZGTextProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */; };
@@ -605,6 +606,8 @@
 		41D439AE21A68EBB00C16FCA /* ZGAssertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAssertController.h; sourceTree = "<group>"; };
 		41D439AF21A68EBB00C16FCA /* ZGAssertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAssertController.m; sourceTree = "<group>"; };
 		41DEED7A21A6D9910017579A /* export.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = export.plist; sourceTree = "<group>"; };
+		41EE603322523D7E00D5ACC9 /* ZGBlockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBlockModel.h; sourceTree = "<group>"; };
+		41EE603422523D7E00D5ACC9 /* ZGBlockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBlockModel.m; sourceTree = "<group>"; };
 		41FE518B218989C400F17BF5 /* ZGExposureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExposureCell.h; sourceTree = "<group>"; };
 		41FE518C218989C400F17BF5 /* ZGExposureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExposureCell.m; sourceTree = "<group>"; };
 		41FE519B218B138900F17BF5 /* ZGExposureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGExposureManager.h; sourceTree = "<group>"; };
@@ -2595,6 +2598,8 @@
 			children = (
 				EF2F66781FFC6B5D00EA4F6F /* ZGBlockPeople.h */,
 				EF2F66791FFC6B5D00EA4F6F /* ZGBlockPeople.m */,
+				41EE603322523D7E00D5ACC9 /* ZGBlockModel.h */,
+				41EE603422523D7E00D5ACC9 /* ZGBlockModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4751,6 +4756,7 @@
 				4163862E223BA372008E09C3 /* ZGAliyunTestController.m in Sources */,
 				4110F92A22141333006B9CEF /* ZGTabBarContentView.m in Sources */,
 				417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */,
+				41EE603522523D7E00D5ACC9 /* ZGBlockModel.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,

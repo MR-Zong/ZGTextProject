@@ -13,6 +13,7 @@
 
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) ZGBlockPeople *p;
+@property (nonatomic, weak) void(^zg_stackBlcok)(void);
 
 @end
 
@@ -27,7 +28,47 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-     _p = [[ZGBlockPeople alloc] init];
+    // 怎么破block循环引用
+//    [self testBlockRecyle];
+    
+    // 三种block 全局，栈 堆block
+    [self testBlockClass];
+    
+    
+}
+
+#pragma mark  - 三种block 全局，栈 堆block
+- (void)testBlockClass
+{
+    self.zg_stackBlcok = ^(){
+        NSLog(@"xxxx");
+        NSLog(@"self %@",self);
+    };
+    
+    
+    __weak void(^tmpBlock)(void) = ^(void){
+        NSLog(@"yyyyyy");
+        NSLog(@"self %@",self);
+    };
+    
+    void (^gloableBlock)(void) = ^(void){
+        NSLog(@"xxxxxxx");
+    };
+    
+    NSLog(@"zg_stackBlcok %@",self.zg_stackBlcok);
+    NSLog(@"tmpBlock %@",tmpBlock);
+    NSLog(@"gloableBlock %@",gloableBlock);
+    
+    // 好神奇的block 正常nsobject类是不能用weak 来引用初始化的
+    __weak NSObject *aobj = [NSObject new];
+    NSLog(@"aobj %@",aobj);
+}
+
+#pragma mark  - 怎么破block循环引用
+- (void)testBlockRecyle
+{
+    
+    _p = [[ZGBlockPeople alloc] init];
     [_p setupSayBlock:^(NSString *str) {
         self.name = @"zonggen";
         NSLog(@"%@",str);
@@ -47,7 +88,6 @@
     btn.frame = CGRectMake(100, 100, 100, 100);
     [btn addTarget:self action:@selector(didBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    
 }
 
 - (void)didBtn:(UIButton *)btn
