@@ -89,13 +89,16 @@
     // 可变对象的copy
     NSMutableArray *mAry = [[NSMutableArray alloc] initWithObjects:str,mStr,zcObj, nil];
     NSArray *cymAry = [mAry copy];
+    [mAry addObject:@"after copy add obj"];
+    NSMutableString *mStr2 = mAry[1];
+    [mStr2 setString:@"mStr after copy add obj"];
     NSLog(@"mAry %p,cymAry %p",mAry,cymAry);
     NSLog(@"mArytr %@\t cymAry %@",[mAry class],[cymAry class]);
     
     for (NSString *s in mAry) {
         NSLog(@"mAryElement :%@  %p",[s class],s);
     }
-    
+    NSLog(@"mAry.count %zd",mAry.count);
     for (NSString *s in cymAry) {
         NSLog(@"cymAryElement :%@  %p",[s class],s);
     }
