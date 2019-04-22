@@ -32,6 +32,9 @@
     [super viewDidLoad];
     
 //    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(doTimer) userInfo:nil repeats:YES];
+    
+    SEL sl = @selector(viewDidDisappear:);
+    NSLog(@"sl %d",sl);
     [self initialze];
     [self setupViews];
 }

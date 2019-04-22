@@ -34,13 +34,29 @@
     /**
      * 锁 对于函数递归
      */
-    _lock = [[NSLock alloc] init];
-    [self testLockFuntion];
+//    _lock = [[NSLock alloc] init];
+//    [self testLockFuntion];
     
     /**
      * benchmark
      */
 //    [self testbenchmark];
+
+    /**
+     * @synchronize
+     */
+        [self testSynchronize];
+}
+
+- (void)testSynchronize
+{
+    // 居然可以嵌套！！
+    @synchronized (self) {
+        NSLog(@"@synchronized aaaaaa");
+        @synchronized (self) {
+            NSLog(@"@synchronized bbbb");
+        }
+    }
 }
 
 - (void)testbenchmark
@@ -64,7 +80,7 @@
     
     /**
      * 千万不能，没解锁时候就递归
-     * 否则会导致 死锁
+     * 否则会导致 死锁  可以用递归锁
      */
     [self testLockFuntion];
     [self.lock unlock];
