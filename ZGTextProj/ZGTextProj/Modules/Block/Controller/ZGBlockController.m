@@ -15,6 +15,8 @@
 @property (nonatomic,strong) ZGBlockPeople *p;
 @property (nonatomic, weak) void(^zg_stackBlcok)(void);
 
+@property (nonatomic, strong) NSArray *zgAry;
+
 @end
 
 @implementation ZGBlockController
@@ -32,8 +34,17 @@
 //    [self testBlockRecyle];
     
     // 三种block 全局，栈 堆block
-    [self testBlockClass];
+//    [self testBlockClass];
     
+    // ARC下 怎么生成 栈block
+    [self testARC_StackBlock];
+    
+    
+    /**
+     * 测试 数组是否会强引用元素
+     * 结果，是会强引用元素
+     */
+//    _zgAry = @[@1,self];
     
 }
 
@@ -94,6 +105,59 @@
 {
     NSLog(@"%@",self.name);
 }
+
+
+#pragma mark - 测试ARC下 怎么生成 栈block
+-(NSArray *) getBlockArray{
+    int val =10;
+    int val2 =10;
+    int val3 =10;
+    
+    /**
+     * 发现 数组中除了第一个block是mallocBlock，其他都会是stackBlock
+     * 为什么呢？
+     */
+    NSArray *blockAry = [NSArray arrayWithObjects:
+     ^{NSLog(@"blk0:%d",val);},
+     ^{NSLog(@"blk1:%d",val2);},
+     ^{NSLog(@"blk2:%d",val3);},nil];
+    /**
+     * 解决方法：手动叫copy
+     */
+//    NSArray *blockAry = [NSArray arrayWithObjects:
+//                         ^{NSLog(@"blk0:%d",val);},
+//                         [^{NSLog(@"blk1:%d",val2);} copy],
+//                         [^{NSLog(@"blk2:%d",val3);} copy],nil];
+    NSLog(@"blockAry %@",blockAry);
+    
+    /**
+     * 测试 字典会不会同样问题
+     * 结果，字典居然没有问题
+     */
+    NSDictionary *blockDic = @{@"a":^{NSLog(@"blk0:%d",val);},@"b":^{NSLog(@"blk1:%d",val);}};
+    NSLog(@"blockDic %@",blockDic);
+    return nil;
+}
+
+- (void)testARC_StackBlock
+{
+    NSArray *blockAry = [self getBlockArray];
+    typedef void (^blk_t)(void);
+    blk_t blk = (blk_t)[blockAry objectAtIndex:0];
+    blk();
+    
+//    void(^bb)(void) = [self returnBlock];
+//    bb();
+
+}
+
+-(void(^)(void))returnBlock{
+    __block int add=10;
+    void(^blk_h)(void)  =^{printf("add=%d\n",++add);};
+    return blk_h;
+}
+
+
 
 
 @end
