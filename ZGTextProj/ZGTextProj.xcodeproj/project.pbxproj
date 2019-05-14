@@ -4566,7 +4566,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -4577,7 +4577,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6C6E7C5F404CC5EEBF67AE31 /* [CP] Check Pods Manifest.lock */ = {

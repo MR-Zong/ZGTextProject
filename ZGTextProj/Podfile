@@ -6,6 +6,7 @@ target 'ZGTextProj' do
   # use_frameworks!
 
   # Pods for ZGTextProj
+  pod 'AFNetworking', '~> 3.0'
   pod 'Masonry'
   pod 'MJRefresh'
   pod 'SDWebImage', '4.3.0'
