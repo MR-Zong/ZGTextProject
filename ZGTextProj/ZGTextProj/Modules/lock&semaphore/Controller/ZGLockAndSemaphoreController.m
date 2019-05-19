@@ -45,7 +45,15 @@
     /**
      * @synchronize
      */
-        [self testSynchronize];
+//        [self testSynchronize];
+    
+    
+    /**
+     * 测试 dispatch_semaphore_wait(signal, overTime);
+     */
+    [self testSemaphoreWait];
+    
+    
 }
 
 - (void)testSynchronize
@@ -87,6 +95,7 @@
     
 }
 
+#pragma mark - semaphore
 - (void)testSemaphore
 {
     /** 初始信号 设置为0 比设置为1好
@@ -109,6 +118,36 @@
     NSLog(@"yyyyyy");
     //    dispatch_semaphore_signal(semaphore);
 
+}
+
+- (void)testSemaphoreWait
+{
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+//    long k = dispatch_semaphore_signal(semaphore);
+//    NSLog(@"k00 %ld",k);
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"option 1");
+        dispatch_time_t overTime = dispatch_time(DISPATCH_TIME_NOW, 1*1000*1000*1000); //超时1秒
+        long r = dispatch_semaphore_wait(semaphore, overTime);
+        NSLog(@"r1 %ld",r);
+        sleep(10);
+        NSLog(@"option 1 do something...");
+        long k = dispatch_semaphore_signal(semaphore);
+        NSLog(@"k1 %ld",k);
+    });
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        sleep(3);
+        NSLog(@"option 2");
+        dispatch_time_t overTime = dispatch_time(DISPATCH_TIME_NOW, 1*1000*1000*1000); //超时1秒
+        long r = dispatch_semaphore_wait(semaphore, overTime);
+        NSLog(@"r2 %ld",r);
+        NSLog(@"option 2 do something...");
+        long k = dispatch_semaphore_signal(semaphore);
+        NSLog(@"k2 %ld",k);
+        long r2 = dispatch_semaphore_wait(semaphore, overTime);
+        NSLog(@"r22 %ld",r2);
+    });
 }
 
 
