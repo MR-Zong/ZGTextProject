@@ -5118,7 +5118,7 @@
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zong.textPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -5143,7 +5143,7 @@
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zongGen.calendar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zong.textPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

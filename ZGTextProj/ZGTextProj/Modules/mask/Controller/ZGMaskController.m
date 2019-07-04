@@ -21,15 +21,139 @@
     
     self.title = @"Mask";
     
+    
     /**
      * selector SEL 测试这两个本质是什么
      */
-    [self testSEL];
-    
-    [self setupViews];
+//    [self testSEL];
+//
+//    [self setupViews];
     
 //    [self maskLayer];
+    
+    /**
+     * 测试 修改文件属性
+     */
+    [self testFileProperty];
 }
+
+#pragma mark - 文件操作相关
++ (NSString *)cachesDir {
+    return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+}
+
++ (BOOL)isExistsAtPath:(NSString *)path {
+    return [[NSFileManager defaultManager] fileExistsAtPath:path];
+}
+
++ (NSString *)directoryAtPath:(NSString *)path {
+    return [path stringByDeletingLastPathComponent];
+}
+
++ (BOOL)createDirectoryAtPath:(NSString *)path error:(NSError *__autoreleasing *)error {
+    NSFileManager *manager = [NSFileManager defaultManager];
+    /* createDirectoryAtPath:withIntermediateDirectories:attributes:error:
+     * 参数1：创建的文件夹的路径
+     * 参数2：是否创建媒介的布尔值，一般为YES
+     * 参数3: 属性，没有就置为nil
+     * 参数4: 错误信息
+     */
+    BOOL isSuccess = [manager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:error];
+    return isSuccess;
+}
+
++ (BOOL)createFileAtPath:(NSString *)path overwrite:(BOOL)overwrite error:(NSError *__autoreleasing *)error {
+    // 如果文件夹路径不存在，那么先创建文件夹
+    NSString *directoryPath = [self directoryAtPath:path];
+    if (![self isExistsAtPath:directoryPath]) {
+        // 创建文件夹
+        if (![self createDirectoryAtPath:directoryPath error:error]) {
+            return NO;
+        }
+    }
+    // 如果文件存在，并不想覆盖，那么直接返回YES。
+    if (!overwrite) {
+        if ([self isExistsAtPath:path]) {
+            return YES;
+        }
+    }
+    /*创建文件
+     *参数1：创建文件的路径
+     *参数2：创建文件的内容（NSData类型）
+     *参数3：文件相关属性
+     */
+    BOOL isSuccess = [[NSFileManager defaultManager] createFileAtPath:path contents:nil attributes:nil];
+    
+    return isSuccess;
+}
+
+- (void)testFileProperty
+{
+    NSString *filePath = [[self.class cachesDir] stringByAppendingPathComponent:@"gen.mp3"];
+    NSError *error = nil;
+    [self.class createFileAtPath:filePath overwrite:YES error:&error];
+    NSLog(@"path:%@", filePath);
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    [self readFileAttr:filePath];
+    
+    // 方案一 直接修改文件原有属性  实践发现不可行
+//    NSLog(@"\noriginal file attr\n");
+//    [self readFileAttr:filePath];
+    
+//    BOOL change = [fileManager setAttributes:@{NSFileOwnerAccountName:@"zonggen"} ofItemAtPath:filePath error:&error];
+//    NSLog(@"\nchange file attr ,change %zd,error %@\n",change,error);
+//    [self readFileAttr:filePath];
+    
+    
+    // 方案二 增加拓展属性
+    [self extendedWithPath:filePath key:@"fullUrl" value:[@"http://www.baidu.com" dataUsingEncoding:NSUTF8StringEncoding]];
+
+    NSData *urlData = [self extendedWithPath:filePath key:@"fullUrl"];
+    NSString *value = [[NSString alloc] initWithData:urlData encoding:NSUTF8StringEncoding];
+    [self readFileAttr:filePath];
+    NSLog(@"value %@",value);
+    
+}
+
+- (void)readFileAttr:(NSString *)filePath
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error = nil;
+
+    NSDictionary *fileInfo = [fileManager attributesOfItemAtPath:filePath error:nil];
+    NSLog(@"%@",fileInfo);
+}
+
+//为文件增加一个扩展属性
+- (BOOL)extendedWithPath:(NSString *)path key:(NSString *)key value:(NSData *)value
+{
+    NSDictionary *extendedAttributes = [NSDictionary dictionaryWithObject:
+                                        [NSDictionary dictionaryWithObject:value forKey:key]
+                                                                   forKey:@"NSFileExtendedAttributes"];
+    
+    NSError *error = NULL;
+    BOOL sucess = [[NSFileManager defaultManager] setAttributes:extendedAttributes
+                                                   ofItemAtPath:path error:&error];
+    return sucess;
+}
+//读取文件扩展属性
+- (NSData *)extendedWithPath:(NSString *)path key:(NSString *)key
+{
+    NSError *error = NULL;
+    NSDictionary *attributes = [[NSFileManager defaultManager] attributesOfItemAtPath:path error:&error];
+    if (!attributes) {
+        return nil;
+    }
+    NSDictionary *extendedAttributes = [attributes objectForKey:@"NSFileExtendedAttributes"];
+    if (!extendedAttributes) {
+        return nil;
+    }
+    return [extendedAttributes objectForKey:key];
+}
+
+
+#pragma mark - ---
 
 - (void)testSEL
 {
