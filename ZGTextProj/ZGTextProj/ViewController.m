@@ -116,6 +116,7 @@
 #import "ZGDiscoverController.h"
 #import "ZGAliyunTestController.h"
 #import "ZGShapeAnimationController.h"
+#import "ZGUrlSessionViewController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -150,7 +151,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 73;
+    return 74;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -302,6 +303,8 @@
         cell.textLabel.text = @"QERDiscover";
     }else if(indexPath.row == 72){
         cell.textLabel.text = @"AliyunText";
+    }else if(indexPath.row == 73){
+        cell.textLabel.text = @"urlSession";
     }
 
 
@@ -560,6 +563,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 72){
         ZGAliyunTestController *con = [[ZGAliyunTestController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 73){
+        ZGUrlSessionViewController *con = [[ZGUrlSessionViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

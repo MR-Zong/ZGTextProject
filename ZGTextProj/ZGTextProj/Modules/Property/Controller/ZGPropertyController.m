@@ -14,6 +14,7 @@
 #import "ZGPEteModelA.h"
 #import "ZGPSHIModelA.h"
 #import "ZGPCopyModel.h"
+#import "ZGPropertyAssociation.h"
 
 /**
  * 匿名分类 不在.m模块里 也不能定义实例变量 效果和不是匿名分类一个效果
@@ -37,6 +38,12 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"property";
+    
+    
+    /**
+     * 测试 property 与 实例变量的关联
+     */
+    //    [self testProperty2];
     
     /** 测试 @synthesize
      */
@@ -87,6 +94,13 @@
     
     
     
+}
+
+- (void)testProperty2
+{
+    ZGPropertyAssociation *mm = [ZGPropertyAssociation new];
+    mm.name = @"gen";
+    NSLog(@"name %@,setupSeekTime %f",mm.name,mm.setupSeekTime);
 }
 
 - (void)testProperty
