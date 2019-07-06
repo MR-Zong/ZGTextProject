@@ -295,6 +295,8 @@
 		EFC6EE281FF4E78D00E1D2C5 /* ZGCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC6EE271FF4E78D00E1D2C5 /* ZGCategoryController.m */; };
 		EFC6EE2B1FF4E81500E1D2C5 /* ZGCategoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC6EE2A1FF4E81500E1D2C5 /* ZGCategoryObject.m */; };
 		EFC6EE2E1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC6EE2D1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.m */; };
+		EFD9EFF022CE4DD300810260 /* 路虎极光.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFD9EFEF22CE4DD300810260 /* 路虎极光.jpg */; };
+		EFD9EFF222CE4F2600810260 /* horse.png in Resources */ = {isa = PBXBuildFile; fileRef = EFD9EFF122CE4F2600810260 /* horse.png */; };
 		EFDBCDBE1F2B159700C542AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDBD1F2B159700C542AD /* main.m */; };
 		EFDBCDC11F2B159700C542AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDC01F2B159700C542AD /* AppDelegate.m */; };
 		EFDBCDC41F2B159700C542AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDC31F2B159700C542AD /* ViewController.m */; };
@@ -944,6 +946,8 @@
 		EFC6EE2A1FF4E81500E1D2C5 /* ZGCategoryObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCategoryObject.m; sourceTree = "<group>"; };
 		EFC6EE2C1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZGCategoryObject+Extension.h"; sourceTree = "<group>"; };
 		EFC6EE2D1FF4E85900E1D2C5 /* ZGCategoryObject+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZGCategoryObject+Extension.m"; sourceTree = "<group>"; };
+		EFD9EFEF22CE4DD300810260 /* 路虎极光.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "路虎极光.jpg"; sourceTree = "<group>"; };
+		EFD9EFF122CE4F2600810260 /* horse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horse.png; sourceTree = "<group>"; };
 		EFDBCDB91F2B159700C542AD /* ZGTextProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGTextProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBCDBD1F2B159700C542AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFDBCDBF1F2B159700C542AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -3785,7 +3789,9 @@
 				EFDBCDC21F2B159700C542AD /* ViewController.h */,
 				EFDBCDC31F2B159700C542AD /* ViewController.m */,
 				41CDAA13217496A900D0DE9B /* audioClipTest.m4a */,
+				EFD9EFEF22CE4DD300810260 /* 路虎极光.jpg */,
 				EFFC13551F3454D300E6F664 /* myPlayer.mp4 */,
+				EFD9EFF122CE4F2600810260 /* horse.png */,
 				417F201621F0643600471B03 /* singing.wav */,
 				418E959021E4CF1A00349982 /* testZong.wav */,
 				417F206921F17C4800471B03 /* gamesound.aac */,
@@ -4517,6 +4523,7 @@
 				EFDBCDCC1F2B159700C542AD /* LaunchScreen.storyboard in Resources */,
 				EF14C7F2210428EE007CC07B /* moreData2.plist in Resources */,
 				41CDAA1721749C4800D0DE9B /* audioClipTest2.mp3 in Resources */,
+				EFD9EFF222CE4F2600810260 /* horse.png in Resources */,
 				EF7F2CA7210972F800AC6755 /* img.jpg in Resources */,
 				EFDBCDC91F2B159700C542AD /* Assets.xcassets in Resources */,
 				EF7F2CA42108176E00AC6755 /* news_pop_six_winged_demon@3x.png in Resources */,
@@ -4535,6 +4542,7 @@
 				EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */,
 				41BDBB9122157A9500043C33 /* intro_0.jpg in Resources */,
 				EFDBCDC71F2B159700C542AD /* Main.storyboard in Resources */,
+				EFD9EFF022CE4DD300810260 /* 路虎极光.jpg in Resources */,
 				EFFCE4A21F62330F008E2375 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				41DEED7B21A6D9910017579A /* export.plist in Resources */,
 				41BDBB9322157A9500043C33 /* intro_3.jpg in Resources */,

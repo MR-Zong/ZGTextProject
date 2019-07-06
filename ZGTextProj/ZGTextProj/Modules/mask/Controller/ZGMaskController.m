@@ -89,11 +89,13 @@
 
 - (void)testFileProperty
 {
-    NSString *filePath = [[self.class cachesDir] stringByAppendingPathComponent:@"gen.mp3"];
-    NSError *error = nil;
-    [self.class createFileAtPath:filePath overwrite:YES error:&error];
-    NSLog(@"path:%@", filePath);
-    NSFileManager *fileManager = [NSFileManager defaultManager];
+//    NSString *filePath = [[self.class cachesDir] stringByAppendingPathComponent:@"gen.mp3"];
+//    NSError *error = nil;
+//    [self.class createFileAtPath:filePath overwrite:YES error:&error];
+//    NSLog(@"path:%@", filePath);
+//    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"horse.png" ofType:nil];
     
     [self readFileAttr:filePath];
     
@@ -107,20 +109,18 @@
     
     
     // 方案二 增加拓展属性
-    [self extendedWithPath:filePath key:@"fullUrl" value:[@"http://www.baidu.com" dataUsingEncoding:NSUTF8StringEncoding]];
-
-    NSData *urlData = [self extendedWithPath:filePath key:@"fullUrl"];
-    NSString *value = [[NSString alloc] initWithData:urlData encoding:NSUTF8StringEncoding];
-    [self readFileAttr:filePath];
-    NSLog(@"value %@",value);
-    
+//    [self extendedWithPath:filePath key:@"fullUrl" value:[@"http://www.baidu.com" dataUsingEncoding:NSUTF8StringEncoding]];
+//
+//    NSData *urlData = [self extendedWithPath:filePath key:@"fullUrl"];
+//    NSString *value = [[NSString alloc] initWithData:urlData encoding:NSUTF8StringEncoding];
+//    [self readFileAttr:filePath];
+//    NSLog(@"value %@",value);
+//    
 }
 
 - (void)readFileAttr:(NSString *)filePath
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSError *error = nil;
-
     NSDictionary *fileInfo = [fileManager attributesOfItemAtPath:filePath error:nil];
     NSLog(@"%@",fileInfo);
 }
