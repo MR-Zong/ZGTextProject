@@ -17,6 +17,7 @@
 @property (nonatomic, assign) NSInteger currentSize;
 @property (nonatomic, strong) NSString *fullPath;
 
+@property (nonatomic, assign) BOOL cc;
 @end
 
 @implementation ZGUrlSessionViewController
@@ -28,7 +29,29 @@
     /**
      * 测试 cdn能否只鉴权 不下载
      */
-    [self testCdnAuthorize];
+//    [self testCdnAuthorize];
+    
+    
+    /**
+     * 测试 dispatch_after
+     */
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"threand %@",[NSThread currentThread]);
+        
+        // timer
+        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2 repeats:YES block:^(NSTimer * _Nonnull timer) {
+            NSLog(@"timer");
+        }];
+        
+        // dispatch
+        self.cc = NO;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            if (self.cc) {
+                NSLog(@"thread %@",[NSThread currentThread]);
+            }
+        });
+        self.cc = YES;
+    });
 }
 
 #pragma mark - test
