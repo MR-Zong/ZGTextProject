@@ -269,6 +269,7 @@
 		EF819FC7212918C3009B959A /* ZGWeakMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EF819FC6212918C3009B959A /* ZGWeakMutableDictionary.m */; };
 		EF85FF3A204A4E9000F5186A /* ZGGCDTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */; };
 		EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8A660F20C384B8002FD95F /* ZGNavView2Controller.m */; };
+		EF8B682A22D7708C001F7E53 /* ZGUUidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8B682922D7708C001F7E53 /* ZGUUidViewController.m */; };
 		EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8E19701F56618100E19DA4 /* ZGStoreKitController.m */; };
 		EFA9A62320AA765A00E73288 /* ZGMainOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA9A62220AA765A00E73288 /* ZGMainOperation.m */; };
 		EFA9A62620AA770E00E73288 /* ZGStartOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA9A62520AA770E00E73288 /* ZGStartOperation.m */; };
@@ -895,6 +896,8 @@
 		EF85FF39204A4E9000F5186A /* ZGGCDTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGGCDTestController.m; sourceTree = "<group>"; };
 		EF8A660E20C384B8002FD95F /* ZGNavView2Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNavView2Controller.h; sourceTree = "<group>"; };
 		EF8A660F20C384B8002FD95F /* ZGNavView2Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNavView2Controller.m; sourceTree = "<group>"; };
+		EF8B682822D7708C001F7E53 /* ZGUUidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGUUidViewController.h; sourceTree = "<group>"; };
+		EF8B682922D7708C001F7E53 /* ZGUUidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGUUidViewController.m; sourceTree = "<group>"; };
 		EF8E196F1F56618100E19DA4 /* ZGStoreKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGStoreKitController.h; sourceTree = "<group>"; };
 		EF8E19701F56618100E19DA4 /* ZGStoreKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGStoreKitController.m; sourceTree = "<group>"; };
 		EFA9A62120AA765A00E73288 /* ZGMainOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMainOperation.h; sourceTree = "<group>"; };
@@ -3521,6 +3524,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EF8B682422D7707A001F7E53 /* UUID */ = {
+			isa = PBXGroup;
+			children = (
+				EF8B682522D7707A001F7E53 /* controller */,
+				EF8B682622D7707A001F7E53 /* Model */,
+				EF8B682722D7707A001F7E53 /* View */,
+			);
+			path = UUID;
+			sourceTree = "<group>";
+		};
+		EF8B682522D7707A001F7E53 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF8B682822D7708C001F7E53 /* ZGUUidViewController.h */,
+				EF8B682922D7708C001F7E53 /* ZGUUidViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EF8B682622D7707A001F7E53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF8B682722D7707A001F7E53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EF8E196B1F56616700E19DA4 /* Store */ = {
 			isa = PBXGroup;
 			children = (
@@ -3872,6 +3908,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF8B682422D7707A001F7E53 /* UUID */,
 				EFD9EFFB22D0976F00810260 /* UrlSession */,
 				4177D792224F10ED00B5C863 /* Authorize */,
 				4175A01222262B4F00B91F43 /* QERDiscover */,
@@ -4801,6 +4838,7 @@
 				4110F92A22141333006B9CEF /* ZGTabBarContentView.m in Sources */,
 				417F203C21F064A500471B03 /* ZGFmodDemoController.m in Sources */,
 				41EE603522523D7E00D5ACC9 /* ZGBlockModel.m in Sources */,
+				EF8B682A22D7708C001F7E53 /* ZGUUidViewController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,

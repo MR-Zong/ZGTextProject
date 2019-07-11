@@ -117,6 +117,7 @@
 #import "ZGAliyunTestController.h"
 #import "ZGShapeAnimationController.h"
 #import "ZGUrlSessionViewController.h"
+#import "ZGUUidViewController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -151,7 +152,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 74;
+    return 75;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -305,6 +306,8 @@
         cell.textLabel.text = @"AliyunText";
     }else if(indexPath.row == 73){
         cell.textLabel.text = @"urlSession";
+    }else if(indexPath.row == 74){
+        cell.textLabel.text = @"UUID";
     }
 
 
@@ -566,6 +569,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 73){
         ZGUrlSessionViewController *con = [[ZGUrlSessionViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 74){
+        ZGUUidViewController *con = [[ZGUUidViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
