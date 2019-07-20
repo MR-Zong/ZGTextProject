@@ -112,7 +112,10 @@
     [self.view addSubview:wkWeb];
 //    [wkWeb loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://sfestival.lizhi.fm/static/gift_progress_new.html?userId=2568669201606673964&isSFestivalOpen=false&isRedEnvelopeOpen=true&redEnvelopeHost=https%3A%2F%2Fredenvelope.lizhi.fm&isValentineDayOpen=false&isHidePendant=true&isFirstChargeWidgetShow=false&isBraveOpen=false&appId=0&subAppId=0&coinLotteryOpen=false&liveId=5055101392710816822&accessToken=806D16B4408E8F98C968BAA1C83EBA5FBDD86A9FD5635EA4F0D6FDE5FFB695B641F2694AE3011498346B93DDB1EC2B68F68FBAD0C157D61CDE87E78EB35E1C0AFF9841E4A65A4A94B5B44E74148F6F2052AA16318C89F1DB"]]];
     [wkWeb loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
-//    [wkWeb loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [wkWeb loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:bdddlank"]]];
+    });
     
     
     // UIWebView
@@ -127,10 +130,10 @@
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
     NSLog(@"navigationAction.request.URL %@",navigationAction.request.URL);
-    if ([navigationAction.request.URL.absoluteString isEqualToString:@"about:blank"]) {
-        decisionHandler(WKNavigationActionPolicyCancel);
-        return;
-    }
+//    if ([navigationAction.request.URL.absoluteString isEqualToString:@"about:blank"]) {
+//        decisionHandler(WKNavigationActionPolicyCancel);
+//        return;
+//    }
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
