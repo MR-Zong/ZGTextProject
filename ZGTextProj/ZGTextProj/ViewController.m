@@ -119,6 +119,9 @@
 #import "ZGUrlSessionViewController.h"
 #import "ZGUUidViewController.h"
 
+#import "ZGJSBridgeURLViewController.h"
+#import "ZGJSBridgeLocalViewController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -152,7 +155,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 75;
+    return 77;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -308,6 +311,10 @@
         cell.textLabel.text = @"urlSession";
     }else if(indexPath.row == 74){
         cell.textLabel.text = @"UUID";
+    }else if(indexPath.row == 75){
+        cell.textLabel.text = @"JSBridge_URL";
+    }else if(indexPath.row == 76){
+        cell.textLabel.text = @"JSBridge_Local";
     }
 
 
@@ -572,6 +579,12 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 74){
         ZGUUidViewController *con = [[ZGUUidViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 75){
+        ZGJSBridgeURLViewController *con = [[ZGJSBridgeURLViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 76){
+        ZGJSBridgeLocalViewController *con = [[ZGJSBridgeLocalViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

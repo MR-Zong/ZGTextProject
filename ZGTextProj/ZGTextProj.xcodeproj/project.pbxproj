@@ -129,6 +129,12 @@
 		41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE519C218B138900F17BF5 /* ZGExposureManager.m */; };
 		6E315BDC31DCCCC5930B0BEC /* libPods-ZGTextProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */; };
 		7222110966F2E76124B0BAC9 /* libPods-ZGTextProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */; };
+		867B879B22E993910054DDFF /* iframeTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 867B879922E993910054DDFF /* iframeTest.html */; };
+		867B879C22E993910054DDFF /* iframeTestLocal.html in Resources */ = {isa = PBXBuildFile; fileRef = 867B879A22E993910054DDFF /* iframeTestLocal.html */; };
+		867B879F22E993AA0054DDFF /* ZGJSBridgeURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B879E22E993AA0054DDFF /* ZGJSBridgeURLViewController.m */; };
+		867B87A222E993BA0054DDFF /* ZGJSBridgeLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B87A122E993BA0054DDFF /* ZGJSBridgeLocalViewController.m */; };
+		86DC575C22E5575900449669 /* iframeTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 86DC575B22E5575800449669 /* iframeTest.html */; };
+		86DC575E22E59E7800449669 /* btest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86DC575D22E59E7700449669 /* btest.txt */; };
 		EF0015AD224768A000A7A73E /* ZGPCopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0015AC224768A000A7A73E /* ZGPCopyModel.m */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
 		EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */; };
@@ -619,6 +625,14 @@
 		41FE519C218B138900F17BF5 /* ZGExposureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGExposureManager.m; sourceTree = "<group>"; };
 		6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.release.xcconfig"; sourceTree = "<group>"; };
 		720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjUITests/Pods-ZGTextProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		867B879922E993910054DDFF /* iframeTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTest.html; sourceTree = "<group>"; };
+		867B879A22E993910054DDFF /* iframeTestLocal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTestLocal.html; sourceTree = "<group>"; };
+		867B879D22E993AA0054DDFF /* ZGJSBridgeURLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGJSBridgeURLViewController.h; sourceTree = "<group>"; };
+		867B879E22E993AA0054DDFF /* ZGJSBridgeURLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGJSBridgeURLViewController.m; sourceTree = "<group>"; };
+		867B87A022E993BA0054DDFF /* ZGJSBridgeLocalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGJSBridgeLocalViewController.h; sourceTree = "<group>"; };
+		867B87A122E993BA0054DDFF /* ZGJSBridgeLocalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGJSBridgeLocalViewController.m; sourceTree = "<group>"; };
+		86DC575B22E5575800449669 /* iframeTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTest.html; sourceTree = "<group>"; };
+		86DC575D22E59E7700449669 /* btest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = btest.txt; sourceTree = "<group>"; };
 		91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.debug.xcconfig"; sourceTree = "<group>"; };
 		C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProjTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0015AB224768A000A7A73E /* ZGPCopyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPCopyModel.h; sourceTree = "<group>"; };
@@ -2146,6 +2160,35 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		867B879622E993530054DDFF /* JSBridage */ = {
+			isa = PBXGroup;
+			children = (
+				867B879722E993530054DDFF /* Controller */,
+				867B879822E993530054DDFF /* Resource */,
+			);
+			path = JSBridage;
+			sourceTree = "<group>";
+		};
+		867B879722E993530054DDFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				867B879D22E993AA0054DDFF /* ZGJSBridgeURLViewController.h */,
+				867B879E22E993AA0054DDFF /* ZGJSBridgeURLViewController.m */,
+				867B87A022E993BA0054DDFF /* ZGJSBridgeLocalViewController.h */,
+				867B87A122E993BA0054DDFF /* ZGJSBridgeLocalViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		867B879822E993530054DDFF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				867B879922E993910054DDFF /* iframeTest.html */,
+				867B879A22E993910054DDFF /* iframeTestLocal.html */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		9400C24B02B6D573E382F8CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -3546,6 +3589,8 @@
 		EF8B682622D7707A001F7E53 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				86DC575D22E59E7700449669 /* btest.txt */,
+				86DC575B22E5575800449669 /* iframeTest.html */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3908,6 +3953,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				867B879622E993530054DDFF /* JSBridage */,
 				EF8B682422D7707A001F7E53 /* UUID */,
 				EFD9EFFB22D0976F00810260 /* UrlSession */,
 				4177D792224F10ED00B5C863 /* Authorize */,
@@ -4541,8 +4587,8 @@
 				TargetAttributes = {
 					EFDBCDB81F2B159700C542AD = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6BVF5F2U9J;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = RGU37X3Z9W;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -4588,6 +4634,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41BDBB9222157A9500043C33 /* intro_1.jpg in Resources */,
+				867B879B22E993910054DDFF /* iframeTest.html in Resources */,
 				418E959121E4CF1A00349982 /* testZong.wav in Resources */,
 				41CDAA14217496A900D0DE9B /* audioClipTest.m4a in Resources */,
 				EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */,
@@ -4598,9 +4645,11 @@
 				EF7F2CA7210972F800AC6755 /* img.jpg in Resources */,
 				EFDBCDC91F2B159700C542AD /* Assets.xcassets in Resources */,
 				EF7F2CA42108176E00AC6755 /* news_pop_six_winged_demon@3x.png in Resources */,
+				86DC575C22E5575900449669 /* iframeTest.html in Resources */,
 				411B2BF3215B734F009747D8 /* Cairo-Light.ttf in Resources */,
 				41BDBB9422157A9500043C33 /* intro_2.jpg in Resources */,
 				411B2BF6215B734F009747D8 /* Cairo-Bold.ttf in Resources */,
+				867B879C22E993910054DDFF /* iframeTestLocal.html in Resources */,
 				417F201721F0643600471B03 /* singing.wav in Resources */,
 				EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */,
 				411B2BF5215B734F009747D8 /* Cairo-SemiBold.ttf in Resources */,
@@ -4611,6 +4660,7 @@
 				411B2BF2215B734F009747D8 /* Cairo-Black.ttf in Resources */,
 				417F206A21F17C4800471B03 /* gamesound.aac in Resources */,
 				EF7F2CA52108176E00AC6755 /* news_pop_six_winged_demon@2x.png in Resources */,
+				86DC575E22E59E7800449669 /* btest.txt in Resources */,
 				41BDBB9122157A9500043C33 /* intro_0.jpg in Resources */,
 				EFDBCDC71F2B159700C542AD /* Main.storyboard in Resources */,
 				EFD9EFF022CE4DD300810260 /* 路虎极光.jpg in Resources */,
@@ -4748,6 +4798,7 @@
 				41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */,
 				EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */,
 				EF25CBC020E284E3005A7F8C /* ZGNestPageDController.m in Sources */,
+				867B879F22E993AA0054DDFF /* ZGJSBridgeURLViewController.m in Sources */,
 				EF2F66921FFF651F00EA4F6F /* ZGTbBaseTableView.m in Sources */,
 				4175A0532226916C00B91F43 /* ZGAudioWaveView.m in Sources */,
 				4174DD9021DC9C81007C89E6 /* ZGAVAudioUnitController.m in Sources */,
@@ -4858,6 +4909,7 @@
 				EF7F2C9521070F9500AC6755 /* ZGProModelB.m in Sources */,
 				EFFCE4C71F64D67C008E2375 /* ZGChineseDate.m in Sources */,
 				EF58F6952143BA590000CDC7 /* ZGWaterFallController.m in Sources */,
+				867B87A222E993BA0054DDFF /* ZGJSBridgeLocalViewController.m in Sources */,
 				EF7231AA20DB478200999D3A /* ZGTopicHeaderView.m in Sources */,
 				4137F2EC2192B92E003B6D60 /* ZGPhotoPickController.m in Sources */,
 				4175A0552226916C00B91F43 /* ZGShuoTextShowView.m in Sources */,
@@ -5169,7 +5221,8 @@
 			baseConfigurationReference = 91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6BVF5F2U9J;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = RGU37X3Z9W;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5184,8 +5237,9 @@
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zong.textPro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.lizhifm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = lizhidev_lizhifm_debug;
 			};
 			name = Debug;
 		};
@@ -5194,7 +5248,8 @@
 			baseConfigurationReference = 6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6BVF5F2U9J;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5209,8 +5264,9 @@
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zong.textPro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.lizhifm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

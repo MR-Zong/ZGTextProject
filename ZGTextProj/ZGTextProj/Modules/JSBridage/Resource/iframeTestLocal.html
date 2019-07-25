@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OC调用JS</title>
+    <script type="text/javascript"> 
+    function alertMessage(message) {
+        alert(message);
+    }
+
+    function sendMessageSet(message){
+        // 循环
+        for (var i =  0; i < 501; i++) {
+           sendMessage('zong');
+        }
+    }
+
+    function sendMessage(message) {
+        window.webkit.messageHandlers.testA.postMessage({
+                                                                 "body": message
+                                                                 })
+
+    }
+
+</script>
+</head>
+<body>
+</br></br></br></br>
+        <button type="button" onclick="sendMessage('zong')">sendMessage</button>
+</body>
+</html>

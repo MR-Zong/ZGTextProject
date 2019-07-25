@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OC调用JS</title>
+    <script type="text/javascript"> 
+    function alertMessage(message) {
+        alert(message);
+    }
+
+
+    // var WVJBIframe = document.createElement('iframe');
+    // WVJBIframe.style.display = 'none';
+    // document.documentElement.appendChild(WVJBIframe);
+    
+    function sendMessage(message) {
+        
+        // 单次
+        // WVJBIframe.src = 'lizhi://__zong_bridge_loaded__';
+
+        // 单次 并延迟0
+        // setTimeout(function(){
+        //     WVJBIframe.src = 'lizhi://__zong_bridge_loaded__';
+        //     // WVJBIframe.src = 'https://www.baidu.com';
+        // },0)
+        
+        // 单次 每次都新创建iframe
+        var WVJBIframe = document.createElement('iframe');
+        WVJBIframe.style.display = 'none';
+        document.documentElement.appendChild(WVJBIframe);
+        
+        WVJBIframe.src = 'lizhi://__zong_bridge_loaded__';
+        // WVJBIframe.src = 'https://www.baidu.com';
+        setTimeout(function(){
+                document.documentElement.removeChild(WVJBIframe)
+           }, 0)
+        
+        // 循环
+        // for (var i =  0; i < 100; i++) {
+        //    var WVJBIframe = document.createElement('iframe');
+        //     WVJBIframe.style.display = 'none';
+        //     document.documentElement.appendChild(WVJBIframe);
+           
+        //     WVJBIframe.src = 'lizhi://__zong_bridge_loaded__';
+ 
+        //     setTimeout(function(){
+        //         document.documentElement.removeChild(WVJBIframe)
+        //    }, 0)
+
+        // }
+
+    }
+
+    function sendMessageSet(message){
+        // 循环
+        for (var i =  0; i < 501; i++) {
+           sendMessage('zong');
+        }
+    }
+
+    function sendBlank() {
+        WVJBIframe.src = '';
+
+    }
+
+</script>
+</head>
+<body>
+</br></br></br></br>
+        <button type="button" onclick="sendMessage('zong')">sendMessage</button>
+</body>
+</html>
