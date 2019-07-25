@@ -16,6 +16,7 @@
 @property (nonatomic, strong) WebViewJavascriptBridge *uiJsBridg;
 @property (nonatomic, strong) WKWebViewJavascriptBridge *wkjsBridge;
 @property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) UIButton *btn;
 
 @end
 
@@ -38,9 +39,29 @@
 //    NSString *fileString = [[NSString alloc] initWithData:filedata encoding:NSUTF8StringEncoding];
 //    NSLog(@"fileString %@",fileString);
     
-    
+    // 测试语句块,是否执行一次
+    [self testYuJuKuai];
     
     [self testUUID];
+}
+
+#pragma mark -
+- (void)testYuJuKuai
+{
+    _btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_btn setTitle:@"语句块测试" forState:UIControlStateNormal];
+    _btn.titleLabel.font = [UIFont systemFontOfSize:16];
+    _btn.backgroundColor = [UIColor blueColor];
+    _btn.frame = CGRectMake(50, 200, 140, 40);
+    [_btn addTarget:self action:@selector(didBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_btn];
+}
+
+- (void)didBtn:(UIButton *)btn
+{
+    {
+        NSLog(@"xxxxxxxxx");
+    }
 }
 
 
