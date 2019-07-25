@@ -133,6 +133,8 @@
 		867B879C22E993910054DDFF /* iframeTestLocal.html in Resources */ = {isa = PBXBuildFile; fileRef = 867B879A22E993910054DDFF /* iframeTestLocal.html */; };
 		867B879F22E993AA0054DDFF /* ZGJSBridgeURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B879E22E993AA0054DDFF /* ZGJSBridgeURLViewController.m */; };
 		867B87A222E993BA0054DDFF /* ZGJSBridgeLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B87A122E993BA0054DDFF /* ZGJSBridgeLocalViewController.m */; };
+		86C676B322E9BA7600006925 /* ZGMacroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C676B222E9BA7600006925 /* ZGMacroViewController.m */; };
+		86C676B622E9D51800006925 /* ZGTestSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C676B522E9D51800006925 /* ZGTestSelector.m */; };
 		86DC575C22E5575900449669 /* iframeTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 86DC575B22E5575800449669 /* iframeTest.html */; };
 		86DC575E22E59E7800449669 /* btest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86DC575D22E59E7700449669 /* btest.txt */; };
 		EF0015AD224768A000A7A73E /* ZGPCopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0015AC224768A000A7A73E /* ZGPCopyModel.m */; };
@@ -631,6 +633,10 @@
 		867B879E22E993AA0054DDFF /* ZGJSBridgeURLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGJSBridgeURLViewController.m; sourceTree = "<group>"; };
 		867B87A022E993BA0054DDFF /* ZGJSBridgeLocalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGJSBridgeLocalViewController.h; sourceTree = "<group>"; };
 		867B87A122E993BA0054DDFF /* ZGJSBridgeLocalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGJSBridgeLocalViewController.m; sourceTree = "<group>"; };
+		86C676B122E9BA7600006925 /* ZGMacroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMacroViewController.h; sourceTree = "<group>"; };
+		86C676B222E9BA7600006925 /* ZGMacroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMacroViewController.m; sourceTree = "<group>"; };
+		86C676B422E9D51800006925 /* ZGTestSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTestSelector.h; sourceTree = "<group>"; };
+		86C676B522E9D51800006925 /* ZGTestSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTestSelector.m; sourceTree = "<group>"; };
 		86DC575B22E5575800449669 /* iframeTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTest.html; sourceTree = "<group>"; };
 		86DC575D22E59E7700449669 /* btest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = btest.txt; sourceTree = "<group>"; };
 		91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2187,6 +2193,41 @@
 				867B879A22E993910054DDFF /* iframeTestLocal.html */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		86C676AD22E9BA6600006925 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				86C676AE22E9BA6600006925 /* Controller */,
+				86C676AF22E9BA6600006925 /* Model */,
+				86C676B022E9BA6600006925 /* View */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		86C676AE22E9BA6600006925 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				86C676B122E9BA7600006925 /* ZGMacroViewController.h */,
+				86C676B222E9BA7600006925 /* ZGMacroViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		86C676AF22E9BA6600006925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86C676B422E9D51800006925 /* ZGTestSelector.h */,
+				86C676B522E9D51800006925 /* ZGTestSelector.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86C676B022E9BA6600006925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9400C24B02B6D573E382F8CC /* Frameworks */ = {
@@ -3953,6 +3994,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				86C676AD22E9BA6600006925 /* Macro */,
 				867B879622E993530054DDFF /* JSBridage */,
 				EF8B682422D7707A001F7E53 /* UUID */,
 				EFD9EFFB22D0976F00810260 /* UrlSession */,
@@ -4890,6 +4932,7 @@
 				EF31F95E20707D5B00B1B148 /* ZGSafeDicController.m in Sources */,
 				EF618EB42000C4B40084A59E /* ZGBrightnessController.m in Sources */,
 				EF570B322024625600E14BC9 /* ZGKEDataModel.m in Sources */,
+				86C676B322E9BA7600006925 /* ZGMacroViewController.m in Sources */,
 				EF64EEAD20E4806E009B5767 /* ZGCellOptionGestureController.m in Sources */,
 				EF64EEC220E4E5DA009B5767 /* ZGEventChainView.m in Sources */,
 				EF64EEA920E3DC5A009B5767 /* ZGNestTableView.m in Sources */,
@@ -4910,6 +4953,7 @@
 				EFFCE4C71F64D67C008E2375 /* ZGChineseDate.m in Sources */,
 				EF58F6952143BA590000CDC7 /* ZGWaterFallController.m in Sources */,
 				867B87A222E993BA0054DDFF /* ZGJSBridgeLocalViewController.m in Sources */,
+				86C676B622E9D51800006925 /* ZGTestSelector.m in Sources */,
 				EF7231AA20DB478200999D3A /* ZGTopicHeaderView.m in Sources */,
 				4137F2EC2192B92E003B6D60 /* ZGPhotoPickController.m in Sources */,
 				4175A0552226916C00B91F43 /* ZGShuoTextShowView.m in Sources */,

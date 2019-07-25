@@ -121,6 +121,7 @@
 
 #import "ZGJSBridgeURLViewController.h"
 #import "ZGJSBridgeLocalViewController.h"
+#import "ZGMacroViewController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -155,7 +156,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 77;
+    return 78;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -315,6 +316,8 @@
         cell.textLabel.text = @"JSBridge_URL";
     }else if(indexPath.row == 76){
         cell.textLabel.text = @"JSBridge_Local";
+    }else if(indexPath.row == 77){
+        cell.textLabel.text = @"Macro";
     }
 
 
@@ -585,6 +588,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 76){
         ZGJSBridgeLocalViewController *con = [[ZGJSBridgeLocalViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 77){
+        ZGMacroViewController *con = [[ZGMacroViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
