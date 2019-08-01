@@ -108,6 +108,12 @@
     
     void *ep = (void *)value.pointerValue;
     void *a = *ep;
+    
+    
+    
+    
+    
+    
     NSLog(@"ep %@",ep);
     
 }
