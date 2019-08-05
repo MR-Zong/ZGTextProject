@@ -45,8 +45,13 @@
     /**
      *  测试 文件空间分配
      */
-    [self testFileAllocation];
+//    [self testFileAllocation];
     
+    
+    /**
+     * 测试 关联获取不到属性
+     */
+    [self testAssociation];
 }
 
 /*
@@ -191,6 +196,22 @@
 - (void)errParse:(NSError **)err
 {
     *err = [NSError errorWithDomain:@"sdfds" code:21 userInfo:nil];
+}
+
+
+#pragma mark - 关联对象
+- (void)testAssociation
+{
+    NSObject *obj = [NSObject new];
+    
+    void (^tBlock) (NSObject *) = ^(NSObject *this){
+        objc_setAssociatedObject(this, @"zong", @"value_zong", OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    };
+    tBlock(obj);
+    
+    NSString *value = objc_getAssociatedObject(obj, @"zong");
+    NSLog(@"value %@",value);
+    
 }
 
 @end
