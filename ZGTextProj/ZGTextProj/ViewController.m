@@ -123,6 +123,8 @@
 #import "ZGJSBridgeLocalViewController.h"
 #import "ZGMacroViewController.h"
 
+#import "ZGMonitoreController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -156,7 +158,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 78;
+    return 79;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -318,6 +320,8 @@
         cell.textLabel.text = @"JSBridge_Local";
     }else if(indexPath.row == 77){
         cell.textLabel.text = @"Macro";
+    }else if(indexPath.row == 78){
+        cell.textLabel.text = @"Monitor";
     }
 
 
@@ -591,6 +595,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 77){
         ZGMacroViewController *con = [[ZGMacroViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 78){
+        ZGMonitoreController *con = [[ZGMonitoreController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

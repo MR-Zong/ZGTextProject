@@ -133,6 +133,8 @@
 		867B879C22E993910054DDFF /* iframeTestLocal.html in Resources */ = {isa = PBXBuildFile; fileRef = 867B879A22E993910054DDFF /* iframeTestLocal.html */; };
 		867B879F22E993AA0054DDFF /* ZGJSBridgeURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B879E22E993AA0054DDFF /* ZGJSBridgeURLViewController.m */; };
 		867B87A222E993BA0054DDFF /* ZGJSBridgeLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B87A122E993BA0054DDFF /* ZGJSBridgeLocalViewController.m */; };
+		8690B0052302A0910031C99D /* ZGMonitoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8690B0042302A0910031C99D /* ZGMonitoreController.m */; };
+		8690B0082302A17B0031C99D /* ZGMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8690B0072302A17B0031C99D /* ZGMonitorManager.m */; };
 		86C676B322E9BA7600006925 /* ZGMacroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C676B222E9BA7600006925 /* ZGMacroViewController.m */; };
 		86C676B622E9D51800006925 /* ZGTestSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C676B522E9D51800006925 /* ZGTestSelector.m */; };
 		86DC575C22E5575900449669 /* iframeTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 86DC575B22E5575800449669 /* iframeTest.html */; };
@@ -633,6 +635,10 @@
 		867B879E22E993AA0054DDFF /* ZGJSBridgeURLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGJSBridgeURLViewController.m; sourceTree = "<group>"; };
 		867B87A022E993BA0054DDFF /* ZGJSBridgeLocalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGJSBridgeLocalViewController.h; sourceTree = "<group>"; };
 		867B87A122E993BA0054DDFF /* ZGJSBridgeLocalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGJSBridgeLocalViewController.m; sourceTree = "<group>"; };
+		8690B0032302A0910031C99D /* ZGMonitoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMonitoreController.h; sourceTree = "<group>"; };
+		8690B0042302A0910031C99D /* ZGMonitoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMonitoreController.m; sourceTree = "<group>"; };
+		8690B0062302A17B0031C99D /* ZGMonitorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMonitorManager.h; sourceTree = "<group>"; };
+		8690B0072302A17B0031C99D /* ZGMonitorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMonitorManager.m; sourceTree = "<group>"; };
 		86C676B122E9BA7600006925 /* ZGMacroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGMacroViewController.h; sourceTree = "<group>"; };
 		86C676B222E9BA7600006925 /* ZGMacroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGMacroViewController.m; sourceTree = "<group>"; };
 		86C676B422E9D51800006925 /* ZGTestSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTestSelector.h; sourceTree = "<group>"; };
@@ -2193,6 +2199,41 @@
 				867B879A22E993910054DDFF /* iframeTestLocal.html */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		8690AFFF2302A0750031C99D /* monitor */ = {
+			isa = PBXGroup;
+			children = (
+				8690B0002302A0750031C99D /* Controller */,
+				8690B0012302A0750031C99D /* Model */,
+				8690B0022302A0750031C99D /* View */,
+			);
+			path = monitor;
+			sourceTree = "<group>";
+		};
+		8690B0002302A0750031C99D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8690B0032302A0910031C99D /* ZGMonitoreController.h */,
+				8690B0042302A0910031C99D /* ZGMonitoreController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8690B0012302A0750031C99D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8690B0062302A17B0031C99D /* ZGMonitorManager.h */,
+				8690B0072302A17B0031C99D /* ZGMonitorManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8690B0022302A0750031C99D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		86C676AD22E9BA6600006925 /* Macro */ = {
@@ -3994,6 +4035,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8690AFFF2302A0750031C99D /* monitor */,
 				86C676AD22E9BA6600006925 /* Macro */,
 				867B879622E993530054DDFF /* JSBridage */,
 				EF8B682422D7707A001F7E53 /* UUID */,
@@ -4831,6 +4873,7 @@
 				4177D798224F110300B5C863 /* ZGAuthorizationHelper.m in Sources */,
 				4189406921798637008C13D8 /* YGRecordView.m in Sources */,
 				EFC56B7F20181FA400BA5487 /* ZGHFGirl.m in Sources */,
+				8690B0052302A0910031C99D /* ZGMonitoreController.m in Sources */,
 				4175A0212226320B00B91F43 /* ZGDiscoverConst.m in Sources */,
 				EF01D5E620AE6FC00023B282 /* ZGNTestController.m in Sources */,
 				EF72319F20DA40B600999D3A /* ZGAnimationsCollectionViewController.m in Sources */,
@@ -4888,6 +4931,7 @@
 				EF64EEB020E485A3009B5767 /* ZGCellOpGestureTable.m in Sources */,
 				4163862B223BA351008E09C3 /* ZGAliyunRecognizer.m in Sources */,
 				417EBCB6221A4E4900E86D8D /* ZGChatBaseCell.m in Sources */,
+				8690B0082302A17B0031C99D /* ZGMonitorManager.m in Sources */,
 				EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */,
 				EFE4308B20D51721006930E5 /* ZGAnimationsTableView.m in Sources */,
 				EF58F6A421450B540000CDC7 /* ZGVAKDiscoverReusableViewFooter.m in Sources */,
