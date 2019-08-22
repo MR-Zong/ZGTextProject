@@ -629,6 +629,7 @@
 		41FE519C218B138900F17BF5 /* ZGExposureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGExposureManager.m; sourceTree = "<group>"; };
 		6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.release.xcconfig"; sourceTree = "<group>"; };
 		720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjUITests/Pods-ZGTextProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8620E65C230E48A500FF62AD /* ZGTextProj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZGTextProj.entitlements; sourceTree = "<group>"; };
 		867B879922E993910054DDFF /* iframeTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTest.html; sourceTree = "<group>"; };
 		867B879A22E993910054DDFF /* iframeTestLocal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTestLocal.html; sourceTree = "<group>"; };
 		867B879D22E993AA0054DDFF /* ZGJSBridgeURLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGJSBridgeURLViewController.h; sourceTree = "<group>"; };
@@ -3977,6 +3978,7 @@
 		EFDBCDBB1F2B159700C542AD /* ZGTextProj */ = {
 			isa = PBXGroup;
 			children = (
+				8620E65C230E48A500FF62AD /* ZGTextProj.entitlements */,
 				41CDAA1521749C3600D0DE9B /* Resource */,
 				EFF1DA8C20D3C56100CBC680 /* Libraries */,
 				EFDBCDEF1F2B15FD00C542AD /* Modules */,
@@ -4675,6 +4677,12 @@
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Multipath = {
 								enabled = 0;
 							};
 						};
