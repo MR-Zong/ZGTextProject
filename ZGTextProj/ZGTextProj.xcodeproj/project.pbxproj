@@ -292,6 +292,7 @@
 		EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC58301F3420E000B94D93 /* ZGImagesToVideoManager.m */; };
 		EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB94E82210470B100484950 /* ZGCategoryExtendController.m */; };
 		EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB94E852104711200484950 /* ZGCategoryExtendA.m */; };
+		EFBFFE3023118ABD00143BC3 /* ZGCPPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBFFE2E23118ABC00143BC3 /* ZGCPPViewController.m */; };
 		EFC4FA8D2069EDE000F42842 /* ZGCAAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA8C2069EDE000F42842 /* ZGCAAnimationController.m */; };
 		EFC4FA94206B46E100F42842 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA93206B46E100F42842 /* UncaughtExceptionHandler.m */; };
 		EFC4FA97206B47A500F42842 /* ZGCrashController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC4FA96206B47A500F42842 /* ZGCrashController.m */; };
@@ -949,6 +950,8 @@
 		EFB94E82210470B100484950 /* ZGCategoryExtendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCategoryExtendController.m; sourceTree = "<group>"; };
 		EFB94E842104711200484950 /* ZGCategoryExtendA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCategoryExtendA.h; sourceTree = "<group>"; };
 		EFB94E852104711200484950 /* ZGCategoryExtendA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCategoryExtendA.m; sourceTree = "<group>"; };
+		EFBFFE2E23118ABC00143BC3 /* ZGCPPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGCPPViewController.m; sourceTree = "<group>"; };
+		EFBFFE2F23118ABC00143BC3 /* ZGCPPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGCPPViewController.h; sourceTree = "<group>"; };
 		EFC4FA8B2069EDE000F42842 /* ZGCAAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCAAnimationController.h; sourceTree = "<group>"; };
 		EFC4FA8C2069EDE000F42842 /* ZGCAAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCAAnimationController.m; sourceTree = "<group>"; };
 		EFC4FA92206B46E100F42842 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
@@ -3735,6 +3738,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EFBFFE2723118A2000143BC3 /* C++ */ = {
+			isa = PBXGroup;
+			children = (
+				EFBFFE2823118A2000143BC3 /* Controller */,
+				EFBFFE2923118A2000143BC3 /* Model */,
+				EFBFFE2A23118A2000143BC3 /* View */,
+			);
+			path = "C++";
+			sourceTree = "<group>";
+		};
+		EFBFFE2823118A2000143BC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFBFFE2F23118ABC00143BC3 /* ZGCPPViewController.h */,
+				EFBFFE2E23118ABC00143BC3 /* ZGCPPViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFBFFE2923118A2000143BC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFBFFE2A23118A2000143BC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EFC4FA872069EDC900F42842 /* CAAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -4037,6 +4073,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFBFFE2723118A2000143BC3 /* C++ */,
 				8690AFFF2302A0750031C99D /* monitor */,
 				86C676AD22E9BA6600006925 /* Macro */,
 				867B879622E993530054DDFF /* JSBridage */,
@@ -4865,6 +4902,7 @@
 				EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */,
 				EF64EEBF20E4DAC0009B5767 /* ZGEventChainController.m in Sources */,
 				417115B221AB93130068079B /* ZGIMessageController.m in Sources */,
+				EFBFFE3023118ABD00143BC3 /* ZGCPPViewController.m in Sources */,
 				EF2EEAC020F495D300C9FBAD /* ZGKVOODataModel.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
 				4163863E223E4D3E008E09C3 /* ZGShapeAnimationController.m in Sources */,

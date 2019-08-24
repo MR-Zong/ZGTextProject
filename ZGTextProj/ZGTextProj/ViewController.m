@@ -125,6 +125,8 @@
 
 #import "ZGMonitoreController.h"
 
+#import "ZGCPPViewController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -158,7 +160,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 79;
+    return 80;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -322,6 +324,8 @@
         cell.textLabel.text = @"Macro";
     }else if(indexPath.row == 78){
         cell.textLabel.text = @"Monitor";
+    }else if(indexPath.row == 79){
+        cell.textLabel.text = @"C++";
     }
 
 
@@ -598,6 +602,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 78){
         ZGMonitoreController *con = [[ZGMonitoreController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 79){
+        ZGCPPViewController *con = [[ZGCPPViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
