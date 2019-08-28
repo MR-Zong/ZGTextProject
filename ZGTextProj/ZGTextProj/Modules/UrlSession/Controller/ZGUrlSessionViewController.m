@@ -9,13 +9,15 @@
 #import "ZGUrlSessionViewController.h"
 
 
-@interface ZGUrlSessionViewController () <NSURLSessionDataDelegate>
+@interface ZGUrlSessionViewController () <NSURLSessionDataDelegate,NSURLConnectionDelegate,NSURLConnectionDataDelegate>
 
 /** 接受响应体信息 */
 @property (nonatomic, strong) NSFileHandle *handle;
 @property (nonatomic, assign) NSInteger totalSize;
 @property (nonatomic, assign) NSInteger currentSize;
 @property (nonatomic, strong) NSString *fullPath;
+
+@property (nonatomic, strong) NSURLConnection *con;
 
 @property (nonatomic, assign) BOOL cc;
 @end
@@ -31,7 +33,27 @@
      */
 //    [self testCdnAuthorize];
     
+    /**
+     * 测试 无网络 urlConnection怎么回调
+     */
+    [self testNoNetworkURLConnection];
     
+    
+    
+}
+
+#pragma mark - 测试无网络 urlConnection
+- (void)testNoNetworkURLConnection
+{
+    NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+    req.timeoutInterval = 3;
+    _con  = [[NSURLConnection alloc] initWithRequest:req
+                                                                         delegate:self];
+}
+
+#pragma mark - 测试dispatch_after
+- (void)testDispatchAfter
+{
     /**
      * 测试 dispatch_after
      */
@@ -70,6 +92,37 @@
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:req];
     [dataTask resume];
 }
+
+
+
+#pragma mark - NSURLConnectionDelegate
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    NSLog(@"didFailWithError %@",error);
+    NSLog(@"code %zd,  domain %@",error.code,error.domain);
+}
+
+
+#pragma mark - NSURLConnectionDataDelegate
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    NSLog(@"didReceiveResponse");
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    NSLog(@"didReceiveData");
+}
+
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    NSLog(@"connectionDidFinishLoading");
+}
+
+
+
+
 
 #pragma mark - NSURLSessionDataDelegate
 
