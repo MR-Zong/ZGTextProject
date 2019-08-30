@@ -7,7 +7,7 @@
 //
 
 #import "ZGUrlSessionViewController.h"
-
+#import <objc/message.h>
 
 @interface ZGUrlSessionViewController () <NSURLSessionDataDelegate,NSURLConnectionDelegate,NSURLConnectionDataDelegate>
 
@@ -36,10 +36,29 @@
     /**
      * 测试 无网络 urlConnection怎么回调
      */
-    [self testNoNetworkURLConnection];
+//    [self testNoNetworkURLConnection];
+    
+    
+    /**
+     * 测试obj_sendmessage
+     */
+    [self testObjSendMessage];
     
     
     
+}
+
+
+#pragma mark - testObjSendMessage
+- (void)testObjSendMessage
+{
+    ((void (*) (id, SEL, float)) objc_msgSend) (self, sel_registerName("floatTest:"), 10.6);
+    
+}
+
+- (void)floatTest:(float)value
+{
+    NSLog(@"value %f",value);
 }
 
 #pragma mark - 测试无网络 urlConnection
