@@ -35,9 +35,13 @@
             break;
     }
     
+    // int 类型的内存大小
     NSLog(@"sizeof(int) %zd",sizeof(int));
+    NSLog(@"sizeof(int8_t) %zd",sizeof(int8_t));
+    NSLog(@"sizeof(int16_t) %zd",sizeof(int16_t));
+    NSLog(@"sizeof(int32_t) %zd",sizeof(int32_t));
+    NSLog(@"sizeof(int64_t) %zd",sizeof(int64_t));
 }
-
 
 
 @end
