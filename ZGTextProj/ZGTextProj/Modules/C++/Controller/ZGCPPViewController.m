@@ -8,6 +8,7 @@
 
 #import "ZGCPPViewController.h"
 
+
 @interface ZGCPPViewController ()
 
 @end
@@ -18,6 +19,18 @@
     [super viewDidLoad];
    
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    /**
+     * 理解 __has_include 的作用
+     * 此宏传入一个你想引入文件的名称作为参数，如果该文件能够被引入则返回1，否则返回0。
+     * 本质是检测到某个文件,是否在工程中被包含（注意是工程，在工程中说明可以引用该文件）
+     */
+#if __has_include("xxx.h")
+    NSLog(@"能包含");
+#else
+    NSLog(@"不能包含");
+#endif
     
     [self testSwitch];
 }
