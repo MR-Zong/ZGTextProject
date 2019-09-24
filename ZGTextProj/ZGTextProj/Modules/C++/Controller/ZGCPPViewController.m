@@ -8,8 +8,16 @@
 
 #import "ZGCPPViewController.h"
 
+typedef NS_OPTIONS(NSInteger, ZGTestFLagOp) {
+    ZGTestFLagOpHttp = 1<<0, // 1 做过
+    ZGTestFLagOpTcp = 1<<1,// 1 做过
+    ZGTestFLagOpPriorityHttp = 1 << 2, // http 优先
+};
+
 
 @interface ZGCPPViewController ()
+
+@property (nonatomic, assign) ZGTestFLagOp op;
 
 @end
 
@@ -29,10 +37,11 @@
 #if __has_include("xxx.h")
     NSLog(@"能包含");
 #else
-    NSLog(@"不能包含");
+//    NSLog(@"不能包含");
 #endif
     
-    [self testSwitch];
+//    [self testSwitch];
+    [self testFlag:NO];
 }
 
 - (void)testSwitch
@@ -54,6 +63,30 @@
     NSLog(@"sizeof(int16_t) %zd",sizeof(int16_t));
     NSLog(@"sizeof(int32_t) %zd",sizeof(int32_t));
     NSLog(@"sizeof(int64_t) %zd",sizeof(int64_t));
+}
+
+- (void)testFlag:(BOOL)httpFirst
+{
+    if ( (_op & ZGTestFLagOpHttp) && (_op & ZGTestFLagOpTcp)) {
+        NSLog(@"HTTP AND TCP ALL DONE");
+        return;
+    }
+    
+    if (_op == 0 && httpFirst) _op |= ZGTestFLagOpPriorityHttp;
+    
+    
+    if ( (_op&ZGTestFLagOpPriorityHttp) && !(_op & ZGTestFLagOpHttp) ) {
+        NSLog(@"DO HTTP");
+        _op |= ZGTestFLagOpHttp;
+        [self testFlag:httpFirst];
+    }else {
+        NSLog(@"DO TCP");
+        _op |= ZGTestFLagOpTcp;
+        _op |= ZGTestFLagOpPriorityHttp;
+        [self testFlag:httpFirst];
+    }
+    
+    
 }
 
 
