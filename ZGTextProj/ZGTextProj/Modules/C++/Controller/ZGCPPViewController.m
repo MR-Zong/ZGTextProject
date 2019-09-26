@@ -28,6 +28,9 @@ typedef NS_OPTIONS(NSInteger, ZGTestFLagOp) {
    
     self.view.backgroundColor = [UIColor whiteColor];
     
+    // 测试三元操作符 的省略写法
+    NSLog(@"sanYuan %d",188?:9);
+    
     
     /**
      * 理解 __has_include 的作用
