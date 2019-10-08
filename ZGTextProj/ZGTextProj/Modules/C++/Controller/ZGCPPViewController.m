@@ -28,6 +28,12 @@ typedef NS_OPTIONS(NSInteger, ZGTestFLagOp) {
    
     self.view.backgroundColor = [UIColor whiteColor];
     
+    // 测试filUrl 的host 是否为空
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"img.jpg" ofType:nil];
+    NSURL *fileUrl = [NSURL URLWithString:filePath];
+    NSString *host = [fileUrl host];
+    NSLog(@"fileUrl %@, host %@",fileUrl,host);
+    
     // 测试三元操作符 的省略写法
     NSLog(@"sanYuan %d",188?:9);
     
