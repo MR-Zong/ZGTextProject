@@ -8,6 +8,8 @@
 
 #import "ZGCPPViewController.h"
 
+static NSString *const kLZCdnAudioDomainWhiteListPattern = @"^cdnauth\\w*\\.\\w+\\.\\w+$";
+
 typedef NS_OPTIONS(NSInteger, ZGTestFLagOp) {
     ZGTestFLagOpHttp = 1<<0, // 1 做过
     ZGTestFLagOpTcp = 1<<1,// 1 做过
@@ -34,6 +36,17 @@ typedef NS_OPTIONS(NSInteger, ZGTestFLagOp) {
     NSString *host = [fileUrl host];
     NSLog(@"fileUrl %@, host %@",fileUrl,host);
     
+    NSString *testPath = @"file:///var/mobile/Containers/Data/Application/CB8B5928-E73B-4752-8FAB-E107431B528A/Documents/upload/79DC8630-AD12-4B27-A010-8621CE48FCC7.m4a";
+    NSURL *testUrl = [NSURL fileURLWithPath:testPath];
+    if ([testUrl isFileURL] == YES) {
+        NSLog(@"xxxxx");
+    }
+    NSString *testHost = [testUrl host];
+    NSString *testUrlP = [testUrl path];
+    NSLog(@"testUrl %@, testHost %@, testUrlP %@",testUrl,testHost,testUrlP);
+    
+    [self isMatchWhiteListPatternWithUrl:testUrl];
+    
     // 测试三元操作符 的省略写法
     NSLog(@"sanYuan %d",188?:9);
     
@@ -51,6 +64,15 @@ typedef NS_OPTIONS(NSInteger, ZGTestFLagOp) {
     
 //    [self testSwitch];
     [self testFlag:NO];
+}
+
+- (BOOL)isMatchWhiteListPatternWithUrl:(NSURL *)url
+{
+    NSString *host = [url host];
+    NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:kLZCdnAudioDomainWhiteListPattern options:0 error:nil];
+    NSArray *results = [regex matchesInString:host options:0 range:NSMakeRange(0, host.length)];
+    BOOL isMath = results.count>0?YES:NO;
+    return isMath;
 }
 
 - (void)testSwitch
