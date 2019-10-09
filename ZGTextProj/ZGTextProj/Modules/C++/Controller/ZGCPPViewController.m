@@ -30,20 +30,20 @@ typedef NS_OPTIONS(NSInteger, ZGTestFLagOp) {
    
     self.view.backgroundColor = [UIColor whiteColor];
     
-    // 测试filUrl 的host 是否为空
+    // bundle 地址
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"img.jpg" ofType:nil];
-    NSURL *fileUrl = [NSURL URLWithString:filePath];
+    NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
     NSString *host = [fileUrl host];
-    NSLog(@"fileUrl %@, host %@",fileUrl,host);
     
-    NSString *testPath = @"file:///var/mobile/Containers/Data/Application/CB8B5928-E73B-4752-8FAB-E107431B528A/Documents/upload/79DC8630-AD12-4B27-A010-8621CE48FCC7.m4a";
-    NSURL *testUrl = [NSURL fileURLWithPath:testPath];
-    if ([testUrl isFileURL] == YES) {
-        NSLog(@"xxxxx");
-    }
-    NSString *testHost = [testUrl host];
-    NSString *testUrlP = [testUrl path];
-    NSLog(@"testUrl %@, testHost %@, testUrlP %@",testUrl,testHost,testUrlP);
+    // 网络地址
+    NSString *testPath = @"http:///baidu/index";
+    NSURL *testUrl = [NSURL URLWithString:testPath];
+    
+    
+    // 沙盒地址 获取cache目录路径
+    NSString *cachesDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory,NSUserDomainMask,YES) firstObject];
+    NSURL *shaheUrl = [NSURL fileURLWithPath:[cachesDir stringByAppendingPathComponent:@"zong.txt"]];
+    
     
     [self isMatchWhiteListPatternWithUrl:testUrl];
     
@@ -66,9 +66,23 @@ typedef NS_OPTIONS(NSInteger, ZGTestFLagOp) {
     [self testFlag:NO];
 }
 
+#pragma mark - 白名单规则
 - (BOOL)isMatchWhiteListPatternWithUrl:(NSURL *)url
 {
+    if (url.absoluteString.length == 0) {
+        NSLog(@"url length == 0，url %@",url.absoluteString);
+        return NO;
+    }
+    if ([url isFileURL]) {
+        NSLog(@"url isFileURL，url %@",url.absoluteString);
+        
+        return NO;
+    }
     NSString *host = [url host];
+    if (host.length == 0) {
+        NSLog(@"host 为空，url %@",url.absoluteString);
+        return NO;
+    }
     NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:kLZCdnAudioDomainWhiteListPattern options:0 error:nil];
     NSArray *results = [regex matchesInString:host options:0 range:NSMakeRange(0, host.length)];
     BOOL isMath = results.count>0?YES:NO;
