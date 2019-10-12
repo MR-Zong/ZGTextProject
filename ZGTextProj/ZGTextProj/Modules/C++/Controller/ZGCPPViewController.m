@@ -30,6 +30,9 @@ typedef NS_OPTIONS(NSInteger, ZGTestFLagOp) {
    
     self.view.backgroundColor = [UIColor whiteColor];
     
+//    NSString *text = @"zong";
+//    int w = [text ];
+    
     // bundle 地址
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"img.jpg" ofType:nil];
     NSURL *fileUrl = [NSURL fileURLWithPath:filePath];

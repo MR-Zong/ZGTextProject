@@ -127,6 +127,8 @@
 
 #import "ZGCPPViewController.h"
 
+#import "ZGFUNCDemoViewController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -160,7 +162,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 80;
+    return 81;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -326,6 +328,8 @@
         cell.textLabel.text = @"Monitor";
     }else if(indexPath.row == 79){
         cell.textLabel.text = @"C++";
+    }else if(indexPath.row == 80){
+        cell.textLabel.text = @"functionUseDemo";
     }
 
 
@@ -606,10 +610,10 @@
     }else if(indexPath.row == 79){
         ZGCPPViewController *con = [[ZGCPPViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 80){
+        ZGFUNCDemoViewController *con = [[ZGFUNCDemoViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
-
-
-
 
 
 

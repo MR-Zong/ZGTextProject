@@ -140,6 +140,7 @@
 		86C676B622E9D51800006925 /* ZGTestSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C676B522E9D51800006925 /* ZGTestSelector.m */; };
 		86DC575C22E5575900449669 /* iframeTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 86DC575B22E5575800449669 /* iframeTest.html */; };
 		86DC575E22E59E7800449669 /* btest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86DC575D22E59E7700449669 /* btest.txt */; };
+		86FBB9212351B48A00ECA765 /* ZGFUNCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FBB9202351B48A00ECA765 /* ZGFUNCDemoViewController.m */; };
 		EF0015AD224768A000A7A73E /* ZGPCopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0015AC224768A000A7A73E /* ZGPCopyModel.m */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
 		EF01D5B620AC089C0023B282 /* ZGSAExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF01D5B520AC089C0023B282 /* ZGSAExample.storyboard */; };
@@ -650,6 +651,8 @@
 		86C676B522E9D51800006925 /* ZGTestSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTestSelector.m; sourceTree = "<group>"; };
 		86DC575B22E5575800449669 /* iframeTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTest.html; sourceTree = "<group>"; };
 		86DC575D22E59E7700449669 /* btest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = btest.txt; sourceTree = "<group>"; };
+		86FBB91F2351B48A00ECA765 /* ZGFUNCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFUNCDemoViewController.h; sourceTree = "<group>"; };
+		86FBB9202351B48A00ECA765 /* ZGFUNCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFUNCDemoViewController.m; sourceTree = "<group>"; };
 		91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.debug.xcconfig"; sourceTree = "<group>"; };
 		C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTextProjTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0015AB224768A000A7A73E /* ZGPCopyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPCopyModel.h; sourceTree = "<group>"; };
@@ -2272,6 +2275,39 @@
 			sourceTree = "<group>";
 		};
 		86C676B022E9BA6600006925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86FBB91B2351B46900ECA765 /* functionUseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				86FBB91C2351B46900ECA765 /* Controller */,
+				86FBB91D2351B46900ECA765 /* Model */,
+				86FBB91E2351B46900ECA765 /* View */,
+			);
+			path = functionUseDemo;
+			sourceTree = "<group>";
+		};
+		86FBB91C2351B46900ECA765 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				86FBB91F2351B48A00ECA765 /* ZGFUNCDemoViewController.h */,
+				86FBB9202351B48A00ECA765 /* ZGFUNCDemoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		86FBB91D2351B46900ECA765 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86FBB91E2351B46900ECA765 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -4078,6 +4114,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				86FBB91B2351B46900ECA765 /* functionUseDemo */,
 				EFBFFE2723118A2000143BC3 /* C++ */,
 				8690AFFF2302A0750031C99D /* monitor */,
 				86C676AD22E9BA6600006925 /* Macro */,
@@ -5169,6 +5206,7 @@
 				EF7231A420DB413200999D3A /* ZGHeaderCollectionViewCell.m in Sources */,
 				EF3CAA8F20BD616800FCC752 /* MGSwipeButton.m in Sources */,
 				EF3CAA8E20BD616800FCC752 /* MGSwipeTableCell.m in Sources */,
+				86FBB9212351B48A00ECA765 /* ZGFUNCDemoViewController.m in Sources */,
 				EFFCE4C11F637C3D008E2375 /* ZGDayModel.m in Sources */,
 				EFFCE4B51F62722F008E2375 /* ZGCalendarCell.m in Sources */,
 				EFFCE49E1F62330F008E2375 /* HanyuPinyinOutputFormat.m in Sources */,
