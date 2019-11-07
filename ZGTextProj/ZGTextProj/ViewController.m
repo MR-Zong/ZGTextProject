@@ -129,6 +129,8 @@
 
 #import "ZGFUNCDemoViewController.h"
 
+#import "ZGRangeUtilViewController.h"
+
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -162,7 +164,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 81;
+    return 82;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -330,6 +332,8 @@
         cell.textLabel.text = @"C++";
     }else if(indexPath.row == 80){
         cell.textLabel.text = @"functionUseDemo";
+    }else if(indexPath.row == 81){
+        cell.textLabel.text = @"rangeUtil";
     }
 
 
@@ -612,6 +616,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 80){
         ZGFUNCDemoViewController *con = [[ZGFUNCDemoViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 81){
+        ZGRangeUtilViewController *con = [[ZGRangeUtilViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
