@@ -36,6 +36,8 @@ NSString *kLZPlayerDAPreAudioUrlKey = @"kLZPlayerDAPreAudioUrlKey";
 @property (nonatomic, strong) UIButton *nextBtn;
 @property (nonatomic, assign) NSInteger audioUrlIndex;
 
+@property (nonatomic, strong) dispatch_queue_t cacheQueue;
+
 @end
 
 @implementation ZGRangeUtilViewController
@@ -69,6 +71,7 @@ NSString *kLZPlayerDAPreAudioUrlKey = @"kLZPlayerDAPreAudioUrlKey";
 - (void)prepare
 {
     self.cache = [NSMutableDictionary dictionary];
+    _cacheQueue = dispatch_queue_create("LZPlayerDACacheQueue", DISPATCH_QUEUE_SERIAL);
     
     _audioUrlIndex = 1;
     self.audioUrl = [NSURL URLWithString:[NSString stringWithFormat:@"http://zong.com/zongFaCai.mp%ld",(long)_audioUrlIndex]];
@@ -161,7 +164,6 @@ NSString *kLZPlayerDAPreAudioUrlKey = @"kLZPlayerDAPreAudioUrlKey";
 #pragma mark - action
 - (void)play:(UIButton *)btn
 {
-    
     [self playWithUrl:self.audioUrl];
     
     [self receiveNetworkDataLength:[self.downloadTf.text intValue]];
@@ -184,32 +186,35 @@ NSString *kLZPlayerDAPreAudioUrlKey = @"kLZPlayerDAPreAudioUrlKey";
 #pragma mark -- - - -  - - -  -
 - (void)playWithUrl:(NSURL *)audioUrl
 {
-    if (!audioUrl) {
-        return;
-    }
-    if (audioUrl.absoluteString.length == 0) {
-        return;
-    }
-    
-    self.audioUrl = audioUrl;
-    
-    // 要先上报上一首
-    if (![self getPreAudioUrl]) {
-        [self savePreAudioUrl:audioUrl];
-    }
-    if (![audioUrl.absoluteString isEqualToString:self.preAudioUrl.absoluteString]) {
+    dispatch_async(_cacheQueue, ^{
         
-        [self reportDataAmountWithUrl:self.preAudioUrl];
+        if (!audioUrl) {
+            return;
+        }
+        if (audioUrl.absoluteString.length == 0) {
+            return;
+        }
         
-        // 上一首preDownloadDataAmout，preListenDataAmount处理
-        ZGRCacheItem *preItem = [self getItem:self.preAudioUrl];
-        preItem.preDownloadDataAmout = preItem.downloadDataAmout;
-        preItem.preListenDataAmount = preItem.listenDataAmount;
-        [preItem save2File];
+        self.audioUrl = audioUrl;
         
-        // 保存为上一首
-        [self savePreAudioUrl:audioUrl];
-    }
+        // 要先上报上一首
+        if (![self getPreAudioUrl]) {
+            [self savePreAudioUrl:audioUrl];
+        }
+        if (![audioUrl.absoluteString isEqualToString:self.preAudioUrl.absoluteString]) {
+            
+            [self reportDataAmountWithUrl:self.preAudioUrl];
+            
+            // 上一首preDownloadDataAmout，preListenDataAmount处理
+            ZGRCacheItem *preItem = [self getItem:self.preAudioUrl];
+            preItem.preDownloadDataAmout = preItem.downloadDataAmout;
+            preItem.preListenDataAmount = preItem.listenDataAmount;
+            [preItem save2File];
+            
+            // 保存为上一首
+            [self savePreAudioUrl:audioUrl];
+        }
+    });
     
 }
 
@@ -254,22 +259,28 @@ NSString *kLZPlayerDAPreAudioUrlKey = @"kLZPlayerDAPreAudioUrlKey";
 #pragma mark - 下载流量统计
 - (void)receiveNetworkDataLength:(int64_t)receiveDataLength
 {
-    if (receiveDataLength <= 0 || self.audioUrl.absoluteString.length == 0) {
-        return;
-    }
-    
-    [self synchronizeCacheWithReceiveNetworkDataLength:receiveDataLength listenDataLength:0];
+    dispatch_async(_cacheQueue, ^{
+        if (receiveDataLength <= 0 || self.audioUrl.absoluteString.length == 0) {
+            return;
+        }
+        
+        [self synchronizeCacheWithReceiveNetworkDataLength:receiveDataLength listenDataLength:0];
+    });
+
 }
 
 #pragma mark - 收听流量统计
 - (void)listenStart:(int32_t)listenStart listenDataLength:(int64_t)listenDataLength
 {
-    if (listenDataLength <= 0 || self.audioUrl.absoluteString.length == 0 || listenStart < 0) {
-        return;
-    }
-    
-    int64_t realListenDataLength = [self caculateRealListenDataLengthWithListenStart:listenStart listenDataLength:listenDataLength];
-    [self synchronizeCacheWithReceiveNetworkDataLength:0 listenDataLength:realListenDataLength];
+    dispatch_async(_cacheQueue, ^{
+        if (listenDataLength <= 0 || self.audioUrl.absoluteString.length == 0 || listenStart < 0) {
+            return;
+        }
+        
+        int64_t realListenDataLength = [self caculateRealListenDataLengthWithListenStart:listenStart listenDataLength:listenDataLength];
+        [self synchronizeCacheWithReceiveNetworkDataLength:0 listenDataLength:realListenDataLength];
+    });
+
 }
 
 // 对音频收听流量去重，算出真实新增的收听流量大小
