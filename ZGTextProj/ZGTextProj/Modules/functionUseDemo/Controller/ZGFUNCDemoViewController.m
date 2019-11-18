@@ -27,7 +27,14 @@
      *  探究selector 本质到底是什么？
      *   typedef struct objc_selector *SEL;   struct objc_selector 到底是什么类型
      */
-    [self discoverSelector];
+//    [self discoverSelector];
+    
+    
+    // 测试URL
+    NSString *urlString = @"http://cdn01.lizhi.fm/";
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSString *formatSchemeAndHost = [NSString stringWithFormat:@"%@://%@",url.scheme,url.host];
+    NSLog(@"formatSchemeAndHost %@",formatSchemeAndHost);
 }
 
 - (void)testMemcpy
