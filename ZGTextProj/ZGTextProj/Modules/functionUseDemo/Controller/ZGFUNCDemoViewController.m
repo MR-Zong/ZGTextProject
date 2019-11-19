@@ -7,6 +7,7 @@
 //
 
 #import "ZGFUNCDemoViewController.h"
+#import "ZGReferenceTestModel.h"
 
 @interface ZGFUNCDemoViewController ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
 
     /**
      * 测试memcpy 什么情况会崩溃
@@ -35,6 +37,18 @@
     NSURL *url = [NSURL URLWithString:urlString];
     NSString *formatSchemeAndHost = [NSString stringWithFormat:@"%@://%@",url.scheme,url.host];
     NSLog(@"formatSchemeAndHost %@",formatSchemeAndHost);
+    
+    // 证明：NULL->age 会崩溃 用->的时候要小心必须保证调用者不为NULL
+    ZGReferenceTestModel *model = [ZGReferenceTestModel new];
+    model.name = @"gen";
+    model->age = 19;
+    NSLog(@"name %@",model.name);
+    NSLog(@"age %lld",model->age);
+    model = nil;
+    if (!model) {  // 用->的时候要小心必须保证调用者不为NULL
+        return;
+    }
+    NSLog(@"nil age %lld",model->age);
 }
 
 - (void)testMemcpy

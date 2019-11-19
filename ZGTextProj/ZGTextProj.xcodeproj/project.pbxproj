@@ -144,6 +144,7 @@
 		86C676B622E9D51800006925 /* ZGTestSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C676B522E9D51800006925 /* ZGTestSelector.m */; };
 		86DC575C22E5575900449669 /* iframeTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 86DC575B22E5575800449669 /* iframeTest.html */; };
 		86DC575E22E59E7800449669 /* btest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86DC575D22E59E7700449669 /* btest.txt */; };
+		86F01DA52383D151009A2059 /* ZGReferenceTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F01DA42383D151009A2059 /* ZGReferenceTestModel.m */; };
 		86FBB9212351B48A00ECA765 /* ZGFUNCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FBB9202351B48A00ECA765 /* ZGFUNCDemoViewController.m */; };
 		EF0015AD224768A000A7A73E /* ZGPCopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0015AC224768A000A7A73E /* ZGPCopyModel.m */; };
 		EF01D5B420AC08170023B282 /* ZGSafeAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01D5B320AC08170023B282 /* ZGSafeAreaController.m */; };
@@ -663,6 +664,8 @@
 		86C676B522E9D51800006925 /* ZGTestSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTestSelector.m; sourceTree = "<group>"; };
 		86DC575B22E5575800449669 /* iframeTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTest.html; sourceTree = "<group>"; };
 		86DC575D22E59E7700449669 /* btest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = btest.txt; sourceTree = "<group>"; };
+		86F01DA32383D151009A2059 /* ZGReferenceTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGReferenceTestModel.h; sourceTree = "<group>"; };
+		86F01DA42383D151009A2059 /* ZGReferenceTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGReferenceTestModel.m; sourceTree = "<group>"; };
 		86FBB91F2351B48A00ECA765 /* ZGFUNCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFUNCDemoViewController.h; sourceTree = "<group>"; };
 		86FBB9202351B48A00ECA765 /* ZGFUNCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFUNCDemoViewController.m; sourceTree = "<group>"; };
 		91BD16723F6AB63E8C388384 /* Pods-ZGTextProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2354,6 +2357,8 @@
 		86FBB91D2351B46900ECA765 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				86F01DA32383D151009A2059 /* ZGReferenceTestModel.h */,
+				86F01DA42383D151009A2059 /* ZGReferenceTestModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -5227,6 +5232,7 @@
 				861A0EBE2372D662003752CC /* ZGRangeUtilViewController.m in Sources */,
 				EF42A576211D8D9100EB4A4E /* ZGHotFixController.m in Sources */,
 				EF2F668F1FFF638800EA4F6F /* ZGTbTestController.m in Sources */,
+				86F01DA52383D151009A2059 /* ZGReferenceTestModel.m in Sources */,
 				41FE518D218989C400F17BF5 /* ZGExposureCell.m in Sources */,
 				EF8E19711F56618100E19DA4 /* ZGStoreKitController.m in Sources */,
 				EF2EEAAF20F4593B00C9FBAD /* ZGKVOResearchObserverA.m in Sources */,
