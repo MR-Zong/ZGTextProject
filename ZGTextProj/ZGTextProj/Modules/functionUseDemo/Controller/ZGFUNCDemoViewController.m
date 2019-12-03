@@ -18,24 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];\
-    
-    
-    // 查看本机是大端还是小端
-    short int x;
-    char x0,x1;
-    x=0x1122;
-    x0=((char*)&x)[0]; //低地址单元
-    x1=((char*)&x)[1]; //高地址单元
-    
-    if (x0 == 0x11) {
-        NSLog(@"xiaogen 大端");
-    }
-    else if (x0==0x22)
-    {
-        NSLog(@"xiaogen 小端");
-    }
-    
-    
+
 
     /**
      * 测试memcpy 什么情况会崩溃

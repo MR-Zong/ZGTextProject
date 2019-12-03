@@ -129,6 +129,7 @@
 		41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FE519C218B138900F17BF5 /* ZGExposureManager.m */; };
 		6E315BDC31DCCCC5930B0BEC /* libPods-ZGTextProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB9270CFBDB4218DB452FF5 /* libPods-ZGTextProj.a */; };
 		7222110966F2E76124B0BAC9 /* libPods-ZGTextProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47DCED630A33E94F568FAA4 /* libPods-ZGTextProjTests.a */; };
+		8614450023965BD600FCBE9D /* ZGCodeSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861444FF23965BD600FCBE9D /* ZGCodeSetViewController.m */; };
 		861A0EBE2372D662003752CC /* ZGRangeUtilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A0EBD2372D662003752CC /* ZGRangeUtilViewController.m */; };
 		861A0EC12372D73F003752CC /* ZGRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A0EC02372D73F003752CC /* ZGRange.m */; };
 		861A0EC42372E7DD003752CC /* ZGRCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A0EC32372E7DD003752CC /* ZGRCacheItem.m */; };
@@ -637,6 +638,8 @@
 		41FE519C218B138900F17BF5 /* ZGExposureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGExposureManager.m; sourceTree = "<group>"; };
 		6194700EE66A65E1AC9FDD46 /* Pods-ZGTextProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProj/Pods-ZGTextProj.release.xcconfig"; sourceTree = "<group>"; };
 		720FD36C3F06F22EE92E1866 /* Pods-ZGTextProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTextProjUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTextProjUITests/Pods-ZGTextProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		861444FE23965BD600FCBE9D /* ZGCodeSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCodeSetViewController.h; sourceTree = "<group>"; };
+		861444FF23965BD600FCBE9D /* ZGCodeSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCodeSetViewController.m; sourceTree = "<group>"; };
 		861A0EBC2372D662003752CC /* ZGRangeUtilViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGRangeUtilViewController.h; sourceTree = "<group>"; };
 		861A0EBD2372D662003752CC /* ZGRangeUtilViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGRangeUtilViewController.m; sourceTree = "<group>"; };
 		861A0EBF2372D73F003752CC /* ZGRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGRange.h; sourceTree = "<group>"; };
@@ -2195,6 +2198,23 @@
 				41FE519C218B138900F17BF5 /* ZGExposureManager.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		861444FC23965BB000FCBE9D /* CodeSet */ = {
+			isa = PBXGroup;
+			children = (
+				861444FD23965BB000FCBE9D /* Controller */,
+			);
+			path = CodeSet;
+			sourceTree = "<group>";
+		};
+		861444FD23965BB000FCBE9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				861444FE23965BD600FCBE9D /* ZGCodeSetViewController.h */,
+				861444FF23965BD600FCBE9D /* ZGCodeSetViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		861A0EB82372D647003752CC /* rangeUtil */ = {
@@ -4170,6 +4190,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				861444FC23965BB000FCBE9D /* CodeSet */,
 				861A0EB82372D647003752CC /* rangeUtil */,
 				86FBB91B2351B46900ECA765 /* functionUseDemo */,
 				EFBFFE2723118A2000143BC3 /* C++ */,
@@ -5058,6 +5079,7 @@
 				EFFCE49D1F62330F008E2375 /* ChineseToPinyinResource.m in Sources */,
 				415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */,
 				EF7F2CA12108117900AC6755 /* ZGImageController.m in Sources */,
+				8614450023965BD600FCBE9D /* ZGCodeSetViewController.m in Sources */,
 				417F204B21F1674D00471B03 /* ZGAudioConvertController.mm in Sources */,
 				EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */,
 				EF32B3A62222A5AD00272CAE /* ZGCornerGradientView.m in Sources */,

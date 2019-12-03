@@ -130,6 +130,7 @@
 #import "ZGFUNCDemoViewController.h"
 
 #import "ZGRangeUtilViewController.h"
+#import "ZGCodeSetViewController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -164,7 +165,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 82;
+    return 83;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -334,6 +335,8 @@
         cell.textLabel.text = @"functionUseDemo";
     }else if(indexPath.row == 81){
         cell.textLabel.text = @"rangeUtil";
+    }else if(indexPath.row == 82){
+        cell.textLabel.text = @"codeSet";
     }
 
 
@@ -619,6 +622,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 81){
         ZGRangeUtilViewController *con = [[ZGRangeUtilViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 82){
+        ZGCodeSetViewController *con = [[ZGCodeSetViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 
