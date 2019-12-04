@@ -43,6 +43,21 @@
     }
 }
 
+// 转换成小端，本质内存的移动
+void convertToLittleEndian(unsigned int *data, int len)
+{
+    for (int index = 0; index < len; index ++) {
+        
+        *data = ((*data & 0xff000000) >> 24)
+        | ((*data & 0x00ff0000) >>  8)
+        | ((*data & 0x0000ff00) <<  8)
+        | ((*data & 0x000000ff) << 24);
+        
+        data ++;
+    }
+}
+
+
 - (void)logBytes:(void *)bytes
 {
     int j = 0;
