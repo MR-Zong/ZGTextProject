@@ -131,6 +131,7 @@
 
 #import "ZGRangeUtilViewController.h"
 #import "ZGCodeSetViewController.h"
+#import "ZGAudioViewController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -165,7 +166,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 83;
+    return 84;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -337,6 +338,8 @@
         cell.textLabel.text = @"rangeUtil";
     }else if(indexPath.row == 82){
         cell.textLabel.text = @"codeSet";
+    }else if(indexPath.row == 83){
+        cell.textLabel.text = @"audio";
     }
 
 
@@ -625,6 +628,9 @@
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 82){
         ZGCodeSetViewController *con = [[ZGCodeSetViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 83){
+        ZGAudioViewController *con = [[ZGAudioViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
 

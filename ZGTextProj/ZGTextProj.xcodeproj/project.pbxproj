@@ -135,6 +135,9 @@
 		861A0EC42372E7DD003752CC /* ZGRCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A0EC32372E7DD003752CC /* ZGRCacheItem.m */; };
 		861A0EC72372E8FA003752CC /* NSString+ZGMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A0EC62372E8FA003752CC /* NSString+ZGMD5.m */; };
 		863110DF232F669E00B85113 /* ZGTestCPPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 863110DE232F669E00B85113 /* ZGTestCPPModel.m */; };
+		865927AB239A65300096AC22 /* ZGAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865927AA239A65300096AC22 /* ZGAudioViewController.m */; };
+		865927AE239A81C70096AC22 /* ZGAACUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 865927AD239A81C70096AC22 /* ZGAACUtil.m */; };
+		86677C1E239A83D50010E941 /* liuchang.aac in Resources */ = {isa = PBXBuildFile; fileRef = 86677C1D239A83D40010E941 /* liuchang.aac */; };
 		867B879B22E993910054DDFF /* iframeTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 867B879922E993910054DDFF /* iframeTest.html */; };
 		867B879C22E993910054DDFF /* iframeTestLocal.html in Resources */ = {isa = PBXBuildFile; fileRef = 867B879A22E993910054DDFF /* iframeTestLocal.html */; };
 		867B879F22E993AA0054DDFF /* ZGJSBridgeURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867B879E22E993AA0054DDFF /* ZGJSBridgeURLViewController.m */; };
@@ -651,6 +654,11 @@
 		8620E65C230E48A500FF62AD /* ZGTextProj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZGTextProj.entitlements; sourceTree = "<group>"; };
 		863110DD232F669E00B85113 /* ZGTestCPPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZGTestCPPModel.h; path = ../../../../../../../../localProjs/APM/ZGTestCPPModel.h; sourceTree = "<group>"; };
 		863110DE232F669E00B85113 /* ZGTestCPPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZGTestCPPModel.m; path = ../../../../../../../../localProjs/APM/ZGTestCPPModel.m; sourceTree = "<group>"; };
+		865927A9239A65300096AC22 /* ZGAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioViewController.h; sourceTree = "<group>"; };
+		865927AA239A65300096AC22 /* ZGAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAudioViewController.m; sourceTree = "<group>"; };
+		865927AC239A81C70096AC22 /* ZGAACUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAACUtil.h; sourceTree = "<group>"; };
+		865927AD239A81C70096AC22 /* ZGAACUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAACUtil.m; sourceTree = "<group>"; };
+		86677C1D239A83D40010E941 /* liuchang.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuchang.aac; sourceTree = "<group>"; };
 		867B879922E993910054DDFF /* iframeTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTest.html; sourceTree = "<group>"; };
 		867B879A22E993910054DDFF /* iframeTestLocal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iframeTestLocal.html; sourceTree = "<group>"; };
 		867B879D22E993AA0054DDFF /* ZGJSBridgeURLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGJSBridgeURLViewController.h; sourceTree = "<group>"; };
@@ -2254,6 +2262,33 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		865927A6239A65150096AC22 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				865927A7239A65150096AC22 /* Controller */,
+				865927A8239A65150096AC22 /* Model */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		865927A7239A65150096AC22 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				865927A9239A65300096AC22 /* ZGAudioViewController.h */,
+				865927AA239A65300096AC22 /* ZGAudioViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		865927A8239A65150096AC22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				865927AC239A81C70096AC22 /* ZGAACUtil.h */,
+				865927AD239A81C70096AC22 /* ZGAACUtil.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		867B879622E993530054DDFF /* JSBridage */ = {
@@ -4143,6 +4178,7 @@
 				EFD9EFEF22CE4DD300810260 /* 路虎极光.jpg */,
 				EFFC13551F3454D300E6F664 /* myPlayer.mp4 */,
 				EFD9EFF122CE4F2600810260 /* horse.png */,
+				86677C1D239A83D40010E941 /* liuchang.aac */,
 				417F201621F0643600471B03 /* singing.wav */,
 				418E959021E4CF1A00349982 /* testZong.wav */,
 				417F206921F17C4800471B03 /* gamesound.aac */,
@@ -4190,6 +4226,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				865927A6239A65150096AC22 /* Audio */,
 				861444FC23965BB000FCBE9D /* CodeSet */,
 				861A0EB82372D647003752CC /* rangeUtil */,
 				86FBB91B2351B46900ECA765 /* functionUseDemo */,
@@ -4901,6 +4938,7 @@
 				867B879C22E993910054DDFF /* iframeTestLocal.html in Resources */,
 				417F201721F0643600471B03 /* singing.wav in Resources */,
 				EF76E21F1FFB324B009D21CF /* videoWithAudio.mp4 in Resources */,
+				86677C1E239A83D50010E941 /* liuchang.aac in Resources */,
 				411B2BF5215B734F009747D8 /* Cairo-SemiBold.ttf in Resources */,
 				EF14C7ED2101E121007CC07B /* modelA3.plist in Resources */,
 				411B2BF4215B734F009747D8 /* Cairo-Regular.ttf in Resources */,
@@ -5079,6 +5117,7 @@
 				EFFCE49D1F62330F008E2375 /* ChineseToPinyinResource.m in Sources */,
 				415D8B332181C872000A8213 /* ZGAutoScrollLabelController.m in Sources */,
 				EF7F2CA12108117900AC6755 /* ZGImageController.m in Sources */,
+				865927AB239A65300096AC22 /* ZGAudioViewController.m in Sources */,
 				8614450023965BD600FCBE9D /* ZGCodeSetViewController.m in Sources */,
 				417F204B21F1674D00471B03 /* ZGAudioConvertController.mm in Sources */,
 				EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */,
@@ -5192,6 +5231,7 @@
 				EF570B0F2022E95900E14BC9 /* ZGNFObserverB.m in Sources */,
 				EFDBCDC41F2B159700C542AD /* ViewController.m in Sources */,
 				EFDCEE3920DE43B40076C129 /* ZGAniTextCell.m in Sources */,
+				865927AE239A81C70096AC22 /* ZGAACUtil.m in Sources */,
 				EFF1DA8520D3BA8900CBC680 /* ZGAnimationsController.m in Sources */,
 				417EBCC5221A556800E86D8D /* ZGChatConst.m in Sources */,
 				EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */,
