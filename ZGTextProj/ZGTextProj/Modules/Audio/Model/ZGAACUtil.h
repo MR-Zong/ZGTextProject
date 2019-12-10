@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZGAACUtil : NSObject
 
-+ (double)fileDurationWithFilePath:(NSString *)filePath;
++ (double)fileDurationWithUrl:(NSURL *)audioUrl;
 
 @end
 
