@@ -7,6 +7,7 @@
 //
 
 #import "ZGCodeSetViewController.h"
+#import "NSArray+ZGCrash.h"
 
 @interface ZGCodeSetViewController ()
 
@@ -19,11 +20,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     // 查看本机是大端还是小端
-    [self testNOrBig];
+//    [self testNOrBig];
     
     
     // 输出二进制数据
 //    [self logBytes:nil];
+    
+    // 测试NSArray 防止越界崩溃
+    [self testBeyondCrash];
 }
 
 - (void)testNOrBig
@@ -73,6 +77,20 @@ void convertToLittleEndian(unsigned int *data, int len)
         j++;
     }
     printf("\n");
+}
+
+#pragma mark - 测试NSArray 防止越界崩溃
+- (void)testBeyondCrash
+{
+    NSArray *itemAry1 = @[@1,@2];
+    NSArray *itemAry2 = @[@3,@4];
+    NSArray *arys = @[itemAry1,itemAry2];
+    
+    NSLog(@"test begin");
+    // 这样会调用两次 safeobjectAtIndexedSubscript
+    int value = arys[0][1];
+    NSLog(@"test end");
+    
 }
 
 @end

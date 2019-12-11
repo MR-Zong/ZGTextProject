@@ -134,6 +134,8 @@
 		861A0EC12372D73F003752CC /* ZGRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A0EC02372D73F003752CC /* ZGRange.m */; };
 		861A0EC42372E7DD003752CC /* ZGRCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A0EC32372E7DD003752CC /* ZGRCacheItem.m */; };
 		861A0EC72372E8FA003752CC /* NSString+ZGMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A0EC62372E8FA003752CC /* NSString+ZGMD5.m */; };
+		861B46E123A0D0FA00069B1A /* NSArray+ZGCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B46E023A0D0FA00069B1A /* NSArray+ZGCrash.m */; };
+		861B46E423A0D2D900069B1A /* NSObject+ZGSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B46E323A0D2D900069B1A /* NSObject+ZGSwizzling.m */; };
 		863110DF232F669E00B85113 /* ZGTestCPPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 863110DE232F669E00B85113 /* ZGTestCPPModel.m */; };
 		865927AB239A65300096AC22 /* ZGAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865927AA239A65300096AC22 /* ZGAudioViewController.m */; };
 		865927AE239A81C70096AC22 /* ZGAACUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 865927AD239A81C70096AC22 /* ZGAACUtil.m */; };
@@ -651,6 +653,10 @@
 		861A0EC32372E7DD003752CC /* ZGRCacheItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGRCacheItem.m; sourceTree = "<group>"; };
 		861A0EC52372E8FA003752CC /* NSString+ZGMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZGMD5.h"; sourceTree = "<group>"; };
 		861A0EC62372E8FA003752CC /* NSString+ZGMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZGMD5.m"; sourceTree = "<group>"; };
+		861B46DF23A0D0FA00069B1A /* NSArray+ZGCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZGCrash.h"; sourceTree = "<group>"; };
+		861B46E023A0D0FA00069B1A /* NSArray+ZGCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZGCrash.m"; sourceTree = "<group>"; };
+		861B46E223A0D2D900069B1A /* NSObject+ZGSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZGSwizzling.h"; sourceTree = "<group>"; };
+		861B46E323A0D2D900069B1A /* NSObject+ZGSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZGSwizzling.m"; sourceTree = "<group>"; };
 		8620E65C230E48A500FF62AD /* ZGTextProj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZGTextProj.entitlements; sourceTree = "<group>"; };
 		863110DD232F669E00B85113 /* ZGTestCPPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZGTestCPPModel.h; path = ../../../../../../../../localProjs/APM/ZGTestCPPModel.h; sourceTree = "<group>"; };
 		863110DE232F669E00B85113 /* ZGTestCPPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZGTestCPPModel.m; path = ../../../../../../../../localProjs/APM/ZGTestCPPModel.m; sourceTree = "<group>"; };
@@ -2211,6 +2217,7 @@
 		861444FC23965BB000FCBE9D /* CodeSet */ = {
 			isa = PBXGroup;
 			children = (
+				861B46DE23A0D0E200069B1A /* Model */,
 				861444FD23965BB000FCBE9D /* Controller */,
 			);
 			path = CodeSet;
@@ -2262,6 +2269,17 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		861B46DE23A0D0E200069B1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				861B46DF23A0D0FA00069B1A /* NSArray+ZGCrash.h */,
+				861B46E023A0D0FA00069B1A /* NSArray+ZGCrash.m */,
+				861B46E223A0D2D900069B1A /* NSObject+ZGSwizzling.h */,
+				861B46E323A0D2D900069B1A /* NSObject+ZGSwizzling.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		865927A6239A65150096AC22 /* Audio */ = {
@@ -5062,6 +5080,7 @@
 				417115B221AB93130068079B /* ZGIMessageController.m in Sources */,
 				EFBFFE3023118ABD00143BC3 /* ZGCPPViewController.m in Sources */,
 				EF2EEAC020F495D300C9FBAD /* ZGKVOODataModel.m in Sources */,
+				861B46E123A0D0FA00069B1A /* NSArray+ZGCrash.m in Sources */,
 				EFFCE4C41F63E31F008E2375 /* ZGMonthModel.m in Sources */,
 				4163863E223E4D3E008E09C3 /* ZGShapeAnimationController.m in Sources */,
 				4174DD8D21DC9C29007C89E6 /* ZGAVAudioQueueController.m in Sources */,
@@ -5085,6 +5104,7 @@
 				EF77D76B21527AA80069DE80 /* ZGScrollAndPopController.m in Sources */,
 				417EBD51221ED5BB00E86D8D /* ZGChatRefreshHeader.m in Sources */,
 				41FE519D218B138900F17BF5 /* ZGExposureManager.m in Sources */,
+				861B46E423A0D2D900069B1A /* NSObject+ZGSwizzling.m in Sources */,
 				EF31F96120707DD000B1B148 /* ZGThreadSafeMutableDictionary.m in Sources */,
 				EF25CBC020E284E3005A7F8C /* ZGNestPageDController.m in Sources */,
 				867B879F22E993AA0054DDFF /* ZGJSBridgeURLViewController.m in Sources */,
