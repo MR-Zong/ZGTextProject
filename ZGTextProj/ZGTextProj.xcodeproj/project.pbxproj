@@ -136,6 +136,8 @@
 		861A0EC72372E8FA003752CC /* NSString+ZGMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A0EC62372E8FA003752CC /* NSString+ZGMD5.m */; };
 		861B46E123A0D0FA00069B1A /* NSArray+ZGCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B46E023A0D0FA00069B1A /* NSArray+ZGCrash.m */; };
 		861B46E423A0D2D900069B1A /* NSObject+ZGSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B46E323A0D2D900069B1A /* NSObject+ZGSwizzling.m */; };
+		861BDACA23B1E78700C51161 /* ZGRegexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861BDAC923B1E78700C51161 /* ZGRegexViewController.m */; };
+		861BDACD23B1E7DF00C51161 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 861BDACC23B1E7DF00C51161 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		863110DF232F669E00B85113 /* ZGTestCPPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 863110DE232F669E00B85113 /* ZGTestCPPModel.m */; };
 		865927AB239A65300096AC22 /* ZGAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865927AA239A65300096AC22 /* ZGAudioViewController.m */; };
 		865927AE239A81C70096AC22 /* ZGAACUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 865927AD239A81C70096AC22 /* ZGAACUtil.m */; };
@@ -657,6 +659,10 @@
 		861B46E023A0D0FA00069B1A /* NSArray+ZGCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZGCrash.m"; sourceTree = "<group>"; };
 		861B46E223A0D2D900069B1A /* NSObject+ZGSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZGSwizzling.h"; sourceTree = "<group>"; };
 		861B46E323A0D2D900069B1A /* NSObject+ZGSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZGSwizzling.m"; sourceTree = "<group>"; };
+		861BDAC823B1E78700C51161 /* ZGRegexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGRegexViewController.h; sourceTree = "<group>"; };
+		861BDAC923B1E78700C51161 /* ZGRegexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGRegexViewController.m; sourceTree = "<group>"; };
+		861BDACB23B1E7DF00C51161 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		861BDACC23B1E7DF00C51161 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		8620E65C230E48A500FF62AD /* ZGTextProj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZGTextProj.entitlements; sourceTree = "<group>"; };
 		863110DD232F669E00B85113 /* ZGTestCPPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZGTestCPPModel.h; path = ../../../../../../../../localProjs/APM/ZGTestCPPModel.h; sourceTree = "<group>"; };
 		863110DE232F669E00B85113 /* ZGTestCPPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZGTestCPPModel.m; path = ../../../../../../../../localProjs/APM/ZGTestCPPModel.m; sourceTree = "<group>"; };
@@ -2278,6 +2284,33 @@
 				861B46E023A0D0FA00069B1A /* NSArray+ZGCrash.m */,
 				861B46E223A0D2D900069B1A /* NSObject+ZGSwizzling.h */,
 				861B46E323A0D2D900069B1A /* NSObject+ZGSwizzling.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		861BDAC523B1E76400C51161 /* RegexTest */ = {
+			isa = PBXGroup;
+			children = (
+				861BDAC623B1E76400C51161 /* Controller */,
+				861BDAC723B1E76400C51161 /* Model */,
+			);
+			path = RegexTest;
+			sourceTree = "<group>";
+		};
+		861BDAC623B1E76400C51161 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				861BDAC823B1E78700C51161 /* ZGRegexViewController.h */,
+				861BDAC923B1E78700C51161 /* ZGRegexViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		861BDAC723B1E76400C51161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				861BDACB23B1E7DF00C51161 /* RegexKitLite.h */,
+				861BDACC23B1E7DF00C51161 /* RegexKitLite.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4244,6 +4277,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				861BDAC523B1E76400C51161 /* RegexTest */,
 				865927A6239A65150096AC22 /* Audio */,
 				861444FC23965BB000FCBE9D /* CodeSet */,
 				861A0EB82372D647003752CC /* rangeUtil */,
@@ -5116,6 +5150,7 @@
 				EF570B122022F08200E14BC9 /* ZGKVODataModel.m in Sources */,
 				EF2F66701FFB91A100EA4F6F /* ZGBaseObject.m in Sources */,
 				EF7F2CD3210AF75700AC6755 /* ZGSTITabModel.m in Sources */,
+				861BDACD23B1E7DF00C51161 /* RegexKitLite.m in Sources */,
 				EFD9EFFF22D0978500810260 /* ZGUrlSessionViewController.m in Sources */,
 				417EBCA9221A4D0900E86D8D /* ZGChatTextInputView.m in Sources */,
 				EFFCE4841F62253C008E2375 /* ZGAddressListController.m in Sources */,
@@ -5254,6 +5289,7 @@
 				865927AE239A81C70096AC22 /* ZGAACUtil.m in Sources */,
 				EFF1DA8520D3BA8900CBC680 /* ZGAnimationsController.m in Sources */,
 				417EBCC5221A556800E86D8D /* ZGChatConst.m in Sources */,
+				861BDACA23B1E78700C51161 /* ZGRegexViewController.m in Sources */,
 				EFE0B31E207DB67B0020B143 /* ZGERController.m in Sources */,
 				4137F2EF2192BA71003B6D60 /* ZGPHVideoCell.m in Sources */,
 				EF3C47C21F384D3C0039AA5C /* ZGInterviewViewController.m in Sources */,
@@ -5559,6 +5595,41 @@
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"WebViewJavascriptBridge\"",
+					"-l\"YYText\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-licucore",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.lizhifm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = lizhidev_lizhifm_debug;
@@ -5585,6 +5656,41 @@
 					"$(PROJECT_DIR)/ZGTextProj/Modules/FmodDemo/OpenSource/FMOD/lib",
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faac/lib",
 					"$(PROJECT_DIR)/ZGTextProj/Modules/AVAudio/AudioConvert/FAAC/faad/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"WebViewJavascriptBridge\"",
+					"-l\"YYText\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-licucore",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lizhi.lizhifm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
