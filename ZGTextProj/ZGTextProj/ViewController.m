@@ -133,6 +133,7 @@
 #import "ZGCodeSetViewController.h"
 #import "ZGAudioViewController.h"
 #import "ZGRegexViewController.h"
+#import "ZGRuntimeViewController.h"
 
 @interface ViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -167,7 +168,7 @@
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 85;
+    return 86;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -343,6 +344,8 @@
         cell.textLabel.text = @"audio";
     }else if(indexPath.row == 84){
         cell.textLabel.text = @"regex";
+    }else if(indexPath.row == 85){
+        cell.textLabel.text = @"runtime";
     }
 
 
@@ -638,8 +641,10 @@
     }else if(indexPath.row == 84){
         ZGRegexViewController *con = [[ZGRegexViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
+    }else if(indexPath.row == 85){
+        ZGRuntimeViewController *con = [[ZGRuntimeViewController alloc] init];
+        [self.navigationController pushViewController:con animated:YES];
     }
-
 
 
 

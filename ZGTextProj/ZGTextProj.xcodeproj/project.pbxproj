@@ -138,7 +138,6 @@
 		861B46E423A0D2D900069B1A /* NSObject+ZGSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 861B46E323A0D2D900069B1A /* NSObject+ZGSwizzling.m */; };
 		861BDACA23B1E78700C51161 /* ZGRegexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861BDAC923B1E78700C51161 /* ZGRegexViewController.m */; };
 		861BDACD23B1E7DF00C51161 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 861BDACC23B1E7DF00C51161 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		863110DF232F669E00B85113 /* ZGTestCPPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 863110DE232F669E00B85113 /* ZGTestCPPModel.m */; };
 		865927AB239A65300096AC22 /* ZGAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865927AA239A65300096AC22 /* ZGAudioViewController.m */; };
 		865927AE239A81C70096AC22 /* ZGAACUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 865927AD239A81C70096AC22 /* ZGAACUtil.m */; };
 		86677C1E239A83D50010E941 /* liuchang.aac in Resources */ = {isa = PBXBuildFile; fileRef = 86677C1D239A83D40010E941 /* liuchang.aac */; };
@@ -305,6 +304,8 @@
 		EFAC58281F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC58271F341CF000B94D93 /* ZGComposeVideoAndAudioManager.m */; };
 		EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC582D1F341E4200B94D93 /* ZGProgressHUD.m */; };
 		EFAC58311F3420E000B94D93 /* ZGImagesToVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC58301F3420E000B94D93 /* ZGImagesToVideoManager.m */; };
+		EFACD574247135A500EE244C /* ZGRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFACD573247135A500EE244C /* ZGRuntimeViewController.m */; };
+		EFACD5772471361200EE244C /* ZGRtTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFACD5762471361200EE244C /* ZGRtTModel.m */; };
 		EFB94E83210470B100484950 /* ZGCategoryExtendController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB94E82210470B100484950 /* ZGCategoryExtendController.m */; };
 		EFB94E862104711200484950 /* ZGCategoryExtendA.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB94E852104711200484950 /* ZGCategoryExtendA.m */; };
 		EFBFFE3023118ABD00143BC3 /* ZGCPPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBFFE2E23118ABC00143BC3 /* ZGCPPViewController.m */; };
@@ -664,8 +665,6 @@
 		861BDACB23B1E7DF00C51161 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		861BDACC23B1E7DF00C51161 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		8620E65C230E48A500FF62AD /* ZGTextProj.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZGTextProj.entitlements; sourceTree = "<group>"; };
-		863110DD232F669E00B85113 /* ZGTestCPPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZGTestCPPModel.h; path = ../../../../../../../../localProjs/APM/ZGTestCPPModel.h; sourceTree = "<group>"; };
-		863110DE232F669E00B85113 /* ZGTestCPPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZGTestCPPModel.m; path = ../../../../../../../../localProjs/APM/ZGTestCPPModel.m; sourceTree = "<group>"; };
 		865927A9239A65300096AC22 /* ZGAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAudioViewController.h; sourceTree = "<group>"; };
 		865927AA239A65300096AC22 /* ZGAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAudioViewController.m; sourceTree = "<group>"; };
 		865927AC239A81C70096AC22 /* ZGAACUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAACUtil.h; sourceTree = "<group>"; };
@@ -990,6 +989,10 @@
 		EFAC582D1F341E4200B94D93 /* ZGProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGProgressHUD.m; sourceTree = "<group>"; };
 		EFAC582F1F3420E000B94D93 /* ZGImagesToVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGImagesToVideoManager.h; sourceTree = "<group>"; };
 		EFAC58301F3420E000B94D93 /* ZGImagesToVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGImagesToVideoManager.m; sourceTree = "<group>"; };
+		EFACD572247135A500EE244C /* ZGRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGRuntimeViewController.h; sourceTree = "<group>"; };
+		EFACD573247135A500EE244C /* ZGRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGRuntimeViewController.m; sourceTree = "<group>"; };
+		EFACD5752471361200EE244C /* ZGRtTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGRtTModel.h; sourceTree = "<group>"; };
+		EFACD5762471361200EE244C /* ZGRtTModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGRtTModel.m; sourceTree = "<group>"; };
 		EFB94E81210470B100484950 /* ZGCategoryExtendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCategoryExtendController.h; sourceTree = "<group>"; };
 		EFB94E82210470B100484950 /* ZGCategoryExtendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGCategoryExtendController.m; sourceTree = "<group>"; };
 		EFB94E842104711200484950 /* ZGCategoryExtendA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCategoryExtendA.h; sourceTree = "<group>"; };
@@ -3939,6 +3942,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EFACD56E2471358900EE244C /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				EFACD56F2471358900EE244C /* Controller */,
+				EFACD5702471358900EE244C /* Model */,
+				EFACD5712471358900EE244C /* View */,
+			);
+			path = RunTime;
+			sourceTree = "<group>";
+		};
+		EFACD56F2471358900EE244C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFACD572247135A500EE244C /* ZGRuntimeViewController.h */,
+				EFACD573247135A500EE244C /* ZGRuntimeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFACD5702471358900EE244C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFACD5752471361200EE244C /* ZGRtTModel.h */,
+				EFACD5762471361200EE244C /* ZGRtTModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFACD5712471358900EE244C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EFBFFE2723118A2000143BC3 /* C++ */ = {
 			isa = PBXGroup;
 			children = (
@@ -3961,8 +3999,6 @@
 		EFBFFE2923118A2000143BC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				863110DD232F669E00B85113 /* ZGTestCPPModel.h */,
-				863110DE232F669E00B85113 /* ZGTestCPPModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4277,6 +4313,7 @@
 		EFDBCDEF1F2B15FD00C542AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFACD56E2471358900EE244C /* RunTime */,
 				861BDAC523B1E76400C51161 /* RegexTest */,
 				865927A6239A65150096AC22 /* Audio */,
 				861444FC23965BB000FCBE9D /* CodeSet */,
@@ -5185,6 +5222,7 @@
 				EF2EEAC320F495E900C9FBAD /* ZGKVOOObserverA.m in Sources */,
 				EFC56B7920181ECA00BA5487 /* ZGHeaderFileController.m in Sources */,
 				4175A01822262B7100B91F43 /* ZGDiscoverController.m in Sources */,
+				EFACD574247135A500EE244C /* ZGRuntimeViewController.m in Sources */,
 				EFFCE4A81F623F9E008E2375 /* ZGLetterSectionModel.m in Sources */,
 				EF0A0E9E20060D020095779B /* ZGSV3Delegate.m in Sources */,
 				417EBCB3221A4D9400E86D8D /* ZGChatAudioBubbleView.m in Sources */,
@@ -5338,7 +5376,6 @@
 				4175A0562226916C00B91F43 /* ZGShuoTopView.m in Sources */,
 				EF25CBB720E28145005A7F8C /* ZGNestPageAController.m in Sources */,
 				EF58F69E214509180000CDC7 /* ZGVAKDiscoverController.m in Sources */,
-				863110DF232F669E00B85113 /* ZGTestCPPModel.m in Sources */,
 				EF0A0E9520060BE10095779B /* ZGScrollViewDelegate.m in Sources */,
 				EFC4FAA1206C98E100F42842 /* ZGProxy.m in Sources */,
 				411B2BEA215B7275009747D8 /* ZGFontController.m in Sources */,
@@ -5361,6 +5398,7 @@
 				417115BC21AE7C910068079B /* ZGWKWebViewController.m in Sources */,
 				EF85FF3A204A4E9000F5186A /* ZGGCDTestController.m in Sources */,
 				EF261CF62063AA600002BFB2 /* ZGFPSProbeView.m in Sources */,
+				EFACD5772471361200EE244C /* ZGRtTModel.m in Sources */,
 				417EBD4B221EAA9800E86D8D /* ZGChatTipMesageModel.m in Sources */,
 				EF67D6722057648B00FA65DC /* ZGINSubObject+initialize.m in Sources */,
 				EF0A0EA82006FE140095779B /* ZGOBaseScrollView.m in Sources */,
