@@ -11,6 +11,8 @@
 
 @interface ZGCYViewController ()
 
+@property (nonatomic, copy) NSMutableArray *mAry;
+
 @end
 
 @implementation ZGCYViewController
@@ -22,7 +24,19 @@
     self.title = @"copy测试";
     
 //    [self testObjCopy];
-    [self testSetCopy];
+//    [self testSetCopy];
+    
+    [self testPropertyCopy];
+}
+
+- (void)testPropertyCopy
+{
+    NSArray *arr = @[@"123", @"456", @"asd"];
+    NSMutableArray *tmp = [arr mutableCopy];
+    self.mAry = tmp;
+    NSLog(@"\n arrP = %p \n tmp = %p \n self.mArrP = %p, self.mArr class = %@", arr,tmp, self.mAry, [self.mAry class]);
+    [self.mAry addObject:@8];
+
 }
 
 // 对非集合类
