@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZGCategogreBase.h"
 
-@interface ZGCategoryObject : NSObject
+@interface ZGCategoryObject : ZGCategogreBase
 
 - (void)log;
 

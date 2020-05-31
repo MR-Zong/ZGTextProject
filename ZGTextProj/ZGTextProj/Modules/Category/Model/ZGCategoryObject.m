@@ -10,9 +10,19 @@
 
 @implementation ZGCategoryObject
 
++ (void)initialize
+{
+    NSLog(@"ZGCategoryObject initialize");
+}
+
 - (void)log
 {
     NSLog(@"ZGCategoryObject 本类方法");
+}
+
+- (void)eat
+{
+    NSLog(@"ZGCategoryObject eat");
 }
 
 @end

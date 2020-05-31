@@ -11,6 +11,30 @@
 
 @implementation ZGCategoryObject (Extension)
 
+- (NSString *)description
+{
+    NSLog(@"ZGCategoryObject (Extension) description");
+    return [super description];
+}
+
++ (void)initialize
+{
+    NSLog(@"ZGCategoryObject (Extension) initialize");
+}
+
+- (instancetype)init
+{
+    id obj = [super init];
+    NSLog(@"ZGCategoryObject (Extension) init");
+   return obj;
+}
+
+- (void)eat
+{
+    [super eat];
+    NSLog(@"ZGCategoryObject (Extension) eat");
+}
+
 - (void)log
 {
     // 调用分类覆盖的方法

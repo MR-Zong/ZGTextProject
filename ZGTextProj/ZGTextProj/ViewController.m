@@ -392,7 +392,7 @@
         ZGTestWindowController *con = [[ZGTestWindowController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 10){
-        ZGCategoryExtendController *con = [[ZGCategoryExtendController alloc] init];
+        ZGCategoryController *con = [[ZGCategoryController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }else if(indexPath.row == 11){
         ZGAVAudioTrackController *con = [[ZGAVAudioTrackController alloc] init];

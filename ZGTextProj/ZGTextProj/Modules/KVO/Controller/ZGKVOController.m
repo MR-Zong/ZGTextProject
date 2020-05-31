@@ -218,7 +218,7 @@
     ZGKVCModel *m2 = [ZGKVCModel new];
     m2.name = @"m2";
     m2.age = 2;
-    [m2 willChangeValueForKey:<#(nonnull NSString *)#>];
+    
     NSArray *ary = @[m1,m2];
     [ary setValue:@"m3" forKey:@"name"];
     NSLog(@"value %@",[ary valueForKey:@"name"]);

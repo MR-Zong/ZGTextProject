@@ -21,8 +21,9 @@
     [super viewDidLoad];
     
     ZGCategoryObject *cObj = [[ZGCategoryObject alloc] init];
-    [cObj log];
-    [cObj cat];
+//    [cObj log];
+//    [cObj cat];
+    [cObj eat];
     
 //    unsigned int count = 0;
 //    Method *methodList = class_copyMethodList([ZGCategoryObject class], &count);
