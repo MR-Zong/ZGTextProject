@@ -25,6 +25,8 @@
 #import "ZGKVOOObserverA.h"
 #import "ZGKVOOObserverB.h"
 
+#import "ZGKVCModel.h"
+
 
 @interface ZGKVOController ()
 
@@ -91,13 +93,18 @@
      * 可以重写observationInfo 的getter  setter方法把，observationInfo实例放到当前实例
      * 的某个实例变量里
      */
-    [self kvo_observationInfo];
+//    [self kvo_observationInfo];
 
     
     /**
      * 深入研究KOV -- context 参数 意义
      */
 //    [self kvo_context];
+    
+    /**
+         * 测试KVC 特别容器类
+         */
+        [self testKVC];
 
     
     
@@ -200,6 +207,26 @@
 //    [_oDataModel addObserver:_oB forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
     
     _oDataModel.name = @"Z";
+}
+
+- (void)testKVC
+{
+    ZGKVCModel *m1 = [ZGKVCModel new];
+    m1.name = @"m1";
+    m1.age = 1;
+    
+    ZGKVCModel *m2 = [ZGKVCModel new];
+    m2.name = @"m2";
+    m2.age = 2;
+    [m2 willChangeValueForKey:<#(nonnull NSString *)#>];
+    NSArray *ary = @[m1,m2];
+    [ary setValue:@"m3" forKey:@"name"];
+    NSLog(@"value %@",[ary valueForKey:@"name"]);
+    
+    NSSet *se = [NSSet setWithArray:@[m1,m2]];
+//    [se setValue:@"m3" forKey:@"name"];
+    NSLog(@"value %@",[se valueForKey:@"name"]);
+    
 }
 
 

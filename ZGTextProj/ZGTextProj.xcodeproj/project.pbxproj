@@ -327,6 +327,7 @@
 		EFD9EFF222CE4F2600810260 /* horse.png in Resources */ = {isa = PBXBuildFile; fileRef = EFD9EFF122CE4F2600810260 /* horse.png */; };
 		EFD9EFFA22D096AA00810260 /* ZGPropertyAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD9EFF922D096AA00810260 /* ZGPropertyAssociation.m */; };
 		EFD9EFFF22D0978500810260 /* ZGUrlSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD9EFFE22D0978500810260 /* ZGUrlSessionViewController.m */; };
+		EFDA514924836F1400ED61F9 /* ZGKVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDA514824836F1400ED61F9 /* ZGKVCModel.m */; };
 		EFDBCDBE1F2B159700C542AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDBD1F2B159700C542AD /* main.m */; };
 		EFDBCDC11F2B159700C542AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDC01F2B159700C542AD /* AppDelegate.m */; };
 		EFDBCDC41F2B159700C542AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBCDC31F2B159700C542AD /* ViewController.m */; };
@@ -1034,6 +1035,8 @@
 		EFD9EFF922D096AA00810260 /* ZGPropertyAssociation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPropertyAssociation.m; sourceTree = "<group>"; };
 		EFD9EFFD22D0978500810260 /* ZGUrlSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGUrlSessionViewController.h; sourceTree = "<group>"; };
 		EFD9EFFE22D0978500810260 /* ZGUrlSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGUrlSessionViewController.m; sourceTree = "<group>"; };
+		EFDA514724836F1400ED61F9 /* ZGKVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVCModel.h; sourceTree = "<group>"; };
+		EFDA514824836F1400ED61F9 /* ZGKVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGKVCModel.m; sourceTree = "<group>"; };
 		EFDBCDB91F2B159700C542AD /* ZGTextProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGTextProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDBCDBD1F2B159700C542AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFDBCDBF1F2B159700C542AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -3378,6 +3381,7 @@
 		EF570AFB2022E54B00E14BC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFDA514624836F0400ED61F9 /* KVC */,
 				EF2EEABD20F495BD00C9FBAD /* observationInfo */,
 				EF2EEAB020F4594300C9FBAD /* context */,
 				EF2EEAA620F4593B00C9FBAD /* research */,
@@ -4224,6 +4228,15 @@
 				EFD9EFFE22D0978500810260 /* ZGUrlSessionViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFDA514624836F0400ED61F9 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				EFDA514724836F1400ED61F9 /* ZGKVCModel.h */,
+				EFDA514824836F1400ED61F9 /* ZGKVCModel.m */,
+			);
+			path = KVC;
 			sourceTree = "<group>";
 		};
 		EFDBCDB01F2B159700C542AD = {
@@ -5419,6 +5432,7 @@
 				EF0A0EAB2006FE240095779B /* ZGOHeaderScrollView.m in Sources */,
 				EF58F6982143BA990000CDC7 /* ZGWaterfallCollectionViewLayout.m in Sources */,
 				EF7F2CDF210AF88500AC6755 /* ZGSTIBaseController.m in Sources */,
+				EFDA514924836F1400ED61F9 /* ZGKVCModel.m in Sources */,
 				41D439B021A68EBB00C16FCA /* ZGAssertController.m in Sources */,
 				EFE4308E20D5305F006930E5 /* ZGAnimationCellNormalController.m in Sources */,
 				EF7231A420DB413200999D3A /* ZGHeaderCollectionViewCell.m in Sources */,
