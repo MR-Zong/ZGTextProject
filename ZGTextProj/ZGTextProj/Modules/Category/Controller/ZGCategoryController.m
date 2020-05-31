@@ -10,8 +10,11 @@
 #import "ZGCategoryObject.h"
 #import <objc/runtime.h>
 #import "ZGCategoryObject+Extension.h"
+#import "ZGViewTestMoveToWindow.h"
 
 @interface ZGCategoryController ()
+
+@property (nonatomic, strong) ZGViewTestMoveToWindow *v;
 
 @end
 
@@ -19,6 +22,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor orangeColor];
+    
+    _v = [[ZGViewTestMoveToWindow alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
+    _v.backgroundColor = [UIColor redColor];
+    [self.view addSubview:_v];
+    
+//    [v removeFromSuperview];
     
     ZGCategoryObject *cObj = [[ZGCategoryObject alloc] init];
 //    [cObj log];
@@ -37,6 +48,11 @@
 //    }
 //    free(methodList);
 
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.v removeFromSuperview];
 }
 
 

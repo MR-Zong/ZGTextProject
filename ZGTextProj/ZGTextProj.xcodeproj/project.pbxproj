@@ -231,6 +231,7 @@
 		EF42A576211D8D9100EB4A4E /* ZGHotFixController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF42A575211D8D9100EB4A4E /* ZGHotFixController.m */; };
 		EF488F1D2078679200451738 /* ZGNSPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF488F1C2078679200451738 /* ZGNSPCollectionViewCell.m */; };
 		EF53FC7920A81FFB00FAA3E7 /* ZGScrollViewNestingController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF53FC7820A81FFB00FAA3E7 /* ZGScrollViewNestingController.m */; };
+		EF5642602483FFB600905C9C /* ZGViewTestMoveToWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EF56425F2483FFB600905C9C /* ZGViewTestMoveToWindow.m */; };
 		EF570B032022E57E00E14BC9 /* ZGNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B022022E57E00E14BC9 /* ZGNotificationController.m */; };
 		EF570B062022E5A500E14BC9 /* ZGKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B052022E5A500E14BC9 /* ZGKVOController.m */; };
 		EF570B092022E93D00E14BC9 /* ZGNFNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF570B082022E93D00E14BC9 /* ZGNFNotificationCenter.m */; };
@@ -849,6 +850,8 @@
 		EF488F1C2078679200451738 /* ZGNSPCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNSPCollectionViewCell.m; sourceTree = "<group>"; };
 		EF53FC7720A81FFB00FAA3E7 /* ZGScrollViewNestingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGScrollViewNestingController.h; sourceTree = "<group>"; };
 		EF53FC7820A81FFB00FAA3E7 /* ZGScrollViewNestingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGScrollViewNestingController.m; sourceTree = "<group>"; };
+		EF56425E2483FFB600905C9C /* ZGViewTestMoveToWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGViewTestMoveToWindow.h; sourceTree = "<group>"; };
+		EF56425F2483FFB600905C9C /* ZGViewTestMoveToWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGViewTestMoveToWindow.m; sourceTree = "<group>"; };
 		EF570B012022E57E00E14BC9 /* ZGNotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGNotificationController.h; sourceTree = "<group>"; };
 		EF570B022022E57E00E14BC9 /* ZGNotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGNotificationController.m; sourceTree = "<group>"; };
 		EF570B042022E5A500E14BC9 /* ZGKVOController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGKVOController.h; sourceTree = "<group>"; };
@@ -4205,6 +4208,8 @@
 				EFB94E852104711200484950 /* ZGCategoryExtendA.m */,
 				EFDA514A2483F74A00ED61F9 /* ZGCategogreBase.h */,
 				EFDA514B2483F74A00ED61F9 /* ZGCategogreBase.m */,
+				EF56425E2483FFB600905C9C /* ZGViewTestMoveToWindow.h */,
+				EF56425F2483FFB600905C9C /* ZGViewTestMoveToWindow.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -5281,6 +5286,7 @@
 				EF8B682A22D7708C001F7E53 /* ZGUUidViewController.m in Sources */,
 				EFAC582E1F341E4200B94D93 /* ZGProgressHUD.m in Sources */,
 				EF67D66C2057643C00FA65DC /* ZGINBaseObject.m in Sources */,
+				EF5642602483FFB600905C9C /* ZGViewTestMoveToWindow.m in Sources */,
 				EF8A661020C384B8002FD95F /* ZGNavView2Controller.m in Sources */,
 				41D0A9A621C3586E00BD543C /* ZGTextFixCollectionViewCell.m in Sources */,
 				EF01D5EC20AE74700023B282 /* ZGNavigationBar.m in Sources */,
